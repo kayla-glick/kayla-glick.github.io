@@ -1,14 +1,38 @@
 <div class="col-sm-3 col-sm-offset-1">
   <div id="projects-panel" class="panel panel-default">
-    <div class="panel-heading">
+    <div class="panel-heading text-center">
       <h2 class="panel-title">Projects</h2>
     </div>
     <div class="panel-body">
-      <div id="projects-container">
+      <div id="projects-container" class="col-sm-12" role="tablist">
         {% for category in site.categories %}
           {% unless category[0] == "projects" %}
             <div class="project">
-              <a class="btn btn-lg btn-default" href="/projects/{{category[0]}}">{{category[0]}}</a>
+              <h3 role="tab">
+                <a class="glyphicon glyphicon-chevron-right collapse-btn" data-toggle="collapse" data-parent="#projects-container" href="#{{category[0]}}-posts"></a>
+                <a href="/projects/{{category[0]}}">{{category[0]}}</a>
+              </h3>
+              <div id="{{category[0]}}-posts" class="collapse" role="tabpanel">
+                <ul>
+                  {% for posts in category %}
+                    {% for post in posts %}
+                      {% unless post.title == blank %}
+                        <li>
+                          <h4>
+                            <a href="{{post.url}}">
+                              {{post.title}}
+                              <br>
+                              <small>{{post.description}}</small>
+                              <br>
+                              {% include post_date.html date=post.date %}
+                            </a>
+                          </h4>
+                        </li>
+                      {% endunless %}
+                    {% endfor %}
+                  {% endfor %}
+                </ul>
+              </div>
             </div>
           {% endunless %}
         {% endfor %}

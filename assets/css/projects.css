@@ -1,3 +1,4 @@
+/* Projects Panel */
 #projects-panel {
   border: 1px solid var(--blueberry);
   min-height: 600px;
@@ -21,28 +22,28 @@
   margin: 0px;
 }
 
+.project .collapse-btn {
+  font-size: 1em;
+}
+
 .project ul {
   margin: 0;
+  list-style: none;
 }
 
-.project .btn {
-  color: white;
-  width: 100%;
-  background: var(--citrus);
-  border-color: var(--citrus);
+.project ul li h4 {
+  margin-bottom: 0px;
 }
 
-.project .btn:hover {
-  background: var(--apricot);
-  border-color: var(--apricot);
+.project h3 {
+  margin: 0px;
 }
 
-.project .btn:focus {
-  color: white;
-  background: var(--apricot-secondary);
-  border-color: var(--apricot-secondary);;
+.collapse {
+  transition: all 100ms cubic-bezier(1, 0, 0, 1);
 }
 
+/* Template */
 .post-preview:not(:last-child) {
   padding-bottom: 20px;
   border-bottom: 1px solid #eeeeee;
