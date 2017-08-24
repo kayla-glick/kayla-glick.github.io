@@ -1,3 +1,20 @@
 ---
 layout: projects
 ---
+
+<div class="page-header text-center">
+  <h1 class="page-title">Recent Posts</h1>
+</div>
+<div class="col-sm-6 col-sm-offset-3">
+  {% for post in site.posts limit:5 %}
+    <h3 class="post-preview">
+      {{post.category}}
+      <span class="grey-divider">|</span>
+      <a href="">{{post.title}}</a>
+      <br>
+      <small>{{post.description}}</small>
+      <br>
+      <small>{{post.date | date: "%m/%d/%Y %I:%M %p"}}</small>
+    </h3>
+  {% endfor %}
+</div>

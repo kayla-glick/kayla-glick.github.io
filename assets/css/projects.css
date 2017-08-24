@@ -42,3 +42,8 @@
   background: var(--apricot-secondary);
   border-color: var(--apricot-secondary);;
 }
+
+.post-preview:not(:last-child) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eeeeee;
+}

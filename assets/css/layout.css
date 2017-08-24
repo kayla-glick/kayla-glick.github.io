@@ -68,3 +68,8 @@
 ul {
   list-style: none;
 }
+
+.grey-divider {
+  color: #cccccc;
+  font-weight: normal;
+}
