@@ -73,3 +73,7 @@ ul {
   color: #cccccc;
   font-weight: normal;
 }
+
+a {
+  outline: 0;
+}
