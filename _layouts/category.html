@@ -7,19 +7,5 @@ layout: projects
 </div>
 
 {% for post in site.categories.[page.category] %}
-  <div class="post">
-    <div class="page-header">
-      <h3 class="page-title">
-        {{post.title}}
-        <small>{{post.description}}</small>
-      </h3>
-    </div>
-    <div class="container-fluid no-padding">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <p>{{post.content}}</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  {% include post.html title=post.title description=post.description date=post.date content=post.content%}
 {% endfor %}

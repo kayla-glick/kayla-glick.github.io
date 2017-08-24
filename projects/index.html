@@ -14,7 +14,7 @@ layout: projects
       <br>
       <small>{{post.description}}</small>
       <br>
-      <small>{{post.date | date: "%m/%d/%Y %I:%M %p"}}</small>
+      {% include post_date.html date=post.date %}
     </h3>
   {% endfor %}
 </div>
