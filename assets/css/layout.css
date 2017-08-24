@@ -2,6 +2,7 @@
   --blueberry: #6b7a8f;
   --apricot: #f7882f;
   --apricot-secondary: #d7680f;
+  --apricot-tertiary: #b74800;
   --citrus: #f7c331;
   --apple: #dcc7aa;
 }
@@ -15,6 +16,10 @@
 
 .navbar a {
   color: white !important;
+}
+
+.navbar ul {
+  list-style: none;
 }
 
 .navbar-brand {
@@ -46,6 +51,11 @@
   border-radius: 10px;
 }
 
+.navbar-nav > li a:focus {
+  background: var(--apricot-secondary) !important;
+  border-radius: 10px;
+}
+
 /* Container */
 .container {
   min-height: 600px;
@@ -54,19 +64,35 @@
 /* Footer */
 #footer-links {
   padding: 0px;
+  list-style: none;
 }
 
 /* Other */
+.back-to-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background: var(--apricot);
+  border-color: var(--apricot);
+  color: white !important;
+}
+
+.back-to-top:hover {
+  background: var(--apricot-secondary);
+  border-color: var(--apricot-secondary);
+}
+
+.back-to-top:focus {
+  background: var(--apricot-tertiary) !important;
+  border-color: var(--apricot-tertiary) !important;
+}
+
 .no-margin {
   margin: 0;
 }
 
 .no-padding {
   padding: 0;
-}
-
-ul {
-  list-style: none;
 }
 
 .grey-divider {
@@ -76,4 +102,13 @@ ul {
 
 a {
   outline: 0;
+  text-decoration: none !important;
+}
+
+a:not(.nav-link):not(.btn):hover {
+  color: var(--apricot);
+}
+
+.hidden {
+  display: none;
 }
