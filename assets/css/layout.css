@@ -51,11 +51,6 @@
   border-radius: 10px;
 }
 
-.navbar-nav > li a:focus {
-  background: var(--apricot-secondary) !important;
-  border-radius: 10px;
-}
-
 /* Container */
 .container {
   min-height: 600px;
@@ -107,6 +102,10 @@ a {
 
 a:not(.nav-link):not(.btn):hover {
   color: var(--apricot);
+}
+
+a:not(.nav-link):not(.btn):focus {
+  color: var(--apricot-secondary);
 }
 
 .hidden {
