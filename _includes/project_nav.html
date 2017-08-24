@@ -1,0 +1,18 @@
+<div class="col-sm-3 col-sm-offset-1">
+  <div id="projects-panel" class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">Projects</h2>
+    </div>
+    <div class="panel-body">
+      <div id="projects-container">
+        {% for category in site.categories %}
+          {% unless category[0] == "projects" %}
+            <div class="project">
+              <a class="btn btn-lg btn-default" href="/projects/{{category[0]}}">{{category[0]}}</a>
+            </div>
+          {% endunless %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
