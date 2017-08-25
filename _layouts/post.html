@@ -1,4 +1,23 @@
 ---
 layout: projects
 ---
-{% include post.html title=page.title description=page.description date=page.date content=content %}
+<div class="post">
+  <div class="page-header">
+    <h3 class="page-title">
+      {{page.category}}
+      <span class="grey-divider">|</span>
+      {{page.title}}
+      <br>
+      <small>{{page.description}}</small>
+      <br>
+      {% include post_date.html date=page.date %}
+    </h3>
+  </div>
+  <div class="container-fluid no-padding">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <p>{{page.content}}</p>
+      </div>
+    </div>
+  </div>
+</div>
