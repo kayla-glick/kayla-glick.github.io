@@ -7,14 +7,6 @@ layout: projects
 </div>
 <div class="col-sm-8 col-sm-offset-2">
   {% for post in site.posts limit:5 %}
-    <h3 class="post-preview">
-      {{post.category}}
-      <span class="grey-divider">|</span>
-      <a href="{{post.url}}">{{post.title}}</a>
-      <br>
-      <small>{{post.description}}</small>
-      <br>
-      {% include post_date.html date=post.date %}
-    </h3>
+    {% include post_preview.html post=post %}
   {% endfor %}
 </div>
