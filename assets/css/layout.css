@@ -7,11 +7,20 @@
   --apple: #dcc7aa;
 }
 
+body {
+  background:
+    linear-gradient(135deg, var(--blueberry) 22px, var(--apricot) 22px, var(--apricot) 24px, transparent 24px, transparent 67px, var(--apricot) 67px, var(--apricot) 69px, transparent 69px),
+    linear-gradient(225deg, var(--blueberry) 22px, var(--apricot) 22px, var(--apricot) 24px, transparent 24px, transparent 67px, var(--apricot) 67px, var(--apricot) 69px, transparent 69px)0 64px;
+  background-color: var(--blueberry);
+  background-size: 64px 128px
+}
+
 /* Header */
 .navbar {
   background: var(--blueberry);
   border-radius: 0px;
   border-width: 0px;
+  margin-bottom: 0px;
 }
 
 .navbar a {
@@ -53,10 +62,18 @@
 
 /* Container */
 .container {
-  min-height: 600px;
+  background: white;
+  min-height: 800px;
+  padding: 20px;
 }
 
 /* Footer */
+.footer-container {
+  background: white;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
 #footer-links {
   padding: 0px;
   list-style: none;
