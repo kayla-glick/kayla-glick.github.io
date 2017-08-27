@@ -104,7 +104,7 @@ a:not(.nav-link):not(.btn):hover {
   color: var(--apricot);
 }
 
-a:not(.nav-link):not(.btn):focus {
+a:not(.nav-link):not(.btn):active {
   color: var(--apricot-secondary);
 }
 

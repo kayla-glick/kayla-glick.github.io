@@ -3,7 +3,6 @@
     <span class="grey-divider">|</span>
     <a href="{{include.post.url}}">{{include.post.title}}</a>
     <br>
-    <small>{{include.post.description}}</small>
-    <br>
+    {% include post_description.html description=include.post.description %}
     {% include post_date.html date=include.post.date %}
   </h3>

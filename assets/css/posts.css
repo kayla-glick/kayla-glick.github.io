@@ -1,0 +1,13 @@
+.post-preview:not(:last-child):not(li) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+li.post-preview:not(:last-child) {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eeeeee; 
+}
+
+.post-description p {
+  margin: 0px;
+}

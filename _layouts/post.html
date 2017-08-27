@@ -8,8 +8,7 @@ layout: projects
       <span class="grey-divider">|</span>
       {{page.title}}
       <br>
-      <small>{{page.description}}</small>
-      <br>
+      {% include post_description.html description=page.description %}
       {% include post_date.html date=page.date %}
     </h3>
   </div>

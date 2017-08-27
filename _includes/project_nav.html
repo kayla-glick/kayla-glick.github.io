@@ -17,15 +17,12 @@
                   {% for posts in category %}
                     {% for post in posts %}
                       {% unless post.title == blank %}
-                        <li>
+                        <li class="post-preview">
                           <h4>
-                            <a href="{{post.url}}">
-                              {{post.title}}
-                              <br>
-                              <small>{{post.description}}</small>
-                              <br>
-                              {% include post_date.html date=post.date %}
-                            </a>
+                            <a href="{{post.url}}">{{post.title}}</a>
+                            <br>
+                            {% include post_description.html description=post.description %}
+                            {% include post_date.html date=post.date %}
                           </h4>
                         </li>
                       {% endunless %}
