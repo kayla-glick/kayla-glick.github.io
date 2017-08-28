@@ -1,1 +1,3 @@
-<small class="post-description">{{include.description | xml_escape | markdownify}}</small>
+<small class="post-description">
+  {{include.description | raw}}
+</small>
