@@ -17,7 +17,7 @@ body {
     linear-gradient(225deg, var(--blueberry) 22px, var(--apricot) 22px, var(--apricot) 24px, transparent 24px, transparent 67px, var(--apricot) 67px, var(--apricot) 69px, transparent 69px)0 64px;
   background-color: var(--blueberry);
   background-size: 64px 128px;
-  height: 100%;
+  min-height: 100%;
 }
 
 /* Header */
