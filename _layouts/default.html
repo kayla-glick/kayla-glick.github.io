@@ -4,11 +4,11 @@
   <body>
     {% include header.html %}
     <div class="container col-sm-8 col-sm-offset-2">
-      <div class="content">
-        {{ content }}
-      </div>
-      <footer>
-        <div class="col-sm-10 col-sm-offset-1 text-center">
+      {{ content }}
+    </div>
+    <footer>
+      <div class="col-sm-8 col-sm-offset-2 text-center">
+        <div class="col-sm-10 col-sm-offset-1">
           <hr>
           <ul id="footer-links">
             <li>
@@ -16,8 +16,8 @@
             </li>
           </ul>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
     {% include back_to_top.html %}
   </body>
 </html>
