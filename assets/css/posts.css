@@ -11,3 +11,8 @@ li.post-preview:not(:last-child) {
 .post-description p {
   margin: 0px;
 }
+
+.post ul,
+.post ol {
+  padding-left: 20px;
+}
