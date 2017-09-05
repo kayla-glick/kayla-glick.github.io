@@ -16,3 +16,9 @@ li.post-preview:not(:last-child) {
 .post ol {
   padding-left: 20px;
 }
+
+.post p,
+.post a,
+.post li {
+  font-size: 18px;
+}
