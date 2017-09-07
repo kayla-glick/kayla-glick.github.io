@@ -22,3 +22,7 @@ li.post-preview:not(:last-child) {
 .post li {
   font-size: 18px;
 }
+
+.post table li {
+  font-size: inherit;
+}
