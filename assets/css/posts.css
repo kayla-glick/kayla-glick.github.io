@@ -12,17 +12,17 @@ li.post-preview:not(:last-child) {
   margin: 0px;
 }
 
-.post ul,
-.post ol {
+.post .post-body ul,
+.post .post-body ol {
   padding-left: 20px;
 }
 
-.post p,
-.post a,
-.post li {
+.post .post-body p,
+.post .post-body a,
+.post .post-body li {
   font-size: 18px;
 }
 
-.post table li {
+.post .post-body table li {
   font-size: inherit;
 }
