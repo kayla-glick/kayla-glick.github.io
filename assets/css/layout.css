@@ -132,3 +132,17 @@ a:not(.nav-link):not(.btn):focus {
 .hidden {
   display: none;
 }
+
+.modal .modal-dialog {
+  width: 75vw;
+}
+
+.modal button.close {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.modal button.close span {
+  font-size: 50px;
+}

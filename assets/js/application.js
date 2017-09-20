@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   $(window).scroll(function() {
     if ($(this).scrollTop() > 50) {
       $('.back-to-top').removeClass('hidden');
@@ -19,5 +20,10 @@ $(document).ready(function() {
       $(this).removeClass('glyphicon-chevron-right')
       $(this).addClass('glyphicon-chevron-down')
     }
+  });
+
+  $(document).on('click', 'img', function() {
+    $('#modal-place .modal-dialog').html($(this).clone());
+    $('#modal-place').modal('show');
   });
 });
