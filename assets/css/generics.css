@@ -1,0 +1,30 @@
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.grey-divider {
+  color: #cccccc;
+  font-weight: normal;
+}
+
+a {
+  outline: 0;
+  text-decoration: none !important;
+}
+
+a:not(.nav-link):not(.btn):hover {
+  color: var(--apricot);
+}
+
+a:not(.nav-link):not(.btn):active,
+a:not(.nav-link):not(.btn):focus {
+  color: var(--apricot-secondary);
+}
+
+.hidden {
+  display: none;
+}

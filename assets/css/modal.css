@@ -1,0 +1,29 @@
+.modal .modal-dialog {
+  width: 75vw;
+}
+
+.modal button.close {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  opacity: 1;
+}
+
+.modal button.close span {
+  font-size: 50px;
+  color: var(--apricot);
+  text-shadow: none;
+}
+
+.modal button.close:hover span {
+  color: var(--apricot-secondary);
+}
+
+.modal button.close:active span {
+  color: var(--apricot-tertiary);
+}
+
+.modal-backdrop {
+  background-color: black;
+  opacity: .9 !important;
+}

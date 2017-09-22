@@ -1,3 +1,8 @@
+@import url("generics.css");
+@import url("modal.css");
+@import url("projects.css");
+@import url("posts.css");
+
 :root {
   --blueberry: #6b7a8f;
   --apricot: #f7882f;
@@ -97,52 +102,7 @@ footer > div {
   border-color: var(--apricot-secondary);
 }
 
-.back-to-top:focus {
+.back-to-top:active {
   background: var(--apricot-tertiary) !important;
   border-color: var(--apricot-tertiary) !important;
-}
-
-.no-margin {
-  margin: 0;
-}
-
-.no-padding {
-  padding: 0;
-}
-
-.grey-divider {
-  color: #cccccc;
-  font-weight: normal;
-}
-
-a {
-  outline: 0;
-  text-decoration: none !important;
-}
-
-a:not(.nav-link):not(.btn):hover {
-  color: var(--apricot);
-}
-
-a:not(.nav-link):not(.btn):active,
-a:not(.nav-link):not(.btn):focus {
-  color: var(--apricot-secondary);
-}
-
-.hidden {
-  display: none;
-}
-
-.modal .modal-dialog {
-  width: 75vw;
-}
-
-.modal button.close {
-  position: absolute;
-  top: 0;
-  right: 20px;
-}
-
-.modal button.close span {
-  font-size: 50px;
 }
