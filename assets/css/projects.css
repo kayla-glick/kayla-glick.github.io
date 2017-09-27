@@ -1,3 +1,4 @@
+/* Projects Styling */
 .project-preview {
   margin-bottom: 20px;
 }
@@ -15,6 +16,10 @@
 .project-preview:hover {
   cursor: pointer;
   box-shadow: 0 0 10px var(--apricot);
+}
+
+.project-date {
+  color: var(--apricot);
 }
 
 /* Projects Panel */
