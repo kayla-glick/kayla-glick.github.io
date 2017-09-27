@@ -12,30 +12,24 @@ layout: default
   </h1>
 </div>
 
-{% for post in paginator.posts %}
-  {% include posts/post_preview.html post=post blog=blog %}
-{% endfor %}
+{% assign posts = site.categories.[page.category] %}
 
-{% if paginator.total_pages > 0 %}
+<div class="posts">
+  {% for post in posts %}
+    {% assign index = forloop.index | minus:1 %}
+    {% assign page = (index | divided_by:site.per_page) | plus:1 %}
+    {% include posts/post_preview.html post=post blog=blog page=page %}
+  {% endfor %}
+</div>
+
+{% if posts.size > site.per_page %}
   <div class="col-sm-12 pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="btn btn-lg btn-default">
-        <span class="glyphicon glyphicon-triangle-left"></span>
-      </a>
-    {% else %}
-      <a href="{{ paginator.previous_page_path }}" class="btn btn-lg btn-default disabled">
-        <span class="glyphicon glyphicon-triangle-left"></span>
-      </a>
-    {% endif %}
-    <span class="page-number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="btn btn-lg btn-default">
-        <span class="glyphicon glyphicon-triangle-right"></span>
-      </a>
-    {% else %}
-      <a href="{{ paginator.next_page_path }}" class="btn btn-lg btn-default disabled">
-        <span class="glyphicon glyphicon-triangle-right"></span>
-      </a>
-    {% endif %}
+    <button class="btn btn-lg btn-default prev-category-page disabled">
+      <span class="glyphicon glyphicon-triangle-left"></span>
+    </button>
+    <span class="page-number" data-page="1">Page: 1 of {{ posts.size | modulo:site.per_page }} </span>
+    <button class="btn btn-lg btn-default next-category-page">
+      <span class="glyphicon glyphicon-triangle-right"></span>
+    </button>
   </div>
 {% endif %}

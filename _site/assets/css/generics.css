@@ -25,23 +25,24 @@ a:not(.nav-link):not(.btn):focus {
   color: var(--apricot-secondary);
 }
 
-.btn.btn-default {
+.btn.btn-default,
+.btn.btn-default.disabled:hover {
   background: var(--apricot);
   border-color: var(--apricot);
   color: white !important;
 }
 
-.btn.btn-default:hover {
+.btn.btn-default:not(.disabled):hover {
   background: var(--apricot-secondary);
   border-color: var(--apricot-secondary);
 }
 
-.btn.btn-default:active {
+.btn.btn-default:not(.disabled):active {
   background: var(--apricot-tertiary) !important;
   border-color: var(--apricot-tertiary) !important;
 }
 
-a.disabled span {
+.disabled span {
   color: inherit !important;
   background: inherit !important;
 }

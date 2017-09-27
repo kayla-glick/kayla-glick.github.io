@@ -1,4 +1,10 @@
-<h3 class="post-preview">
+{% if include.page == 1 %}
+  {% assign class = "" %}
+{% else %}
+  {% assign class = "hidden" %}
+{% endif %}
+
+<h3 class="post-preview {{ class }}" data-page="{{ page }}">
   {{ include.blog }}
   <span class="grey-divider">|</span>
   <a href="{{ include.post.url }}">{{ include.post.title }}</a>

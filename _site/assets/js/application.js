@@ -26,4 +26,42 @@ $(document).ready(function() {
     $('#modal-place .modal-dialog').html($(this).clone());
     $('#modal-place').modal('show');
   });
+
+  var per_page    = parseInt($('#per-page').val());
+  var total_page  = Math.ceil($('.post-preview:not(li)').length / per_page);
+  var page        = parseInt($('.page-number').data('page'));
+
+  $(document).on('click', '.prev-category-page:not(.disabled)', function() {
+    $(".post-preview:not(li)[data-page='"+page+"']").addClass('hidden');
+    $(".post-preview:not(li)[data-page='"+(page-1)+"']").removeClass('hidden');
+
+    $('.next-category-page.disabled').removeClass('disabled')
+
+    if ( page-1 == 1) {
+      $(this).addClass('disabled');
+    } else {
+      $(this).removeClass('disabled');
+    }
+
+    page--;
+
+    $('.page-number').text("Page: "+page+" of "+total_page)
+  });
+
+  $(document).on('click', '.next-category-page:not(.disabled)', function() {
+    $(".post-preview:not(li)[data-page='"+page+"']").addClass('hidden');
+    $(".post-preview:not(li)[data-page='"+(page+1)+"']").removeClass('hidden');
+
+    $('.prev-category-page.disabled').removeClass('disabled')
+
+    if ( page+1 == total_page) {
+      $(this).addClass('disabled')
+    } else {
+      $(this).removeClass('disabled')
+    }
+
+    page++;
+
+    $('.page-number').text("Page: "+page+" of "+total_page)
+  });
 });

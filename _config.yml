@@ -1,10 +1,4 @@
-plugins: [jekyll-paginate, jekyll-paginate-categories]
-
-paginate: 5
-paginate_path: "/p/:num/"
-
-paginate_category_basepath: "/projects/:name/"
-paginate_category_layout: "category.html"
+per_page: 5
 
 projects:
   csci_362:
