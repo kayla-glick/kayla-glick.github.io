@@ -1,3 +1,22 @@
+.project-preview {
+  margin-bottom: 20px;
+}
+
+.project-preview,
+.project-preview img {
+  border-radius: 10px;
+}
+
+.project-preview,
+.project-preview:hover {
+  transition: box-shadow 0.25s ease-in-out;
+}
+
+.project-preview:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--apricot);
+}
+
 /* Projects Panel */
 #projects-panel {
   border: 1px solid var(--blueberry);
@@ -41,4 +60,8 @@
 
 .collapse {
   transition: all 100ms cubic-bezier(1, 0, 0, 1);
+}
+
+.no-posts {
+  padding-left: 40px;
 }

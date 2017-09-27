@@ -1,11 +1,11 @@
-.post-preview:not(:last-child):not(li) {
+.post-preview:not(:nth-last-child(2)):not(li) {
   padding-bottom: 20px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #dddddd;
 }
 
 li.post-preview:not(:last-child) {
   padding-bottom: 10px;
-  border-bottom: 1px solid #eeeeee; 
+  border-bottom: 1px solid #dddddd; 
 }
 
 .post-description p {
@@ -29,7 +29,7 @@ li.post-preview:not(:last-child) {
 
 .post .post-body img,
 .post .post-body img:hover {
-  transition: box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.25s ease-in-out;
 }
 
 .post .post-body img:hover {

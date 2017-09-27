@@ -22,7 +22,7 @@ $(document).ready(function() {
     }
   });
 
-  $(document).on('click', 'img', function() {
+  $(document).on('click', '.post img', function() {
     $('#modal-place .modal-dialog').html($(this).clone());
     $('#modal-place').modal('show');
   });

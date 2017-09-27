@@ -1,0 +1,37 @@
+<div id="projects-panel" class="panel panel-default">
+  <div class="panel-heading text-center">
+    <h2 class="panel-title">Projects</h2>
+  </div>
+  <div class="panel-body">
+    <div id="projects-container" class="col-sm-12" role="tablist">
+      {% for project in site.projects %}
+        {% assign project_name = project[0] %}
+        <div class="project">
+          <h3 role="tab">
+            <a class="glyphicon glyphicon-chevron-right collapse-btn" data-toggle="collapse" data-parent="#projects-container" href="#{{ project_name }}-posts"></a>
+            <a href="/projects/{{ project_name }}/">{{ project[1]['title'] }}</a>
+          </h3>
+          <div id="{{ project_name }}-posts" class="collapse" role="tabpanel">
+            {% if site.categories.[project_name].size > 0 %}
+              <ul>
+                {% for posts in site.categories.[project_name] %}
+                  <li class="post-preview">
+                    <h4>
+                      <a href="{{ posts.url }}">{{ posts.title }}</a>
+                      <br>
+                      {% include posts/post_description.html description=posts.description %}
+                      <br>
+                      {% include posts/post_date.html date=posts.date %}
+                    </h4>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              <span class="no-posts">There are no posts in this project</span>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

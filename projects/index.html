@@ -3,10 +3,21 @@ layout: default
 ---
 
 <div class="page-header text-center">
-  <h1 class="page-title">Recent Posts</h1>
+  <h1 class="page-title">Projects</h1>
 </div>
-<div class="col-sm-8 col-sm-offset-2">
-  {% for post in site.posts limit:5 %}
-    {% include post_preview.html post=post %}
-  {% endfor %}
-</div>
+{% for project in site.projects %}
+  <a href="/projects/{{ project[0] }}/" class="col-sm-12 no-padding project-preview">
+    <div class="col-sm-4 no-padding">
+      <img src="{{ project[1]['logo'] }}" alt="{{ project[1]['title'] }} Logo" style="width:100%;">
+    </div>
+    <div class="col-sm-8">
+      <h2>
+        {{ project[1]['title'] }}
+        <br>
+        <small>{{ project[1]['date'] }}</small>
+        <br>
+        <small>{{ project[1]['description'] }}</small>
+      </h2>
+    </div>
+  </a>
+{% endfor %}

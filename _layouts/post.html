@@ -5,13 +5,13 @@ layout: default
 <div class="post">
   <div class="page-header">
     <h1 class="page-title">
-      {{page.category}}
+      <a href="{{ site.base_url }}/projects/{{ page.category }}/">{{ site.projects[page.category]['title'] }}</a>
       <span class="grey-divider">|</span>
-      {{page.title}}
+      {{ page.title }}
       <br>
-      {% include post_description.html description=page.description %}
+      {% include posts/post_description.html description=page.description %}
       <br>
-      {% include post_date.html date=page.date %}
+      {% include posts/post_date.html date=page.date %}
     </h3>
   </div>
   <div class="container-fluid no-padding post-body">
@@ -21,4 +21,42 @@ layout: default
       </div>
     </div>
   </div>
+</div>
+
+{% if page.categories %}
+  {% assign category = page.categories[1] %}
+  {% assign posts = site.categories[category] %}
+  {% for post in posts %}
+    {% if post.url == page.url %}
+      {% assign post_index0 = forloop.index0 %}
+      {% assign post_index1 = forloop.index %}
+    {% endif %}
+  {% endfor %}
+  {% for post in posts %}
+    {% if post_index0 == forloop.index %}
+      {% assign next_post = post %}
+    {% endif %}
+    {% if post_index1 == forloop.index0 %}
+      {% assign prev_post = post %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+<div class="col-sm-12 pagination">
+  {% if prev_post %}
+    <div class="col-sm-5 no-padding">
+      <a href="{{ prev_post.url }}">
+        <span class="glyphicon glyphicon-arrow-left"></span>
+        {{ prev_post.title }}
+      </a>
+    </div>
+  {% endif %}
+  {% if next_post %}
+    <div class="col-sm-5 col-sm-offset-2 no-padding pull-right text-right">
+      <a href="{{ next_post.url }}">
+        {{ next_post.title }}
+        <span class="glyphicon glyphicon-arrow-right"></span>
+      </a>
+    </div>
+  {% endif %}
 </div>

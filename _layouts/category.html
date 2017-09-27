@@ -2,15 +2,40 @@
 layout: default
 ---
 
-<div class="page-header text-center">
+{% assign project = site.projects[page.category] %}
+{% assign blog = project['title'] %}
+<div class="page-header">
   <h1 class="page-title">
-    {{page.category}} Blog
+    {{ blog }}
     <br>
-    <small>{{page.description}}</small>
+    <small>{{ project['description'] }}</small>
   </h1>
 </div>
-<div class="col-sm-8 col-sm-offset-2">
-  {% for post in site.categories.[page.category] %}
-    {% include post_preview.html post=post %}
-  {% endfor %}
-</div>
+
+{% for post in paginator.posts %}
+  {% include posts/post_preview.html post=post blog=blog %}
+{% endfor %}
+
+{% if paginator.total_pages > 0 %}
+  <div class="col-sm-12 pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="btn btn-lg btn-default">
+        <span class="glyphicon glyphicon-triangle-left"></span>
+      </a>
+    {% else %}
+      <a href="{{ paginator.previous_page_path }}" class="btn btn-lg btn-default disabled">
+        <span class="glyphicon glyphicon-triangle-left"></span>
+      </a>
+    {% endif %}
+    <span class="page-number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="btn btn-lg btn-default">
+        <span class="glyphicon glyphicon-triangle-right"></span>
+      </a>
+    {% else %}
+      <a href="{{ paginator.next_page_path }}" class="btn btn-lg btn-default disabled">
+        <span class="glyphicon glyphicon-triangle-right"></span>
+      </a>
+    {% endif %}
+  </div>
+{% endif %}

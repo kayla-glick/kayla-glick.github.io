@@ -92,17 +92,24 @@ footer > div {
   position: fixed;
   right: 10px;
   bottom: 10px;
-  background: var(--apricot);
-  border-color: var(--apricot);
-  color: white !important;
 }
 
-.back-to-top:hover {
-  background: var(--apricot-secondary);
-  border-color: var(--apricot-secondary);
+.page-header {
+  border-color: #DDDDDD;
 }
 
-.back-to-top:active {
-  background: var(--apricot-tertiary) !important;
-  border-color: var(--apricot-tertiary) !important;
+.pagination {
+  padding: 10px 0 10px 0;
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.page-number {
+  font-size: 18px;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+}
+
+.page-number:not(:first-child) {
+  margin: 0 10px 0 10px;
 }
