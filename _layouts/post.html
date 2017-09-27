@@ -42,21 +42,23 @@ layout: default
   {% endfor %}
 {% endif %}
 
-<div class="col-sm-12 pagination">
-  {% if prev_post %}
-    <div class="col-sm-5 no-padding">
-      <a href="{{ prev_post.url }}">
-        <span class="glyphicon glyphicon-arrow-left"></span>
-        {{ prev_post.title }}
-      </a>
-    </div>
-  {% endif %}
-  {% if next_post %}
-    <div class="col-sm-5 col-sm-offset-2 no-padding pull-right text-right">
-      <a href="{{ next_post.url }}">
-        {{ next_post.title }}
-        <span class="glyphicon glyphicon-arrow-right"></span>
-      </a>
-    </div>
-  {% endif %}
-</div>
+{% if prev_post || next_post %}
+  <div class="col-sm-12 pagination">
+    {% if prev_post %}
+      <div class="col-sm-5 no-padding">
+        <a href="{{ prev_post.url }}">
+          <span class="glyphicon glyphicon-arrow-left"></span>
+          {{ prev_post.title }}
+        </a>
+      </div>
+    {% endif %}
+    {% if next_post %}
+      <div class="col-sm-5 col-sm-offset-2 no-padding pull-right text-right">
+        <a href="{{ next_post.url }}">
+          {{ next_post.title }}
+          <span class="glyphicon glyphicon-arrow-right"></span>
+        </a>
+      </div>
+    {% endif %}
+  </div>
+{% endif %}
