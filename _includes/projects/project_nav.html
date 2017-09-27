@@ -12,7 +12,16 @@
             <a href="/projects/{{ project_name }}/">{{ project[1]['title'] }}</a>
           </h3>
           <div id="{{ project_name }}-posts" class="collapse" role="tabpanel">
-            {% if site.categories.[project_name].size > 0 %}
+            {% assign show_posts = true %}
+
+            {% for post in site.categories.[project_name] limit:1 %}
+              {% assign date = post.date | date: "%Y" %}
+              {% if date == "2000" %}
+                {% assign show_posts = false %}
+              {% endif %}
+            {% endfor %}
+
+            {% if show_posts %}
               <ul>
                 {% for posts in site.categories.[project_name] %}
                   <li class="post-preview">
