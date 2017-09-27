@@ -5,8 +5,6 @@
 {% endif %}
 
 <h3 class="post-preview {{ class }}" data-page="{{ page }}">
-  {{ include.blog }}
-  <span class="grey-divider">|</span>
   <a href="{{ include.post.url }}">{{ include.post.title }}</a>
   <br>
   {% include posts/post_description.html description=include.post.description %}

@@ -4,12 +4,12 @@ future: false
 
 projects:
   csci_362:
-    title: "CSCI 362 Blog"
-    description: "A blog for my CSCI 362 - Software Engineering class taught by Dr. Jim Bowring where I discuss ethical issues in Software Engineering and complete various homework from Ian Sommerville's book <em>Software Engineering 10th Edition</em>."
+    title: "CSCI 362 - Software Engineering Blog"
+    description: "A blog for my CSCI 362 - Software Engineering class where I discuss various issues in Software Engineering and respond to homework questions from Ian Sommerville's <em>Software Engineering 10th Edition</em>."
     date: "Fall 2017"
     logo: "/assets/images/csci_362/logo.jpg"
   sparcrequest:
     title: "SPARCRequest"
-    description: "A blog dedicated to my work on the SPARCRequest team at the Medical University of South Carolina Biomedical Informatics Center."
+    description: "I worked as an intern at the Biomedical Informatics Center at the Medical University of South Carolina to maintain and develop for the SPARCRequest team, consisting of several applications dedicated to research management."
     date: "Summer 2015 - Present"
-    logo: "/assets/images/sparcrequest/logo.jpg"
+    logo: "/assets/images/sparcrequest/sparc_logo.jpg"

@@ -26,13 +26,3 @@ li.post-preview:not(:last-child) {
 .post .post-body table li {
   font-size: inherit;
 }
-
-.post .post-body img,
-.post .post-body img:hover {
-  transition: box-shadow 0.25s ease-in-out;
-}
-
-.post .post-body img:hover {
-  cursor: pointer;
-  box-shadow: 0 0 10px var(--apricot);
-}

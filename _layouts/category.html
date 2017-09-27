@@ -3,13 +3,24 @@ layout: default
 ---
 
 {% assign project = site.projects[page.category] %}
-{% assign blog = project['title'] %}
-<div class="page-header">
-  <h1 class="page-title">
-    {{ blog }}
-    <br>
-    <small>{{ project['description'] }}</small>
-  </h1>
+{% assign project_title = project['title'] %}
+<div class="project-header media">
+  <div class="media-left col-sm-4 no-padding">
+    <img class="project-logo" src="{{ project['logo'] }}" alt="{{ project['title'] }} Logo" style="width:100%;">
+  </div>
+  <div class="media-body container fluid">
+    <h1 class="media-heading">
+      {{ project['title'] }}
+      <br>
+      <small class="project-date">{{ project['date'] }}</small>
+      <br>
+      <small>{{ project['description'] }}</small>
+    </h1>
+  </div>
+</div>
+
+<div class="project-content">
+  {{ content }}
 </div>
 
 {% assign posts = site.categories.[page.category] %}
@@ -24,11 +35,14 @@ layout: default
 {% endfor %}
 
 {% if show_posts %}
+  <div class="page-header">
+    <h1 class="page-title">Blog Posts</h1>
+  </div>
   <div class="posts">
     {% for post in posts %}
       {% assign index = forloop.index | minus:1 %}
       {% assign page = (index | divided_by:site.per_page) | plus:1 %}
-      {% include posts/post_preview.html post=post blog=blog page=page %}
+      {% include posts/post_preview.html post=post project_title=project_title page=page %}
     {% endfor %}
   </div>
 {% endif %}

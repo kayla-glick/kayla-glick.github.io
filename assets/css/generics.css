@@ -50,3 +50,21 @@ a:not(.nav-link):not(.btn):focus {
 .hidden {
   display: none;
 }
+
+.glowing-link:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--apricot);
+}
+
+.glowing-link,
+.glowing-link:hover {
+  transition: box-shadow 0.25s ease-in-out;
+}
+
+.glowing-logo {
+  transition: all .25s linear;
+}
+
+.glowing-logo:hover {
+  opacity: .5;
+}

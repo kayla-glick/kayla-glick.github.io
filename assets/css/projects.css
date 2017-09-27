@@ -4,18 +4,8 @@
 }
 
 .project-preview,
-.project-preview img {
+.project-logo {
   border-radius: 10px;
-}
-
-.project-preview,
-.project-preview:hover {
-  transition: box-shadow 0.25s ease-in-out;
-}
-
-.project-preview:hover {
-  cursor: pointer;
-  box-shadow: 0 0 10px var(--apricot);
 }
 
 .project-date {
