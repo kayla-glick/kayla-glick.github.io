@@ -1,0 +1,115 @@
+@import url("generics.css");
+@import url("modal.css");
+@import url("projects.css");
+@import url("posts.css");
+
+:root {
+  --blueberry: #6b7a8f;
+  --apricot: #f7882f;
+  --apricot-secondary: #d7680f;
+  --apricot-tertiary: #b74800;
+  --citrus: #f7c331;
+  --apple: #dcc7aa;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background:
+    linear-gradient(135deg, var(--blueberry) 22px, var(--apricot) 22px, var(--apricot) 24px, transparent 24px, transparent 67px, var(--apricot) 67px, var(--apricot) 69px, transparent 69px),
+    linear-gradient(225deg, var(--blueberry) 22px, var(--apricot) 22px, var(--apricot) 24px, transparent 24px, transparent 67px, var(--apricot) 67px, var(--apricot) 69px, transparent 69px)0 64px;
+  background-color: var(--blueberry);
+  background-size: 64px 128px;
+  height: 100%;
+}
+
+/* Header */
+.navbar {
+  background: var(--blueberry);
+  border-radius: 0px;
+  border-width: 0px;
+  margin-bottom: 0px;
+}
+
+.navbar a {
+  color: white !important;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar-brand {
+  font-size:      3em;
+  line-height:    1em;
+  display:        table;
+}
+
+.navbar-brand small {
+  font-size: 50%;
+}
+
+.navbar-header {
+  margin-top: 1em;
+}
+
+.navbar-header {
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-radius: 10px;
+}
+
+.navbar-nav > li > a {
+  font-size: 2em;
+}
+
+.navbar-nav > li:hover {
+  background: var(--apricot);
+  border-radius: 10px;
+}
+
+/* Container */
+.container {
+  background: white;
+  padding: 20px;
+  min-height: 100%;
+}
+
+/* Footer */
+footer > div {
+  background: white;
+}
+
+#footer-links {
+  padding: 0px;
+  list-style: none;
+}
+
+/* Other */
+.back-to-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.page-header {
+  border-color: #DDDDDD;
+}
+
+.pagination {
+  padding: 10px 0 10px 0;
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.page-number {
+  font-size: 18px;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+}
+
+.page-number:not(:first-child) {
+  margin: 0 10px 0 10px;
+}

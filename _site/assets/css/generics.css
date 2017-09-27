@@ -1,0 +1,51 @@
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.grey-divider {
+  color: #cccccc;
+  font-weight: normal;
+}
+
+a {
+  outline: 0;
+  text-decoration: none !important;
+}
+
+a:not(.nav-link):not(.btn):hover {
+  color: var(--apricot);
+}
+
+a:not(.nav-link):not(.btn):active,
+a:not(.nav-link):not(.btn):focus {
+  color: var(--apricot-secondary);
+}
+
+.btn.btn-default {
+  background: var(--apricot);
+  border-color: var(--apricot);
+  color: white !important;
+}
+
+.btn.btn-default:hover {
+  background: var(--apricot-secondary);
+  border-color: var(--apricot-secondary);
+}
+
+.btn.btn-default:active {
+  background: var(--apricot-tertiary) !important;
+  border-color: var(--apricot-tertiary) !important;
+}
+
+a.disabled span {
+  color: inherit !important;
+  background: inherit !important;
+}
+
+.hidden {
+  display: none;
+}

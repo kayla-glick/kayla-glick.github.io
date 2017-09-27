@@ -12,17 +12,10 @@ layout: default
   </h1>
 </div>
 
-Test
-{{ paginator }}
-<br>
-{{ paginator.posts }}
-<br>
 {% for post in paginator.posts %}
   {% include posts/post_preview.html post=post blog=blog %}
 {% endfor %}
 
-{{ paginator.total_pages }}
-Test
 {% if paginator.total_pages > 0 %}
   <div class="col-sm-12 pagination">
     {% if paginator.previous_page %}

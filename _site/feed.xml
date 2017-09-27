@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-26T21:11:45-04:00</updated><id>http://localhost:4000/</id><entry><title type="html">HW12: Mythical Man Month</title><link href="http://localhost:4000/projects/csci_362/2017/09/26/hw12.html" rel="alternate" type="text/html" title="HW12: Mythical Man Month" /><published>2017-09-26T10:00:00-04:00</published><updated>2017-09-26T10:00:00-04:00</updated><id>http://localhost:4000/projects/csci_362/2017/09/26/hw12</id><content type="html" xml:base="http://localhost:4000/projects/csci_362/2017/09/26/hw12.html">&lt;p&gt;    From my personal experiences as a Software Developer so far, I find myself in some ways agreeing with Brooks’s notion of the “Mythical Man Month”, but in other ways, fervently disagreeing as well. On the one hand, I’ve experienced the futility of having a larger team. As a team grows, there are (seemingly) always going to be the group of developers who are working extra to make up for the second group of developers who do next to nothing. There are developers who abide by code, style, and convention standards, while others couldn’t care in the least. And there are the developers who rush to finish as much as possible while sacrificing quality and care of work, while others develop so inefficiently (generally due to lack of work) that they often hold up the development or testing processes of other members of the team or the system as a whole.&lt;/p&gt;
+
+&lt;p&gt;    Despite this, having more people on a team is not always a bad thing. There are certain systems which are simply too big to not have a large team, and there are certain scenarios where more people being brought onto a project to help finish it is more beneficial than not. The team that I’m currently interning for consists of only 9 developers - 3 of which are interns. The primary application that we’re responsible for, SPARCRequest, would not be considered particularly large by commercial standards, but it is reasonably large and often has very complex logic and requirements. For our small team, at times we’re very busy with continuous requests for new features, bug fixes, or refactors, and at times things are slow, giving us a break of sorts, generally towards the end of a release / beginning of a new release cycle.&lt;/p&gt;
+
+&lt;p&gt;    But even within our small team, disorganization and inconsistency is rampant. Like Brooks says, these things are a natural part of the team process. But I would argue that we can overcome these obstacles by enforcing stricter organization and standards within the team - holding one another accountable for our productivity and adherence to standards. Within a larger team, we do this by creating subteams and subteams within subteams to work together to tackle sections at a time. But doing this alone isn’t enough, because within one team will exist inconsistencies with the work of another team. There has to be an overarching set of standards for design, development, styling, etc. that have to be agreed upon and enforced by all members of the development team. And when these standards are not met, it’s our job to remind others and remind them of what needs to be done.&lt;/p&gt;
+
+&lt;p&gt;    But even if a team manages to find a solid, stable method to organize their team, goals, and standards, that doesn’t mean that there won’t be problems. Every developer has, at some point or another, run into a problem that they spend way too much time looking at. Confused, frustrated, and exhausted, they may slow down pace and become unable to focus on and complete the task before them. I’ve seen this firsthand, and probably experienced it too. You can easily get lost within your work, especially if you have spent a week or more in it. You forget what you’ve done, what needs to be done, and everything can become an overwhelming stress nightmare. When this happens, it’s important to have others to back you up. You have to be willing to ask for help, but more importantly, you need to be able to get help when you need it. Having more team members gives you this opportunity, too.&lt;/p&gt;
+
+&lt;p&gt;    In the end, I think there is a trade off between labor, time, and cost that is virtually impossible to make a realistic expectation of beforehand. There are pros to having more developers, but also cons to having too many. You don’t want to over-work the few you have, but you don’t want to waste resources on the many who don’t produce. I think in some ways Brooks is right in his perspectives of these trade offs, but in many other ways his arguments are deeply flawed from having worked in a different time with different processes and resources. It seems almost like an impossible expectation to expect to fit within budget, deadlines, and achieving full specifications. It’s a lot to ask for from a process so complex and building a software system. Can we do better? Yes. But to a point, we have to realize that, in anything, there are trade offs to make. Rarely will you meet a goal 100%.&lt;/p&gt;</content><author><name></name></author><category term="csci_362" /><summary type="html">    From my personal experiences as a Software Developer so far, I find myself in some ways agreeing with Brooks’s notion of the “Mythical Man Month”, but in other ways, fervently disagreeing as well. On the one hand, I’ve experienced the futility of having a larger team. As a team grows, there are (seemingly) always going to be the group of developers who are working extra to make up for the second group of developers who do next to nothing. There are developers who abide by code, style, and convention standards, while others couldn’t care in the least. And there are the developers who rush to finish as much as possible while sacrificing quality and care of work, while others develop so inefficiently (generally due to lack of work) that they often hold up the development or testing processes of other members of the team or the system as a whole.</summary></entry><entry><title type="html">HW11: Chapter 6</title><link href="http://localhost:4000/projects/csci_362/2017/09/21/hw11.html" rel="alternate" type="text/html" title="HW11: Chapter 6" /><published>2017-09-21T18:00:00-04:00</published><updated>2017-09-21T18:00:00-04:00</updated><id>http://localhost:4000/projects/csci_362/2017/09/21/hw11</id><content type="html" xml:base="http://localhost:4000/projects/csci_362/2017/09/21/hw11.html">&lt;h3 id=&quot;64&quot;&gt;6.4&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Draw diagrams showing a conceptual view and a process view of the architectures of the following systems:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;A ticket machine used by passengers at a railway station&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/csci_362/hw11_6.4_1.png&quot; width=&quot;100%&quot; alt=&quot;HW11 - Ticket Kiosk Process View&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;A computer-controlled video conferencing system that allows video, audio, and computer data to be visible to several participants at the same time&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/csci_362/hw11_6.4_2.png&quot; width=&quot;100%&quot; alt=&quot;HW11 - Video Conference Process View&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;A robot floor-cleaner that is intended to clean relatively clear spaces such as corridors. The cleaner must be able to sense walls and other obstructions.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/csci_362/hw11_6.4_3.png&quot; width=&quot;100%&quot; alt=&quot;HW11 - Floor Cleaner Process View&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;text-center&quot;&gt;
+  &lt;em&gt;Diagrams made with draw.io&lt;/em&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="csci_362" /><summary type="html">6.4 Draw diagrams showing a conceptual view and a process view of the architectures of the following systems:</summary></entry><entry><title type="html">HW10: Chapter 5</title><link href="http://localhost:4000/projects/csci_362/2017/09/19/hw10.html" rel="alternate" type="text/html" title="HW10: Chapter 5" /><published>2017-09-19T10:00:00-04:00</published><updated>2017-09-19T10:00:00-04:00</updated><id>http://localhost:4000/projects/csci_362/2017/09/19/hw10</id><content type="html" xml:base="http://localhost:4000/projects/csci_362/2017/09/19/hw10.html">&lt;h3 id=&quot;53&quot;&gt;5.3&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;You have been asked to develop a system that will help with planning large-scale events and parties such as weddings, graduation celebrations, and birthday parties. Using an activity diagram, model the process context for such a system that shows the activities involved in planning a party (booking a venue, organizing invitations, etc.) and the system elements that might be used at each stage.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/csci_362/hw10_5.3.png&quot; width=&quot;100%&quot; alt=&quot;HW10 #5.3 - Event Planner Activity Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;55&quot;&gt;5.5&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Develop a sequence diagram showing the interactions involved when a student registers for a course in a university. Courses may have limited enrollment, so the registration process must include checks that places are available. Assume that the student accesses an electronic course catalog to find out about available courses.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/csci_362/hw10_5.5.png&quot; width=&quot;100%&quot; alt=&quot;HW10 #5.5 - Course Registration Sequence Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;57&quot;&gt;5.7&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Based on your experience with a bank ATM, draw an activity diagram that models the data processing involved when a customer withdraws cash from the machine.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/csci_362/hw10_5.7.png&quot; width=&quot;100%&quot; alt=&quot;HW10 #5.7 - ATM Activity Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;58&quot;&gt;5.8&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Draw a sequence diagram for the same system. Explain why you might want to develop both activity and sequence diagrams when modeling the behavior of a system.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/csci_362/hw10_5.8.png&quot; width=&quot;100%&quot; alt=&quot;HW10 #5.8 - ATM Sequence Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;    It’s important to use both Sequence and Activity diagrams when modeling the behavior of a system because each diagram provides an important, but at the same time incomplete description of the system events. Activity diagrams provide an easy-to-read model of event flow with fewer technical details. It’s best use it to model Work Flow, but not necessarily the interactions taking place within the system. Sequence Diagrams are the opposite. They tend to be more technical and provide more detailed information about how the system is going about its various events. It tends to poorly show the overall Work Flow of a system, but it provides valuable technical implementation details.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;text-center&quot;&gt;
+  &lt;em&gt;Diagrams made with draw.io&lt;/em&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="csci_362" /><summary type="html">5.3 You have been asked to develop a system that will help with planning large-scale events and parties such as weddings, graduation celebrations, and birthday parties. Using an activity diagram, model the process context for such a system that shows the activities involved in planning a party (booking a venue, organizing invitations, etc.) and the system elements that might be used at each stage.</summary></entry><entry><title type="html">HW9: Reflections</title><link href="http://localhost:4000/projects/csci_362/2017/09/11/hw9.html" rel="alternate" type="text/html" title="HW9: Reflections" /><published>2017-09-11T14:00:00-04:00</published><updated>2017-09-11T14:00:00-04:00</updated><id>http://localhost:4000/projects/csci_362/2017/09/11/hw9</id><content type="html" xml:base="http://localhost:4000/projects/csci_362/2017/09/11/hw9.html">&lt;p&gt;    To me, the future of programming is both fantastic and scary. On one hand, we’re developing tools and systems that enable us to accomplish exponentially more with greater ease than ever. At the same time though, not all of these tools and systems are meant to better the world. In recent years, alongside the rise of such great technologies as the smart phone, VR, and self-driving cars have come equally dangerous pieces of software. Botnets, more complex viruses, large-scale data breaches, and so much more. As we move into the future of programming, we need to look too back to the past to ensure that as we move forward, we fix the mistakes of the past.&lt;/p&gt;
+
+&lt;p&gt;    Right now in 2017, the IoT has become a rapidly expanding web of devices, APIs, and data. I would imagine that the IoT is still in its infancy in the grand scheme of programming. One day, I would not be surprised to see nearly autonomous home systems, transportation, and tons of other tools for things such as food, entertainment, education, etc. But right now, that future is more of a danger than something to aspire for. The IoT of 2017 is riddled with security risks. Many devices connected to the IoT are improperly maintained (and designed as such), as a result are easily hacked into and used for whatever malevolent purposes a hacker might have. We’ve gotten lazy over the years. As we build fancy new gadgets, we tend to overlook their security. Default usernames and passwords are a huge part of these security flaws, as well as unprotected communication channels. Even many routers, which have been around for well over a decade now, still rely on default username=username/admin/root password=password/null configurations, and that in itself is a massive danger to simple home computing that has been around for years already. And alongside that, many routers are not properly maintained by their users (ex. updating firmware). Like routers, many of these new, fancy IoT gadgets suffer from the same flaws. They user communication channels with weak protections. They’re designed to be simple, but that simplicity just makes it easier for hackers to take control. And just like routers, many IoT devices don’t have a process to maintain their firmware and update configuration settings like username and password. If we want to continue building onto the IoT - which is inevitably going to happen - then we need to come up with more user-friendly processes to maintain those devices and keep them secure, rather than leaving them open and vulnerable.&lt;/p&gt;
+
+&lt;p&gt;    As we move forward into this highly autonomous future, IoT botnets aren’t the only problem we face. In a similar way, we’re beginning to see a rise in both human-controller and fully autonomous internet bots. Every day when I log into social media sites and view content from public pages, there always seems to be a great deal of what we consider “troll” and “bot” accounts. They post the same, long, reptitive, obnoxious content as comments. They often look human, having somewhat active profiles, real pictures (though often stolen from others), etc., but it’s usually easy to tell that they aren’t in any way human. Their posts read like a robot - clunky, emotionless cluttered space of random “facts” (whether real or not). These bots have taken over social media sites such as Facebook and Twitter, killing a big part of the human aspect of “social” media. I remember recently reading an article (similar link &lt;a href=&quot;http://money.cnn.com/video/technology/culture/2017/08/10/trump-twitter-followers-social-media-bots.cnnmoney/index.html&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;) talking about President Donald Trump’s twitter account. The author discussed a study done using data from Twitter’s API to look at Trump’s twitter followers’ accounts. From analyzing the profiles following the President’s twitter account, they found that an astonishing amount of the accounts appeared to be fake - generally having few to no pictures, few to no posts, and simply reading, again, like robots. These bots tend to share propaganda and falsified or misleading articles, created by many sides of the political spectrum, in order to influence opinions by those who don’t know any better. And these accounts are making substantial amounts of money for posting falsified information (see &lt;a href=&quot;https://www.washingtonpost.com/news/the-intersect/wp/2016/11/18/this-is-how-the-internets-fake-news-writers-make-money/?utm_term=.b7cbfe9cdbae&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;), so they’re not going anywhere anytime soon.&lt;/p&gt;
+
+&lt;p&gt;    These dangers exist whether we like it or not, and we need to plan for them as we move into the future. As more and more systems move to the cloud, they become a liability that we need to protect and secure. The internet has become rampant with bots and malevolent users who seek to hurt others, and it’s our responsibility as ethical programmers to work against them. As we build these futuristic systems like autonomous cars, homes, etc., VR, and much more that I’m sure we couldn’t even imagine yet, the scope of the damage that these people can cause will become far more substantial. Whereas in the past we had to fight mostly to protect our financial assets, in the future, we may very well be fighting for our very lives. These tools can be very dangerous, and it’s our responsibility to keep our users safe.&lt;/p&gt;</content><author><name></name></author><category term="csci_362" /><summary type="html">    To me, the future of programming is both fantastic and scary. On one hand, we’re developing tools and systems that enable us to accomplish exponentially more with greater ease than ever. At the same time though, not all of these tools and systems are meant to better the world. In recent years, alongside the rise of such great technologies as the smart phone, VR, and self-driving cars have come equally dangerous pieces of software. Botnets, more complex viruses, large-scale data breaches, and so much more. As we move into the future of programming, we need to look too back to the past to ensure that as we move forward, we fix the mistakes of the past.</summary></entry><entry><title type="html">HW8: Chapter 2</title><link href="http://localhost:4000/projects/csci_362/2017/09/11/hw8.html" rel="alternate" type="text/html" title="HW8: Chapter 2" /><published>2017-09-11T10:00:00-04:00</published><updated>2017-09-11T10:00:00-04:00</updated><id>http://localhost:4000/projects/csci_362/2017/09/11/hw8</id><content type="html" xml:base="http://localhost:4000/projects/csci_362/2017/09/11/hw8.html">&lt;h3 id=&quot;21&quot;&gt;2.1&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Suggest the most appropriate generic software process model that might be used as a basis for managing the development of the following systems. Explain your answer according to the type of systems being developed:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;A system to control antilock braking in a car&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Model:&lt;/strong&gt; Waterfall&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Reasoning:&lt;/strong&gt; An antilock braking system is likely going to be designed with a hard set of specifications from the start and few updates post-release. It’s a simple software with a specific goal in mind and a narrow set of specifications. It doesn’t require extensive iterations or maintenance.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;A virtual reality system to support software maintenance&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Model:&lt;/strong&gt; Incremental Development&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Reasoning:&lt;/strong&gt; A system like this is likely going to have requests by users for various feature changes. It would make sense to use an iterative approach to ensure the code is robust and maintainable. Similarly, this sounds like a complex system that could require a larger development and design effort than the braking system.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;A university accounting system that replaces an existing system&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Model:&lt;/strong&gt; Integration and Configuration&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Reasoning:&lt;/strong&gt; Because this system is being built as a replacement, it would benefit greatly from integrating old components and ideas from the old system to develop the new one. Combining this with an iterative approach would minimize development and design requirements but allow the system engineers to maintain robust and flexible code to keep their own system up-to-date.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;An interactive travel planning system that helps users plan journeys with the lowest environmental impact&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Model:&lt;/strong&gt; Incremental Development&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Reasoning:&lt;/strong&gt; This system is likely very similar to the VR software maintenance system. It will have many users and likely many new feature requests throughout its life cycle. It would benefit greatly from iterative development.&lt;/p&gt;</content><author><name></name></author><category term="csci_362" /><summary type="html">2.1 Suggest the most appropriate generic software process model that might be used as a basis for managing the development of the following systems. Explain your answer according to the type of systems being developed:</summary></entry><entry><title type="html">HW7: Reflections</title><link href="http://localhost:4000/projects/csci_362/2017/09/07/hw7.html" rel="alternate" type="text/html" title="HW7: Reflections" /><published>2017-09-07T10:00:00-04:00</published><updated>2017-09-07T10:00:00-04:00</updated><id>http://localhost:4000/projects/csci_362/2017/09/07/hw7</id><content type="html" xml:base="http://localhost:4000/projects/csci_362/2017/09/07/hw7.html">&lt;h2 id=&quot;readings&quot;&gt;Readings&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;The Magical Number Seven, Plus or Minus Two&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stono.cs.cofc.edu/~bowring/classes/csci%20362/docs/rfid-tire-pressure-2010-002-tpms.pdf&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Security and Privacy Vulnerabilities of In-Car Wireless Networks: A Tire Pressure Monitoring System Case Study&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.markey.senate.gov/imo/media/doc/SPY%20Car%20legislation.pdf&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;SPY Car Act of 2015&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.simple-talk.com/cloud/development/planning-for-failure-in-cloud-applications/&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Planning for Failure in Cloud Applications&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.agiledata.org/essays/tdd.html&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Introduction to Test Driven Development (TDD)&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Chapter 4 of &lt;a href=&quot;http://iansommerville.com/software-engineering-book/&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Software Engineering 10th Edition&lt;/em&gt; by Ian Sommerville&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;response&quot;&gt;Response&lt;/h2&gt;
+&lt;p&gt;    As I discussed in &lt;a href=&quot;/projects/csci-362/2017/09/04/hw5.html&quot; target=&quot;_blank&quot;&gt;my last reflections post&lt;/a&gt;, one of the greatest hurdles we face as software developers is our will to follow good practices and procedures when designing, developing, testing, and maintaining our software. In Chapter 4 of &lt;a href=&quot;http://iansommerville.com/software-engineering-book/&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Software Engineering 10th Edition&lt;/em&gt; by Ian Sommerville&lt;/a&gt; Ian Sommerville discusses, in great detail, extensive design processes before ever even considering beginning to build a piece of software. He discusses the differences between functional and nonfunctional requirements, and using them to develop strctured use case scenario and specifications when designing a software system. When we don’t give enough thought and effort when drafting our specifications, often times we may overlook critical flaws or missing components. Thorough design and specifications are an essential part of developing a reliable and secure application.&lt;/p&gt;
+
+&lt;p&gt;    As an example, consider the readings regarding tire pressure monitoring systems. These systems have become an essential part - alongside countless other technical innovations - of modern automobiles which strive to provide detailed information about the condition of the automobile to those in it. However, despite the wonderful features that such systems have provided to automobile owners, we see that critical security concerns had not been properly addressed when designing them (leading to the SPY Car Act of 2015). The lack of consideration for security left many automobiles vulnerable to malicious attackers. And they’re not alone in this. With the rise of the Internet of Things (IoT), countless devices that, in the past, we may have never considered would be part of an automated system, are now being automated and connected via networking. I’ve read / heard several stories about simple devices, such as electronically-voiced Teddy Bears and baby monitors (among the simplest cases), being hacked into.&lt;/p&gt;
+
+&lt;p&gt;    The other problem that we face is, what happens when these systems fail? Autonomous systems (in terms of, for example, simple devices owned and maintained by civilians) seem to often disregard the case where they fail. When home automation or other IoT devices fail and their owners don’t have the know-how to fix them is a flaw in the design process by the manufacturer. Along the same lines, in the case of a modern car with the many fancy gadgets that they include now (I don’t have one, so this is based largely on secondary sources), what happens when their autonomous systems fail? Are users given adequate warnings in those scenarios, or are they left completely in the dark? Do they have some way to reboot or repair the systems? These are questions that seem to often get overlooked when designing personal devices, let alone larger, centralized systems.&lt;/p&gt;
+
+&lt;p&gt;    And finally, as I discussed in my previous reflections post, there’s testing. Everyone dreads testing, because it’s tedious, monotonous, and far less creative and intuitive (generally) than building a software itself. But it’s a necessary part of the process to ensure the safety, security, and reliability of your system. To this regard, I think the idea of the “Magical Number Seven” is rather interesting. Consider this scenario. A developer is working on a larger portion of an application. As they develop, they decide that they will wait to write tests until after they finish development completely, and just remember what cases they need to test. They finish their work and start testing, but as they go, they struggle to think of the test cases from before. They tried to keep track of too many things in their mind at once, and as a result they lost that information. Now, the test suite for the software has far less coverage than it would have had they used Test Driven Development (TDD). It’s another interesting consideration about our struggle to follow best practices and how our bad decisions will leave a lasting effect on the software we build.&lt;/p&gt;</content><author><name></name></author><category term="csci_362" /><summary type="html">Readings The Magical Number Seven, Plus or Minus Two Security and Privacy Vulnerabilities of In-Car Wireless Networks: A Tire Pressure Monitoring System Case Study SPY Car Act of 2015 Planning for Failure in Cloud Applications Introduction to Test Driven Development (TDD) Chapter 4 of Software Engineering 10th Edition by Ian Sommerville</summary></entry><entry><title type="html">HW6: Chapter 4</title><link href="http://localhost:4000/projects/csci_362/2017/09/06/hw6.html" rel="alternate" type="text/html" title="HW6: Chapter 4" /><published>2017-09-06T20:00:00-04:00</published><updated>2017-09-06T20:00:00-04:00</updated><id>http://localhost:4000/projects/csci_362/2017/09/06/hw6</id><content type="html" xml:base="http://localhost:4000/projects/csci_362/2017/09/06/hw6.html">&lt;h3 id=&quot;45&quot;&gt;4.5&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Using the technique suggested here, where natural language descriptions are presented in a standard format, write plausible user requirements for the following functions:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;An unattended petrol (gas) pump system that includes a credit card reader. The customer swipes the card through the reader, then specifies the amount of fuel required. The fuel is delivered and the customer’s account debited.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;table class=&quot;table table-bordered&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Function:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;Dispense fuel and charge customer&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Description:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;The system dispenses the specified amount of fuel, calculates the cost of the fuel, and debits the customer's account for the amount&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Inputs:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;
+        Account number ( &lt;em&gt;acct_num&lt;/em&gt; )
+        &lt;br /&gt;
+        Amount of fuel ( &lt;em&gt;amt&lt;/em&gt; )
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Source:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;
+        &lt;em&gt;acct_num&lt;/em&gt; - Card reader
+        &lt;br /&gt;
+        &lt;em&gt;amt&lt;/em&gt; - Keypad
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Outputs:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;Amount of fuel, Amount charged&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Action:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;Customer inputs card, Card reader reads card and verifies, Customer enters amount of fuel, Customer puts gas in car, Account debited for charge, Receipt printed&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Preconditions:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;Station has requested amount of gas, Customer has enough money in account to pay&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Postconditions:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;Fuel is dispensed, Customer account debited&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;The cash-dispensing function in a bank ATM.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;table class=&quot;table table-bordered&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Function:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;Dispense Cash&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Description:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;Dispenses the correct amount of cash requested by a customer from their account&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Inputs:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;
+        Amount requested ( &lt;em&gt;amt&lt;/em&gt; )
+        &lt;br /&gt;
+        account number ( &lt;em&gt;acct_num&lt;/em&gt; )
+        &lt;br /&gt;
+        pin ( &lt;em&gt;pin&lt;/em&gt; )
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Source:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;
+        &lt;em&gt;amt&lt;/em&gt; - Keypad
+        &lt;br /&gt;
+        &lt;em&gt;acct_num&lt;/em&gt; - Card reader
+        &lt;br /&gt;
+        &lt;em&gt;pin&lt;/em&gt; - Keypad
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Outputs:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;Requested amount of cash&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Action:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;Customer enters debit card, Customer enters pin, Customer selects amount to withdraw, Cash is dispensed&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Preconditions:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;Machine has enough cash to dispense, Customer has enough money in account to withdraw&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Postconditions:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;Cash is dispensed, Customer account charged&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;In an internet banking system, a facility that allows customers to transfer funds from one account held with the bank to another account with the same bank.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;table class=&quot;table table-bordered&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Function:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;Transfer funds between acounts&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Description:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;A customer transfers money from one account with a bank to another account with the same bank&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Inputs:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;
+        Account 1 number ( &lt;em&gt;acct_num_1&lt;/em&gt; )
+        &lt;br /&gt;
+        Account 1 pin ( &lt;em&gt;pin_1&lt;/em&gt; )
+        &lt;br /&gt;
+        Account 2 number ( &lt;em&gt;acct_num_2&lt;/em&gt; )
+        &lt;br /&gt;
+        Account 2 pin ( &lt;em&gt;pin_2&lt;/em&gt; )
+        &lt;br /&gt;
+        Amount ( &lt;em&gt;amt&lt;/em&gt; )
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Source:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;All values from web form input&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Outputs:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;Confirmation of transaction&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Action:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;Customer enters information of first account, Customer enters information of second account, Customer enters amount to transfer, Customer submits information, Transaction made&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Preconditions:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;User is logged in, Both account credentials are valid, First account has enough money to make transfer&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-3 text-right&quot;&gt;Postconditions:&lt;/th&gt;
+      &lt;td class=&quot;col-sm-9&quot;&gt;Transaction is made to transfer money, Customer given receipt&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;46&quot;&gt;4.6&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Suggest how an engineer responsible for drawing up a system requirements specification  might keep track of the relationships between functional and non-functional requirements.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;    In order to keep track of the relationships between functional and non-functional requirements of a system, the engineer should ideally devise a table or diagram. The engineer could list the functional system requirements, and for each functional requirement, specify the nonfunctional requirements that coincide with it.&lt;/p&gt;
+
+&lt;p&gt;As an example:&lt;/p&gt;
+&lt;table class=&quot;table table-bordered&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;col-sm-6&quot;&gt;Functional Requirements&lt;/th&gt;
+      &lt;th class=&quot;col-sm-6&quot;&gt;Related Nonfunctional Requirements&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;User should be able to deposit checks in ATM&lt;/td&gt;
+      &lt;td&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Service should be available at any ATM&lt;/li&gt;
+          &lt;li&gt;Transactions should be made in a reasonable amount of time&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;47&quot;&gt;4.7&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Using your knowledge of how an ATM is used, develop a set of use cases that could serve as a basis for understanding the requirements for an ATM system.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Insert / Read Card
+    &lt;ul&gt;
+      &lt;li&gt;User enters card&lt;/li&gt;
+      &lt;li&gt;System reads card&lt;/li&gt;
+      &lt;li&gt;System prompts / verifies pin&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Prompt / Verify Pin
+    &lt;ul&gt;
+      &lt;li&gt;System displays pin prompt&lt;/li&gt;
+      &lt;li&gt;User enters pin&lt;/li&gt;
+      &lt;li&gt;System verifies pin
+        &lt;ul&gt;
+          &lt;li&gt;Valid - System displays main options&lt;/li&gt;
+          &lt;li&gt;Invalid - System prompts / verifies pin&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Main Options
+    &lt;ul&gt;
+      &lt;li&gt;Deposit Check
+        &lt;ul&gt;
+          &lt;li&gt;System prompts user to enter check&lt;/li&gt;
+          &lt;li&gt;User enters check&lt;/li&gt;
+          &lt;li&gt;System reads check and verifies amount&lt;/li&gt;
+          &lt;li&gt;User conirms amount&lt;/li&gt;
+          &lt;li&gt;System deposits check&lt;/li&gt;
+          &lt;li&gt;System displays main options&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Withdraw Cash
+        &lt;ul&gt;
+          &lt;li&gt;System prompts user for ammount&lt;/li&gt;
+          &lt;li&gt;User enters ammount&lt;/li&gt;
+          &lt;li&gt;System withdraws amount&lt;/li&gt;
+          &lt;li&gt;System provides cash to user&lt;/li&gt;
+          &lt;li&gt;System displays main options&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Transfer funds
+        &lt;ul&gt;
+          &lt;li&gt;Systems prompts user for secondary account information&lt;/li&gt;
+          &lt;li&gt;User enters secondary account information&lt;/li&gt;
+          &lt;li&gt;System verifies secondary account information
+            &lt;ul&gt;
+              &lt;li&gt;Valid - System prompts user for amount&lt;/li&gt;
+              &lt;li&gt;Invalid - System prompts user for secondary account information&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;System prompts user for amount&lt;/li&gt;
+          &lt;li&gt;User enters amount&lt;/li&gt;
+          &lt;li&gt;System transfers amount&lt;/li&gt;
+          &lt;li&gt;System displays main options&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Cancel
+        &lt;ul&gt;
+          &lt;li&gt;User cancels&lt;/li&gt;
+          &lt;li&gt;System logs out account&lt;/li&gt;
+          &lt;li&gt;Show insert card prompt&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="csci_362" /><summary type="html">4.5 Using the technique suggested here, where natural language descriptions are presented in a standard format, write plausible user requirements for the following functions:</summary></entry><entry><title type="html">HW5: Reflections</title><link href="http://localhost:4000/projects/csci_362/2017/09/04/hw5.html" rel="alternate" type="text/html" title="HW5: Reflections" /><published>2017-09-04T20:00:00-04:00</published><updated>2017-09-04T20:00:00-04:00</updated><id>http://localhost:4000/projects/csci_362/2017/09/04/hw5</id><content type="html" xml:base="http://localhost:4000/projects/csci_362/2017/09/04/hw5.html">&lt;h2 id=&quot;readings&quot;&gt;&lt;strong&gt;Readings&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stono.cs.cofc.edu/~bowring/classes/csci%20362/docs/Therac25Accidents.html&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;An Investigation of the Therac-25 Accidents&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stono.cs.cofc.edu/~bowring/classes/csci%20362/docs/The%20Radiation%20Boom%20-%20After%20Stroke%20Scans,%20Patients%20Face%20Serious%20Health%20Risks%20-%20NYTimes.com.pdf&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;After Stroke Scans, Patients Face Serious
+Health Risks&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ic3.gov/media/2016/160317.aspx&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Motor Vehicles Increasingly Vulnerable to Remote Exploits&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stono.cs.cofc.edu/~bowring/classes/csci%20362/docs/levesonSoftwareAccidentsSpacecraft.pdf&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;The Role of Software in Spacecraft Accidents&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stono.cs.cofc.edu/~bowring/classes/csci%20362/docs/SpectrumFBIcaseFileSytem.pdf&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Who Killed the Virtual Case File?&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.washingtonpost.com/wp-dyn/content/article/2010/10/20/AR2010102006754.html&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;FBI Sentinel project is over budget and behind schedule, say IG auditors&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.pcmag.com/article2/0,2817,2407922,00.asp&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Years Late and Millions Over Budget, FBI’s Sentinel Finally On Line&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://spectrum.ieee.org/riskfactor/computing/it/fbis-500-million-sentinel-case-management-system-still-has-major-operational-kinks-ig-reports&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;FBI’s Sentinel System Still Not In Total Shape to Surveil&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Chapters 13 &amp;amp; 14 of &lt;a href=&quot;http://iansommerville.com/software-engineering-book/&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Software Engineering 10th Edition&lt;/em&gt; by Ian Sommerville&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;response&quot;&gt;&lt;strong&gt;Response&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;    It seems that when we want a piece of software, we have the highest expectations for it, yet the poorest motivation to achieve them. We tend to put together these grandiose ideas of what we want in our minds, expecting robust, cutting-edge technology and functionality at a low cost and without failures. Yet, when the “honeymoon phase” of a new software idea comes crashing down (and it does hard), we fail to provide the effort and tools necessary to achieve what we first set out to build. It’s not the fault of any one person, or even group of people. Technology failures occur at all of the various stages of the engineering process.&lt;/p&gt;
+
+&lt;p&gt;    Even from the earliest designs of our systems, we fail to adequately account for use cases, exceptional cases, and the potential vulnerabilities of those cases. Consider the CT scanner incidents circa 2010. The self-adjusting dosage feature seems, in theory, like a wonderfully useful tool to prevent human error in setting the dosage for patients. In practice however, the feature was implemented without proper training procedures for users of the devices, and as it seems, even if proper training had been given, the feature did not work as intended. In the case of Therac-25, the use transition to software-based fail-safe systems resulted in critical errors and failures to protect patients from high dosages of radiation. While it might seem like a good idea in the design phase, in practice, many obvious dangers were not considered.&lt;/p&gt;
+
+&lt;p&gt;    If a software has not already been irreparably faulted by the designs of its creators, then it faces the damage surely to come from its implementation. In this pahse, so many critical decisions are made that can potentially destroy key functionality, make the system virtually unusable, or leave critical vulnerabilities open for attackers. In the FBI’s Sentinel system, it’s clear that while case search and index features were well thought-out, their implementation failed miserably to achieve the specified requirements. Or, in the case of modern car vulnerabilities, many features are provided that drastically improve the driver’s experience, but they were developed without considering the massive vulnerabilities of channeled communications between the cars’ software and centralized systems.&lt;/p&gt;
+
+&lt;p&gt;    In an ideal world, we would be able to build software exactly how we design it, on time, on budget, with no bugs, perfect testing, and plentiful fail-safe protections. In reality though, this is simply against our nature as humans. We’re naturally disorganized and often incapable of articulating, let alone producing, exactly what we’re looking for. And at the same time, our tendency to find the path of least resistance to a solution often finds us cutting corners, skipping essential steps, and covering our butts when it all blows up in our faces. Our personal flaws are encapsulated in our work, and as a result, the software is as imperfect as we are.&lt;/p&gt;
+
+&lt;p&gt;    Even in an ideal world where architects, engineers, and developers are able to build their ideal systems, it’s almost certainly not going to happen on time or on budget. This doesn’t just apply to software. When we humans try to take on such monumentally complex tasks, we tend to fail to consider the true cost, time, and labor needed. The FBI’s VCF and Sentinel systems are obvious victims of this, though I don’t doubt that all of the other cases also suffered the same fate. We set budgetary goals and timelines that are often unrealistic because we don’t have a feasible way to properly estimate these things. And even if we could accurately devise an estimate for budget and time, you can never predict the many failures and setbacks that are almost certain to arise in the process.&lt;/p&gt;
+
+&lt;p&gt;    In the end, there will always be deeply flawed software, because human nature encourages those flaws to exist. In a world with such rapid growth of technology, we often rush to build new systems with unrealistic goals. And when deadlines come and go, we cheat - cutting functionality, testing, reviews, backups, etc. But as software engineers, we owe it to ourselves, our clients, and the general population to strive to build better software and to discourage cheating.&lt;/p&gt;</content><author><name></name></author><category term="csci_362" /><summary type="html">Readings An Investigation of the Therac-25 Accidents After Stroke Scans, Patients Face Serious Health Risks Motor Vehicles Increasingly Vulnerable to Remote Exploits The Role of Software in Spacecraft Accidents Who Killed the Virtual Case File? FBI Sentinel project is over budget and behind schedule, say IG auditors Years Late and Millions Over Budget, FBI’s Sentinel Finally On Line FBI’s Sentinel System Still Not In Total Shape to Surveil Chapters 13 &amp;amp; 14 of Software Engineering 10th Edition by Ian Sommerville</summary></entry><entry><title type="html">HW4: Chapters 11 &amp;amp; 12</title><link href="http://localhost:4000/projects/csci_362/2017/08/30/hw4.html" rel="alternate" type="text/html" title="HW4: Chapters 11 &amp; 12" /><published>2017-08-30T20:00:00-04:00</published><updated>2017-08-30T20:00:00-04:00</updated><id>http://localhost:4000/projects/csci_362/2017/08/30/hw4</id><content type="html" xml:base="http://localhost:4000/projects/csci_362/2017/08/30/hw4.html">&lt;h3 id=&quot;114&quot;&gt;11.4&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;What is the common characteristic of all architectural styles that are geared to supporting software fault tolerance?&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;    Architecture which is designed to support fault tolerance has 2 main characteristics - redundancy and diversity of software and hardware. Using a redundant and diverse architecture ensures that in the event of a system failure, there is a backup in place to allow the software to perform its tasks.&lt;/p&gt;
+
+&lt;h3 id=&quot;117&quot;&gt;11.7&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;It has been suggested that the control software for a radiation therapy machine, used to treat patients with cancer, should be implemented using N-version programming. Comment on whether or not you think this is a good suggestion.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;    A delicate system such as radiation therapy controls would benefit greatly from N-Version programming. The software controls the life of the patient it’s being used to monitor, so a failure in the system could have dire consequences for potentially many patients, and perhaps even doctors and nurses aiding with the therapy. At the same time however, the author notes the impractable nature of N-Version programming for many situations:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;N&lt;/em&gt;-version programming may be less expensive than self-checking architectures in systems for which a high level of availability is required. However, it still requires several different teams to develop different versions of the software. This leads to very high software development costs. As a result, this approach is only used in systems where it is impractical to provide a protection system that can guard against safety-critical failures.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;    As a result, in practical usage, a radiation therapy system may be better off using its own internal safety-checks to ensure the safety of the patient. Additionally, these machines are not consistently in use. They’re generally used during routinely scheduled visits, rather than always being in use. Thus, such a system is not necessarily as high-availability as would warrant N-Version programming.&lt;/p&gt;
+
+&lt;h3 id=&quot;119&quot;&gt;11.9&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Explain why you should explicitly handle all exceptions in a system that is intended to have a high level of availability.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;    Unhandled exceptions and errors generally result in system failure / shut down. Because of this, a system that needs to be highly available must handle exceptions. Rather than shutting down when a failure occurs, such systems need to control the error and apply any backups or maintenance which may be required as a result. This ensure that the system remains operational for users.&lt;/p&gt;
+
+&lt;h3 id=&quot;125&quot;&gt;12.5&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;A train protection system automatically applies the brakes of a train if the speed limit for a segment of track is exceeded, or if the train enters a track segment that is currently signaled with a red light (i.e., the segment should not be entered). There are two critical-safety requirements for this train protection system:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;The train shall not enter a segment of track that is signaled with a red light.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;The train shall not exceed the specified speed limit for a section of track.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Assuming that the signal status and the speed limit for the track segment are transmitted to on-board software on the train before it enters the track segment, propose five possible functional system requirements for the onboard software that may be generated from its system safety requirements.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;ol&gt;
+  &lt;li&gt;The system needs to be able to monitor the speed of the train.&lt;/li&gt;
+  &lt;li&gt;The system needs to know the maximum speed for a segment of track.&lt;/li&gt;
+  &lt;li&gt;The system needs to be able to automatically apply the breaks to reduce speed if the train’s speed approaches the maximum speed of a segment of track.&lt;/li&gt;
+  &lt;li&gt;The systems need to be able to detect when a segment of track should not be entered (i.e. it is indicated with a red light)&lt;/li&gt;
+  &lt;li&gt;The system needs to be able to automatically apply the breaks to quickly stop if the upcoming segment of track should not be entered.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="csci_362" /><summary type="html">11.4 What is the common characteristic of all architectural styles that are geared to supporting software fault tolerance?</summary></entry><entry><title type="html">HW3: Chapter 10</title><link href="http://localhost:4000/projects/csci_362/2017/08/28/hw3.html" rel="alternate" type="text/html" title="HW3: Chapter 10" /><published>2017-08-28T22:00:00-04:00</published><updated>2017-08-28T22:00:00-04:00</updated><id>http://localhost:4000/projects/csci_362/2017/08/28/hw3</id><content type="html" xml:base="http://localhost:4000/projects/csci_362/2017/08/28/hw3.html">&lt;h3 id=&quot;106&quot;&gt;10.6&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Explain why it is reasonable to assume that the use of dependable processes will lead to the creation of dependable software.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;The author suggests that there are five primary aspects of dependability:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Availability&lt;/strong&gt; - &lt;em&gt;Informally, the availability of a system is the probability that it will be up and running and able to deliver useful services to users at any given time.&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Reliability&lt;/strong&gt; - &lt;em&gt;Informally, the reliability of a system is the probability, over a given period of time, that the system will correctly deliver services as expected by the user.&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Safety&lt;/strong&gt; - &lt;em&gt;Informally, the safety of a system is a judgment of how likely it is that the system will cause damage to people or its environment.&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Security&lt;/strong&gt; - &lt;em&gt;Informally, the security of a system is a judgment of how likely it is that the system can resist accidental or deliberate intrusions.&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Resilience&lt;/strong&gt; - &lt;em&gt;Informally, the resilience of a system is a judgment of how well the system can maintain the continuity of its critical services in the presence of disruptive events, such as equipment failure and cyberattacks. Resilience is a more recent addition to the set of dependability properties that were originally suggested by Laprie.&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;    These properties are difficult to test and prove. As a result, software engineering companies will use so-called &lt;em&gt;Dependable Processes&lt;/em&gt; to ensure the dependability of their systems. &lt;em&gt;Dependable Processes&lt;/em&gt; stem from the motivation to commit to proper software engineering practices in modeling, development, testing, and maintenance of systems. The author describes five key characteristics of dependable processes:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Auditable&lt;/strong&gt; - &lt;em&gt;The process should be understandable by people apart from process participants, who can check that process standards ar being followed and make suggestions for process improvement.&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Diverse&lt;/strong&gt; - &lt;em&gt;The process should include redundant and diverse verifications and validation activities.&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Documentable&lt;/strong&gt; - &lt;em&gt;The process should have a defined process model that sets out the activities in the process and the documentation that is to be produced during these activities.&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Robust&lt;/strong&gt; - &lt;em&gt;The process should be able to recover from failures of individual process activities.&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Standardized&lt;/strong&gt; - &lt;em&gt;A comprehensive set of software developemnt standards coveting software production and documentation should be available.&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;    These characteristics provide that &lt;em&gt;Dependable Processes&lt;/em&gt; are thoroughly modeled, reviewed, and documented. They enforce the core principals of proper software engineering. When you develop a thorough, structured model of a system, combined with robust and reliable coding practices following standard practices, descriptive and effective documentation, and extensive testing of both digital and physical systems, you ensure that the highest standards are being applied to ensure the dependability of your software. The over-arching goal of using &lt;em&gt;Dependable Processes&lt;/em&gt; is to prevent the introduction of errors, find and remove existing errors, and provide an informative process to ensure the dependability of the process itself.&lt;/p&gt;
+
+&lt;h3 id=&quot;1010&quot;&gt;10.10&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;It has been suggested that the need for regulation inhibits innovation and that regulators force the use of older methods of systems development that have been used on other systems. Discuss whether or not you think this is true and the desirability of regulators imposing their views on what methods should be used.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;    Defiance to regulation seems to be ever-increasing in various aspects of life in recent years. Many hold negative views of regulations because they often require companies / individuals to spend greater capital to meet regulations. In the same way, many regulations are outdated, even in fields, such as Software Engineering, which are quickly evolving and developing new procedures and practices. I think it’s natural to have feelings of frustration when regulations impose restrictions on what we’re able to do. There are many types of regulations, but for Software Engineering, many regulations exist to ensure that applications are developed with the aforementioned dependability principles in mind. These regulations may exist to provide safety or assurance to clients, or simply to improve the maintainability of code.&lt;/p&gt;
+
+&lt;p&gt;    Despite the frustration that regulations can cause, they are a necessary evil to protect the people who may be affected by software. In general, regulations follow the same core principals as the ACM/IEEE Code of Ethics. They’re designed to protect the interest of the general population and to commit to the highest standards of development and management of software. In this way, (many) regulations are an extention of the Code of Ethics. They ensure that we abide by the general ethical principles to produce dependable software in the public interest.&lt;/p&gt;
+
+&lt;p&gt;    This doesn’t mean that there aren’t bad regulations. The simple nature of law is that often, our ideas of what consistutes right and wrong change. But shifting the attitude of such a large number of people requires a great deal of time and effort. There are likely regulations that need to be reviewed and reconsidered, and there are others which do not currently exist that should. It’s a never-ending cycle of evolution, much like software itself. It may not be perfect, but we can make modifications to improve the experiences of everyone involved.&lt;/p&gt;</content><author><name></name></author><category term="csci_362" /><summary type="html">10.6 Explain why it is reasonable to assume that the use of dependable processes will lead to the creation of dependable software.</summary></entry></feed>
