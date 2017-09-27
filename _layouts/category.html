@@ -14,13 +14,24 @@ layout: default
 
 {% assign posts = site.categories.[page.category] %}
 
-<div class="posts">
-  {% for post in posts %}
-    {% assign index = forloop.index | minus:1 %}
-    {% assign page = (index | divided_by:site.per_page) | plus:1 %}
-    {% include posts/post_preview.html post=post blog=blog page=page %}
-  {% endfor %}
-</div>
+{% assign show_posts = true %}
+
+{% for post in posts limit:1 %}
+  {% assign date = post.date | date: "%Y" %}
+  {% if date == "2000" %}
+    {% assign show_posts = false %}
+  {% endif %}
+{% endfor %}
+
+{% if show_posts %}
+  <div class="posts">
+    {% for post in posts %}
+      {% assign index = forloop.index | minus:1 %}
+      {% assign page = (index | divided_by:site.per_page) | plus:1 %}
+      {% include posts/post_preview.html post=post blog=blog page=page %}
+    {% endfor %}
+  </div>
+{% endif %}
 
 {% if posts.size > site.per_page %}
   <div class="col-sm-12 pagination">
