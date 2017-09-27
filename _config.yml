@@ -1,7 +1,5 @@
 per_page: 5
 
-future: false
-
 projects:
   csci_362:
     title: "CSCI 362 Blog"
