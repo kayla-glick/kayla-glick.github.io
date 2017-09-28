@@ -2,24 +2,24 @@
 layout: default
 ---
 
-{% assign project = site.projects[page.category] %}
-{% assign project_title = project['title'] %}
-<div class="project-header media">
+{% assign portfolio = site.portfolio[page.category] %}
+{% assign portfolio_title = portfolio['title'] %}
+<div class="portfolio-header media">
   <div class="media-left col-sm-4 no-padding">
-    <img class="project-logo" src="{{ project['logo'] }}" alt="{{ project['title'] }} Logo" style="width:100%;">
+    <img class="portfolio-logo" src="{{ portfolio['logo'] }}" alt="{{ portfolio['title'] }} Logo" style="width:100%;">
   </div>
   <div class="media-body container fluid">
     <h1 class="media-heading">
-      {{ project['title'] }}
+      {{ portfolio['title'] }}
       <br>
-      <small class="project-date">{{ project['date'] }}</small>
+      <small class="portfolio-date">{{ portfolio['date'] }}</small>
       <br>
-      <small>{{ project['description'] }}</small>
+      <small>{{ portfolio['description'] }}</small>
     </h1>
   </div>
 </div>
 
-<div class="project-content">
+<div class="portfolio-content">
   {{ content }}
 </div>
 
@@ -42,7 +42,7 @@ layout: default
     {% for post in posts %}
       {% assign index = forloop.index | minus:1 %}
       {% assign page = (index | divided_by:site.per_page) | plus:1 %}
-      {% include posts/post_preview.html post=post project_title=project_title page=page %}
+      {% include posts/post_preview.html post=post portfolio_title=portfolio_title page=page %}
     {% endfor %}
   </div>
 {% endif %}

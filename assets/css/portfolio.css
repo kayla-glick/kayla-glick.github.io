@@ -1,55 +1,55 @@
 /* Projects Styling */
-.project-preview {
+.portfolio-preview {
   margin-bottom: 20px;
 }
 
-.project-preview,
-.project-logo {
+.portfolio-preview,
+.portfolio-logo {
   border-radius: 10px;
 }
 
-.project-date {
+.portfolio-date {
   color: var(--apricot);
 }
 
 /* Projects Panel */
-#projects-panel {
+#portfolio-panel {
   border: 1px solid var(--blueberry);
   min-height: 600px;
 }
 
-#projects-panel .panel-heading {
+#portfolio-panel .panel-heading {
   background: var(--blueberry);
   color: white;
 }
 
-.project:not(:last-child) {
+.portfolio:not(:last-child) {
   margin-bottom: 30px;
 }
 
-.project .page-header {
+.portfolio .page-header {
   margin: 0px;
   padding: 0px;
 }
 
-.project .page-title {
+.portfolio .page-title {
   margin: 0px;
 }
 
-.project .collapse-btn {
+.portfolio .collapse-btn {
   font-size: 1em;
 }
 
-.project ul {
+.portfolio ul {
   margin: 0;
   list-style: none;
 }
 
-.project ul li h4 {
+.portfolio ul li h4 {
   margin-bottom: 0px;
 }
 
-.project h3 {
+.portfolio h3 {
   margin: 0px;
 }
 

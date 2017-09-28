@@ -1,20 +1,20 @@
-<div id="projects-panel" class="panel panel-default">
+<div id="portfolio-panel" class="panel panel-default">
   <div class="panel-heading text-center">
     <h2 class="panel-title">Projects</h2>
   </div>
   <div class="panel-body">
-    <div id="projects-container" class="col-sm-12" role="tablist">
-      {% for project in site.projects %}
-        {% assign project_name = project[0] %}
-        <div class="project">
+    <div id="portfolio-container" class="col-sm-12" role="tablist">
+      {% for portfolio in site.portfolio %}
+        {% assign portfolio_name = portfolio[0] %}
+        <div class="portfolio">
           <h3 role="tab">
-            <a class="glyphicon glyphicon-chevron-right collapse-btn" data-toggle="collapse" data-parent="#projects-container" href="#{{ project_name }}-posts"></a>
-            <a href="/projects/{{ project_name }}/">{{ project[1]['title'] }}</a>
+            <a class="glyphicon glyphicon-chevron-right collapse-btn" data-toggle="collapse" data-parent="#portfolio-container" href="#{{ portfolio_name }}-posts"></a>
+            <a href="/portfolio/{{ portfolio_name }}/">{{ portfolio[1]['title'] }}</a>
           </h3>
-          <div id="{{ project_name }}-posts" class="collapse" role="tabpanel">
+          <div id="{{ portfolio_name }}-posts" class="collapse" role="tabpanel">
             {% assign show_posts = true %}
 
-            {% for post in site.categories.[project_name] limit:1 %}
+            {% for post in site.categories.[portfolio_name] limit:1 %}
               {% assign date = post.date | date: "%Y" %}
               {% if date == "2000" %}
                 {% assign show_posts = false %}
@@ -23,7 +23,7 @@
 
             {% if show_posts %}
               <ul>
-                {% for posts in site.categories.[project_name] %}
+                {% for posts in site.categories.[portfolio_name] %}
                   <li class="post-preview">
                     <h4>
                       <a href="{{ posts.url }}">{{ posts.title }}</a>
@@ -36,7 +36,7 @@
                 {% endfor %}
               </ul>
             {% else %}
-              <span class="no-posts">There are no posts in this project</span>
+              <span class="no-posts">There are no posts in this portfolio</span>
             {% endif %}
           </div>
         </div>
