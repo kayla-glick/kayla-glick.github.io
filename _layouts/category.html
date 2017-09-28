@@ -52,7 +52,7 @@ layout: default
     <button class="btn btn-lg btn-default prev-category-page disabled">
       <span class="glyphicon glyphicon-triangle-left"></span>
     </button>
-    <span class="page-number" data-page="1">Page: 1 of {{ posts.size | modulo:site.per_page }} </span>
+    <span class="page-number" data-page="1">Page: 1 of {{ posts.size | times:1.0 | divided_by:site.per_page | ceil }} </span>
     <button class="btn btn-lg btn-default next-category-page">
       <span class="glyphicon glyphicon-triangle-right"></span>
     </button>
