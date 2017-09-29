@@ -57,6 +57,10 @@
   padding-left: 40px;
 }
 
+.team-member {
+  margin-bottom: 20px;
+}
+
 .team-member > .col-sm-12 {
   border-right: 3px solid var(--apricot);
   border-left: 3px solid var(--apricot);
