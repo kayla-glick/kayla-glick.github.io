@@ -8,10 +8,6 @@
   border-radius: 10px;
 }
 
-.portfolio-date {
-  color: var(--apricot);
-}
-
 /* Projects Panel */
 #portfolio-panel {
   border: 1px solid var(--blueberry);
@@ -59,4 +55,16 @@
 
 .no-posts {
   padding-left: 40px;
+}
+
+.team-member > .col-sm-12 {
+  border-right: 3px solid var(--apricot);
+  border-left: 3px solid var(--apricot);
+  border-radius: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.team-member h3 {
+  margin-top: 0px;
 }

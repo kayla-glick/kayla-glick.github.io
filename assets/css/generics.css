@@ -68,3 +68,7 @@ a:not(.nav-link):not(.btn):focus {
 .glowing-logo:hover {
   opacity: .5;
 }
+
+.text-orange {
+  color: var(--apricot);
+}
