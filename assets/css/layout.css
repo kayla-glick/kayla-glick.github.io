@@ -39,6 +39,10 @@ body {
   font-size: 3em;
 }
 
+.navbar-brand img {
+  margin-right: 5px;
+}
+
 .brand-container {
   display: table-row;
 }
