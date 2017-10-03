@@ -33,36 +33,33 @@ body {
   margin-bottom: 0px;
 }
 
-.navbar a {
-  color: white !important;
-}
-
-.navbar ul {
-  list-style: none;
-}
-
 .navbar-brand {
-  font-size:      3em;
-  line-height:    1em;
-  display:        table;
+  display: table;
+  color: white !important;
+  font-size: 3em;
 }
 
-.navbar-brand small {
-  font-size: 50%;
+.brand-container {
+  display: table-row;
 }
 
-.navbar-header {
-  margin-top: 1em;
+.brand-container img,
+.brand-container span {
+  display: table-cell;
+  vertical-align: middle;
 }
 
-.navbar-header {
+.navbar-nav {
+  margin-top: 20px;
+  margin-right: 0px;
   border-left: 3px solid white;
   border-right: 3px solid white;
   border-radius: 10px;
+  font-size: 2.5em;
 }
 
-.navbar-nav > li > a {
-  font-size: 2em;
+.navbar-nav li a {
+  color: white !important;
 }
 
 .navbar-nav > li:hover {
