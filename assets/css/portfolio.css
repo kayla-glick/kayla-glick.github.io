@@ -8,55 +8,6 @@
   border-radius: 10px;
 }
 
-/* Projects Panel */
-#portfolio-panel {
-  border: 1px solid var(--blueberry);
-  min-height: 600px;
-}
-
-#portfolio-panel .panel-heading {
-  background: var(--blueberry);
-  color: white;
-}
-
-.portfolio:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-.portfolio .page-header {
-  margin: 0px;
-  padding: 0px;
-}
-
-.portfolio .page-title {
-  margin: 0px;
-}
-
-.portfolio .collapse-btn {
-  font-size: 1em;
-}
-
-.portfolio ul {
-  margin: 0;
-  list-style: none;
-}
-
-.portfolio ul li h4 {
-  margin-bottom: 0px;
-}
-
-.portfolio h3 {
-  margin: 0px;
-}
-
-.collapse {
-  transition: all 100ms cubic-bezier(1, 0, 0, 1);
-}
-
-.no-posts {
-  padding-left: 40px;
-}
-
 .team-member {
   margin-bottom: 20px;
 }
