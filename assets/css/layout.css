@@ -4,12 +4,13 @@
 @import url("posts.css");
 
 :root {
-  --blueberry: #6b7a8f;
+  --background: #474747;
   --apricot: #f7882f;
   --apricot-secondary: #d7680f;
   --apricot-tertiary: #b74800;
   --citrus: #f7c331;
-  --apple: #dcc7aa;
+  --apple: #fce7ca;
+  --apple-tertiary: #dcc7aa;
 }
 
 html {
@@ -17,17 +18,13 @@ html {
 }
 
 body {
-  background:
-    linear-gradient(135deg, var(--blueberry) 22px, var(--apricot) 22px, var(--apricot) 24px, transparent 24px, transparent 67px, var(--apricot) 67px, var(--apricot) 69px, transparent 69px),
-    linear-gradient(225deg, var(--blueberry) 22px, var(--apricot) 22px, var(--apricot) 24px, transparent 24px, transparent 67px, var(--apricot) 67px, var(--apricot) 69px, transparent 69px)0 64px;
-  background-color: var(--blueberry);
-  background-size: 64px 128px;
   height: 100%;
+  background: var(--apple);
 }
 
 /* Header */
 .navbar {
-  background: var(--blueberry);
+  background-color: var(--background);
   border-radius: 0px;
   border-width: 0px;
   margin-bottom: 0px;
@@ -75,17 +72,23 @@ body {
   border-bottom: 2px solid var(--apricot);
 }
 
+.navbar-nav > li a:focus {
+  color: var(--apricot-secondary) !important;
+  border-bottom: 2px solid var(--apricot-secondary);
+}
+
 /* Container */
 .container {
-  background: white;
   padding: 20px;
   min-height: 100%;
 }
 
-/* Footer */
+.container,
 footer > div {
+  box-shadow: 0 12px 15px 0 var(--apple-tertiary);
   background: white;
 }
+/* Footer */
 
 #footer-links {
   padding: 0px;
@@ -95,8 +98,8 @@ footer > div {
 /* Other */
 .back-to-top {
   position: fixed;
-  right: 10px;
-  bottom: 10px;
+  right: 1vw;
+  bottom: 1vw;
 }
 
 .page-header {
