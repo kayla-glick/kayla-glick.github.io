@@ -97,6 +97,10 @@ footer > div {
   padding-bottom: 20px;
 }
 
+footer > div > div > span {
+  opacity: 0.4;
+}
+
 footer .github-pages-logo {
   margin-top: 2px;
 }
