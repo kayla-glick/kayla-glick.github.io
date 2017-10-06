@@ -89,10 +89,20 @@ footer > div {
   background: white;
 }
 /* Footer */
+footer {
+  font-size: 32px;
+}
 
-#footer-links {
-  padding: 0px;
-  list-style: none;
+footer > div {
+  padding-bottom: 20px;
+}
+
+footer .github-pages-logo {
+  margin-top: 2px;
+}
+
+footer .bootstrap-logo {
+  margin-bottom: 4px;
 }
 
 /* Other */
