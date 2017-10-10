@@ -130,8 +130,8 @@ footer .bootstrap-logo {
 
 .pagination {
   padding: 10px 0 10px 0;
-  border-top: 1px solid #DDDDDD;
-  border-bottom: 1px solid #DDDDDD;
+  border-top: 1px solid var(--apricot);
+  border-bottom: 1px solid var(--apricot);
 }
 
 .page-number {
