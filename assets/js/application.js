@@ -23,7 +23,7 @@ $(document).ready(function() {
   });
 
   $(document).on('click', '.post img', function() {
-    $('#modal-place .modal-dialog').html($(this).clone());
+    $('#modal-place .modal-dialog').html($(this).clone().removeClass('glowing-link'));
     $('#modal-place').modal('show');
   });
 

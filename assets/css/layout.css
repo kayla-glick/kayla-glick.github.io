@@ -78,6 +78,13 @@ body {
   border-bottom: 2px solid var(--apricot-secondary);
 }
 
+.navbar-nav > li > a,
+.navbar-nav > li:hover > a,
+.navbar-nav > li > a.active,
+.navbar-nav > li > a:focus {
+  transition: color .25s, border-bottom .25s ease-in-out;
+}
+
 /* Container */
 .container {
   padding: 20px;

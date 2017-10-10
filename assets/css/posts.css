@@ -26,3 +26,7 @@ li.post-preview:not(:last-child) {
 .post .post-body table li {
   font-size: inherit;
 }
+
+.image-source {
+  opacity: 0.5;
+}

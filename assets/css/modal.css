@@ -2,25 +2,18 @@
   width: 75vw;
 }
 
-.modal button.close {
+.modal .close {
   position: absolute;
   top: 0;
   right: 20px;
+  color: white;
   opacity: 1;
 }
 
-.modal button.close span {
+.modal .close span {
   font-size: 50px;
-  color: var(--apricot);
+  color: inherit;
   text-shadow: none;
-}
-
-.modal button.close:hover span {
-  color: var(--apricot-secondary);
-}
-
-.modal button.close:active span {
-  color: var(--apricot-tertiary);
 }
 
 .modal-backdrop {

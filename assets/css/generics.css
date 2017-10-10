@@ -16,13 +16,20 @@ a {
   text-decoration: none !important;
 }
 
-a:not(.nav-link):not(.btn):hover {
+a:not(.navbar-link):not(.btn):hover {
   color: var(--apricot);
 }
 
-a:not(.nav-link):not(.btn):active,
-a:not(.nav-link):not(.btn):focus {
+a:not(.navbar-link):not(.btn):active,
+a:not(.navbar-link):not(.btn):focus {
   color: var(--apricot-secondary);
+}
+
+a:not(.navbar-link):not(.glowing-link):not(.glowing-logo):not(.btn),
+a:not(.navbar-link):not(.glowing-link):not(.glowing-logo):not(.btn):hover,
+a:not(.navbar-link):not(.glowing-link):not(.glowing-logo):not(.btn):active,
+a:not(.navbar-link):not(.glowing-link):not(.glowing-logo):not(.btn):focus {
+  transition: color .25s ease-in-out;
 }
 
 .btn.btn-default,
@@ -42,6 +49,12 @@ a:not(.nav-link):not(.btn):focus {
   border-color: var(--apricot-tertiary) !important;
 }
 
+.btn.btn-default:not(.disabled),
+.btn.btn-default:not(.disabled):hover,
+.btn.btn-default:not(.disabled):active {
+  transition: background-color .25s, border-color .25s ease-in-out;
+}
+
 .disabled span {
   color: inherit !important;
   background: inherit !important;
@@ -58,7 +71,7 @@ a:not(.nav-link):not(.btn):focus {
 
 .glowing-link,
 .glowing-link:hover {
-  transition: box-shadow 0.25s ease-in-out;
+  transition: color .25s, box-shadow 0.25s ease-in-out;
 }
 
 .glowing-logo {
