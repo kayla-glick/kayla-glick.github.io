@@ -11,6 +11,12 @@
   font-weight: normal;
 }
 
+.orange-divider {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid var(--apricot);
+}
+
 a {
   outline: 0;
   text-decoration: none !important;
