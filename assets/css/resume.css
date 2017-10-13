@@ -47,6 +47,7 @@
   margin-bottom: 10px;
   border-color: var(--apricot);
   border-style: dashed;
+  border-width: 2px;
 }
 
 .resume-container .page-header {
