@@ -45,6 +45,16 @@
 .resume-container hr {
   margin-top: 0;
   margin-bottom: 10px;
+  border-color: var(--apricot);
+  border-style: dashed;
+}
+
+.resume-container .page-header {
+  color: var(--apricot);
+}
+
+.resume-container .familiarity {
+  color: var(--apricot);
 }
 
 
@@ -64,7 +74,7 @@
 
 /* Header and Links */
 .resume-container .resume-left {
-  background: #dddddd;
+  background: #eeeeee;
 }
 
 .resume-header h1 {
