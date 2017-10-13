@@ -3,6 +3,7 @@
 @import url("modal.css");
 @import url("portfolio.css");
 @import url("posts.css");
+@import url("resume.css");
 
 :root {
   --background: #474747;

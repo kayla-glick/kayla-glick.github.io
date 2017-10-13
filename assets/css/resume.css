@@ -1,0 +1,211 @@
+/* Container */
+.resume-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+}
+
+.resume-container > div {
+  flex: 1 auto;
+}
+
+.resume-container .width-30 {
+  width: 30%;
+}
+
+.resume-container .width-70 {
+  width: 70%;
+}
+
+.resume-container h1,
+.resume-container h2,
+.resume-container h3,
+.resume-container h4,
+.resume-container h5,
+.resume-container h6 {
+  word-wrap: break-word;
+  font-weight: bolder;
+}
+
+.resume-container h1 {
+  font-size: 32.4px;
+}
+
+.resume-container h4 {
+  font-size: 16.2px;
+}
+
+.resume-container .resume-contents h4,
+.resume-container .languages h4,
+.resume-container .frameworks h4,
+.resume-container .tools h4 {
+  margin-top: 0;
+}
+
+.resume-container hr {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+
+
+/* Objective */
+.resume-container .objective {
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+}
+
+.resume-container .objective h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+/* Header and Links */
+.resume-container .resume-left {
+  background: #dddddd;
+}
+
+.resume-header h1 {
+  background-color: white;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  margin-top: 85px;
+  margin-bottom: 0;
+  font-size: 86.4px;
+}
+
+.contact-links {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contact-links > a {
+  display: flex;
+}
+
+.contact-links > a > div {
+  flex: 1 auto;
+}
+
+.contact-links > a > div > span {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.resume-container .page-header {
+  border-color: black;
+  border-width: 3px;
+}
+
+.resume-container .page-header .page-title {
+  margin: 0;
+}
+
+
+
+/* Languages Section */
+.resume-container .languages > .page-header {
+  margin-top: 24px;
+}
+
+
+
+/* Tools Section */
+.resume-container .tools > .page-header {
+  margin-top: 18px;
+}
+
+
+
+/* Frameworks Section */
+.resume-container .frameworks > .page-header {
+  margin-top: 14px;
+}
+
+
+
+/* Education Section */
+.resume-container .education {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.resume-container .education > .page-header {
+  flex: 1 100%;
+}
+
+.resume-container .education > div:not(.page-header) {
+  flex: 1 auto;
+}
+
+.resume-container .education .gpa-information {
+  font-weight: normal;
+  color: #777777;
+}
+
+
+
+/* Relevant Coursework Section */
+.resume-container .relevant-coursework > .page-header {
+  margin-top: 24px;
+}
+
+.resume-container .relevant-coursework .course-list {
+  font-weight: normal;
+}
+
+
+
+/* Experience Section */
+.resume-container .experience > .page-header {
+  margin-top: 24px;
+}
+
+.resume-container .experience .experience-entity {
+  font-style: italic;
+  font-weight: normal;
+  color: #777777;
+}
+
+.resume-container .experience ul {
+  list-style: none;
+  padding-left: 15px;
+  margin: 0;
+}
+
+.resume-container .experience ul li {
+  padding-left: 1.3em;
+  font-size: 16.2px;
+}
+
+.resume-container .experience ul li:before {
+  content: "➢";
+  display: inline-block;
+  margin-left: -1.3em;
+  width: 1.3em;
+}
+
+
+
+/* Involvement */
+.resume-container .involvement > .page-header {
+  margin-top: 24px;
+}
+
+.resume-container .involvement .activity-name {
+  font-weight: normal;
+}
+
+
+
+/* Awards and Honors Section */
+.resume-container .honors > .page-header {
+  margin-top: 24px;
+}
+
+.resume-container .honors .honor-name {
+  font-weight: normal;
+}
