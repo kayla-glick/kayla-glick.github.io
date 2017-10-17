@@ -48,6 +48,9 @@
   border-color: var(--apricot);
   border-style: dashed;
   border-width: 2px;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
 }
 
 .resume-container .page-header {
@@ -119,14 +122,14 @@
 
 /* Languages Section */
 .resume-container .languages > .page-header {
-  margin-top: 24px;
+  margin-top: 1px;
 }
 
 
 
 /* Tools Section */
 .resume-container .tools > .page-header {
-  margin-top: 15px;
+  margin-top: 11px;
 }
 
 
