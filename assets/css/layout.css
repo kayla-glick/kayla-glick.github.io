@@ -35,12 +35,13 @@ body {
 .navbar-brand {
   display: table;
   color: white !important;
-  font-size: 3em;
+  font-size: 2.188vw
 }
 
 .navbar-brand img {
   margin-right: 5px;
-  width: 1em;
+  width: 2.188vw;
+  height: 2.188vw;
 }
 
 .brand-container {
@@ -59,7 +60,7 @@ body {
   border-left: 3px solid white;
   border-right: 3px solid white;
   border-radius: 10px;
-  font-size: 2.5em;
+  font-size: 1.82vw;
 }
 
 .navbar-nav > li > a {
