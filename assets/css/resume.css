@@ -28,11 +28,15 @@
 }
 
 .resume-container h1 {
-  font-size: 32px;
+  font-size: 1.667vw !important;
 }
 
+.resume-container h3 {
+  font-size: 1.25vw !important;
+}
 .resume-container h4 {
-  font-size: 16px;
+  font-size: .834vw !important;
+  margin-bottom: .521vw;
 }
 
 .resume-container .resume-contents h4,
@@ -85,14 +89,18 @@
   background-color: white;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
-  margin-top: 85px;
+  margin-top: 4.425vw;
   margin-bottom: 0;
-  font-size: 86px;
+  font-size: 4.475vw !important;
 }
 
 .contact-links {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.contact-links h4 {
+  margin-top: .521vw;
 }
 
 .contact-links > a {
@@ -109,9 +117,21 @@
   vertical-align: middle;
 }
 
+@media only screen and (max-width: 1406px) {
+  .contact-links > a > div > span {
+    display: none;
+  }
+}
+
+.contact-links > a img {
+  width: 1.667vw;
+  height: 1.667vw;
+}
+
 .resume-container .page-header {
   border-color: black;
   border-width: 3px;
+  margin-bottom: 1.0425vw;
 }
 
 .resume-container .page-header .page-title {
@@ -129,14 +149,14 @@
 
 /* Tools Section */
 .resume-container .tools > .page-header {
-  margin-top: 11px;
+  margin-top: .575vw;
 }
 
 
 
 /* Frameworks Section */
 .resume-container .frameworks > .page-header {
-  margin-top: 14px;
+  margin-top: .725vw;
 }
 
 
@@ -149,22 +169,29 @@
 
 .resume-container .education > .page-header {
   flex: 1 100%;
+  margin-top: 2.084vw;
 }
 
 .resume-container .education > div:not(.page-header) {
   flex: 1 auto;
 }
 
+.resume-container .education .cofc-logo {
+   width: 9.375vw;
+   height: 2.5525vw;
+}
+
 .resume-container .education .gpa-information {
   font-weight: normal;
   color: #777777;
+  margin-bottom: 0;
 }
 
 
 
 /* Relevant Coursework Section */
 .resume-container .relevant-coursework > .page-header {
-  margin-top: 25px;
+  margin-top: 1.625vw;
 }
 
 .resume-container .relevant-coursework .course-list {
@@ -175,7 +202,7 @@
 
 /* Experience Section */
 .resume-container .experience > .page-header {
-  margin-top: 24px;
+  margin-top: 1.3vw;
 }
 
 .resume-container .experience .experience-entity {
@@ -192,7 +219,7 @@
 
 .resume-container .experience ul li {
   padding-left: 1.3em;
-  font-size: 16px;
+  font-size: .834vw;
 }
 
 .resume-container .experience ul li:before {
@@ -206,7 +233,7 @@
 
 /* Involvement */
 .resume-container .involvement > .page-header {
-  margin-top: 25px; 
+  margin-top: 1.275vw; 
   -webkit-margin-before: 30px;
 }
 
@@ -218,7 +245,7 @@
 
 /* Awards and Honors Section */
 .resume-container .honors > .page-header {
-  margin-top: 24px;
+  margin-top: 1.25vw;
 }
 
 .resume-container .honors .honor-name {
