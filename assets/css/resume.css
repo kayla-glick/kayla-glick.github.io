@@ -28,14 +28,14 @@
 }
 
 .resume-container h1 {
-  font-size: 1.667vw !important;
+  font-size: 1.6575vw !important;
 }
 
 .resume-container h3 {
-  font-size: 1.25vw !important;
+  font-size: 1.231vw !important;
 }
 .resume-container h4 {
-  font-size: .834vw !important;
+  font-size: .853vw !important;
   margin-bottom: .521vw;
 }
 
@@ -48,7 +48,7 @@
 
 .resume-container hr {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: .521vw;
   border-color: var(--apricot);
   border-style: dashed;
   border-width: 2px;
@@ -65,17 +65,34 @@
   color: var(--apricot);
 }
 
+.resume-container .col-xs-1:not(.no-padding),
+.resume-container .col-xs-2:not(.no-padding),
+.resume-container .col-xs-3:not(.no-padding),
+.resume-container .col-xs-4:not(.no-padding),
+.resume-container .col-xs-5:not(.no-padding),
+.resume-container .col-xs-6:not(.no-padding),
+.resume-container .col-xs-7:not(.no-padding),
+.resume-container .col-xs-8:not(.no-padding),
+.resume-container .col-xs-9:not(.no-padding),
+.resume-container .col-xs-10:not(.no-padding),
+.resume-container .col-xs-11:not(.no-padding),
+.resume-container .col-xs-12:not(.no-padding) {
+  padding-left: .782vw;
+  padding-right: .782vw;
+}
+
+
 
 
 /* Objective */
 .resume-container .objective {
-  border-bottom: 3px solid black;
-  border-top: 3px solid black;
+  border-bottom: .18vw solid black;
+  border-top: .18vw solid black;
 }
 
 .resume-container .objective h3 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: .521vw;
+  margin-bottom: .521vw;
 }
 
 
@@ -87,16 +104,21 @@
 
 .resume-header h1 {
   background-color: white;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
-  margin-top: 4.425vw;
+  border-top: .18vw solid black;
+  border-bottom: .18vw solid black;
+  margin-top: 4.375vw;
   margin-bottom: 0;
-  font-size: 4.475vw !important;
+  display: flex;
+  flex-flow: column;
+}
+
+.resume-header h1 span {
+  font-size: 4.499vw !important
 }
 
 .contact-links {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: .521vw;
+  padding-bottom: .521vw;
 }
 
 .contact-links h4 {
@@ -130,8 +152,9 @@
 
 .resume-container .page-header {
   border-color: black;
-  border-width: 3px;
+  border-width: .18vw;
   margin-bottom: 1.0425vw;
+  padding-bottom: .469vw;
 }
 
 .resume-container .page-header .page-title {
@@ -142,21 +165,21 @@
 
 /* Languages Section */
 .resume-container .languages > .page-header {
-  margin-top: 1px;
+  margin-top: 0;
 }
 
 
 
 /* Tools Section */
 .resume-container .tools > .page-header {
-  margin-top: .575vw;
+  margin-top: .573vw;
 }
 
 
 
 /* Frameworks Section */
 .resume-container .frameworks > .page-header {
-  margin-top: .725vw;
+  margin-top: .782vw;
 }
 
 
@@ -191,7 +214,7 @@
 
 /* Relevant Coursework Section */
 .resume-container .relevant-coursework > .page-header {
-  margin-top: 1.625vw;
+  margin-top: 1.615vw;
 }
 
 .resume-container .relevant-coursework .course-list {
@@ -202,7 +225,15 @@
 
 /* Experience Section */
 .resume-container .experience > .page-header {
-  margin-top: 1.3vw;
+  margin-top: 1.3025vw;
+}
+
+.resume-container .experience .experience-opportunity .employment {
+  display: flex;
+  flex-flow: row;
+}
+
+.resume-container .experience .experience-opportunity span {
 }
 
 .resume-container .experience .experience-entity {
@@ -213,28 +244,28 @@
 
 .resume-container .experience ul {
   list-style: none;
-  padding-left: 15px;
+  padding-left: .782vw;
   margin: 0;
 }
 
 .resume-container .experience ul li {
-  padding-left: 1.3em;
-  font-size: .834vw;
+  padding-left: 1.042vw;
+  font-size: .839vw;
 }
 
 .resume-container .experience ul li:before {
   content: "➢";
   display: inline-block;
-  margin-left: -1.3em;
-  width: 1.3em;
+  margin-left: -1.042vw;
+  width: 1.042vw;
+  height: 1.042vw;
 }
 
 
 
 /* Involvement */
 .resume-container .involvement > .page-header {
-  margin-top: 1.275vw; 
-  -webkit-margin-before: 30px;
+  margin-top: 1.3025vw;
 }
 
 .resume-container .involvement .activity-name {
@@ -245,7 +276,7 @@
 
 /* Awards and Honors Section */
 .resume-container .honors > .page-header {
-  margin-top: 1.25vw;
+  margin-top: .782vw;
 }
 
 .resume-container .honors .honor-name {
