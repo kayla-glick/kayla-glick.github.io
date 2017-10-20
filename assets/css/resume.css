@@ -282,3 +282,94 @@
 .resume-container .honors .honor-name {
   font-weight: normal;
 }
+
+
+
+/* Google Chrome Styles*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .resume-container .col-xs-1:not(.no-padding),
+  .resume-container .col-xs-2:not(.no-padding),
+  .resume-container .col-xs-3:not(.no-padding),
+  .resume-container .col-xs-4:not(.no-padding),
+  .resume-container .col-xs-5:not(.no-padding),
+  .resume-container .col-xs-6:not(.no-padding),
+  .resume-container .col-xs-7:not(.no-padding),
+  .resume-container .col-xs-8:not(.no-padding),
+  .resume-container .col-xs-9:not(.no-padding),
+  .resume-container .col-xs-10:not(.no-padding),
+  .resume-container .col-xs-11:not(.no-padding),
+  .resume-container .col-xs-12:not(.no-padding) {
+    padding-left: .78125vw;
+    padding-right: .78125vw;
+  }
+
+  .resume-container h1 {
+    font-size: 1.7vw !important;
+  }
+
+  .resume-container h4 {
+    margin-bottom: .52083333333vw;
+  }
+
+  .resume-container .page-header {
+    margin-bottom: 1.04166666667vw;
+    padding-bottom: 0.46875vw;
+  }
+
+  .resume-container .objective h3 {
+    margin-top: 0.52083333333vw;
+    margin-bottom: 0.52083333333vw;
+  }
+
+  .resume-container .contact-links {
+    padding-top: 0.52083333333vw;
+    padding-bottom: 0.52083333333vw;
+  }
+
+  .resume-container .contact-links h4 {
+    margin-top: 0.52083333333vw;
+  }
+
+  .resume-container .tools > .page-header {
+    margin-top: 0.57291666666vw;
+  }
+
+  .resume-container .frameworks > .page-header {
+    margin-top: .78125vw;
+  }
+
+  .resume-container .education > .page-header {
+    margin-top: 2.08333333333vw;
+  }
+
+  .resume-container .relevant-coursework > .page-header {
+    margin-top: 1.61458333333vw;
+  }
+
+  .resume-container .experience > .page-header {
+    margin-top: 1.30208333333vw;
+  }
+
+  .resume-container .involvement > .page-header {
+    margin-top: 1.30208333333vw;
+  }
+
+  .resume-container .honors > .page-header {
+    margin-top: 0.78125vw;
+  }
+
+  .resume-container .experience ul {
+    padding-left: 0.782vw;
+  }
+
+  .resume-container .experience ul li {
+    padding-left: 1.04166666667vw;
+    font-size: 0.84vw;
+  }
+
+  .resume-container .experience ul li:before {
+    margin-left: -1.04166666667vw;
+    width: 1.04166666667vw;
+    height: 1.04166666667vw;
+  }
+}

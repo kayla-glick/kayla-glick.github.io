@@ -72,19 +72,17 @@ body {
 .navbar-nav > li:hover a,
 .navbar-nav > li > a.active {
   color: var(--apricot) !important;
-  border-bottom: 2px solid var(--apricot);
 }
 
 .navbar-nav > li a:focus {
   color: var(--apricot-secondary) !important;
-  border-bottom: 2px solid var(--apricot-secondary);
 }
 
 .navbar-nav > li > a,
 .navbar-nav > li:hover > a,
 .navbar-nav > li > a.active,
 .navbar-nav > li > a:focus {
-  transition: color .25s, border-bottom .25s ease-in-out;
+  transition: color .25s ease-in-out;
 }
 
 /* Container */
