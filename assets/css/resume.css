@@ -165,21 +165,21 @@
 
 /* Languages Section */
 .resume-container .languages > .page-header {
-  margin-top: 0;
+  margin-top: .78125vw;
 }
 
 
 
 /* Tools Section */
 .resume-container .tools > .page-header {
-  margin-top: .573vw;
+  margin-top: .78125vw;
 }
 
 
 
 /* Frameworks Section */
 .resume-container .frameworks > .page-header {
-  margin-top: .782vw;
+  margin-top: .78125vw
 }
 
 
@@ -328,14 +328,6 @@
 
   .resume-container .contact-links h4 {
     margin-top: 0.52083333333vw;
-  }
-
-  .resume-container .tools > .page-header {
-    margin-top: 0.57291666666vw;
-  }
-
-  .resume-container .frameworks > .page-header {
-    margin-top: .78125vw;
   }
 
   .resume-container .education > .page-header {
