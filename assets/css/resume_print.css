@@ -1,0 +1,244 @@
+@media print {
+  a[href]:after {
+    content: "" !important;
+  }
+
+  /* Container */
+  .resume-container h1 {
+    font-size: 3.315vw !important;
+  }
+
+  .resume-container h3 {
+    font-size: 2.462vw !important;
+  }
+  .resume-container h4 {
+    font-size: 1.706vw !important;
+    margin-bottom: 1.042vw;
+  }
+
+  .resume-container hr {
+    margin-bottom: 1.042vw;
+  }
+
+  .resume-container .col-xs-1:not(.no-padding),
+  .resume-container .col-xs-2:not(.no-padding),
+  .resume-container .col-xs-3:not(.no-padding),
+  .resume-container .col-xs-4:not(.no-padding),
+  .resume-container .col-xs-5:not(.no-padding),
+  .resume-container .col-xs-6:not(.no-padding),
+  .resume-container .col-xs-7:not(.no-padding),
+  .resume-container .col-xs-8:not(.no-padding),
+  .resume-container .col-xs-9:not(.no-padding),
+  .resume-container .col-xs-10:not(.no-padding),
+  .resume-container .col-xs-11:not(.no-padding),
+  .resume-container .col-xs-12:not(.no-padding) {
+    padding-left: 1.564vw;
+    padding-right: 1.564vw;
+  }
+
+
+
+
+  /* Objective */
+  .resume-container .objective {
+    border-bottom: .36vw solid black;
+    border-top: .36vw solid black;
+  }
+
+  .resume-container .objective h3 {
+    margin-top: 1.042vw;
+    margin-bottom: 1.042vw;
+  }
+
+
+
+  /* Header and Links */
+  .resume-container .resume-header h1 {
+    border-top: .36vw solid black;
+    border-bottom: .36vw solid black;
+    margin-top: 8.75vw;
+  }
+
+  .resume-container .resume-header h1 span {
+    font-size: 8.998vw !important
+  }
+
+  .resume-container .contact-links {
+    padding-top: 1.042vw;
+    padding-bottom: 1.042vw;
+  }
+
+  .resume-container .contact-links h4 {
+    margin-top: 1.042vw;
+  }
+
+  .resume-container .contact-links > a img {
+    width: 3.334vw;
+    height: 3.334vw;
+  }
+
+  .resume-container .page-header {
+    border-width: .36vw;
+    margin-bottom: 2.085vw;
+    padding-bottom: .938vw;
+  }
+
+
+
+  /* Languages Section */
+  .resume-container .languages > .page-header {
+    margin-top: 1.45833333332vw;
+  }
+
+
+
+  /* Tools Section */
+  .resume-container .tools > .page-header {
+    margin-top: 1.5625vw;
+  }
+
+
+
+  /* Frameworks Section */
+  .resume-container .frameworks > .page-header {
+    margin-top: 1.5625vw
+  }
+
+
+
+  /* Education Section */
+  .resume-container .education > .page-header {
+    margin-top: 4.168vw;
+  }
+
+  .resume-container .education .cofc-logo {
+     width: 18.75vw;
+     height: 5.105vw;
+  }
+
+
+
+  /* Relevant Coursework Section */
+  .resume-container .relevant-coursework > .page-header {
+    margin-top: 3.23vw;
+  }
+
+
+
+  /* Experience Section */
+  .resume-container .experience > .page-header {
+    margin-top: 2.605vw;
+  }
+
+  .resume-container .experience ul {
+    padding-left: 1.564vw;
+  }
+
+  .resume-container .experience ul li {
+    padding-left: 2.084vw;
+    font-size: 1.678vw !important;
+  }
+
+  .resume-container .experience ul li:before {
+    margin-left: -2.084vw;
+    width: 2.084vw;
+    height: 2.084vw;
+  }
+
+
+
+  /* Involvement */
+  .resume-container .involvement > .page-header {
+    margin-top: 2.605vw;
+  }
+
+
+
+  /* Awards and Honors Section */
+  .resume-container .honors > .page-header {
+    margin-top: 1.564vw;
+  }
+
+
+
+  /* Google Chrome Styles*/
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .resume-container .col-xs-1:not(.no-padding),
+    .resume-container .col-xs-2:not(.no-padding),
+    .resume-container .col-xs-3:not(.no-padding),
+    .resume-container .col-xs-4:not(.no-padding),
+    .resume-container .col-xs-5:not(.no-padding),
+    .resume-container .col-xs-6:not(.no-padding),
+    .resume-container .col-xs-7:not(.no-padding),
+    .resume-container .col-xs-8:not(.no-padding),
+    .resume-container .col-xs-9:not(.no-padding),
+    .resume-container .col-xs-10:not(.no-padding),
+    .resume-container .col-xs-11:not(.no-padding),
+    .resume-container .col-xs-12:not(.no-padding) {
+      padding-left: 1.5625vw;
+      padding-right: 1.5625vw;
+    }
+
+    .resume-container h1 {
+      font-size: 3.316vw !important;
+    }
+
+    .resume-container h4 {
+      margin-bottom: 1.04166666666vw;
+    }
+
+    .resume-container .page-header {
+      margin-bottom: 2.08333333334vw;
+      padding-bottom: .9375vw;
+    }
+
+    .resume-container .objective h3 {
+      margin-top: 1.04166666666vw;
+      margin-bottom: 1.04166666666vw;
+    }
+
+    .resume-container .contact-links {
+      padding-top: 1.04166666666vw;
+      padding-bottom: 1.04166666666vw;
+    }
+
+    .resume-container .contact-links h4 {
+      margin-top: 1.04166666666vw;
+    }
+
+    .resume-container .education > .page-header {
+      margin-top: 4.16666666666vw;
+    }
+
+    .resume-container .relevant-coursework > .page-header {
+      margin-top: 3.22916666666vw;
+    }
+
+    .resume-container .experience > .page-header {
+      margin-top: 2.60416666668vw;
+    }
+
+    .resume-container .involvement > .page-header {
+      margin-top: 2.60416666668vw;
+    }
+
+    .resume-container .honors > .page-header {
+      margin-top: 1.5625vw;
+    }
+
+    .resume-container .experience ul {
+      padding-left: 1.564vw;
+    }
+
+    .resume-container .experience ul li {
+      padding-left: 2.08333333334vw;
+      font-size: 1.68vw !important;
+    }
+
+    .resume-container .experience ul li:before {
+      margin-left: -2.08333333334vw;
+      width: 2.08333333334vw;
+      height: 2.08333333334vw;
+    }
+  }
+}

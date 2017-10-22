@@ -4,6 +4,7 @@
 @import url("portfolio.css");
 @import url("posts.css");
 @import url("resume.css");
+@import url("resume_print.css");
 
 :root {
   --background: #474747;

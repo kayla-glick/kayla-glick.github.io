@@ -57,12 +57,16 @@
   border-left: 0;
 }
 
-.resume-container .page-header {
-  color: var(--apricot);
+.resume-container .page-header h1 {
+  color: var(--apricot) !important;
 }
 
-.resume-container .familiarity {
-  color: var(--apricot);
+.resume-container .familiarity h4 {
+  color: var(--apricot) !important;
+}
+
+.resume-container .resume-contents {
+  padding-right: 0;
 }
 
 .resume-container .col-xs-1:not(.no-padding),
@@ -99,11 +103,11 @@
 
 /* Header and Links */
 .resume-container .resume-left {
-  background: #eeeeee;
+  background: #eeeeee !important;
 }
 
-.resume-header h1 {
-  background-color: white;
+.resume-container .resume-header h1 {
+  background-color: white !important;
   border-top: .18vw solid black;
   border-bottom: .18vw solid black;
   margin-top: 4.375vw;
@@ -112,40 +116,40 @@
   flex-flow: column;
 }
 
-.resume-header h1 span {
+.resume-container .resume-header h1 span {
   font-size: 4.499vw !important
 }
 
-.contact-links {
+.resume-container .contact-links {
   padding-top: .521vw;
   padding-bottom: .521vw;
 }
 
-.contact-links h4 {
+.resume-container .contact-links h4 {
   margin-top: .521vw;
 }
 
-.contact-links > a {
+.resume-container .contact-links > a {
   display: flex;
 }
 
-.contact-links > a > div {
+.resume-container .contact-links > a > div {
   flex: 1 auto;
 }
 
-.contact-links > a > div > span {
+.resume-container .contact-links > a > div > span {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
 
 @media only screen and (max-width: 1406px) {
-  .contact-links > a > div > span {
+  .resume-container .contact-links > a > div > span {
     display: none;
   }
 }
 
-.contact-links > a img {
+.resume-container .contact-links > a img {
   width: 1.667vw;
   height: 1.667vw;
 }
@@ -165,7 +169,7 @@
 
 /* Languages Section */
 .resume-container .languages > .page-header {
-  margin-top: .78125vw;
+  margin-top: .72916666666vw;
 }
 
 
@@ -233,9 +237,6 @@
   flex-flow: row;
 }
 
-.resume-container .experience .experience-opportunity span {
-}
-
 .resume-container .experience .experience-entity {
   font-style: italic;
   font-weight: normal;
@@ -250,7 +251,7 @@
 
 .resume-container .experience ul li {
   padding-left: 1.042vw;
-  font-size: .839vw;
+  font-size: .839vw !important;
 }
 
 .resume-container .experience ul li:before {
@@ -304,7 +305,7 @@
   }
 
   .resume-container h1 {
-    font-size: 1.7vw !important;
+    font-size: 1.658vw !important;
   }
 
   .resume-container h4 {
@@ -356,7 +357,7 @@
 
   .resume-container .experience ul li {
     padding-left: 1.04166666667vw;
-    font-size: 0.84vw;
+    font-size: 0.84vw !important;
   }
 
   .resume-container .experience ul li:before {

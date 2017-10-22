@@ -89,5 +89,5 @@ a:not(.navbar-link):not(.glowing-link):not(.glowing-logo):not(.btn):focus {
 }
 
 .text-orange {
-  color: var(--apricot);
+  color: var(--apricot) !important;
 }
