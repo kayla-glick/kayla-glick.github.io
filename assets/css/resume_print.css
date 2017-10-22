@@ -100,6 +100,10 @@
 
 
   /* Frameworks Section */
+  .resume-container .frameworks {
+    padding-bottom: 1.0418vw;
+  }
+
   .resume-container .frameworks > .page-header {
     margin-top: 1.5625vw
   }
@@ -204,6 +208,10 @@
 
     .resume-container .contact-links h4 {
       margin-top: 1.04166666666vw;
+    }
+
+    .resume-container .frameworks {
+      padding-bottom: 1.04166666667vw;
     }
 
     .resume-container .education > .page-header {
