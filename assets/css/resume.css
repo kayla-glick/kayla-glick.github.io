@@ -17,6 +17,26 @@
   width: 70%;
 }
 
+.resume-container ul {
+  list-style: none;
+  padding-left: .782vw;
+  margin: 0;
+}
+
+.resume-container ul li {
+  padding-left: 1.042vw;
+  font-size: .839vw !important;
+  line-height: 1.42857143;
+}
+
+.resume-container ul li:before {
+  content: "➢";
+  display: inline-block;
+  margin-left: -1.042vw;
+  width: 1.042vw;
+  height: 1.042vw;
+}
+
 .resume-container h1,
 .resume-container h2,
 .resume-container h3,
@@ -121,8 +141,8 @@
 }
 
 .resume-container .contact-links {
-  padding-top: .521vw;
-  padding-bottom: .521vw;
+  padding-top: 1.042vw;
+  padding-bottom: 1.042vw;
 }
 
 .resume-container .contact-links h4 {
@@ -169,14 +189,14 @@
 
 /* Languages Section */
 .resume-container .languages > .page-header {
-  margin-top: .72916666666vw;
+  margin-top: 0.2605vw;
 }
 
 
 
 /* Tools Section */
 .resume-container .tools > .page-header {
-  margin-top: .78125vw;
+  margin-top: 0.88541666666vw;
 }
 
 
@@ -233,7 +253,7 @@
 
 /* Experience Section */
 .resume-container .experience > .page-header {
-  margin-top: 1.3025vw;
+  margin-top: 0.78125vw;
 }
 
 .resume-container .experience .experience-opportunity .employment {
@@ -245,25 +265,6 @@
   font-style: italic;
   font-weight: normal;
   color: #777777;
-}
-
-.resume-container .experience ul {
-  list-style: none;
-  padding-left: .782vw;
-  margin: 0;
-}
-
-.resume-container .experience ul li {
-  padding-left: 1.042vw;
-  font-size: .839vw !important;
-}
-
-.resume-container .experience ul li:before {
-  content: "➢";
-  display: inline-block;
-  margin-left: -1.042vw;
-  width: 1.042vw;
-  height: 1.042vw;
 }
 
 
@@ -292,6 +293,25 @@
 
 /* Google Chrome Styles*/
 @media screen and (-webkit-min-device-pixel-ratio:0) {
+  .resume-container ul {
+    list-style: none;
+    padding-left: 0.78125vw;
+    margin: 0;
+  }
+
+  .resume-container ul li {
+    padding-left: 1.04166666667vw;
+    font-size: 0.83333333333vw !important;
+  }
+
+  .resume-container ul li:before {
+    content: "➢";
+    display: inline-block;
+    margin-left: -1.04166666667vw;
+    width: 1.04166666667vw;
+    height: 1.04166666667vw;
+  }
+
   .resume-container .col-xs-1:not(.no-padding),
   .resume-container .col-xs-2:not(.no-padding),
   .resume-container .col-xs-3:not(.no-padding),
@@ -327,8 +347,8 @@
   }
 
   .resume-container .contact-links {
-    padding-top: 0.52083333333vw;
-    padding-bottom: 0.52083333333vw;
+    padding-top: 1.04166666667vw;
+    padding-bottom: 1.04166666667vw;
   }
 
   .resume-container .contact-links h4 {
@@ -347,30 +367,11 @@
     margin-top: 1.61458333333vw;
   }
 
-  .resume-container .experience > .page-header {
-    margin-top: 1.30208333333vw;
-  }
-
   .resume-container .involvement > .page-header {
     margin-top: 1.30208333333vw;
   }
 
   .resume-container .honors > .page-header {
     margin-top: 0.78125vw;
-  }
-
-  .resume-container .experience ul {
-    padding-left: 0.782vw;
-  }
-
-  .resume-container .experience ul li {
-    padding-left: 1.04166666667vw;
-    font-size: 0.84vw !important;
-  }
-
-  .resume-container .experience ul li:before {
-    margin-left: -1.04166666667vw;
-    width: 1.04166666667vw;
-    height: 1.04166666667vw;
   }
 }

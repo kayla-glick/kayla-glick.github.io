@@ -4,6 +4,25 @@
   }
 
   /* Container */
+  .resume-container ul {
+    list-style: none;
+    padding-left: 1.564vw;
+    margin: 0;
+  }
+
+  .resume-container ul li {
+    padding-left: 2.084vw;
+    font-size: 1.678vw !important;
+  }
+
+  .resume-container ul li:before {
+    content: "➢";
+    display: inline-block;
+    margin-left: -2.084vw;
+    width: 2.084vw;
+    height: 2.084vw;
+  }
+
   .resume-container h1 {
     font-size: 3.315vw !important;
   }
@@ -64,8 +83,8 @@
   }
 
   .resume-container .contact-links {
-    padding-top: 1.042vw;
-    padding-bottom: 1.042vw;
+    padding-top: 2.084vw;
+    padding-bottom: 2.084vw;
   }
 
   .resume-container .contact-links h4 {
@@ -87,14 +106,14 @@
 
   /* Languages Section */
   .resume-container .languages > .page-header {
-    margin-top: 1.45833333332vw;
+    margin-top: 0.521vw;
   }
 
 
 
   /* Tools Section */
   .resume-container .tools > .page-header {
-    margin-top: 1.5625vw;
+    margin-top: 1.77083333333vw;
   }
 
 
@@ -131,22 +150,7 @@
 
   /* Experience Section */
   .resume-container .experience > .page-header {
-    margin-top: 2.605vw;
-  }
-
-  .resume-container .experience ul {
-    padding-left: 1.564vw;
-  }
-
-  .resume-container .experience ul li {
-    padding-left: 2.084vw;
-    font-size: 1.678vw !important;
-  }
-
-  .resume-container .experience ul li:before {
-    margin-left: -2.084vw;
-    width: 2.084vw;
-    height: 2.084vw;
+    margin-top: 1.5625vw;
   }
 
 
@@ -167,6 +171,25 @@
 
   /* Google Chrome Styles*/
   @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .resume-container ul {
+      list-style: none;
+      padding-left: 1.5625vw;
+      margin: 0;
+    }
+
+    .resume-container ul li {
+      padding-left: 2.08333333333vw;
+      font-size: 1.66666666666vw !important;
+    }
+
+    .resume-container ul li:before {
+      content: "➢";
+      display: inline-block;
+      margin-left: -2.08333333333vw;
+      width: 2.08333333333vw;
+      height: 2.08333333333vw;
+    }
+  
     .resume-container .col-xs-1:not(.no-padding),
     .resume-container .col-xs-2:not(.no-padding),
     .resume-container .col-xs-3:not(.no-padding),
@@ -202,8 +225,8 @@
     }
 
     .resume-container .contact-links {
-      padding-top: 1.04166666666vw;
-      padding-bottom: 1.04166666666vw;
+      padding-top: 2.08333333334vw;
+      padding-bottom: 2.08333333334vw;
     }
 
     .resume-container .contact-links h4 {
@@ -232,21 +255,6 @@
 
     .resume-container .honors > .page-header {
       margin-top: 1.5625vw;
-    }
-
-    .resume-container .experience ul {
-      padding-left: 1.564vw;
-    }
-
-    .resume-container .experience ul li {
-      padding-left: 2.08333333334vw;
-      font-size: 1.68vw !important;
-    }
-
-    .resume-container .experience ul li:before {
-      margin-left: -2.08333333334vw;
-      width: 2.08333333334vw;
-      height: 2.08333333334vw;
     }
   }
 }
