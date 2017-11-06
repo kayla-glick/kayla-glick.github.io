@@ -130,7 +130,7 @@
   background-color: white !important;
   border-top: .18vw solid black;
   border-bottom: .18vw solid black;
-  margin-top: 4.375vw;
+  margin-top: 5.41666666667vw;
   margin-bottom: 0;
   display: flex;
   flex-flow: column;
@@ -141,8 +141,8 @@
 }
 
 .resume-container .contact-links {
-  padding-top: 1.042vw;
-  padding-bottom: 1.042vw;
+  padding-top: 1.5625vw;
+  padding-bottom: 1.5625vw;
 }
 
 .resume-container .contact-links h4 {
@@ -189,25 +189,25 @@
 
 /* Languages Section */
 .resume-container .languages > .page-header {
-  margin-top: 0.2605vw;
+  margin-top: 0;
 }
 
 
 
 /* Tools Section */
 .resume-container .tools > .page-header {
-  margin-top: 0.88541666666vw;
+  margin-top: 1.042vw;
 }
 
 
 
 /* Frameworks Section */
 .resume-container .frameworks {
-  padding-bottom: .5209vw;
+  padding-bottom: 0.9375vw;
 }
 
 .resume-container .frameworks > .page-header {
-  margin-top: .78125vw
+  margin-top: 1.042vw;
 }
 
 
@@ -220,7 +220,7 @@
 
 .resume-container .education > .page-header {
   flex: 1 100%;
-  margin-top: 2.084vw;
+  margin-top: 3.125vw;
 }
 
 .resume-container .education > div:not(.page-header) {
@@ -253,7 +253,7 @@
 
 /* Experience Section */
 .resume-container .experience > .page-header {
-  margin-top: 0.78125vw;
+  margin-top: 1.45833333333vw;
 }
 
 .resume-container .experience .experience-opportunity .employment {
@@ -271,7 +271,7 @@
 
 /* Involvement */
 .resume-container .involvement > .page-header {
-  margin-top: 1.3025vw;
+  margin-top: 1.5625vw;
 }
 
 .resume-container .involvement .activity-name {
@@ -282,7 +282,7 @@
 
 /* Awards and Honors Section */
 .resume-container .honors > .page-header {
-  margin-top: .782vw;
+  margin-top: 1.042vw;
 }
 
 .resume-container .honors .honor-name {
@@ -346,32 +346,23 @@
     margin-bottom: 0.52083333333vw;
   }
 
-  .resume-container .contact-links {
-    padding-top: 1.04166666667vw;
-    padding-bottom: 1.04166666667vw;
-  }
-
   .resume-container .contact-links h4 {
     margin-top: 0.52083333333vw;
   }
 
-  .resume-container .frameworks {
-    padding-bottom: 0.52083333333vw;
+  .resume-container .tools > .page-header {
+    margin-top: 1.04166666667vw;
   }
 
-  .resume-container .education > .page-header {
-    margin-top: 2.08333333333vw;
+  .resume-container .frameworks > .page-header {
+    margin-top: 1.04166666667vw;
   }
 
   .resume-container .relevant-coursework > .page-header {
     margin-top: 1.61458333333vw;
   }
 
-  .resume-container .involvement > .page-header {
-    margin-top: 1.30208333333vw;
-  }
-
   .resume-container .honors > .page-header {
-    margin-top: 0.78125vw;
+    margin-top: 1.04166666667vw;
   }
 }

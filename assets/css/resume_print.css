@@ -1,4 +1,9 @@
 @media print {
+  a,
+  a * {
+    color: #337ab7 !important;
+  }
+
   a[href]:after {
     content: "" !important;
   }
@@ -75,7 +80,7 @@
   .resume-container .resume-header h1 {
     border-top: .36vw solid black;
     border-bottom: .36vw solid black;
-    margin-top: 8.75vw;
+    margin-top: 10.8333333333vw;
   }
 
   .resume-container .resume-header h1 span {
@@ -113,7 +118,7 @@
 
   /* Tools Section */
   .resume-container .tools > .page-header {
-    margin-top: 1.77083333333vw;
+    margin-top: 2.084vw;
   }
 
 
@@ -124,14 +129,14 @@
   }
 
   .resume-container .frameworks > .page-header {
-    margin-top: 1.5625vw
+    margin-top: 2.084vw;
   }
 
 
 
   /* Education Section */
   .resume-container .education > .page-header {
-    margin-top: 4.168vw;
+    margin-top: 6.25vw;
   }
 
   .resume-container .education .cofc-logo {
@@ -150,21 +155,21 @@
 
   /* Experience Section */
   .resume-container .experience > .page-header {
-    margin-top: 1.5625vw;
+    margin-top: 2.084vw;
   }
 
 
 
   /* Involvement */
   .resume-container .involvement > .page-header {
-    margin-top: 2.605vw;
+    margin-top: 3.125vw;
   }
 
 
 
   /* Awards and Honors Section */
   .resume-container .honors > .page-header {
-    margin-top: 1.564vw;
+    margin-top: 2.084vw;
   }
 
 
@@ -233,28 +238,20 @@
       margin-top: 1.04166666666vw;
     }
 
-    .resume-container .frameworks {
-      padding-bottom: 1.04166666667vw;
+    .resume-container .tools > .page-header {
+      margin-top: 2.08333333334vw;
     }
 
-    .resume-container .education > .page-header {
-      margin-top: 4.16666666666vw;
+    .resume-container .frameworks > .page-header {
+      margin-top: 1.04166666667vw;
     }
-
+    
     .resume-container .relevant-coursework > .page-header {
       margin-top: 3.22916666666vw;
     }
 
-    .resume-container .experience > .page-header {
-      margin-top: 2.60416666668vw;
-    }
-
-    .resume-container .involvement > .page-header {
-      margin-top: 2.60416666668vw;
-    }
-
     .resume-container .honors > .page-header {
-      margin-top: 1.5625vw;
+      margin-top: 2.08333333334vw;
     }
   }
 }
