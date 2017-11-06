@@ -18,6 +18,7 @@
   .resume-container ul li {
     padding-left: 2.084vw;
     font-size: 1.678vw !important;
+    line-height: 1.42857143;
   }
 
   .resume-container ul li:before {
@@ -42,6 +43,7 @@
 
   .resume-container hr {
     margin-bottom: 1.042vw;
+    border-width: 0.3125vw;
   }
 
   .resume-container .col-xs-1:not(.no-padding),
@@ -62,25 +64,11 @@
 
 
 
-
-  /* Objective */
-  .resume-container .objective {
-    border-bottom: .36vw solid black;
-    border-top: .36vw solid black;
-  }
-
-  .resume-container .objective h3 {
-    margin-top: 1.042vw;
-    margin-bottom: 1.042vw;
-  }
-
-
-
   /* Header and Links */
   .resume-container .resume-header h1 {
     border-top: .36vw solid black;
     border-bottom: .36vw solid black;
-    margin-top: 10.8333333333vw;
+    margin-top: 10.8333333333vw !important;
   }
 
   .resume-container .resume-header h1 span {
@@ -88,8 +76,8 @@
   }
 
   .resume-container .contact-links {
-    padding-top: 2.084vw;
-    padding-bottom: 2.084vw;
+    padding-top: 3.125vw;
+    padding-bottom: 3.125vw;
   }
 
   .resume-container .contact-links h4 {
@@ -111,7 +99,7 @@
 
   /* Languages Section */
   .resume-container .languages > .page-header {
-    margin-top: 0.521vw;
+    margin-top: 0;
   }
 
 
@@ -155,7 +143,7 @@
 
   /* Experience Section */
   .resume-container .experience > .page-header {
-    margin-top: 2.084vw;
+    margin-top: 2.08333333333vw;
   }
 
 
@@ -171,87 +159,80 @@
   .resume-container .honors > .page-header {
     margin-top: 2.084vw;
   }
+}
 
 
+/* Google Chrome Styles*/
+@media print and (-webkit-min-device-pixel-ratio:0) {
+  .resume-container ul {
+    list-style: none;
+    padding-left: 1.5625vw;
+    margin: 0;
+  }
 
-  /* Google Chrome Styles*/
-  @media screen and (-webkit-min-device-pixel-ratio:0) {
-    .resume-container ul {
-      list-style: none;
-      padding-left: 1.5625vw;
-      margin: 0;
-    }
+  .resume-container ul li {
+    padding-left: 2.08333333333vw;
+    font-size: 1.7vw !important;
+  }
 
-    .resume-container ul li {
-      padding-left: 2.08333333333vw;
-      font-size: 1.7vw !important;
-    }
+  .resume-container ul li:before {
+    content: "➢";
+    display: inline-block;
+    margin-left: -2.08333333333vw;
+    width: 2.08333333333vw;
+    height: 2.08333333333vw;
+  }
 
-    .resume-container ul li:before {
-      content: "➢";
-      display: inline-block;
-      margin-left: -2.08333333333vw;
-      width: 2.08333333333vw;
-      height: 2.08333333333vw;
-    }
+  .resume-container .col-xs-1:not(.no-padding),
+  .resume-container .col-xs-2:not(.no-padding),
+  .resume-container .col-xs-3:not(.no-padding),
+  .resume-container .col-xs-4:not(.no-padding),
+  .resume-container .col-xs-5:not(.no-padding),
+  .resume-container .col-xs-6:not(.no-padding),
+  .resume-container .col-xs-7:not(.no-padding),
+  .resume-container .col-xs-8:not(.no-padding),
+  .resume-container .col-xs-9:not(.no-padding),
+  .resume-container .col-xs-10:not(.no-padding),
+  .resume-container .col-xs-11:not(.no-padding),
+  .resume-container .col-xs-12:not(.no-padding) {
+    padding-left: 1.5625vw;
+    padding-right: 1.5625vw;
+  }
 
-    .resume-container .col-xs-1:not(.no-padding),
-    .resume-container .col-xs-2:not(.no-padding),
-    .resume-container .col-xs-3:not(.no-padding),
-    .resume-container .col-xs-4:not(.no-padding),
-    .resume-container .col-xs-5:not(.no-padding),
-    .resume-container .col-xs-6:not(.no-padding),
-    .resume-container .col-xs-7:not(.no-padding),
-    .resume-container .col-xs-8:not(.no-padding),
-    .resume-container .col-xs-9:not(.no-padding),
-    .resume-container .col-xs-10:not(.no-padding),
-    .resume-container .col-xs-11:not(.no-padding),
-    .resume-container .col-xs-12:not(.no-padding) {
-      padding-left: 1.5625vw;
-      padding-right: 1.5625vw;
-    }
+  .resume-container h1 {
+    font-size: 3.316vw !important;
+  }
 
-    .resume-container h1 {
-      font-size: 3.316vw !important;
-    }
+  .resume-container h4 {
+    margin-bottom: 1.04166666666vw;
+  }
 
-    .resume-container h4 {
-      margin-bottom: 1.04166666666vw;
-    }
+  .resume-container hr {
+    margin-bottom: 1.04166666666vw;
+  }
 
-    .resume-container .page-header {
-      margin-bottom: 2.08333333334vw;
-      padding-bottom: .9375vw;
-    }
+  .resume-container .page-header {
+    margin-bottom: 2.08333333334vw;
+    padding-bottom: .9375vw;
+  }
 
-    .resume-container .objective h3 {
-      margin-top: 1.04166666666vw;
-      margin-bottom: 1.04166666666vw;
-    }
+  .resume-container .contact-links h4 {
+    margin-top: 1.04166666666vw;
+  }
 
-    .resume-container .contact-links {
-      padding-top: 2.08333333334vw;
-      padding-bottom: 2.08333333334vw;
-    }
+  .resume-container .tools > .page-header {
+    margin-top: 2.08333333334vw;
+  }
 
-    .resume-container .contact-links h4 {
-      margin-top: 1.04166666666vw;
-    }
+  .resume-container .frameworks > .page-header {
+    margin-top: 2.08333333334vw;
+  }
 
-    .resume-container .tools > .page-header {
-      margin-top: 2.08333333334vw;
-    }
+  .resume-container .relevant-coursework > .page-header {
+    margin-top: 3.3vw;
+  }
 
-    .resume-container .frameworks > .page-header {
-      margin-top: 1.04166666667vw;
-    }
-    
-    .resume-container .relevant-coursework > .page-header {
-      margin-top: 3.22916666666vw;
-    }
-
-    .resume-container .honors > .page-header {
-      margin-top: 2.08333333334vw;
-    }
+  .resume-container .honors > .page-header {
+    margin-top: 2vw;
   }
 }

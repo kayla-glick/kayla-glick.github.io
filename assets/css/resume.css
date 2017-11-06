@@ -71,7 +71,7 @@
   margin-bottom: .521vw;
   border-color: var(--apricot);
   border-style: dashed;
-  border-width: 2px;
+  border-width: 0.15625vw;
   border-top: 0;
   border-right: 0;
   border-left: 0;
@@ -110,8 +110,8 @@
 
 /* Objective */
 .resume-container .objective {
-  border-bottom: .18vw solid black;
-  border-top: .18vw solid black;
+  border-bottom: 0.15625vw solid black;
+  border-top: 0.15625vw solid black;
 }
 
 .resume-container .objective h3 {
@@ -128,8 +128,8 @@
 
 .resume-container .resume-header h1 {
   background-color: white !important;
-  border-top: .18vw solid black;
-  border-bottom: .18vw solid black;
+  border-top: 0.15625vw solid black;
+  border-bottom: 0.15625vw solid black;
   margin-top: 5.41666666667vw;
   margin-bottom: 0;
   display: flex;
@@ -176,7 +176,7 @@
 
 .resume-container .page-header {
   border-color: black;
-  border-width: .18vw;
+  border-width: 0.15625vw;
   margin-bottom: 1.0425vw;
   padding-bottom: .469vw;
 }
@@ -253,7 +253,7 @@
 
 /* Experience Section */
 .resume-container .experience > .page-header {
-  margin-top: 1.45833333333vw;
+  margin-top: 1.51041666667vw;
 }
 
 .resume-container .experience .experience-opportunity .employment {
@@ -334,6 +334,10 @@
 
   .resume-container h4 {
     margin-bottom: .52083333333vw;
+  }
+
+  .resume-container hr {
+    margin-bottom: 0.52083333333vw;
   }
 
   .resume-container .page-header {
