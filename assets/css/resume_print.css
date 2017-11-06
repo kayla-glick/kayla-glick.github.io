@@ -179,7 +179,7 @@
 
     .resume-container ul li {
       padding-left: 2.08333333333vw;
-      font-size: 1.66666666666vw !important;
+      font-size: 1.7vw !important;
     }
 
     .resume-container ul li:before {
@@ -189,7 +189,7 @@
       width: 2.08333333333vw;
       height: 2.08333333333vw;
     }
-  
+
     .resume-container .col-xs-1:not(.no-padding),
     .resume-container .col-xs-2:not(.no-padding),
     .resume-container .col-xs-3:not(.no-padding),
