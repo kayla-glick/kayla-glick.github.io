@@ -1,4 +1,7 @@
 future: false
+plugins:
+  - jekyll-seo-tag
+title: "Kyle Glick | Full Stack Developer"
 
 per_page: 5
 
