@@ -3,7 +3,7 @@
   {% include head.html header=page.header %}
   <body>
     {% include header.html header=page.header %}   
-    <div class="container col-sm-8 col-sm-offset-2 hidden-print">
+    <div class="container hidden-print">
       <div class="col-sm-10 col-sm-offset-1">
         {{ content }}
       </div>
@@ -26,7 +26,7 @@
     </footer>
     {% include modal.html %}
     {% include back_to_top.html %}
-    <div class="col-xs-12 no-padding visible-print">
+    <div class="col-xs-12 p-0 visible-print">
       {% include resume/resume.html %}
     </div>
   </body>

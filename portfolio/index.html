@@ -8,9 +8,9 @@ header: portfolio
 </div>
 <div class="col-sm-12">
   {% for portfolio in site.portfolio %}
-    <a href="/portfolio/{{ portfolio[0] }}/" class="col-sm-12 no-padding portfolio-preview glowing-link">
+    <a href="/portfolio/{{ portfolio[0] }}/" class="col-sm-12 p-0 portfolio-preview glowing-link">
       <div class="media">
-        <div class="media-left col-sm-4 no-padding">
+        <div class="media-left col-sm-4 p-0">
           <img class="media-object portfolio-logo" src="{{ portfolio[1]['logo'] }}" alt="{{ portfolio[1]['title'] }} Logo" style="width:100%;">
         </div>
         <div class="media-body container-fluid">

@@ -14,7 +14,7 @@ layout: default
       {% include posts/post_date.html date=page.date %}
     </h3>
   </div>
-  <div class="container-fluid no-padding post-body">
+  <div class="container-fluid p-0 post-body">
     <div class="panel panel-default">
       <div class="panel-body">
         <p>{{page.content}}</p>
@@ -45,7 +45,7 @@ layout: default
 {% if prev_post or next_post %}
   <div class="col-sm-12 pagination">
     {% if prev_post %}
-      <div class="col-sm-5 no-padding">
+      <div class="col-sm-5 p-0">
         <a href="{{ prev_post.url }}">
           <span class="glyphicon glyphicon-arrow-left"></span>
           {{ prev_post.title }}
@@ -53,7 +53,7 @@ layout: default
       </div>
     {% endif %}
     {% if next_post %}
-      <div class="col-sm-5 col-sm-offset-2 no-padding pull-right text-right">
+      <div class="col-sm-5 col-sm-offset-2 p-0 pull-right text-right">
         <a href="{{ next_post.url }}">
           {{ next_post.title }}
           <span class="glyphicon glyphicon-arrow-right"></span>

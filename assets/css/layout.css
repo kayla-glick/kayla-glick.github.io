@@ -1,10 +1,9 @@
 @import url("contact.css");
-@import url("generics.css");
-@import url("modal.css");
 @import url("portfolio.css");
 @import url("posts.css");
 @import url("resume.css");
-@import url("resume_print.css");
+@import url("modal.css");
+@import url("generics.css");
 
 :root {
   --background: #474747;
@@ -23,6 +22,30 @@ html {
 body {
   height: 100%;
   background: var(--apple);
+}
+
+@media(min-width: 768px) {
+  body > .container {
+    width: 750px;
+  }
+}
+
+@media(min-width: 992px) {
+  body > .container {
+    width: 970px;
+  }
+}
+
+@media(min-width: 1200px) {
+  body > .container {
+    width: 1170px;
+  }
+}
+
+@media(min-width: 1280px) {
+  body > .container {
+    width: 1280px;
+  }
 }
 
 /* Header */
