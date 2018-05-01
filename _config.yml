@@ -1,6 +1,15 @@
+#################
+# Configuration #
+#################
+exclude: []
 future: false
 plugins:
+  - jekyll-coffeescript
   - jekyll-seo-tag
+sass:
+  load_paths:
+    - assets/stylesheets
+    - node_modules
 title: "Kyle Glick | Full Stack Developer"
 
 per_page: 5
@@ -11,11 +20,6 @@ portfolio:
     description: "I worked as an intern at the Biomedical Informatics Center at the Medical University of South Carolina to maintain and develop for the SPARCRequest team, consisting of several applications dedicated to research management built with Ruby on Rails."
     date: "Summer 2015 - Present"
     logo: "/assets/images/sparcrequest/bmic_logo.png"
-  csci_362_blog:
-    title: "CSCI 362 Software Engineering - Blog"
-    description: "A blog for my CSCI 362 - Software Engineering class where I discuss various issues in Software Engineering and respond to homework questions from Ian Sommerville's <em>Software Engineering 10th Edition</em>."
-    date: "Fall 2017"
-    logo: "/assets/images/csci_362_blog/logo.jpg"
   csci_360:
     title: "CSCI 360 Software Architecture and Design - Alarm Clock"
     description: "I worked with two other students to build a Dual-Alarm AM/FM Clock Radio application using JavaFX. We also drafted a report detailing the various steps of the design process."
