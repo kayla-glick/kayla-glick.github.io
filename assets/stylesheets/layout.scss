@@ -1,0 +1,70 @@
+html {
+  min-height: 100%;
+  position: relative;
+
+  &.fontawesome-i2svg-active {
+    body {
+      opacity: 1;
+    }
+  }
+
+  body {
+    opacity: 0;
+    transition: 0.5s opacity ease-in-out;
+
+    footer {
+      padding: 40px 5% 40px 5%;
+      box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+
+      .col-md-4 {
+        @include media-breakpoint-down(md) {
+          #socialLinks {
+            margin-bottom: $spacer !important;
+          }
+        }
+
+        #socialLinks {
+          li {
+            #githubLink {
+              color: black;
+            }
+
+            #linkedinLink {
+              color: #0077b5;
+            }
+
+            #emailLink {
+              color: #d14836;
+            }
+
+            a {
+              transition: 0.25s opacity linear;
+
+              svg {
+                height: 32px;
+                width: 32px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    a {
+      text-decoration: none !important;
+      outline: 0 !important;
+    }
+
+    a.transition {
+      transition: 0.25s filter linear;
+    }
+
+    a.transition:hover {
+      filter: brightness(50%);
+    }
+
+    a.faded {
+      opacity: 0.25;
+    }
+  }
+}
