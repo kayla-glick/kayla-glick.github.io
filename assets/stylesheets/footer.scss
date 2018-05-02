@@ -1,0 +1,64 @@
+html {
+  body {
+    footer {
+      padding: 40px 5% 40px 5%;
+      box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+
+      @include media-breakpoint-up(md) {
+        #copyrightContainer {
+          padding-left: 0;
+        }
+
+        #socialLinksContainer {
+          #socialLinks {
+            justify-content: flex-end;
+            padding-right: 0;
+          }
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        .footer-content {
+          justify-content: center;
+
+          #socialLinks {
+            justify-content: center;
+          }
+        }    
+      }
+
+      .footer-content {
+        @include media-breakpoint-down(sm) {
+          #socialLinks {
+            margin-bottom: $spacer !important;
+          }
+        }
+
+        #socialLinks {
+          li {
+            #githubLink {
+              color: black;
+            }
+
+            #linkedinLink {
+              color: #0077b5;
+            }
+
+            #emailLink {
+              color: #d14836;
+            }
+
+            a {
+              transition: 0.25s opacity linear;
+
+              svg {
+                height: 32px;
+                width: 32px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

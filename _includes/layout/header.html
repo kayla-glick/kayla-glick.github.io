@@ -1,0 +1,36 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark p-0">
+    <div class="container align-items-stretch p-0">
+      <div class="navbar-header">
+        <a href="{{ site.baseurl }}/" class="navbar-brand">
+          <img src="{{ site.baseurl }}/assets/images/logo.png" id="siteLogo">
+        </a>
+        <div class="navbar-toggler-container d-flex align-items-center">
+          <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+      <div id="navbarNav" class="collapse navbar-collapse align-items-stretch justify-content-end">
+        <div class="navbar-nav">
+          <a href="{{ site.baseurl }}/" class="nav-item nav-link text-white d-flex align-items-center position-relative {% if include.header == 'home' %}active{% endif %}">
+            <i class="far fa-home"></i>
+            Home
+          </a>
+          <a href="{{ site.baseurl }}/portfolio" class="nav-item nav-link text-white d-flex align-items-center position-relative {% if include.header == 'portfolio' %}active{% endif %}">
+            <i class="far fa-book"></i>
+            Portfolio
+          </a>
+          <a href="{{ site.baseurl }}/blog" class="nav-item nav-link text-white d-flex align-items-center position-relative {% if include.header == 'blog' %}active{% endif %}">
+            <i class="far fa-comment-alt"></i>
+            Blog
+          </a>
+          <a href="{{ site.baseurl }}/resume" class="nav-item nav-link text-white d-flex align-items-center position-relative {% if include.header == 'resume' %}active{% endif %}">
+            <i class="far fa-file-alt"></i>
+            Resumé
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
