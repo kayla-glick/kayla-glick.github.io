@@ -1,0 +1,77 @@
+section.main {
+  #greetingImage {
+    width: 100%;
+    border-radius: 100%;
+  }
+}
+
+@include media-breakpoint-only(sm) {
+  section.main {
+    #greetingImageContainer {
+      #greetingImage {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  section.main {
+    #aboutMeContainer {
+      padding: 0;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  section.main {
+    #aboutMeContainer {
+      padding-left: 0;
+
+      #name {
+        font-size: 7.2rem;
+      }
+
+      #intro {
+        font-size: 2.6rem;
+      }
+
+      #greetingImageContainer {
+        width: percentage(1/2);
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  section.main {
+    #aboutMeContainer {
+      justify-content: center;
+
+      #name {
+        font-size: 7.2rem;
+      }
+
+      #intro {
+        font-size: 2.6rem;
+      }
+    }
+
+    #greetingImageContainer {
+      width: percentage(5/12);
+      margin-left: percentage(1/12);
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  section.main {
+    #name {
+      font-size: 9.6rem;
+    }
+
+    #intro {
+      font-size: 3.6rem;
+    }
+  }
+}

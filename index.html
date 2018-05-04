@@ -2,14 +2,37 @@
 layout: application
 header: 'home'
 ---
-<section class="section-light">
+<section class="main">
   <div class="container">
-    <div class="page-header">
-      <h1 class="page-title text-center">Welcome to my personal website!</h1>
-    </div>
+    <div id="aboutMeContainer" class="col-md-6 d-flex flex-column">
+      <h1 id="name" class="font-weight-bold mb-4">
+        Kyle
+        <span class="text-success">Glick</span>
+      </h1>
+      <p id="intro" class="text-muted font-weight-light">Front-End &amp; Full-stack Developer</p>
+      <p id="aboutMe" class="font-weight-light">
+        I'm a recent graduate of the College of Charleston with an an eye for detail and a pashion for building sleek, intuitive websites. In my free time, I enjoy travelling the world to indulge in art, history, and most importantly, food!
+      </p>
 
-    <h4>This was a project I started for my Software Engineering class, built using GitHub pages, Jekyll, and Liquid. It's still very much a work-in-progress. There's not a whole lot to it right now, but I'm currently upgrading it to Bootstrap 4 and overhauling the layout.</h4>
-    <br />
-    <h4>In the meantime, you can check out my Blog (located under "Portfolio") or view my HTML+CSS resume. Check back later once I've completed my revamp!</h4>
+    </div>
+    <div id="greetingImageContainer" class="d-flex align-items-center justify-content-center pr-0">
+      <img src="{{ site.baseurl }}/assets/images/greeting.jpg" id="greetingImage">
+    </div>
+  </div>
+</section>
+<section id="aboutSection" class="section-dark">
+  <div class="container">
+  </div>
+</section>
+<section id="skillsSection" class="section-light">
+  <div class="container">
+  </div>
+</section>
+<section id="experienceSection" class="section-dark">
+  <div class="container">
+  </div>
+</section>
+<section id="portfolioSection" class="section-light">
+  <div class="container">
   </div>
 </section>

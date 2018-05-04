@@ -10,7 +10,7 @@ sass:
   load_paths:
     - assets/stylesheets
     - node_modules
-title: "Kyle Glick | Full Stack Developer"
+title: "Kyle Glick | Full-Stack Developer"
 
 per_page: 5
 

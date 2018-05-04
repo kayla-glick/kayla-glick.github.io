@@ -1,5 +1,6 @@
 html {
   min-height: 100%;
+  font-size: 62.5%;
   position: relative;
 
   &.fontawesome-i2svg-active {
@@ -11,22 +12,96 @@ html {
   body {
     opacity: 0;
     transition: 0.5s opacity ease-in-out;
+  }
+}
 
-    a {
-      text-decoration: none !important;
-      outline: 0 !important;
-    }
+section {
+  border-bottom: 1px solid #ddd;
 
-    a.transition {
-      transition: 0.25s filter linear;
-    }
+  &.section-light {
+    background: white;
+    box-shadow: inset 0px 30px 30px -30px rgba(0, 0, 0, 0.05);
+  }
 
-    a.transition:hover {
-      filter: brightness(50%);
-    }
+  &.section-dark {
+    background: theme-color('light');
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  }
 
-    a.faded {
-      opacity: 0.25;
-    }
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+p {
+  line-height: 2.8rem;
+  margin-bottom: 2.5rem;
+}
+
+p, a {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none !important;
+  outline: 0 !important;
+}
+
+a.transition {
+  transition: 0.25s filter linear;
+}
+
+a.transition:hover {
+  filter: brightness(50%);
+}
+
+a.faded {
+  opacity: 0.25;
+}
+
+.dashing {
+  width: 30%;
+  margin: $spacer * 1.8 auto;
+  border-bottom: 8px solid theme-color('success');
+}
+
+@include media-breakpoint-up(xs) {
+  h1, .h1 {
+    font-size: 48px;
+    font-size: 4.8rem;
+  }
+
+  section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  h1, .h1 {
+    font-size: 70px;
+    font-size: 70rem;
+  }
+
+  section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 }

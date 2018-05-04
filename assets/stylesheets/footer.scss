@@ -1,64 +1,68 @@
-html {
-  body {
-    footer {
-      padding: 40px 5% 40px 5%;
-      box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+footer {
+  padding: 40px 5% 40px 5%;
+  background: theme-color-level('light', 0.25);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
 
-      @include media-breakpoint-up(md) {
-        #copyrightContainer {
-          padding-left: 0;
+  p, a {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+
+  .footer-content {
+    #socialLinks {
+      li {
+        #githubLink {
+          color: black;
         }
 
-        #socialLinksContainer {
-          #socialLinks {
-            justify-content: flex-end;
-            padding-right: 0;
-          }
-        }
-      }
-
-      @include media-breakpoint-down(sm) {
-        .footer-content {
-          justify-content: center;
-
-          #socialLinks {
-            justify-content: center;
-          }
-        }    
-      }
-
-      .footer-content {
-        @include media-breakpoint-down(sm) {
-          #socialLinks {
-            margin-bottom: $spacer !important;
-          }
+        #linkedinLink {
+          color: #0077b5;
         }
 
-        #socialLinks {
-          li {
-            #githubLink {
-              color: black;
-            }
+        #emailLink {
+          color: #d14836;
+        }
 
-            #linkedinLink {
-              color: #0077b5;
-            }
+        a {
+          transition: 0.25s opacity linear;
 
-            #emailLink {
-              color: #d14836;
-            }
-
-            a {
-              transition: 0.25s opacity linear;
-
-              svg {
-                height: 32px;
-                width: 32px;
-              }
-            }
+          svg {
+            height: 32px;
+            width: 32px;
           }
         }
       }
     }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  footer {
+    #copyrightContainer {
+      padding-left: 0;
+    }
+
+    #socialLinksContainer {
+      #socialLinks {
+        justify-content: flex-end;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  footer {
+    .footer-content {
+      justify-content: center;
+
+      #socialLinks {
+        justify-content: center;
+      }
+
+      #socialLinks, #navLinks {
+        margin-bottom: $spacer !important;
+      }
+    }    
   }
 }
