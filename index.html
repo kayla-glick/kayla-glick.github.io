@@ -2,24 +2,7 @@
 layout: application
 header: 'home'
 ---
-<section class="main">
-  <div class="container">
-    <div id="aboutMeContainer" class="col-md-6 d-flex flex-column">
-      <h1 id="name" class="font-weight-bold mb-4">
-        Kyle
-        <span class="text-success">Glick</span>
-      </h1>
-      <p id="intro" class="text-muted font-weight-light">Front-End &amp; Full-stack Developer</p>
-      <p id="aboutMe" class="font-weight-light">
-        I'm a recent graduate of the College of Charleston with an an eye for detail and a pashion for building sleek, intuitive websites. In my free time, I enjoy travelling the world to indulge in art, history, and most importantly, food!
-      </p>
-
-    </div>
-    <div id="greetingImageContainer" class="d-flex align-items-center justify-content-center pr-0">
-      <img src="{{ site.baseurl }}/assets/images/greeting.jpg" id="greetingImage">
-    </div>
-  </div>
-</section>
+{% include home/about_me.html %}
 <section id="aboutSection" class="section-dark">
   <div class="container">
   </div>

@@ -1,7 +1,21 @@
 section.main {
-  #greetingImage {
-    width: 100%;
-    border-radius: 100%;
+  #greetingImageContainer {
+    #greetingImage {
+      width: 100%;
+      border-radius: 100%;
+    }
+  }
+
+  #learnMoreContainer {
+    #learnMore {
+      color: theme-color('success') !important;
+      font-size: 56px;
+      font-size: 5.6rem;
+      animation-name: bob;
+      animation-duration: 1.5s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
   }
 }
 
@@ -29,16 +43,18 @@ section.main {
       padding-left: 0;
 
       #name {
+        font-size: 72px;
         font-size: 7.2rem;
       }
 
       #intro {
+        font-size: 26px;
         font-size: 2.6rem;
       }
+    }
 
-      #greetingImageContainer {
-        width: percentage(1/2);
-      }
+    #greetingImageContainer {
+      width: percentage(1/2);
     }
   }
 }
@@ -47,14 +63,6 @@ section.main {
   section.main {
     #aboutMeContainer {
       justify-content: center;
-
-      #name {
-        font-size: 7.2rem;
-      }
-
-      #intro {
-        font-size: 2.6rem;
-      }
     }
 
     #greetingImageContainer {
@@ -67,11 +75,23 @@ section.main {
 @include media-breakpoint-up(xl) {
   section.main {
     #name {
+      font-size: 96px;
       font-size: 9.6rem;
     }
 
     #intro {
+      font-size: 36px;
       font-size: 3.6rem;
     }
+  }
+}
+
+@keyframes bob {
+  0%, 100% {
+    transform: translateY(-5%);
+  }
+
+  50% {
+    transform: translateY(-10%);
   }
 }
