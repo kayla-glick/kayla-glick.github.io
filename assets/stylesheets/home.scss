@@ -11,10 +11,12 @@ section.main {
       color: theme-color('success') !important;
       font-size: 56px;
       font-size: 5.6rem;
-      animation-name: bob;
-      animation-duration: 1.5s;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
+      transform: translateY(-15%);
+      transition: 0.5s transform ease-in-out;
+
+      &:hover {
+        transform: translateY(-5%);
+      }
     }
   }
 }
@@ -83,15 +85,5 @@ section.main {
       font-size: 36px;
       font-size: 3.6rem;
     }
-  }
-}
-
-@keyframes bob {
-  0%, 100% {
-    transform: translateY(-5%);
-  }
-
-  50% {
-    transform: translateY(-10%);
   }
 }

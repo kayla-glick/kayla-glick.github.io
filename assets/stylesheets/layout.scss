@@ -74,6 +74,31 @@ a.faded {
     font-size: 4.8rem;
   }
 
+  h2, .h2 {
+    font-size: 36px;
+    font-size: 3.6rem;
+  }
+
+  h3, .h3 {
+    font-size: 28px;
+    font-size: 2.8rem;
+  }
+
+  h4, .h4 {
+    font-size: 24px;
+    font-size: 2.4rem;
+  }
+
+  h5, .h5 {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+
+  h6, .h6 {
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+
   section {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -83,7 +108,32 @@ a.faded {
 @include media-breakpoint-up(md) {
   h1, .h1 {
     font-size: 70px;
-    font-size: 70rem;
+    font-size: 7rem;
+  }
+
+  h2, .h2 {
+    font-size: 52.5px;
+    font-size: 5.25rem;
+  }
+
+  h3, .h3 {
+    font-size: 41px;
+    font-size: 4.1rem;
+  }
+
+  h4, .h4 {
+    font-size: 35px;
+    font-size: 3.5rem;
+  }
+
+  h5, .h5 {
+    font-size: 29px;
+    font-size: 2.9rem;
+  }
+
+  h6, .h6 {
+    font-size: 23.5px;
+    font-size: 2.35rem;
   }
 
   section {
