@@ -1,7 +1,23 @@
 <footer id="footer" class="position-relative">
   <div class="container">
     <div class="row">
-      <div id="socialLinksContainer" class="footer-content order-md-last col-md-4 d-flex align-items-center">
+      <div id="navLinksContainer" class="footer-content col-lg-4 col-md-6 offset-lg-0 offset-md-3 d-flex align-items-center">
+        <ul id="navLinks" class="list-unstyled list-inline d-flex justify-content-around w-100 m-0">
+          <li class="list-inline-item m-0 p-0">
+            <a href="{{ site.baseurl }}/" class="text-muted transition" target="_blank" draggable="false">Home</a>
+          </li>
+          <li class="list-inline-item m-0 p-0">
+            <a href="{{ site.baseurl }}/portfolio" class="text-muted transition" target="_blank" draggable="false">Portfolio</a>
+          </li>
+          <li class="list-inline-item m-0 p-0">
+            <a href="{{ site.baseurl }}/blog" class="text-muted transition" target="_blank" draggable="false">Blog</a>
+          </li>
+          <li class="list-inline-item m-0 p-0">
+            <a href="{{ site.baseurl }}/resume" class="text-muted transition" target="_blank" draggable="false">Resume</a>
+          </li>
+        </ul>
+      </div>
+      <div id="socialLinksContainer" class="footer-content order-lg-last col-lg-4 col-md-6 offset-lg-0 offset-md-3 d-flex align-items-center">
         <ul id="socialLinks" class="list-unstyled list-inline d-flex w-100 m-0">
           <li class="list-inline-item col-lg-2 col-3 m-0 p-0">
             <a href="https://github.com/kyle-glick/" id="githubLink" class="d-flex justify-content-center w-100" target="_blank" draggable="false">
@@ -20,23 +36,7 @@
           </li>
         </ul>
       </div>
-      <div id="navLinksContainer" class="footer-content col-md-4 d-flex align-items-center">
-        <ul id="navLinks" class="list-unstyled list-inline d-flex justify-content-around w-100 m-0">
-          <li class="list-inline-item m-0 p-0">
-            <a href="{{ site.baseurl }}/" class="text-muted transition" target="_blank" draggable="false">Home</a>
-          </li>
-          <li class="list-inline-item m-0 p-0">
-            <a href="{{ site.baseurl }}/portfolio" class="text-muted transition" target="_blank" draggable="false">Portfolio</a>
-          </li>
-          <li class="list-inline-item m-0 p-0">
-            <a href="{{ site.baseurl }}/blog" class="text-muted transition" target="_blank" draggable="false">Blog</a>
-          </li>
-          <li class="list-inline-item m-0 p-0">
-            <a href="{{ site.baseurl }}/resume" class="text-muted transition" target="_blank" draggable="false">Resume</a>
-          </li>
-        </ul>
-      </div>
-      <div id="copyrightContainer" class="footer-content order-md-first col-md-4 d-flex align-items-center">
+      <div id="copyrightContainer" class="footer-content order-lg-first col-lg-4 d-flex align-items-center">
         <a href="{{ site.baseurl }}" id="copyright" class="text-muted transition" draggable="false">&copy; 2018 Kyle Glick</a>
       </div>
     </div>
