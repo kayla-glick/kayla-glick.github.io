@@ -1,0 +1,287 @@
+#resumeContainer {
+  #resumeHeader {
+    #resumeTitle {
+      padding: 0;
+
+      #name span {
+        font-size: inherit;
+      }
+
+      #role {
+        line-height: 1;
+      }
+    }
+
+    #contactLinks {
+      padding: 0;
+
+      a {
+        color: black;
+
+        svg {
+          width: 24px;
+          height: 24px;
+          margin-right: $spacer;
+        }
+      }
+    }
+
+    #headerSpacer {
+      border-top: 3px solid black;
+      border-bottom: 3px solid black;
+    }
+  }
+
+  .section-header {
+    span {
+      font-size: inherit;
+    }
+  }
+
+  #skills {
+    .skills-section {
+      padding: 0;
+    }
+  }
+
+  #experience {
+    .experience-section {
+      .dates-container {
+        padding: 0;
+      }
+
+      svg {
+        width: 20px;
+      }
+    }
+  }
+
+  #education {
+    .education-section {
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex: 1;
+
+      #universityInfo, #degreeInfo {
+        margin-bottom: $spacer * 2;
+      }
+
+      #GPAInfo {
+        margin-bottom: $spacer * 2;
+      }
+    }
+  }
+
+  #honors {
+    li {
+      margin-bottom: $spacer * 2;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #resumeContainer {
+    #resumeHeader {
+      #resumeTitle {
+        #name span {
+          font-size: 10.5rem;
+        }
+      }
+
+      #contactLinks {
+        a {
+          svg {
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+    }
+
+    #experience {
+      .experience-section {
+        svg {
+          width: 40px;
+        }
+      }
+    }
+
+    #education {
+      .education-section {
+        #universityInfo, #degreeInfo, #GPAInfo {
+          margin: 0;
+        }
+      }
+    }
+
+    #honors {
+      li {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #resumeContainer {
+    #resumeHeader {
+      #resumeTitle {
+        padding-right: $spacer * 1.5;
+      }
+
+      #contactLinks {
+        padding-left: $spacer * 1.5;
+
+        a {
+          flex-direction: column;
+
+          svg {
+            width: 48px;
+            height: 48px;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    #skills {
+      .skills-section {
+        &:nth-child(odd) {
+          padding-left: $spacer * 1.5;
+        }
+
+        &:nth-child(even) {
+          padding-right: $spacer * 1.5;
+        }
+      }
+    }
+
+    #education {
+      .education-section {
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        &> * {
+          flex: 1;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  #resumeContainer {
+    #resumeHeader {
+      #resumeTitle {
+        #name span {
+          font-size: 12rem;
+        }
+      }
+    }
+
+    #experience {
+      .dates-container {
+        padding-left: $spacer * 1.5;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+@media print {
+  #resumeContainer {
+    #resumeHeader {
+      #resumeTitle {
+        @include make-col(6);
+        padding-right: $spacer * 1.5;
+
+        #name span {
+          font-size: 11.5rem;
+        }
+      }
+
+      #contactLinks {
+        @include make-col(6);
+
+        a {
+          flex-direction: column;
+
+          svg {
+            width: 48px;
+            height: 48px;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    #skills {
+      .skills-section {
+        @include make-col(6);
+
+        &:nth-child(odd) {
+          padding-left: $spacer * 1.5;
+        }
+
+        &:nth-child(even) {
+          padding-right: $spacer * 1.5;
+        }
+      }
+    }
+
+    #experience {
+      .experience-section {
+        .job-container {
+          @include make-col(9);
+
+          .job-title br {
+            display: none;
+          }
+        }
+
+        .dates-container {
+          @include make-col(3);
+          padding-left: $spacer * 1.5;
+          justify-content: flex-end;
+        }
+
+        .location-container {
+          @include make-col(9);
+        }
+      }
+    }
+
+    #education {
+      @include make-col(6);
+
+      .education-section {
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        &> * {
+          flex: 1;
+        }
+
+        #universityInfo, #degreeInfo, #GPAInfo {
+          margin: 0;
+        }
+      }
+    }
+
+    #honors {
+      @include make-col(6);
+
+      li {
+        margin: 0;
+
+        .honor {
+          @include make-col(9);
+        }
+
+        .honor-date {
+          @include make-col(3);
+        }
+      }
+    }
+  }
+}

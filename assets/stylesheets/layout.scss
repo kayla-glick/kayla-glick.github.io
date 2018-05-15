@@ -40,9 +40,29 @@ p {
   margin-bottom: 2.5rem;
 }
 
-p, a {
+p, a, li, span {
   font-size: 18px;
   font-size: 1.8rem;
+}
+
+ul {
+  list-style: none;
+}
+
+ul {
+  &:not(.list-unstyled) {
+    padding-left: 20px;
+
+    li:before {
+      content: ">";
+      display: inline-block;
+      width: 20px;
+      height: 2rem;
+      margin-left: -20px;
+      text-align: center;
+      line-height: 1;
+    }
+  }
 }
 
 a {
@@ -94,7 +114,7 @@ a.faded {
     font-size: 2rem;
   }
 
-  h6, .h6 {
+  h6, .h6, .btn {
     font-size: 18px;
     font-size: 1.8rem;
   }
@@ -106,6 +126,11 @@ a.faded {
 }
 
 @include media-breakpoint-up(md) {
+  section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   h1, .h1 {
     font-size: 70px;
     font-size: 7rem;
@@ -131,14 +156,21 @@ a.faded {
     font-size: 2.9rem;
   }
 
-  h6, .h6 {
+  h6, .h6, .btn {
     font-size: 23.5px;
     font-size: 2.35rem;
   }
 
-  section {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+  ul {
+    &:not(.list-unstyled) {
+      padding-left: 40px;
+
+      li:before {
+        width: 40px;
+        margin-left: -40px;
+        line-height: 1.5;
+      }
+    }
   }
 }
 
