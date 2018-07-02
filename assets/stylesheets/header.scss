@@ -13,10 +13,45 @@ header {
       }
 
       .navbar-toggler {
-        height: 48px;
-        width: 48px;
+        height: 64px;
+        width: 64px;
         border: none;
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+
+        .toggler-bar {
+          width: 60px;
+          height: 6px;
+          background-color: #fff;
+          display: block;
+          position: relative;
+          transition: 300ms ease-in-out;
+
+          &:nth-child(2) {
+            top: 3px;
+            transform: rotate(45deg);
+          }
+
+          &:nth-child(3) {
+            opacity: 0;
+          }
+
+          &:last-child {
+            top: -3px;
+            transform: rotate(-45deg);
+          }
+        }
+
+        &.collapsed {
+          .toggler-bar {
+            width: 48px;
+            top: 0;
+            opacity: 1;
+            transform: rotate(0deg);
+
+            &:nth-child(3), &:nth-child(4) {
+              margin-top: 12px;
+            }
+          }
+        }
       }
     }
 
@@ -35,6 +70,7 @@ header {
 @include media-breakpoint-up(lg) {
   header {
     nav {
+      height: 8.5rem;
       padding-top: 0 !important;
       padding-bottom: 0 !important;
 
@@ -92,6 +128,30 @@ header {
         .navbar-toggler {
           height: 32px;
           width: 32px;
+
+          .toggler-bar {
+            width: 30px;
+            height: 3px;
+          }
+
+          &.collapsed {
+            .toggler-bar {
+              width: 24px;
+
+              &:nth-child(3), &:nth-child(4) {
+                margin-top: 4px;
+              }
+            }
+          }
+        }
+      }
+
+      .navbar-nav {
+        .nav-link {
+          svg {
+            width: 24px;
+            height: 24px;
+          }
         }
       }
     }
@@ -101,6 +161,10 @@ header {
 @include media-breakpoint-down(md) {
   header {
     nav {
+      &> .container {
+        max-width: 100%;
+      }
+
       .navbar-header {
         width: 100%;
         padding: $spacer $spacer * 1.5;

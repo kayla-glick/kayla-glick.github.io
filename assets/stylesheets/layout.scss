@@ -89,6 +89,16 @@ a.faded {
 }
 
 @include media-breakpoint-up(xs) {
+  body {
+    padding-top: 6rem;
+
+    header {
+      nav {
+        height: 6rem;
+      }
+    }
+  }
+
   h1, .h1 {
     font-size: 48px;
     font-size: 4.8rem;
@@ -126,6 +136,16 @@ a.faded {
 }
 
 @include media-breakpoint-up(md) {
+  body {
+    padding-top: 10rem;
+
+    header {
+      nav {
+        height: 10rem;
+      }
+    }
+  }
+
   section {
     padding-top: 3rem;
     padding-bottom: 3rem;

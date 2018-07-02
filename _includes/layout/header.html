@@ -1,12 +1,16 @@
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark p-0">
-    <div class="container align-items-stretch">
-      <div class="navbar-header">
-        <a href="{{ site.baseurl }}/" class="navbar-brand">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-0">
+    <div class="container align-items-stretch h-100">
+      <div class="navbar-header container h-100">
+        <a href="{{ site.baseurl }}/" class="navbar-brand d-flex align-items-center h-100">
           <img src="{{ site.baseurl }}/assets/images/logo.png" id="siteLogo">
         </a>
         <div class="navbar-toggler-container d-flex align-items-center">
-          <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler collapsed d-flex flex-column align-items-center p-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="toggler-bar"></span>
+            <span class="toggler-bar"></span>
+            <span class="toggler-bar"></span>
           </button>
         </div>
       </div>
@@ -14,19 +18,19 @@
         <div class="navbar-nav">
           <a href="{{ site.baseurl }}/" class="nav-item nav-link text-white d-flex align-items-center position-relative {% if include.header == 'home' %}active{% endif %}">
             <i class="far fa-home"></i>
-            Home
+            HOME
           </a>
           <a href="{{ site.baseurl }}/portfolio" class="nav-item nav-link text-white d-flex align-items-center position-relative {% if include.header == 'portfolio' %}active{% endif %}">
             <i class="far fa-book"></i>
-            Portfolio
+            PORTFOLIO
           </a>
           <a href="{{ site.baseurl }}/blog" class="nav-item nav-link text-white d-flex align-items-center position-relative {% if include.header == 'blog' %}active{% endif %}">
             <i class="far fa-comment-alt"></i>
-            Blog
+            BLOG
           </a>
           <a href="{{ site.baseurl }}/resume" class="nav-item nav-link text-white d-flex align-items-center position-relative {% if include.header == 'resume' %}active{% endif %}">
             <i class="far fa-file-alt"></i>
-            Resumé
+            RESUMÉ
           </a>
         </div>
       </div>
