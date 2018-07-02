@@ -26,7 +26,7 @@ header {
           transition: 300ms ease-in-out;
 
           &:nth-child(2) {
-            top: 3px;
+            top: 6px;
             transform: rotate(45deg);
           }
 
@@ -35,7 +35,7 @@ header {
           }
 
           &:last-child {
-            top: -3px;
+            top: -6px;
             transform: rotate(-45deg);
           }
         }
@@ -132,11 +132,20 @@ header {
           .toggler-bar {
             width: 30px;
             height: 3px;
+
+            &:nth-child(2) {
+              top: 3px;
+            }
+
+            &:last-child {
+              top: -3px;
+            }
           }
 
           &.collapsed {
             .toggler-bar {
               width: 24px;
+              top: 0;
 
               &:nth-child(3), &:nth-child(4) {
                 margin-top: 4px;
