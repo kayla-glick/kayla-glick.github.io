@@ -1,14 +1,16 @@
 header {
   nav {
-    background: theme-color('dark');
+    background: white;
+    border-bottom: 1px solid #ddd;
 
     .navbar-header {
       .navbar-brand {
         margin-right: $spacer;
 
         #siteLogo {
+          border: 1px solid black;
           border-radius: 100%;
-          width: 64px;
+          height: 100%;
         }
       }
 
@@ -19,14 +21,14 @@ header {
 
         .toggler-bar {
           width: 60px;
-          height: 6px;
-          background-color: #fff;
+          height: 3px;
+          background-color: black;
           display: block;
           position: relative;
           transition: 300ms ease-in-out;
 
           &:nth-child(2) {
-            top: 6px;
+            top: 3px;
             transform: rotate(45deg);
           }
 
@@ -35,7 +37,7 @@ header {
           }
 
           &:last-child {
-            top: -6px;
+            top: -3px;
             transform: rotate(-45deg);
           }
         }
@@ -57,12 +59,29 @@ header {
 
     .navbar-nav {
       .nav-link {
+        color: theme-color('success') !important;
+
         svg {
           width: 32px;
           height: 32px;
           margin-right: $spacer * .5;
         }
       }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      box-shadow: 0 0 18px 0 rgba(0,0,0,.3);
+      transition: opacity 0.25s ease-in-out;
+    }
+
+    &.scroll::after {
+      opacity: 1;
     }
   }
 }
@@ -81,12 +100,8 @@ header {
 
       .navbar-nav {
         .nav-link {
-          padding-left: $spacer !important;
-          padding-right: $spacer !important;
-
-          &.active {
-            background: theme-color('success');
-          }
+          padding-left: $spacer * 2 !important;
+          padding-right: $spacer * 2 !important;
 
           &:before {
             content: "";
@@ -118,27 +133,20 @@ header {
   header {
     nav {
       .navbar-header {
-        .navbar-brand {
-          #siteLogo {
-            height: 32px;
-            width: 32px;
-          }
-        }
-
         .navbar-toggler {
           height: 32px;
           width: 32px;
 
           .toggler-bar {
             width: 30px;
-            height: 3px;
+            height: 1px;
 
             &:nth-child(2) {
-              top: 3px;
+              top: 1px;
             }
 
             &:last-child {
-              top: -3px;
+              top: -1px;
             }
           }
 
@@ -148,7 +156,7 @@ header {
               top: 0;
 
               &:nth-child(3), &:nth-child(4) {
-                margin-top: 4px;
+                margin-top: 6px;
               }
             }
           }
@@ -182,11 +190,13 @@ header {
       }
 
       .navbar-nav {
+        background: white;
+
         .nav-link {
-          background: theme-color-level('dark', -2);
-          justify-content: center;
           padding-top: 2rem;
           padding-bottom: 2rem;
+          border-bottom: 1px solid #ddd;
+          justify-content: center;
 
           &:nth-child(even) {
             svg {
@@ -196,8 +206,8 @@ header {
             }
           }
 
-          &:not(:last-child) {
-            border-bottom: 1px solid theme-color-level('dark', -4);
+          &:first-child {
+            border-top: 1px solid #ddd;
           }
         }
       }
