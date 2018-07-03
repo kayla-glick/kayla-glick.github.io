@@ -45,6 +45,19 @@ p, a, li, span {
   font-size: 1.8rem;
 }
 
+a {
+  color: theme-color('info');
+  transition: color .25s linear;
+
+  &.ignore-link {
+    color: inherit;
+  }
+
+  &:hover {
+    color: theme-color('primary');
+  }
+}
+
 ul {
   list-style: none;
 }
