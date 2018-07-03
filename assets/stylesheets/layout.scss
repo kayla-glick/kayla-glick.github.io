@@ -38,6 +38,8 @@ section {
 p {
   line-height: 2.8rem;
   margin-bottom: 2.5rem;
+  color: #6c757d !important;
+  font-weight: 300 !important;
 }
 
 p, a, li, span {
@@ -50,7 +52,7 @@ a {
   transition: color .25s linear;
 
   &.ignore-link {
-    color: inherit;
+    color: inherit !important;
   }
 
   &:hover {

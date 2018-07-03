@@ -1,9 +1,26 @@
 <section id="projectsSection" class="section-light">
   <div class="container">
     <div class="col-xl-2 col-lg-3 section-title">
-      <h6 class="text-success m-0">FEATURED PROJECTS</h6>
+      <h6 class="text-success m-0">PROJECTS</h6>
     </div>
     <div class="col-xl-10 col-lg-9 section-content">
+      {% for project in site.portfolio.projects %}
+        {% if project[1].featured == 'true' %}
+          <div class="row project">
+            <div class="col-md-9">
+              <a href="{{ project[1].url }}" target="_blank">
+                <img src="{{ site.baseurl }}/assets/images/portfolio/projects/{{ project[0] }}/cover.png" class="w-100">
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="{{ project[1].url }}" target="_blank" class="ignore-link">
+                <h6>{{ project[1].name }}</h6>
+              </a>
+              <p>{{ project[1].description }}</p>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </section>

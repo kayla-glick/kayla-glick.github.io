@@ -64,6 +64,16 @@
       }
     }
   }
+
+  #projectsSection {
+    .project {
+      &:not(:last-child) {
+        padding-bottom: $spacer * 5;
+        margin-bottom: $spacer * 5;
+        border-bottom: 1px solid #ddd;
+      }
+    }
+  }
 }
 
 @include media-breakpoint-up(sm) {
