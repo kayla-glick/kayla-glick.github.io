@@ -124,6 +124,9 @@
 
 @include media-breakpoint-up(lg) {
   #resumeContainer {
+    padding-left: $spacer * 1.5;
+    padding-right: $spacer * 1.5;
+
     #resumeHeader {
       #resumeTitle {
         padding-right: $spacer * 1.5;

@@ -12,6 +12,8 @@
 
     .subsection {
       .subsection-title {
+        border-bottom: 1px solid black;
+        padding-bottom: $spacer;
         text-align: center;
       }
     }
