@@ -12,6 +12,10 @@ html {
   body {
     opacity: 0;
     transition: 0.5s opacity ease-in-out;
+
+    .content {
+      padding-bottom: 203px;
+    }
   }
 }
 
@@ -237,6 +241,14 @@ a.faded {
   section {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  html {
+    body {
+      .content {
+        padding-bottom: 112px;
+      }
+    }
   }
 }
 
