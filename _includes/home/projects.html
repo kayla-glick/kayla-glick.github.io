@@ -9,7 +9,7 @@
           <div class="row project">
             <div class="col-md-9">
               <a href="{{ project[1].url }}" target="_blank">
-                <img src="{{ site.baseurl }}/assets/images/portfolio/projects/{{ project[0] }}/cover.png" class="w-100">
+                <img src="{{ site.baseurl }}/assets/images/portfolio/projects/{{ project[0] }}/cover.png" class="project-cover w-100">
               </a>
             </div>
             <div class="col-md-3">
@@ -17,10 +17,24 @@
                 <h6>{{ project[1].name }}</h6>
               </a>
               <p>{{ project[1].description }}</p>
+              <div class="d-flex flex-wrap tags">
+                {% for tag in project[1].tags %}
+                  <span class="border border-info rounded text-info px-3 py-1 mr-2 mb-2 tag">{{ tag }}</span>
+                {% endfor %}
+              </div>
             </div>
           </div>
         {% endif %}
       {% endfor %}
+    </div>
+    <div class="col-12 text-center mt-5">
+      <a href="{{ site.baseurl }}/portfolio" class="d-inline-block underline-link view-projects">
+        <h6 class="mb-0">
+          <i class="fas fa-arrow-right mr-2"></i>
+          View My Full Portfolio
+          <i class="fas fa-arrow-left ml-2"></i>
+        </h6>
+      </a>
     </div>
   </div>
 </section>

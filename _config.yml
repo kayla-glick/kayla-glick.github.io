@@ -33,18 +33,39 @@ portfolio:
       description: "Production target management and visualization website for Bosch designed by a team of College of Charleston students and built with Ruby on Rails."
       url: "https://github.com/kyle-glick/capstone-spring-2018-team-4"
       featured: "true"
+      tags:
+        - Rails
+        - Ruby
+        - JavaScript
+        - HTML
+        - CSS
+        - MySQL
     csci_362:
       name: "Canvas Test Framework"
       description: ""
       url: "https://github.com/kyle-glick/Don-t-Test-Me"
       featured: "false"
+      tags:
+        - Ruby
+        - Bash
     csci_360:
       name: "360Snoozin Clock"
       description: "Dual-Alarm AM/FM Radio Clock built with JavaFX for a Software Architecture and Design class."
       url: "https://github.com/kyle-glick/360Snoozin"
       featured: "true"
+      tags:
+        - JavaFX
+        - Java
+        - HTML
+        - CSS
     csci_332:
       name: "MovEDB"
       description: "Simple movie ticket and theater management website built with PHP for a Database Concepts class."
       url: "https://github.com/kyle-glick/csci-332"
       featured: "true"
+      tags:
+        - PHP
+        - JavaScript
+        - HTML
+        - CSS
+        - MySQL

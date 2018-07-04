@@ -29,6 +29,7 @@
 
       #intro {
         font-size: 3rem;
+        line-height: 5rem;
       }
     }
 
@@ -71,6 +72,12 @@
         padding-bottom: $spacer * 5;
         margin-bottom: $spacer * 5;
         border-bottom: 1px solid #ddd;
+      }
+
+      .tags {
+        .tag {
+          font-size: 1.2rem;
+        }
       }
     }
   }
@@ -207,6 +214,18 @@
           .subsection-title, .subsection-content {
             text-align: right;
           }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  #home {
+    #projectsSection {
+      .project {
+        .project-cover {
+          margin-bottom: $spacer * 5;
         }
       }
     }
