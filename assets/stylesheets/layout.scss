@@ -258,3 +258,15 @@ a.faded {
     padding-bottom: 6rem;
   }
 }
+
+@media print {
+  html {
+    body {
+      padding: 0;
+
+      .content {
+        padding: 0;
+      }
+    }
+  }
+}
