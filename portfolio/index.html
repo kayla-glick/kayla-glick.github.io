@@ -1,30 +1,16 @@
 ---
-layout: default
+layout: application
 ---
 
-<div class="page-header text-center">
-  <h1 class="page-title">Portfolio</h1>
-</div>
-<div class="col-sm-12">
-  {% for portfolio in site.portfolio %}
-    <a href="/portfolio/{{ portfolio[0] }}/" class="col-sm-12 p-0 portfolio-preview glowing-link">
-      <div class="media">
-        <div class="media-left col-sm-4 p-0">
-          <img class="media-object portfolio-logo" src="{{ portfolio[1]['logo'] }}" alt="{{ portfolio[1]['title'] }} Logo" style="width:100%;">
-        </div>
-        <div class="media-body container-fluid">
-          <h2 class="media-heading">
-            {{ portfolio[1]['title'] }}
-            <br>
-            <small class="text-orange">{{ portfolio[1]['date'] }}</small>
-            <br>
-            <small>{{ portfolio[1]['description'] }}</small>
-          </h2>
+<div id="portfolio">
+  <section class="main position-relative">
+    <div class="container">
+      <div class="col-12">
+        <div class="alert alert-danger">
+          <h3 class="text-center">Portfolio Under Construction</h3>
+          <h6 class="text-center">This portion of the website is still being upgraded! Thank you for your patience!</h6>
         </div>
       </div>
-    </a>
-    {% if forloop.last == false %}
-      <span class="col-sm-12 orange-divider"></span>
-    {% endif %}
-  {% endfor %}
+    </div>
+  </section>
 </div>

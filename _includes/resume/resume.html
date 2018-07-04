@@ -1,10 +1,9 @@
-<div class="resume-download-container hidden-print">
-  <h3 class="text-center">
-    <a href="{{site.baseurl}}/resume.pdf" target="_blank">Download PDF Version</a>
-  </h3>
-</div>
-<div class="resume-container col-xs-12 p-0">
+<div id="resumeContainer" class="w-100">
   {% include resume/header.html %}
-  {% include resume/resume_left.html %}
-  {% include resume/resume_right.html %}
+  {% include resume/skills.html %}
+  {% include resume/experience.html %}
+  <div class="d-flex flex-row flex-wrap">
+    {% include resume/education.html %}
+    {% include resume/honors.html %}
+  </div>
 </div>

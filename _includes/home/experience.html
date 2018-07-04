@@ -1,0 +1,36 @@
+<section id="experienceSection" class="section-dark">
+  <div class="container">
+    <div class="col-xl-2 col-lg-3 section-title">
+      <h6 class="text-success m-0">EXPERIENCE</h6>
+    </div>
+    <div class="col-xl-10 col-lg-9 section-content">
+      {% for employment in site.portfolio.experience %}
+        <div class="row employer">
+          <div class="col-3 col-md-2 employer-logo">
+            <img src="{{ site.baseurl }}/assets/images/portfolio/experience/{{ employment[0] }}/logo.png" id="{{ employment[0] }}Logo">
+          </div>
+          <div class="col-9 col-md-10 row pr-0">
+            <div class="col-md-8 employer-info">
+              <a href="{{ employment[1].website }}" target="_blank" class="ignore-link">
+                <h6 class="employer-name">{{ employment[1].employer }}</h6>
+              </a>
+              <p class="role">{{ employment[1].role }}</p>
+            </div>
+            <div class="col-md-4 dates-employed p-0">
+              <p>{{ employment[1].dates }}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="col-12 text-center mt-5">
+      <a href="{{ site.baseurl }}/resume" class="d-inline-block underline-link view-resume">
+        <h6 class="mb-0">
+          <i class="fas fa-arrow-right mr-2"></i>
+          View My Resume
+          <i class="fas fa-arrow-left ml-2"></i>
+        </h6>
+      </a>
+    </div>
+  </div>
+</section>

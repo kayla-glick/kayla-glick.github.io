@@ -1,23 +1,71 @@
+#################
+# Configuration #
+#################
+exclude: []
 future: false
 plugins:
+  - jekyll-coffeescript
   - jekyll-seo-tag
-title: "Kyle Glick | Full Stack Developer"
+sass:
+  load_paths:
+    - assets/stylesheets
+    - node_modules
+title: "Kyle Glick | Full-Stack Developer"
 
 per_page: 5
 
 portfolio:
-  sparcrequest:
-    title: "MUSC Biomedical Informatics Center - Student Intern"
-    description: "I worked as an intern at the Biomedical Informatics Center at the Medical University of South Carolina to maintain and develop for the SPARCRequest team, consisting of several applications dedicated to research management built with Ruby on Rails."
-    date: "Summer 2015 - Present"
-    logo: "/assets/images/sparcrequest/bmic_logo.png"
-  csci_362_blog:
-    title: "CSCI 362 Software Engineering - Blog"
-    description: "A blog for my CSCI 362 - Software Engineering class where I discuss various issues in Software Engineering and respond to homework questions from Ian Sommerville's <em>Software Engineering 10th Edition</em>."
-    date: "Fall 2017"
-    logo: "/assets/images/csci_362_blog/logo.jpg"
-  csci_360:
-    title: "CSCI 360 Software Architecture and Design - Alarm Clock"
-    description: "I worked with two other students to build a Dual-Alarm AM/FM Clock Radio application using JavaFX. We also drafted a report detailing the various steps of the design process."
-    date: "Spring 2017"
-    logo: "/assets/images/csci_360/logo.png"
+  experience:
+    musc:
+      employer: "Medical University of South Carolina"
+      website: "www.musc.edu"
+      role: "Full-Stack Developer"
+      dates: "June 2015 - Aug 2018"
+    bosch:
+      employer: "Bosch"
+      website: "https://www.bosch.com/"
+      role: "Full-Stack Developer, Scrum Master"
+      dates: "Jan - May 2018"
+
+  projects:
+    csci_462:
+      name: "Target Charts"
+      description: "Production target management and visualization website for Bosch designed by a team of College of Charleston students and built with Ruby on Rails."
+      url: "https://github.com/kyle-glick/capstone-spring-2018-team-4"
+      featured: "true"
+      tags:
+        - Rails
+        - Ruby
+        - JavaScript
+        - HTML
+        - CSS
+        - MySQL
+    csci_362:
+      name: "Canvas Test Framework"
+      description: ""
+      url: "https://github.com/kyle-glick/Don-t-Test-Me"
+      featured: "false"
+      tags:
+        - Ruby
+        - Bash
+    csci_360:
+      name: "360Snoozin Clock"
+      description: "Dual-Alarm AM/FM Radio Clock built with JavaFX for a Software Architecture and Design class."
+      url: "https://github.com/kyle-glick/360Snoozin"
+      featured: "true"
+      tags:
+        - JavaFX
+        - Java
+        - HTML
+        - CSS
+    csci_332:
+      name: "MovEDB"
+      description: "Simple movie ticket and theater management website built with PHP for a Database Concepts class."
+      url: "https://github.com/kyle-glick/csci-332"
+      featured: "true"
+      tags:
+        - PHP
+        - JavaScript
+        - HTML
+        - CSS
+        - MySQL

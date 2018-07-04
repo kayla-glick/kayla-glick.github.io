@@ -1,10 +1,11 @@
 ---
-layout: default
+layout: application
 ---
-<div class="page-header">
-  <h1 class="page-title text-center">Welcome to my personal website!</h1>
-</div>
 
-<h4>This was a project I started for my Software Engineering class, built using GitHub pages, Jekyll, and Liquid. It's still very much a work-in-progress. There's not a whole lot to it right now, but I'm currently upgrading it to Bootstrap 4 and overhauling the layout.</h4>
-<br />
-<h4>In the meantime, you can check out my Blog (located under "Portfolio") or view my HTML+CSS resume. Check back later once I've completed my revamp!</h4>
+<div id="home">
+  {% include home/greeting.html %}
+  {% include home/background.html %}
+  {% include home/skills.html %}
+  {% include home/experience.html %}
+  {% include home/projects.html %}
+</div>

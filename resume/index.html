@@ -1,7 +1,13 @@
 ---
-layout: default
+layout: application
 ---
-<div class="page-header text-center">
-  <h1 class="page-title">Resume</h1>
+
+<section class="main position-relative d-print-none">
+  <div class="container">
+    {% include resume/resume.html %}
+    <a href="{{ site.baseurl }}/resume.pdf" target="_blank" class="btn btn-block btn-outline-success mt-5">Download PDF</a>
+    </div>
+</section>
+<div class="d-none d-print-block">
+  {% include resume/resume.html %}
 </div>
-{% include resume/resume.html %}
