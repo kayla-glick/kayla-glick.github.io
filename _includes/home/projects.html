@@ -1,6 +1,6 @@
-<section id="projectsSection" class="section-light">
+<section id="projectsSection">
   <div class="container">
-    <div class="col-xl-2 col-lg-3 section-title">
+    <div class="col-xl-2 col-lg-3 section-title fade-in">
       <h6 class="text-success m-0">PROJECTS</h6>
     </div>
     <div class="col-xl-10 col-lg-9 section-content">
@@ -9,10 +9,10 @@
           <div class="row project">
             <div class="col-md-9">
               <a href="{{ project[1].url }}" target="_blank">
-                <img src="{{ site.baseurl }}/assets/images/portfolio/projects/{{ project[0] }}/cover.png" class="project-cover w-100">
+                <img src="{{ site.baseurl }}/assets/images/portfolio/projects/{{ project[0] }}/cover.png" class="project-cover w-100 fade-in delay-1">
               </a>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 fade-in delay-2">
               <a href="{{ project[1].url }}" target="_blank" class="ignore-link">
                 <h6>{{ project[1].name }}</h6>
               </a>
@@ -28,7 +28,7 @@
       {% endfor %}
     </div>
     <div class="col-12 text-center mt-5">
-      <a href="{{ site.baseurl }}/portfolio" class="d-inline-block underline-link view-projects">
+      <a href="{{ site.baseurl }}/portfolio" class="d-inline-block underline-link view-projects fade-in">
         <h6 class="mb-0">
           <i class="fas fa-arrow-right mr-2"></i>
           View My Full Portfolio

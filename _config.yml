@@ -18,7 +18,7 @@ portfolio:
   experience:
     musc:
       employer: "Medical University of South Carolina"
-      website: "www.musc.edu"
+      website: "https://www.musc.edu"
       role: "Full-Stack Developer"
       dates: "June 2015 - Aug 2018"
     bosch:
@@ -26,7 +26,6 @@ portfolio:
       website: "https://www.bosch.com/"
       role: "Full-Stack Developer, Scrum Master"
       dates: "Jan - May 2018"
-
   projects:
     csci_462:
       name: "Target Charts"

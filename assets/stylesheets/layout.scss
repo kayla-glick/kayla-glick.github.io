@@ -22,12 +22,12 @@ html {
 section {
   border-bottom: 1px solid #ddd;
 
-  &.section-light {
+  &:nth-child(odd) {
     background: white;
     box-shadow: inset 0px 30px 30px -30px rgba(0, 0, 0, 0.05);
   }
 
-  &.section-dark {
+  &:nth-child(even) {
     background: theme-color('light');
     box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
   }
@@ -125,10 +125,19 @@ a.faded {
   opacity: 0.25;
 }
 
-.dashing {
-  width: 30%;
-  margin: $spacer * 1.8 auto;
-  border-bottom: 8px solid theme-color('success');
+.fade-in {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+
+  &.show {
+    opacity: 1;
+  }
+}
+
+@for $i from 1 through 10 {
+  .delay-#{$i} {
+    transition-delay: $i * 0.15s !important;
+  }
 }
 
 @include media-breakpoint-up(xs) {
