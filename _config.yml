@@ -68,3 +68,8 @@ portfolio:
         - HTML
         - CSS
         - MySQL
+
+blog:
+  csci_362_blog:
+    name: "Software Engineering Blog"
+    description: "lorem ipsum test this stuff"

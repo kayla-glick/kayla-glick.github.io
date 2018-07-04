@@ -151,6 +151,15 @@ a.faded {
     }
   }
 
+  section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .header-container {
+      margin-bottom: 2rem;
+    }
+  }
+  
   h1, .h1 {
     font-size: 48px;
     font-size: 4.8rem;
@@ -180,11 +189,6 @@ a.faded {
     font-size: 18px;
     font-size: 1.8rem;
   }
-
-  section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
 }
 
 @include media-breakpoint-up(md) {
@@ -201,6 +205,10 @@ a.faded {
   section {
     padding-top: 3rem;
     padding-bottom: 3rem;
+
+    .header-container {
+      margin-bottom: 3rem;
+    }
   }
 
   h1, .h1 {
@@ -250,6 +258,10 @@ a.faded {
   section {
     padding-top: 4rem;
     padding-bottom: 4rem;
+
+    .header-container {
+      margin-bottom: 4rem;
+    }
   }
 
   html {
@@ -265,6 +277,10 @@ a.faded {
   section {
     padding-top: 6rem;
     padding-bottom: 6rem;
+
+    .header-container {
+      margin-bottom: 6rem;
+    }
   }
 }
 
