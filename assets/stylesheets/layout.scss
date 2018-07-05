@@ -140,6 +140,10 @@ a.faded {
   }
 }
 
+button {
+  outline: none !important;
+}
+
 @include media-breakpoint-up(xs) {
   body {
     padding-top: 6rem;
@@ -149,6 +153,11 @@ a.faded {
         height: 6rem;
       }
     }
+  }
+
+  section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   h1, .h1 {
@@ -179,11 +188,6 @@ a.faded {
   h6, .h6, .btn {
     font-size: 18px;
     font-size: 1.8rem;
-  }
-
-  section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 }
 
