@@ -1,0 +1,80 @@
+#blog {
+  .header-container, .blog-cover-container, .blog-info-container, .post-container {
+    padding: 0;
+  }
+
+  .blog-cover-container {
+    .blog {
+      overflow: hidden;
+
+      .blog-overlay {
+        opacity: 0;
+        transition: opacity 0.25s linear;
+      }
+
+      .fa-search-plus {
+        top: 22.5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        opacity: 0;
+        transition: all 0.25s linear;
+      }
+
+      .blog-info {
+        bottom: -50%;
+        opacity: 0;
+        transition: all 0.25s linear;
+      }
+
+      &:hover {
+        .blog-overlay {
+          opacity: 0.85;
+        }
+
+        .fa-search-plus {
+          top: 45%;
+          font-size: 4rem;
+          opacity: 1;
+        }
+
+        .blog-info {
+          bottom: 0;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .fa-ellipsis-h {
+    font-size: 8rem;
+  }
+
+  .post {
+    &:not(:last-child) {
+      border-bottom: 1px solid #dee2e6;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #blog {
+    .header-container, .blog-cover-container, .blog-info-container, .post-container {
+      padding: inherit;
+    }
+  }
+}
+
+@include media-breakpoint-only(md) {
+  #blog {
+    .blog-cover-container {
+      &:nth-child(even) {
+        padding-right: inherit;
+      }
+
+      &:nth-child(odd) {
+        padding-left: inherit;
+      }
+    }
+  }
+}

@@ -40,15 +40,35 @@ section {
 }
 
 p {
-  line-height: 2.8rem;
   margin-bottom: 2.5rem;
-  color: #6c757d !important;
+}
+
+p, li, td, figcaption {
+  line-height: 2.8rem;
   font-weight: 300 !important;
 }
 
-p, a, li, span {
+p, li, td, figcaption, small {
+  color: #6c757d !important;
+}
+
+p, a, li, th, td, span, figcaption {
   font-size: 18px;
   font-size: 1.8rem;
+}
+
+strong {
+  font-weight: 700;
+}
+
+blockquote {
+  padding: 0 2rem;
+  border-left: 0.5rem solid #dfe2e5;
+  color: #dfe2e5;
+
+  &> * {
+    color: #aaa !important;
+  }
 }
 
 a {
@@ -90,21 +110,33 @@ a {
 
 ul {
   list-style: none;
-}
 
-ul {
   &:not(.list-unstyled) {
-    padding-left: 20px;
-
-    li:before {
+    li::before {
       content: ">";
-      display: inline-block;
+      display: inline-table;
       width: 20px;
       height: 2rem;
       margin-left: -20px;
       text-align: center;
-      line-height: 1;
+      line-height: 2.5rem;
     }
+  }
+
+  li {
+    display: flex;
+  }
+}
+
+ul, ol {
+  &:not(.list-unstyled) {
+    padding-left: 20px;
+  }
+}
+
+ol {
+  li {
+    padding-left: 10px;
   }
 }
 
@@ -158,6 +190,10 @@ button {
   section {
     padding-top: 2rem;
     padding-bottom: 2rem;
+
+    .header-container {
+      margin-bottom: 2rem;
+    }
   }
 
   h1, .h1 {
@@ -205,6 +241,10 @@ button {
   section {
     padding-top: 3rem;
     padding-bottom: 3rem;
+
+    .header-container {
+      margin-bottom: 3rem;
+    }
   }
 
   h1, .h1 {
@@ -239,13 +279,16 @@ button {
 
   ul {
     &:not(.list-unstyled) {
-      padding-left: 40px;
-
-      li:before {
+      li::before {
         width: 40px;
         margin-left: -40px;
-        line-height: 1.5;
       }
+    }
+  }
+
+  ul, ol {
+    &:not(.list-unstyled) {
+      padding-left: 40px;
     }
   }
 }
@@ -254,6 +297,10 @@ button {
   section {
     padding-top: 4rem;
     padding-bottom: 4rem;
+
+    .header-container {
+      margin-bottom: 4rem;
+    }
   }
 
   html {
@@ -269,6 +316,10 @@ button {
   section {
     padding-top: 6rem;
     padding-bottom: 6rem;
+
+    .header-container {
+      margin-bottom: 6rem;
+    }
   }
 }
 

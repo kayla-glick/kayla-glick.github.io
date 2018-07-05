@@ -1,4 +1,4 @@
-footer {
+#footer {
   padding: 40px 5% 40px 5%;
   bottom: 0;
   background: theme-color-level('light', 0.25);
@@ -38,7 +38,7 @@ footer {
 }
 
 @include media-breakpoint-up(lg) {
-  footer {
+  #footer {
     #socialLinksContainer {
       #socialLinks {
         justify-content: flex-end;
@@ -48,7 +48,7 @@ footer {
 }
 
 @include media-breakpoint-down(md) {
-  footer {
+  #footer {
     .footer-content {
       justify-content: center;
       padding: 0;

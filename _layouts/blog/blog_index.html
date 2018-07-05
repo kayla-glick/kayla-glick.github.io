@@ -1,0 +1,24 @@
+---
+layout: blog/blog
+---
+
+<header>
+  <h3 class="text-center border-bottom pb-3 mb-5">Recent Posts</h3>
+</header>
+{% for post in site.categories[page.category] %}
+  <article class="col-12 p-0 mb-5 post">
+    <a href="{{ post.url }}">
+      <div class="col-12 p-0">
+        <h6>
+          {{ post.title }}
+          </br>
+          <small class="text-success">
+            <i class="fal fa-calendar-alt"></i>
+            <time>{{ post.date | date: "%A, %B %d, %Y" }}</time>
+          </small>
+        </h6>
+        <p>{{ post.description }}</p>
+      </div>
+    </a>
+  </article>
+{% endfor %}
