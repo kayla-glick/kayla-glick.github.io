@@ -172,6 +172,10 @@ a.faded {
   }
 }
 
+button {
+  outline: none !important;
+}
+
 @include media-breakpoint-up(xs) {
   body {
     padding-top: 6rem;
@@ -191,7 +195,7 @@ a.faded {
       margin-bottom: 2rem;
     }
   }
-  
+
   h1, .h1 {
     font-size: 48px;
     font-size: 4.8rem;
