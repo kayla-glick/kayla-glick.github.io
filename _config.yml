@@ -12,8 +12,6 @@ sass:
     - node_modules
 title: "Kyle Glick | Full-Stack Developer"
 
-per_page: 5
-
 portfolio:
   experience:
     musc:
@@ -72,4 +70,4 @@ portfolio:
 blog:
   csci_362_blog:
     name: "Software Engineering Blog"
-    description: "lorem ipsum test this stuff"
+    description: "A blog for my Software Engineering class at College of Charleston, taught by <a href='http://stono.cs.cofc.edu/~bowring/' target='_blank'>Dr. Jim Bowring</a>, where I discuss various topics related to software engineering through various readings and my textbook, <a href='http://iansommerville.com/software-engineering-book/' target='_blank'><em>Software Engineering 10th Edition</em></a> by Ian Sommerville."

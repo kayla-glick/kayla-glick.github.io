@@ -1,5 +1,9 @@
 #blog {
-  .blog-wrapper {
+  .header-container, .blog-cover-container, .blog-info-container, .post-container {
+    padding: 0;
+  }
+
+  .blog-container {
     .blog {
       overflow: hidden;
 
@@ -44,5 +48,33 @@
 
   .fa-ellipsis-h {
     font-size: 8rem;
+  }
+
+  .post {
+    &:not(:last-child) {
+      border-bottom: 1px solid #dee2e6;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #blog {
+    .header-container, .blog-cover-container, .blog-info-container, .post-container {
+      padding: inherit;
+    }
+  }
+}
+
+@include media-breakpoint-only(md) {
+  #blog {
+    .blog-cover-container {
+      &:nth-child(even) {
+        padding-right: inherit;
+      }
+
+      &:nth-child(odd) {
+        padding-left: inherit;
+      }
+    }
   }
 }

@@ -1,0 +1,56 @@
+---
+layout: blog/blog
+---
+
+<header class="border-bottom pb-3 mb-5">
+  <h3>{{ page.title }}</h3>
+  <h6>
+    <small class="text-success">
+      <i class="fal fa-calendar-alt"></i>
+      <time>{{ page.date | date: "%A, %B %d, %Y" }}</time>
+    </small>
+  </h6>
+  <p class="mb-0">{{ page.description }}</p>
+</header>
+<article>
+  {{ page.content }}
+</article>
+
+{% for post in site.categories[page.category] %}
+  {% if post.url == page.url %}
+    {% assign post_index0 = forloop.index0 %}
+    {% assign post_index1 = forloop.index %}
+  {% endif %}
+{% endfor %}
+
+{% for post in site.categories[page.category] %}
+  {% if post_index0 == forloop.index %}
+    {% assign next_post = post %}
+  {% endif %}
+  {% if post_index1 == forloop.index0 %}
+    {% assign prev_post = post %}
+  {% endif %}
+{% endfor %}
+
+{% if prev_post or next_post %}
+  <footer>
+    <div class="container p-0">
+      <div class="col-5 p-0">
+        {% if prev_post %}
+          <a href="{{ prev_post.url }}" class="underline-link">
+            <i class="fal fa-arrow-left"></i>
+            {{ prev_post.title }}
+          </a>
+        {% endif %}
+      </div>
+      <div class="col-5 offset-2 text-right p-0">
+        {% if next_post %}
+          <a href="{{ next_post.url }}" class="underline-link">
+            {{ next_post.title }}
+            <i class="fal fa-arrow-right"></i>
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </footer>
+{% endif %}
