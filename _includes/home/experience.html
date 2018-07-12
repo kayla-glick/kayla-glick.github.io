@@ -4,11 +4,11 @@
       <h6 class="text-success m-0">EXPERIENCE</h6>
     </div>
     <div class="col-xl-10 col-lg-9 section-content">
-      {% for employment in site.portfolio.experience %}
+      {% for employment in site.experience %}
         <div class="row employer fade-in delay-1">
           <div class="col-3 col-md-2 employer-logo">
             <a href="{{ employment[1].website }}" target="_blank">
-              <img src="{{ site.baseurl }}/assets/images/portfolio/experience/{{ employment[0] }}/logo.png" id="{{ employment[0] }}Logo">
+              <img src="{{ site.baseurl }}/assets/images/experience/{{ employment[0] }}/logo.png" id="{{ employment[0] }}Logo">
             </a>
           </div>
           <div class="col-9 col-md-10 row pr-0">

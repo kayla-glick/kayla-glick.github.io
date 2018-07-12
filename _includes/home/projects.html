@@ -4,24 +4,33 @@
       <h6 class="text-success m-0">PROJECTS</h6>
     </div>
     <div class="col-xl-10 col-lg-9 section-content">
-      {% for project in site.portfolio.projects %}
+      {% for project in site.portfolio %}
         {% if project[1].featured == 'true' %}
           <div class="row project">
             <div class="col-md-9">
-              <a href="{{ project[1].url }}" target="_blank">
-                <img src="{{ site.baseurl }}/assets/images/portfolio/projects/{{ project[0] }}/cover.png" class="project-cover w-100 fade-in delay-1">
+              <a href="{{ site.baseurl }}/portfolio/{{ project[0] }}">
+                <img src="{{ site.baseurl }}/assets/images/portfolio/{{ project[0] }}/preview.png" class="project-preview w-100 fade-in delay-1">
               </a>
             </div>
             <div class="col-md-3 fade-in delay-2">
-              <a href="{{ project[1].url }}" target="_blank" class="ignore-link">
-                <h6>{{ project[1].name }}</h6>
+              <a href="{{ site.baseurl }}/portfolio/{{ project[0] }}" class="ignore-link">
+                <h6 class="project-title">{{ project[1].name }}</h6>
               </a>
-              <p>{{ project[1].description }}</p>
-              <div class="d-flex flex-wrap tags">
+              <p class="mb-3 project-description">{{ project[1].description }}</p>
+              <div class="d-flex flex-wrap mb-3 tags">
                 {% for tag in project[1].tags %}
                   <span class="border border-info rounded text-info px-3 py-1 mr-2 mb-2 tag">{{ tag }}</span>
                 {% endfor %}
               </div>
+              <ul class="list-unstyled d-flex links">
+                {% for link in project[1].links %}
+                  <li>
+                    <a href="{{ link[1] }}" target="_blank" class="mr-3 brand-link {{ link[0] }}-link">
+                      <i class="fab fa-{{ link[0] }}"></i>
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
             </div>
           </div>
         {% endif %}

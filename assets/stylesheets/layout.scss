@@ -153,10 +153,6 @@ a.transition:hover {
   filter: brightness(50%);
 }
 
-a.faded {
-  opacity: 0.25;
-}
-
 .fade-in {
   opacity: 0;
   transition: all 0.5s ease-in-out;
@@ -174,6 +170,35 @@ a.faded {
 
 button {
   outline: none !important;
+}
+
+.brand-link {
+  transition: 0.25s opacity linear;
+
+  &.faded {
+    opacity: 0.25;
+  }
+
+  &.github-link {
+    color: black !important;
+  }
+
+  &.linkedin-link {
+    color: #0077b5 !important;
+  }
+
+  &.email-link {
+    color: #d14836 !important;
+  }
+
+  &.youtube-link {
+    color: #ff0000 !important;
+  }
+
+  svg {
+    height: 32px !important;
+    width: 32px !important;
+  }
 }
 
 @include media-breakpoint-up(xs) {

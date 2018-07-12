@@ -79,6 +79,13 @@
           font-size: 1.2rem;
         }
       }
+
+      .links {
+        svg {
+          width: 32px;
+          height: 32px;
+        }
+      }
     }
   }
 }
@@ -224,7 +231,7 @@
   #home {
     #projectsSection {
       .project {
-        .project-cover {
+        .project-preview {
           margin-bottom: $spacer * 5;
         }
       }

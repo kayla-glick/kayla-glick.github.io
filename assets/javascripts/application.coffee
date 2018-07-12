@@ -2,10 +2,10 @@
 ---
 
 $ ->
-  $(document).on('mouseover', 'footer #socialLinks a', ->
-    $('footer #socialLinks a').not(this).addClass('faded')
-  ).on('mouseout', 'footer #socialLinks a', ->
-    $('footer #socialLinks a').not(this).removeClass('faded')
+  $(document).on('mouseover', '.brand-link', ->
+    $(this).parents('ul').find('.brand-link').not(this).addClass('faded')
+  ).on('mouseout', '.brand-link', ->
+    $(this).parents('ul').find('.brand-link').not(this).removeClass('faded')
   )
 
   if $(window).scrollTop() > 0
