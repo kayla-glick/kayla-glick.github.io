@@ -9,9 +9,11 @@ layout: application
     <div class="container">
       <div class="col-lg-4 blog-info-container">
         <aside class="card mb-5">
-          <img src="{{ site.baseurl }}/assets/images/blog/{{ page.category }}/cover.png" class="card-img-top w-100">
+          <a href="{{ site.baseurl }}/blog/{{ page.category }}">
+            <img src="{{ site.baseurl }}/assets/images/blog/{{ page.category }}/cover.png" class="card-img-top w-100">
+          </a>
           <div class="card-body">
-            <a href="{{ site.baseurl }}/blog/{{ page.category }}">
+            <a href="{{ site.baseurl }}/blog/{{ page.category }}" class="ignore-link">
               <h6 class="card-title mb-0">
                 {{ blog.name }}
               </h6>
