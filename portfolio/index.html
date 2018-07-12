@@ -3,14 +3,18 @@ layout: application
 ---
 
 <div id="portfolio">
-  <section class="main position-relative">
+  <section class="main border-0">
     <div class="container">
-      <div class="col-12">
-        <div class="alert alert-danger">
-          <h3 class="text-center">Portfolio Under Construction</h3>
-          <h6 class="text-center">This portion of the website is still being upgraded! Thank you for your patience!</h6>
-        </div>
+      <div class="col-12 header-container">
+        <h3 class="text-center m-0 header">My Portfolio</h3>
       </div>
-    </div>
+      <ul class="col-12 d-flex flex-row flex-wrap p-0">
+        {% for project in site.portfolio %}
+          {% assign id=project[0] %}
+          {% assign name=project[1].name %}
+          {% include shared/cover.html id=id name=name klass='portfolio' %}
+        {% endfor %}
+      </ul>
+    </div
   </section>
 </div>
