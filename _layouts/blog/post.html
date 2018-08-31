@@ -37,7 +37,7 @@ layout: blog/blog
     <div class="container p-0">
       <div class="col-5 p-0">
         {% if prev_post %}
-          <a href="{{ prev_post.url }}" class="underline-link">
+          <a href="{{ prev_post.url }}">
             <i class="fal fa-arrow-left"></i>
             {{ prev_post.title }}
           </a>
@@ -45,7 +45,7 @@ layout: blog/blog
       </div>
       <div class="col-5 offset-2 text-right p-0">
         {% if next_post %}
-          <a href="{{ next_post.url }}" class="underline-link">
+          <a href="{{ next_post.url }}">
             {{ next_post.title }}
             <i class="fal fa-arrow-right"></i>
           </a>

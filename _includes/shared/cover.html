@@ -1,5 +1,5 @@
-<div class="{% if include.klass == 'blog' %}col-xl-4 {% endif %}col-md-6 {{ include.klass }}-cover-container cover-container mb-5 fade-in">
-  <div class="card {{ include.klass }}">
+<div class="{% if include.klass == 'blog' %}col-xl-4 {% endif %}col-md-6 {{ include.klass }}-cover-container cover-container mb-5">
+  <div class="card fade-in {{ include.klass }}">
     <a href="{{ site.baseurl }}/{{ include.klass }}/{{ include.id }}" class="d-flex">
       <img src="{{ site.baseurl }}/assets/images/{{ include.klass }}/{{ include.id }}/cover.png" class="w-100 {{ include.klass }}-cover cover">
       <div class="position-absolute w-100 h-100 bg-dark {{ include.klass }}-overlay cover-overlay"></div>

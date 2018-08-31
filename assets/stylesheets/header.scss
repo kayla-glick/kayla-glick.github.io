@@ -60,7 +60,7 @@ header {
       .nav-link {
         color: theme-color('success') !important;
 
-        &:before {
+        &::before {
           height: 8px;
           bottom: 0px;
           background: theme-color('success');
