@@ -14,15 +14,23 @@ title: "Kyle Glick | Full-Stack Developer"
 
 experience:
   musc:
-    employer: "Medical University of South Carolina"
+    employer: "Medical University of SC"
     website: "https://www.musc.edu"
     role: "Full-Stack Developer"
-    dates: "June 2015 - Aug 2018"
+    dates: "June 2015 - Current"
+    location: "Charleston, SC / Remote"
+    tasks:
+      - "Collaborated with small team of developers to build open-source Ruby on Rails applications used in conducting clinical research studies."
+      - "Helped design and coordinate several new modules for existing applications."
   bosch:
     employer: "Bosch"
     website: "https://www.bosch.com/"
     role: "Full-Stack Developer, Scrum Master"
     dates: "Jan - May 2018"
+    location: "Charleston, SC"
+    tasks:
+      - "Collaborated with small team of students and Bosch employees to design a Ruby on Rails application for managing production targets."
+      - "Alternated roles as Scrum Master to plan sprints and manage team progress."
 
 portfolio:
   csci_462:
