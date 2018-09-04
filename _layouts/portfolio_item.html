@@ -1,0 +1,15 @@
+---
+layout: application
+---
+
+{% assign item = site.portfolio[page.category] %}
+<div id="portfolio">
+  <section class="main border-0">
+    <div class="container">
+      <div class="alert alert-danger w-100">
+        <h3 class="text-center">This page is still under development.<br>Please check back later!</h3>
+      </div>
+      {{ content }}
+    </div>
+  </section>
+</div>
