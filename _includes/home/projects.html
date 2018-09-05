@@ -7,13 +7,13 @@
       {% for project in site.portfolio %}
         {% if project[1].featured == 'true' %}
           <div class="row project">
-            <div class="col-md-9">
+            <div class="col-md-9 fade-in delay-1">
               <a href="{{ site.baseurl }}/portfolio/{{ project[0] }}">
-                <img src="{{ site.baseurl }}/assets/images/portfolio/{{ project[0] }}/preview.png" class="project-preview w-100 fade-in delay-1">
+                <img src="{{ site.baseurl }}/assets/images/portfolio/{{ project[0] }}/preview.png" class="w-100 project-preview hover-img">
               </a>
             </div>
             <div class="col-md-3 fade-in delay-2">
-              <a href="{{ site.baseurl }}/portfolio/{{ project[0] }}" class="ignore-link">
+              <a href="{{ site.baseurl }}/portfolio/{{ project[0] }}">
                 <h6 class="project-title">{{ project[1].name }}</h6>
               </a>
               <p class="mb-3 project-description">{{ project[1].description }}</p>

@@ -7,7 +7,7 @@
 
     .cover-overlay {
       opacity: 0;
-      transition: opacity 0.25s linear;
+      transition: opacity 0.25s ease-in-out;
     }
 
     .fa-search-plus {
@@ -16,13 +16,13 @@
       right: 0;
       margin: auto;
       opacity: 0;
-      transition: all 0.25s linear;
+      transition: all 0.25s ease-in-out;
     }
 
     .cover-info {
       bottom: -50%;
       opacity: 0;
-      transition: all 0.25s linear;
+      transition: all 0.25s ease-in-out;
     }
 
     &:hover {
@@ -40,6 +40,15 @@
         bottom: 0;
         opacity: 1;
       }
+
+      img {
+        transform: scale(1.1);
+      }
+    }
+
+    img {
+      transition: all 0.25s ease-in-out;
+      transform: scale(1);
     }
   }
 }

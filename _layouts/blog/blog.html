@@ -9,11 +9,13 @@ layout: application
     <div class="container">
       <div class="col-lg-4 blog-info-container">
         <aside class="card mb-5">
-          <a href="{{ site.baseurl }}/blog/{{ page.category }}">
-            <img src="{{ site.baseurl }}/assets/images/blog/{{ page.category }}/cover.png" class="card-img-top w-100">
-          </a>
+          <div class="hide-overflow">
+            <a href="{{ site.baseurl }}/blog/{{ page.category }}">
+              <img src="{{ site.baseurl }}/assets/images/blog/{{ page.category }}/cover.png" class="card-img-top w-100 hover-img">
+            </a>
+          </div>
           <div class="card-body">
-            <a href="{{ site.baseurl }}/blog/{{ page.category }}" class="ignore-link">
+            <a href="{{ site.baseurl }}/blog/{{ page.category }}">
               <h6 class="card-title mb-0">
                 {{ blog.name }}
               </h6>

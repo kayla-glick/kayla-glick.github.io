@@ -73,7 +73,7 @@ blockquote {
 
 a {
   color: theme-color('info');
-  transition: color 0.3s ease-in-out;
+  transition: color 0.25s linear;
 
   &:hover {
     color: theme-color('primary');
@@ -98,8 +98,8 @@ a {
       visibility: hidden;
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
-      -webkit-transition: all 0.3s ease-in-out 0s;
-      transition: all 0.3s ease-in-out 0s;
+      -webkit-transition: all 0.25s ease-in-out 0s;
+      transition: all 0.25s ease-in-out 0s;
     }
 
     &:hover::before {
@@ -148,11 +148,11 @@ a {
 }
 
 a.transition {
-  transition: 0.25s filter linear;
-}
+  transition: 0.25s filter ease-in-out;
 
-a.transition:hover {
-  filter: brightness(50%);
+  &:hover {
+    filter: brightness(50%);
+  }
 }
 
 .fade-in {
@@ -175,7 +175,7 @@ button {
 }
 
 .brand-link {
-  transition: 0.25s opacity linear;
+  transition: 0.25s opacity ease-in-out;
 
   &.faded {
     opacity: 0.25;
@@ -201,6 +201,19 @@ button {
     height: 32px !important;
     width: 32px !important;
   }
+}
+
+.hover-img {
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    filter: brightness(95%);
+    transform: scale(1.05);
+  }
+}
+
+.hide-overflow {
+  overflow: hidden;
 }
 
 @include media-breakpoint-up(xs) {
