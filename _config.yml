@@ -35,7 +35,7 @@ experience:
 portfolio:
   csci_462:
     name: "Target Charts"
-    description: "Production target management and visualization website for Bosch designed by a team of College of Charleston students and built with Ruby on Rails."
+    description: "A business target management and visualization tool built by students in collaboration with Bosch."
     featured: "true"
     tags:
       - Rails
@@ -45,7 +45,7 @@ portfolio:
       - CSS
       - MySQL
     links:
-      github: "https://github.com/kyle-glick/capstone-spring-2018-team-4"
+      github: "https://github.com/Anderson-Lab/capstone-spring-2018-team-4"
       youtube: "https://www.youtube.com/watch?v=ShAVnZbSqfY&feature=youtu.be"
   csci_362:
     name: "Canvas Test Framework"
@@ -58,7 +58,7 @@ portfolio:
       github: "https://github.com/kyle-glick/Don-t-Test-Me"
   csci_360:
     name: "360Snoozin Clock"
-    description: "Dual-Alarm AM/FM Radio Clock built with JavaFX for a Software Architecture and Design class."
+    description: "A dual-alarm AM/FM radio clock built with JavaFX for a Software Architecture and Design class."
     featured: "true"
     tags:
       - JavaFX
@@ -69,7 +69,7 @@ portfolio:
       github: "https://github.com/kyle-glick/360Snoozin"
   csci_332:
     name: "MovEDB"
-    description: "Simple movie ticket and theater management website built with PHP for a Database Concepts class."
+    description: "A simple movie ticket and theater management website built with PHP for a Database Concepts class."
     featured: "true"
     tags:
       - PHP

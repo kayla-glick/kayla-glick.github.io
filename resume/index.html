@@ -5,8 +5,16 @@ layout: application
 <section class="main position-relative d-print-none">
   <div class="container">
     {% include resume/resume.html %}
-    <a href="{{ site.baseurl }}/resume.pdf" target="_blank" class="btn btn-block btn-outline-success mt-5">Download PDF</a>
+    <div class="col-12 text-center mt-5">
+      <a href="{{ site.baseurl }}/resume.pdf" target="_blank">
+        <h6 class="mb-0">
+          <i class="fas fa-arrow-right mr-2"></i>
+          Download a PDF
+          <i class="fas fa-arrow-left ml-2"></i>
+        </h6>
+      </a>
     </div>
+  </div>
 </section>
 <div class="d-none d-print-block">
   {% include resume/resume.html %}
