@@ -1,19 +1,27 @@
 <div id="skills" class="d-flex flex-row flex-wrap">
-  <h2 class="w-100 text-success mb-4">Skills</h2>
+  <h2 class="w-100 text-success mb-2">Skills</h2>
   <div class="skills-section col-12 col-lg-6">
-    <h4 class="section-header font-weight-bold">Languages</h4>
-    <h6 class="font-weight-light mb-4">Ruby, JavaScript (ES6), TypeScript, HTML5, CSS3, SASS, SQL, Java</h6>
+    <h4 class="resume-section-header font-weight-bold mb-3">Languages</h4>
+    <h6 class="font-weight-light text mb-3">
+      {{ site.skills.languages | join: ', ' }}
+    </h6>
   </div>
   <div class="skills-section col-12 col-lg-6">
-    <h4 class="section-header font-weight-bold">Frameworks</h4>
-    <h6 class="font-weight-light mb-4">Ruby on Rails, jQuery, Jekyll, Liquid, Handlebars, Bootstrap</h6>
+    <h4 class="resume-section-header font-weight-bold mb-3">Frameworks</h4>
+    <h6 class="font-weight-light text mb-3">
+      {{ site.skills.frameworks | join: ', ' }}
+    </h6>
   </div>
   <div class="skills-section col-12 col-lg-6">
-    <h4 class="section-header font-weight-bold">Tools &amp; Utilities</h4>
-    <h6 class="font-weight-light mb-5">Git, GitHub, Pivotal Tracker, ZenHub, MySQL, AWS, UML</h6>
+    <h4 class="resume-section-header font-weight-bold mb-3">Tools &amp; Utilities</h4>
+    <h6 class="font-weight-light text">
+      {{ site.skills.utilities | join: ', ' }}
+    </h6>
   </div>
   <div class="skills-section col-12 col-lg-6">
-    <h4 class="section-header font-weight-bold">Methodologies &amp; Design</h4>
-    <h6 class="font-weight-light mb-5">Scrum, Agile, REST, Test-Driven-Development, Continuous-Integration</h6>
+    <h4 class="resume-section-header font-weight-bold mb-3">Methodologies &amp; Design</h4>
+    <h6 class="font-weight-light text">
+      {{ site.skills.methodologies | join: ', ' }}
+    </h6>
   </div>
 </div>

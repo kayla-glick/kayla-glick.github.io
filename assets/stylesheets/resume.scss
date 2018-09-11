@@ -36,7 +36,7 @@
     }
   }
 
-  .section-header {
+  .resume-section-header {
     span {
       font-size: inherit;
     }
@@ -79,6 +79,10 @@
   #honors {
     li {
       margin-bottom: $spacer * 2;
+
+      .honor-date {
+        color: black;
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 <section id="projectsSection">
   <div class="container">
-    <div class="col-xl-2 col-lg-3 section-title fade-in">
+    <div class="col-xl-2 col-lg-3 section-header fade-in">
       <h6 class="text-success m-0">PROJECTS</h6>
     </div>
     <div class="col-xl-10 col-lg-9 section-content">
@@ -26,7 +26,7 @@
                 {% for link in project[1].links %}
                   <li>
                     <a href="{{ link[1] }}" target="_blank" class="mr-3 brand-link {{ link[0] }}-link">
-                      <i class="fab fa-{{ link[0] }}"></i>
+                      <i class="fab fa-{{ link[0] }} hover-img"></i>
                     </a>
                   </li>
                 {% endfor %}

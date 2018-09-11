@@ -6,6 +6,7 @@
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 
     .cover-overlay {
+      top: 0;
       opacity: 0;
       transition: opacity 0.25s ease-in-out;
     }

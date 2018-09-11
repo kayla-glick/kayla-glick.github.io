@@ -1,35 +1,9 @@
 #home {
-  section {
-    .section-title {
-      padding: 0;
-      margin-bottom: $spacer * 2.5;
-      text-align: center;
-    }
-
-    .section-content {
-      padding: 0;
-    }
-
-    .subsection {
-      .subsection-title {
-        border-bottom: 1px solid black;
-        padding-bottom: $spacer;
-        text-align: center;
-      }
-    }
-  }
-
   section.main {
-    #greetingContainer {
-      text-align: center;
-
-      #name span {
-        font-size: 6rem;
-      }
-
-      #intro {
-        font-size: 3rem;
-        line-height: 5rem;
+    .social-links {
+      svg {
+        height: calc(var(--icon-size) + 16px) !important;
+        width: calc(var(--icon-size) + 16px) !important;
       }
     }
 
@@ -59,10 +33,6 @@
 
     .employer-info {
       padding: 0;
-
-      .role {
-        margin-bottom: $spacer * .5;
-      }
     }
   }
 
@@ -90,17 +60,27 @@
   }
 }
 
+@include media-breakpoint-up(xs) {
+  #home {
+    #experienceSection {
+      .role {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
 @include media-breakpoint-up(sm) {
   #home {
     #experienceSection {
       .employer-logo {
         img {
           &#muscLogo {
-            top: -2.25rem;
+            top: -2rem;
           }
 
           &#boschLogo {
-            top: -1.75rem;
+            top: -1.5rem;
           }
         }
       }
@@ -110,22 +90,6 @@
 
 @include media-breakpoint-up(md) {
   #home {
-    section {
-      .subsection {
-        .subsection-title {
-          text-align: left;
-        }
-      }
-    }
-
-    section.main {
-      #greetingContainer {
-        #name span {
-          font-size: 9rem;
-        }
-      }
-    }
-
     #experienceSection {
       .employer-logo {
         padding-right: 0;
@@ -144,34 +108,13 @@
       .employer-info {
         padding: inherit;
       }
-
-      .dates-employed {
-        text-align: right;
-      }
     }
   }
 }
 
 @include media-breakpoint-up(lg) {
   #home {
-    section {
-      .section-title {
-        padding: inherit;
-        margin-bottom: 0;
-        text-align: left;
-      }
-
-      .section-content {
-        padding: inherit;
-      }
-    }
-
     section.main {
-      #greetingContainer {
-        justify-content: center;
-        text-align: left;
-      }
-
       #greetingImageContainer {
         margin-left: percentage(1/12);
 
@@ -185,18 +128,6 @@
 
 @include media-breakpoint-up(xl) {
   #home {
-    section.main {
-      #greetingContainer {
-        #name span {
-          font-size: 10rem;
-        }
-
-        #intro {
-          font-size: 3.6rem;
-        }
-      }
-    }
-
     #experienceSection {
       .employer-logo {
         img {
@@ -206,20 +137,6 @@
 
           &#boschLogo {
             top: -2rem;
-          }
-        }
-      }
-    }
-  }
-}
-
-@include media-breakpoint-only(md) {
-  #home {
-    #skillsSection {
-      .subsection {
-        &:nth-child(3), &:nth-child(4) {
-          .subsection-title, .subsection-content {
-            text-align: right;
           }
         }
       }

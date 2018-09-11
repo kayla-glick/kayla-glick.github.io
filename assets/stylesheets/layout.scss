@@ -10,75 +10,17 @@ html {
   }
 
   body {
+    padding-top: var(--navbar-height);
     opacity: 0;
     transition: 0.5s opacity ease-in-out;
 
     .content {
-      padding-bottom: 203px;
+      padding-bottom: var(--footer-height);
     }
   }
 }
 
-section {
-  border-bottom: 1px solid #ddd;
-
-  &:nth-child(odd) {
-    background: white;
-    box-shadow: inset 0px 30px 30px -30px rgba(0, 0, 0, 0.05);
-  }
-
-  &:nth-child(even) {
-    background: theme-color('light');
-    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
-  }
-
-  .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
-p {
-  margin-bottom: 2.5rem;
-}
-
-p, li, td, figcaption {
-  line-height: 2.8rem;
-  font-weight: 300 !important;
-}
-
-p, li, td, figcaption, small {
-  color: #6c757d !important;
-}
-
-p, a, li, th, td, span, figcaption {
-  font-size: 18px;
-  font-size: 1.8rem;
-}
-
-strong {
-  font-weight: 700;
-}
-
-blockquote {
-  padding: 0 2rem;
-  border-left: 0.5rem solid #dfe2e5;
-  color: #dfe2e5;
-
-  &> * {
-    color: #aaa !important;
-  }
-}
-
 a {
-  color: theme-color('info');
-  transition: color 0.25s linear;
-
-  &:hover {
-    color: theme-color('primary');
-  }
-
   &.ignore-link {
     color: inherit !important;
   }
@@ -110,43 +52,6 @@ a {
   }
 }
 
-ul {
-  list-style: none;
-
-  &:not(.list-unstyled) {
-    li::before {
-      content: ">";
-      display: inline-table;
-      width: 20px;
-      height: 2rem;
-      margin-left: -20px;
-      text-align: center;
-      line-height: 2.5rem;
-    }
-  }
-
-  li {
-    display: flex;
-  }
-}
-
-ul, ol {
-  &:not(.list-unstyled) {
-    padding-left: 20px;
-  }
-}
-
-ol {
-  li {
-    padding-left: 10px;
-  }
-}
-
-a {
-  text-decoration: none !important;
-  outline: 0 !important;
-}
-
 a.transition {
   transition: 0.25s filter ease-in-out;
 
@@ -170,8 +75,8 @@ a.transition {
   }
 }
 
-button {
-  outline: none !important;
+.social-links {
+  justify-content: space-around;
 }
 
 .brand-link {
@@ -216,150 +121,38 @@ button {
   overflow: hidden;
 }
 
+.text {
+  color: $text-color;
+}
+
 @include media-breakpoint-up(xs) {
-  body {
-    padding-top: 6rem;
-
-    header {
-      nav {
-        height: 6rem;
-      }
-    }
+  .title {
+    margin-bottom: $spacer * 1.5;
   }
 
-  section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-
-    .header-container {
-      margin-bottom: 2rem;
-    }
+  .title, .title > * {
+    font-size: 6rem;
   }
 
-  h1, .h1 {
-    font-size: 48px;
-    font-size: 4.8rem;
-  }
-
-  h2, .h2 {
-    font-size: 36px;
-    font-size: 3.6rem;
-  }
-
-  h3, .h3 {
-    font-size: 28px;
-    font-size: 2.8rem;
-  }
-
-  h4, .h4 {
-    font-size: 24px;
-    font-size: 2.4rem;
-  }
-
-  h5, .h5 {
-    font-size: 20px;
-    font-size: 2rem;
-  }
-
-  h6, .h6, .btn {
-    font-size: 18px;
-    font-size: 1.8rem;
+  .subtitle, .subtitle > * {
+    font-size: 3rem;
+    line-height: 5rem;
   }
 }
 
 @include media-breakpoint-up(md) {
-  body {
-    padding-top: 10rem;
-
-    header {
-      nav {
-        height: 10rem;
-      }
-    }
-  }
-
-  section {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-
-    .header-container {
-      margin-bottom: 3rem;
-    }
-  }
-
-  h1, .h1 {
-    font-size: 70px;
-    font-size: 7rem;
-  }
-
-  h2, .h2 {
-    font-size: 52.5px;
-    font-size: 5.25rem;
-  }
-
-  h3, .h3 {
-    font-size: 41px;
-    font-size: 4.1rem;
-  }
-
-  h4, .h4 {
-    font-size: 35px;
-    font-size: 3.5rem;
-  }
-
-  h5, .h5 {
-    font-size: 29px;
-    font-size: 2.9rem;
-  }
-
-  h6, .h6, .btn {
-    font-size: 23.5px;
-    font-size: 2.35rem;
-  }
-
-  ul {
-    &:not(.list-unstyled) {
-      li::before {
-        width: 40px;
-        margin-left: -40px;
-      }
-    }
-  }
-
-  ul, ol {
-    &:not(.list-unstyled) {
-      padding-left: 40px;
-    }
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  section {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-
-    .header-container {
-      margin-bottom: 4rem;
-    }
-  }
-
-  html {
-    body {
-      .content {
-        padding-bottom: 112px;
-      }
-    }
+  .title, .title > * {
+    font-size: 9rem;
   }
 }
 
 @include media-breakpoint-up(xl) {
-  section {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+  .title, .title > * {
+    font-size: 10rem;
+  }
 
-    .header-container {
-      margin-bottom: 6rem;
-    }
+  .subtitle, .subtitle > * {
+    font-size: 3.6rem;
   }
 }
 
@@ -367,10 +160,6 @@ button {
   html {
     body {
       padding: 0;
-
-      .content {
-        padding: 0;
-      }
     }
   }
 }

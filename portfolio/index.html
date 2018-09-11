@@ -5,16 +5,16 @@ layout: application
 <div id="portfolio">
   <section class="main border-0">
     <div class="container">
-      <div class="col-12 header-container">
-        <h3 class="text-center m-0 header">My Portfolio</h3>
+      <div class="col-12 section-header">
+        <h3 class="text-center m-0">My Portfolio</h3>
       </div>
-      <ul class="col-12 d-flex flex-row flex-wrap p-0">
+      <div class="col-12 d-flex flex-row flex-wrap section-content">
         {% for project in site.portfolio %}
           {% assign id=project[0] %}
           {% assign name=project[1].name %}
           {% include shared/cover.html id=id name=name klass='portfolio' %}
         {% endfor %}
-      </ul>
+      </div>
     </div
   </section>
 </div>

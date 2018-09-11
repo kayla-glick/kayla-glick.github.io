@@ -12,16 +12,45 @@ sass:
     - node_modules
 title: "Kyle Glick | Full-Stack Developer"
 
+skills:
+  languages:
+    - Ruby
+    - JavaScript (ES6)
+    - TypeScript
+    - HTML5
+    - CSS/SASS
+    - SQL
+  frameworks:
+    - Ruby on Rails
+    - ReactJS
+    - Node.js
+    - AJAX
+    - jQuery
+    - Bootstrap
+  utilities:
+    - Git (GitHub)
+    - Pivotal Tracker
+    - Zenhub
+    - MySQL
+    - Travis CI
+    - AWS
+  methodologies:
+    - Scrum / Agile
+    - RESTFul Architecture
+    - Test-Driven Development
+    - Continuous Integration
+
 experience:
   musc:
     employer: "Medical University of SC"
     website: "https://www.musc.edu"
     role: "Full-Stack Developer"
-    dates: "June 2015 - Current"
+    dates: "June 2015 - Present"
     location: "Charleston, SC / Remote"
     tasks:
-      - "Collaborated with small team of developers to build open-source Ruby on Rails applications used in conducting clinical research studies."
-      - "Helped design and coordinate several new modules for existing applications."
+      - "Collaborated with a team of developers and from various institutions to build complex open-source Ruby on Rails web applications used to manage costs and services for clinical research studies."
+      - "Interfaced with systems analysts to write and test new functionality and fix bugs in short scrum sprints."
+      - "Drafted and built major new modules and lead modernization of existing portions of applications."
   bosch:
     employer: "Bosch"
     website: "https://www.bosch.com/"
@@ -29,13 +58,13 @@ experience:
     dates: "Jan - May 2018"
     location: "Charleston, SC"
     tasks:
-      - "Collaborated with small team of students and Bosch employees to design a Ruby on Rails application for managing production targets."
+      - "Collaborated with a small team of CofC students and Bosch employees to design a Ruby on Rails application for managing production targets."
       - "Alternated roles as Scrum Master to plan sprints and manage team progress."
 
 portfolio:
   csci_462:
     name: "Target Charts"
-    description: "A business target management and visualization tool built by students in collaboration with Bosch."
+    description: "A business target management and visualization tool built by students in collaboration with Bosch Charleston."
     featured: "true"
     tags:
       - Rails
@@ -48,8 +77,8 @@ portfolio:
       github: "https://github.com/Anderson-Lab/capstone-spring-2018-team-4"
       youtube: "https://www.youtube.com/watch?v=ShAVnZbSqfY&feature=youtu.be"
   csci_362:
-    name: "Canvas Test Framework"
-    description: ""
+    name: "Testing Canvas"
+    description: "An automated test suite built around the Canvas LMS source code for a Software Engineering class."
     featured: "false"
     tags:
       - Ruby
@@ -57,7 +86,7 @@ portfolio:
     links:
       github: "https://github.com/kyle-glick/Don-t-Test-Me"
   csci_360:
-    name: "360Snoozin Clock"
+    name: "360Snoozin"
     description: "A dual-alarm AM/FM radio clock built with JavaFX for a Software Architecture and Design class."
     featured: "true"
     tags:

@@ -1,29 +1,41 @@
 <section id="skillsSection">
   <div class="container">
-    <div class="col-xl-2 col-lg-3 section-title fade-in">
+    <div class="col-xl-2 col-lg-3 section-header fade-in">
       <h6 class="text-success m-0">SKILLS</h6>
     </div>
     <div class="col-xl-10 col-lg-9 section-content">
       <div class="row skills">
-        <div class="col-md-3 subsection fade-in delay-1">
+        <div class="col-6 col-md-3 subsection fade-in delay-1">
           <h6 class="subsection-title">Languages</h6>
-          <p class="d-none d-md-block m-0 subsection-content">Ruby</br>JavaScript (ES6)</br>TypeScript</br>HTML5</br>CSS3/SASS</br>SQL</br>Java</p>
-          <p class="d-block d-md-none text-center subsection-content">Ruby, JavaScript (ES6), TypeScript</br>HTML5, CSS3/SASS, SQL, Java</p>
+          <ul class="subsection-content pl-5">
+            {% for lang in site.skills.languages %}
+              <li>{{ lang }}</li>
+            {% endfor %}
+          </ul>
         </div>
-        <div class="col-md-3 subsection fade-in delay-2">
+        <div class="col-6 col-md-3 subsection fade-in delay-2">
           <h6 class="subsection-title">Frameworks</h6>
-          <p class="d-none d-md-block m-0 subsection-content">Ruby on Rails</br>jQuery</br>Jekyll</br>Liquid</br>Handlebars</br>Bootstrap</p>
-          <p class="d-block d-md-none text-center subsection-content">Ruby on Rails, jQuery, Jekyll</br>Liquid, Handlebars, Bootstrap</p>
+          <ul class="subsection-content pl-5">
+            {% for frame in site.skills.frameworks %}
+              <li>{{ frame }}</li>
+            {% endfor %}
+          </ul>
         </div>
-        <div class="col-md-3 subsection fade-in delay-3">
+        <div class="col-6 col-md-3 subsection fade-in delay-3">
           <h6 class="subsection-title">Utilities</h6>
-          <p class="d-none d-md-block m-0 subsection-content">Git/GitHub</br>Pivotal Tracker</br>ZenHub</br>MySQL</br>AWS</br>UML</p>
-          <p class="d-block d-md-none text-center subsection-content">Git/GitHub, Pivotal Tracker</br>ZenHub, MySQL, AWS, UML</p>
+          <ul class="subsection-content pl-5">
+            {% for util in site.skills.utilities %}
+              <li>{{ util }}</li>
+            {% endfor %}
+          </ul>
         </div>
-        <div class="col-md-3 subsection fade-in delay-4">
-          <h6 class="subsection-title">Methods</h6>
-          <p class="d-none d-md-block m-0 subsection-content">Scrum</br>Agile</br>REST</br>TDD</br>CI</p>
-          <p class="d-block d-md-none text-center m-0 subsection-content">Scrum, Agile, REST, TDD, CI</p>
+        <div class="col-6 col-md-3 subsection fade-in delay-4">
+          <h6 class="subsection-title">Methodologies</h6>
+          <ul class="subsection-content pl-5">
+            {% for method in site.skills.methodologies %}
+              <li>{{ method }}</li>
+            {% endfor %}
+          </ul>
         </div>
       </div>
     </div>

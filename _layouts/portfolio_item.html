@@ -6,10 +6,19 @@ layout: application
 <div id="portfolio">
   <section class="main border-0">
     <div class="container">
-      <div class="alert alert-danger w-100">
-        <h3 class="text-center">This page is still under development.<br>Please check back later!</h3>
+      <div class="col-12 col-lg-6 d-flex flex-column justify-content-center section-title">
+        <h1 class="text-center mb-4">
+          {{ item.name }}
+        </h1>
+        <p class="text-center subtitle">{{ item.description }}</p>
       </div>
-      {{ content }}
+      <div class="col-12 col-lg-6 section-content">
+        <img src="{{ site.baseurl }}/assets/images/portfolio/{{ page.category }}/cover.png" class="w-100">
+      </div>
+      <div class="alert alert-danger text-center w-100 mt-5">
+        <h3 class="m-0">I'm still working on this page.</br>Please check back later for updates!</h3>
+      </div>
     </div>
   </section>
+  <!-- {{ content }} -->
 </div>

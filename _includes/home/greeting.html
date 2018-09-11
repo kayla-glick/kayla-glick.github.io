@@ -1,13 +1,30 @@
 <section class="main">
   <div class="container fade-in">
-    <div id="greetingContainer" class="col-12 col-lg-6 d-flex flex-column justify-content-center text-center">
-      <h1 id="name" class="mb-4">
+    <div id="greetingContainer" class="col-12 col-lg-6 d-flex flex-column justify-content-center text-center m-0 section-header">
+      <h1 id="name" class="title">
         <span>Kyle</span>
         <span class="text-success">Glick</span>
       </h1>
-      <p id="intro">Front-End &amp; Full-Stack Developer</br>Welcome to my personal website!</p>
+      <p id="intro" class="subtitle">Front-End &amp; Full-Stack Developer</p>
+      <ul class="list-unstyled d-flex w-100 m-0 social-links">
+        <li class="col-lg-4 m-0 p-0">
+          <a href="https://github.com/kyle-glick/" class="d-flex justify-content-center w-100 brand-link github-link" target="_blank" draggable="false">
+            <i class="fab fa-github hover-img"></i>
+          </a>
+        </li>
+        <li class="col-lg-4 m-0 p-0">
+          <a href="https://www.linkedin.com/in/kyle-glick-8a9775b6/" class="d-flex justify-content-center w-100 brand-link linkedin-link" target="_blank" draggable="false">
+            <i class="fab fa-linkedin hover-img"></i>
+          </a>
+        </li>
+        <li class="col-lg-4 m-0 p-0">
+          <a href="mailto:kyleglick99@gmail.com" class="d-flex justify-content-center w-100 brand-link email-link" target="_blank" draggable="false">
+            <i class="far fa-envelope hover-img"></i>
+          </a>
+        </li>
+      </ul>
     </div>
-    <div id="greetingImageContainer" class="col-12 col-lg-5 d-flex align-items-center justify-content-center">
+    <div id="greetingImageContainer" class="col-12 col-lg-5 d-flex align-items-center justify-content-center section-content">
       <img src="{{ site.baseurl }}/assets/images/greeting.jpg" id="greetingImage">
     </div>
   </div>
