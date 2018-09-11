@@ -64,7 +64,7 @@ experience:
 portfolio:
   csci_462:
     name: "Target Charts"
-    description: "A business target management and visualization tool built by students in collaboration with Bosch Charleston."
+    description: "A business target management and visualization tool built by CofC students in collaboration with Bosch Charleston."
     featured: "true"
     tags:
       - Rails
