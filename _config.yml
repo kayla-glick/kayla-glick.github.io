@@ -10,33 +10,33 @@ sass:
   load_paths:
     - assets/stylesheets
     - node_modules
-title: "Kyle Glick | Full-Stack Developer"
+title: "Kyle Glick | Full-Stack Web Developer"
 
 skills:
   languages:
     - Ruby
     - JavaScript (ES6)
     - TypeScript
-    - HTML5
-    - CSS/SASS
+    - HTML5/HAML
+    - CSS/Sass
     - SQL
   frameworks:
     - Ruby on Rails
     - ReactJS
-    - Node.js
-    - AJAX
     - jQuery
     - Bootstrap
   utilities:
+    - Node.js
+    - Yarn
     - Git (GitHub)
     - Pivotal Tracker
     - Zenhub
     - MySQL
     - Travis CI
-    - AWS
   methodologies:
     - Scrum / Agile
-    - RESTFul Architecture
+    - REST APIs
+    - Asynchronous Requests
     - Test-Driven Development
     - Continuous Integration
 
@@ -44,7 +44,7 @@ experience:
   musc:
     employer: "Medical University of SC"
     website: "https://www.musc.edu"
-    role: "Full-Stack Developer"
+    role: "Web Developer"
     dates: "June 2015 - Present"
     location: "Charleston, SC / Remote"
     tasks:
