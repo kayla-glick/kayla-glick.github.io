@@ -12,7 +12,6 @@ layout: application
         {% for project in site.portfolio %}
           {% assign id=project[0] %}
           {% assign name=project[1].name %}
-          {% include shared/cover.html id=id name=name klass='portfolio' %}
         {% endfor %}
       </div>
     </div

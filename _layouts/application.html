@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include layout/head.html %}
-  <body>
+  <body data-spy="scroll" data-target="#headerNav" data-offset="0">
     {% include layout/header.html %}
-    <div class="content">
+    {% include layout/wallpaper.html %}
+    <main id="content" class="column">
+      {% include layout/social_links.html %}
+      {% include layout/email.html %}
       {{ content }}
-    </div>
+    </main>
     {% include layout/footer.html %}
     {% include layout/scripts.html %}
   </body>

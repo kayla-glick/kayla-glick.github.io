@@ -1,0 +1,31 @@
+section {
+  padding: 150px 0;
+  margin-left: -150px;
+  margin-right: -150px;
+  width: calc(100% + 300px);
+  @extend .column;
+  @extend .center;
+
+  .section-title {
+    margin-bottom: 0;
+    color: theme-color('light');
+    text-align: center;
+
+    &::after {
+      content: '';
+      width: 200px;
+      height: 2px;
+      margin: 10px auto;
+      background: theme-color('pop');
+      display: block;
+    }
+  }
+
+  .section-content {
+    display: flex;
+
+    p {
+      font-size: 20px;
+    }
+  }
+}

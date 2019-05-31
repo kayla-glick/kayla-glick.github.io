@@ -2,14 +2,15 @@
 ---
 
 $ ->
-  $(document).on('mouseover', '.brand-link', ->
-    $(this).parents('ul').find('.brand-link').not(this).addClass('faded')
-  ).on('mouseout', '.brand-link', ->
-    $(this).parents('ul').find('.brand-link').not(this).removeClass('faded')
-  )
+  $('html').addClass('ready')
 
   if $(window).scrollTop() > 0
     $('nav').addClass('scroll')
+
+  $('.nav-link, .scroll-to').click (e) ->
+    e.preventDefault()
+    ref = $(this).attr('href')
+    $('html, body').animate({ scrollTop: $(ref).offset().top }, 'slow')
 
   fadeIn()
 

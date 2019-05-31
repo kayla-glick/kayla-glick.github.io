@@ -1,37 +1,14 @@
-$text-color: theme-color-level('dark', -5);
-$text-color-alt: theme-color-level('dark', -8);
+$theme-colors: (
+  "pop": #d400ff,
+  "light": #fbeaff,
+  "neutral": #9c88b0,
+  "dark": #08000a,
+  "background": #1b0021
+);
+
+$body-bg: #08000a;
+$body-color: #fbeaff;
 
 :root {
   --animation-duration: 0.25s;
-  --footer-height: 203px;
-  --icon-size: 32px;
-  --navbar-height: 6rem;
-  --section-spacer: 4rem;
-}
-
-@include media-breakpoint-up(md) {
-  :root {
-    --icon-size: 48px;
-    --navbar-height: 10rem;
-    --section-spacer: 6rem;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  :root {
-    --footer-height: 112px;
-    --section-spacer: 8rem;
-  }
-}
-
-@include media-breakpoint-up(xl) {
-  :root {
-    --section-spacer: 10rem;
-  }
-}
-
-@media print {
-  :root {
-    --footer-height: 0px;
-  }
 }

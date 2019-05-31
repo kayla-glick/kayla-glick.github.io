@@ -1,0 +1,23 @@
+a {
+  color: theme-color('pop');
+  text-decoration: none !important;
+  transition: var(--animation-duration) ease-in-out;
+
+  &:hover, &:focus, &:active {
+    color: theme-color('pop');
+  }
+
+  &.underline-link {
+    color: theme-color('pop');
+  }
+}
+
+ul, ol {
+  &.unstyled {
+    list-style: none;
+  }
+}
+
+a, p, span, button {
+  font-weight: lighter;
+}

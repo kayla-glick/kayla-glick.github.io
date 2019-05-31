@@ -1,0 +1,25 @@
+#greeting {
+  min-height: 100vh;
+
+  #name {
+    margin: 0;
+    font-size: 6rem;
+    font-family: "Georgia, serif";
+
+    &::after {
+      content: '';
+      width: 200px;
+      height: 2px;
+      margin: 10px auto;
+      background: theme-color('pop');
+      display: block;
+    }
+  }
+
+  #title {
+    margin-bottom: 50px;
+    color: theme-color('neutral');
+    font-weight: lighter;
+    font-style: italic;
+  }
+}

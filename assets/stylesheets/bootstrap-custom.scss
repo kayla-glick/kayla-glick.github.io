@@ -1,0 +1,20 @@
+.btn {
+  @extend .rounded-0;
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    color: $value;
+
+    &:not(:disabled):not(.disabled) {
+      &:hover, &:focus, &:active {
+        color: $value;
+        background: rgba($value, 0.1);
+      }
+    }
+  }
+}
+
+.container-fluid {
+  padding: 0 50px;
+}

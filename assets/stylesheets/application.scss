@@ -2,23 +2,19 @@
 ---
 
 // Bootstrap Styles
-@import 'bootstrap_custom';
+@import 'variables';
 @import '../../node_modules/bootstrap/scss/functions';
 @import '../../node_modules/bootstrap/scss/variables';
 @import '../../node_modules/bootstrap/scss/bootstrap';
+@import 'bootstrap-custom';
 
-// Generic Stuff
-@import 'variables';
-@import 'defaults';
 @import 'layout';
-
-// Components
-@import 'cover';
-@import 'section';
 @import 'header';
+@import 'asides';
 @import 'footer';
+@import 'components';
+@import 'utilities';
+@import 'sections';
 
-// Page-Specific Styles
-@import 'home';
-@import 'blog';
-@import 'resume';
+@import 'greeting';
+@import 'about';
