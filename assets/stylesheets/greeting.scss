@@ -1,24 +1,15 @@
 #greeting {
-  min-height: 100vh;
-
   #name {
     margin: 0;
     font-size: 6rem;
-    font-weight: lighter;
-
-    &::after {
-      content: '';
-      width: 200px;
-      height: 2px;
-      margin: 10px auto;
-      background: theme-color('pop');
-      display: block;
-    }
   }
 
   #title {
     color: theme-color('neutral');
-    font-weight: lighter;
+  }
+
+  #phrase {
+    color: theme-color('neutral');
     font-style: italic;
   }
 }

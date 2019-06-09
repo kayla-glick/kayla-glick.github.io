@@ -8,3 +8,14 @@
   display: flex;
   flex-flow: column;
 }
+
+.divider {
+  &::after {
+    content: '';
+    width: 100px;
+    height: 2px;
+    margin: 10px auto;
+    background: theme-color('pop');
+    display: block;
+  }
+}
