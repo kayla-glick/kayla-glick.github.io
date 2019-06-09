@@ -4,11 +4,7 @@ a {
   transition: var(--animation-duration) ease-in-out;
 
   &:hover, &:focus, &:active {
-    color: theme-color('pop');
-  }
-
-  &.underline-link {
-    color: theme-color('pop');
+    color: theme-color-level('pop', 4);
   }
 }
 

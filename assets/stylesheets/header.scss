@@ -77,9 +77,9 @@
             padding: 0;
 
             .nav-link {
+              color: theme-color('light');
               padding: 10px;
               margin: 0 10px;
-              color: theme-color('light');
 
               &::after {
                 content: '';
@@ -91,8 +91,8 @@
                 transition: all var(--animation-duration) ease-in-out;
               }
 
-              &:hover, &.active, &:active {
-                color: theme-color('pop');
+              &:hover, &:focus, &:active, &.active {
+                color: theme-color('pop') !important;
 
                 &::after {
                   width: 100%;
