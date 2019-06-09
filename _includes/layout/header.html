@@ -1,7 +1,10 @@
 <header class="fixed-top" id="siteHeader">
   <nav class="navbar navbar-expand-lg" id="headerNav">
     <div class="container-fluid">
-      <a href="#greeting" class="navbar-brand">{% include logo.svg %}</a>
+      <a href="#greeting" class="navbar-brand">
+        {% include logo.svg %}
+        <h5 id="headerName" class="mb-0">ayla Glick</h5>
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="sr-only">Toggle Navigation</span>
         <span class="toggler-bar"></span>
@@ -22,10 +25,11 @@
           <li class="nav-item">
             <a href="#portfolio" class="nav-link">Portfolio</a>
           </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
         </ul>
         <div>
-          <a href="{{ site.baseurl }}/resume.pdf" target="blank" class="btn btn-outline-pop" id="resumeLink">Resume</a>
-        </div>
       </div>
     </div>
   </nav>

@@ -4,7 +4,7 @@
   #name {
     margin: 0;
     font-size: 6rem;
-    font-family: "Georgia, serif";
+    font-weight: lighter;
 
     &::after {
       content: '';
@@ -17,7 +17,6 @@
   }
 
   #title {
-    margin-bottom: 50px;
     color: theme-color('neutral');
     font-weight: lighter;
     font-style: italic;

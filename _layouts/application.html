@@ -4,11 +4,10 @@
   <body data-spy="scroll" data-target="#headerNav" data-offset="0">
     {% include layout/header.html %}
     {% include layout/wallpaper.html %}
-    <main id="content" class="column">
-      {% include layout/social_links.html %}
-      {% include layout/email.html %}
+    <main id="content" class="container column">
       {{ content }}
     </main>
+    {% include layout/social_links.html %}
     {% include layout/footer.html %}
     {% include layout/scripts.html %}
   </body>

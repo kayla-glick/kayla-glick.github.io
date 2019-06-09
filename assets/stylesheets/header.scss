@@ -38,6 +38,12 @@
       &::after {
         opacity: 1;
       }
+
+      .navbar-brand {
+        #headerName {
+          opacity: 1 !important;
+        }
+      }
     }
 
     .container-fluid {
@@ -47,6 +53,7 @@
         padding: 0;
         margin: 0;
         display: flex;
+        align-items: center;
 
         .logo {
           height: 64px;
@@ -54,10 +61,9 @@
           transition: all var(--animation-duration) ease-in-out;
         }
 
-        &:hover {
-          .logo {
-            transform: scale(1.15, 1.15);
-          }
+        #headerName {
+          opacity: 0;
+          transition: opacity var(--animation-duration) ease-in-out;
         }
       }
 

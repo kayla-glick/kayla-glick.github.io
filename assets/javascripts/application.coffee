@@ -9,6 +9,11 @@ $ ->
 
   $('.nav-link, .scroll-to').click (e) ->
     e.preventDefault()
+
+    if $(this).hasClass('nav-link')
+      $('.nav-link.active').removeClass('active')
+      $(this).addClass('active')
+
     ref = $(this).attr('href')
     $('html, body').animate({ scrollTop: $(ref).offset().top }, 'slow')
 
