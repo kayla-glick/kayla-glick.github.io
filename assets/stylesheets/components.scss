@@ -1,3 +1,7 @@
+* {
+  font-weight: lighter !important;
+}
+
 a {
   color: theme-color('pop');
   text-decoration: none !important;
@@ -14,6 +18,11 @@ ul, ol {
   }
 }
 
-a, p, span, button {
-  font-weight: lighter;
+p {
+  color: theme-color('neutral');
+}
+
+hr {
+  border-top-color: theme-color('neutral');
+  margin: 1.5rem 0;
 }

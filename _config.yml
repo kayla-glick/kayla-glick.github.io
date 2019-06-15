@@ -10,35 +10,18 @@ sass:
   load_paths:
     - assets/stylesheets
     - node_modules
+
 title: "Kayla Glick | Web Developer"
 
-skills:
-  languages:
-    - Ruby
-    - JavaScript (ES6)
-    - TypeScript
-    - HTML5/HAML
-    - CSS/Sass
-    - SQL
-  frameworks:
-    - Ruby on Rails
-    - ReactJS
-    - jQuery
-    - Bootstrap
-  utilities:
-    - Node.js
-    - Yarn
-    - Git (GitHub)
-    - Pivotal Tracker
-    - Zenhub
-    - MySQL
-    - Travis CI
-  methodologies:
-    - Scrum / Agile
-    - REST APIs
-    - Asynchronous Requests
-    - Test-Driven Development
-    - Continuous Integration
+employers:
+  musc:
+    employer: "Medical University of South Carolina"
+    role: "Web Developer"
+    dates: "Oct 2018 - Present"
+  musc_intern:
+    employer: "Medical University of South Carolina"
+    role: "Web Developer Intern"
+    dates: "Jun 2015 - Sept 2018"
 
 experience:
   musc:

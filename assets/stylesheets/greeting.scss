@@ -1,15 +1,3 @@
 #greeting {
-  #name {
-    margin: 0;
-    font-size: 6rem;
-  }
-
-  #title {
-    color: theme-color('neutral');
-  }
-
-  #phrase {
-    color: theme-color('neutral');
-    font-style: italic;
-  }
+  min-height: 100vh;
 }

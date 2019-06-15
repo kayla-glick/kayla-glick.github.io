@@ -1,13 +1,5 @@
 #about {
-  #skills {
-    p {
-      display: flex;
-      align-items: center;
-
-      svg {
-        width: 24px;
-        height: 24px;
-      }
-    }
+  #me {
+    border: 20px solid theme-color-level('background', -1);
   }
 }

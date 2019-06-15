@@ -1,9 +1,25 @@
 <section id="experience">
   <div class="section-container container">
     <div class="section-title-container">
-      <h1 class="section-title">Where I've Worked</h1>
+      <h1 class="section-title">Experience</h1>
+      <hr/>
     </div>
     <div class="section-content-container">
+      <div id="employerCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          {% for employer in site.employers %}
+            <li data-target="#employerCarousel" data-slide-to="{{ forloop.index }}"></li>
+          {% endfor %}
+        </ol>
+        <div class="carousel-inner">
+          {% for employer in site.employers %}
+          <div class="carousel-item">
+            <img class="d-block w-100" src="">
+          </div>
+          {% endfor %}
+        </div>
+        <a href="#" class="carousel-control-prev"></a>
+      </div>
     </div>
   </div>
 </section>
