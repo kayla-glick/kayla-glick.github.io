@@ -13,6 +13,63 @@ sass:
 
 title: "Kayla Glick | Web Developer"
 
+skills:
+  agile:
+    text: "Agile / Scrum"
+    proficiency: 5
+  bootstrap:
+    text: "Bootstrap (3 & 4)"
+    proficiency: 5
+  html:
+    text: "HTML(5)"
+    proficiency: 5
+  json:
+    text: "JSON"
+    proficiency: 5
+  rails:
+    text: "(Ruby) on Rails"
+    proficiency: 5
+  scss:
+    text: "(S)CSS"
+    proficiency: 5
+  coffeescript:
+    text: "Coffeescript (1 & 2)"
+    proficiency: 4
+  git:
+    text: "Git(Hub)"
+    proficiency: 4
+  javascript:
+    text: "JavaScript (ES6+)"
+    proficiency: 4
+  jQuery:
+    text: "jQuery"
+    proficiency: 4
+  mysql:
+    text: "MySQL"
+    proficiency: 4
+  rest:
+    text: "REST"
+    proficiency: 4
+  uml:
+    text: "UML"
+    proficiency: 4
+  java:
+    text: "Java"
+    proficiency: 3
+  nodejs:
+    text: "Node.js"
+    proficiency: 3
+  yarn:
+    text: "Yarn"
+    proficiency: 3
+  bash:
+    text: "Bash"
+    proficiency: 2
+  react:
+    text: "React"
+    proficiency: 1
+
+
 employers:
   musc:
     employer: "Medical University of South Carolina"

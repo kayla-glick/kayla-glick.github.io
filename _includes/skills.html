@@ -5,6 +5,43 @@
       <hr/>
     </div>
     <div class="section-content-container">
+      {% assign midpoint = site.skills | size | divided_by: 2.0 | ceil %}
+      <div class="col-6">
+        <ul class="list-unstyled">
+          {% for skill in site.skills limit: midpoint %}
+            <li class="skill">
+              <span class="font-weight-normal">{{ skill[1]['text'] }}</span>
+              <div class="proficiency">
+                {% for i in (1..skill[1]['proficiency']) %}
+                  <i class="fas fa-star text-pop"></i>
+                {% endfor %}
+                {% assign start = skill[1]['proficiency'] | plus: 1 %}
+                {% for i in (start..5) %}
+                  <i class="fas fa-star text-neutral"></i>
+                {% endfor %}
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col-6">
+        <ul class="list-unstyled">
+          {% for skill in site.skills offset: midpoint %}
+            <li class="skill">
+              <span class="font-weight-normal">{{ skill[1]['text'] }}</span>
+              <div class="proficiency">
+                {% for i in (1..skill[1]['proficiency']) %}
+                  <i class="fas fa-star text-pop"></i>
+                {% endfor %}
+                {% assign start = skill[1]['proficiency'] | plus: 1 %}
+                {% for i in (start..5) %}
+                  <i class="fas fa-star text-neutral"></i>
+                {% endfor %}
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
   </div>
 </section>
