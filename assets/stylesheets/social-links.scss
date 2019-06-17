@@ -1,70 +1,62 @@
-.social-links-container {
-  width: 100%;
-  bottom: 1rem;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  position: fixed;
-  pointer-events: none;
+.social-links {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
 
-  .social-links {
-    padding: 0;
-    margin: 0;
+  .social-link {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     pointer-events: all;
 
-    .social-link-container {
-      .social-link {
-        position: relative;
-        width: 42px;
-        height: 42px;
-        border-radius: 100%;
-        color: theme-color('light');
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    &::before, &::after {
+      box-sizing: inherit;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 100%;    
+    }
 
-        &::before, &::after {
-          box-sizing: inherit;
-          content: '';
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;
-          border-radius: 100%;    
-        }
+    &::before {
+      border: 1px solid white;
+    }
 
-        &::before {
-          border: 1px solid theme-color('light');
-        }
+    &::after {
+      border: 0 solid transparent;
+    }
 
-        &::after {
-          border: 0 solid transparent;
-        }
+    &:hover {
+      color: theme-color('pop');
 
-        &:hover {
-          color: theme-color('pop');
+      &::before {
+        border-top-color: theme-color('pop');
+        border-right-color: theme-color('pop');
+        border-bottom-color: theme-color('pop');
+        border-left-color: transparent;
+        transition:
+          border-top-color 0.15s linear,
+          border-right-color 0.15s linear 0.10s,
+          border-bottom-color 0.15s linear 0.20s,
+          border-left-color 0.15s linear 0.30s;
+      }
 
-          &::before {
-            border-top-color: theme-color('pop');
-            border-right-color: theme-color('pop');
-            border-bottom-color: theme-color('pop');
-            transition:
-              border-top-color 0.15s linear,
-              border-right-color 0.15s linear 0.10s,
-              border-bottom-color 0.15s linear 0.20s;
-          }
-
-          &::after {
-            border-top: 1px solid theme-color('pop');
-            border-left-width: 1px;
-            border-right-width: 1px;
-            transform: rotate(270deg);
-            transition:
-              transform 0.4s linear 0s,
-              border-left-width 0s linear 0.35s;
-          }
-        }
+      &::after {
+        border-top: 1px solid theme-color('pop');
+        border-left-width: 1px;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+        transform: rotate(270deg);
+        transition:
+          transform 0.4s linear 0s,
+          border-left-width 0s linear 0.35s;
       }
     }
   }

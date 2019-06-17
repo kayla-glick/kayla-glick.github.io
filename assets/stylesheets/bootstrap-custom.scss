@@ -5,11 +5,14 @@
 @each $color, $value in $theme-colors {
   .btn-outline-#{$color} {
     color: $value;
+    background: rgba($value, 0.1);
+    transition: all var(--animation-duration) ease-in-out;
 
     &:not(:disabled):not(.disabled) {
       &:hover, &:focus, &:active {
         color: $value;
-        background: rgba($value, 0.1);
+        background: rgba($value, 0.2);
+        transform: scale(1.1);
       }
     }
   }

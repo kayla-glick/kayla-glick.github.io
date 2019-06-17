@@ -1,0 +1,23 @@
+#contact {
+  padding-bottom: 0;
+
+  .section-container {
+    padding-bottom: 0;
+    display: flex;
+    flex-flow: column;
+
+    .section-content-container {
+      flex: 1;
+    }
+  }
+
+  svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

@@ -1,13 +1,12 @@
 $theme-colors: (
-  "pop": #d400ff,
-  "light": #fbeaff,
-  "neutral": #9c88b0,
-  "dark": #08000a,
-  "background": #1b0021
+  "pop": #fe5f55,
+  "text": #9c88b0,
+  "background": #eae7dc,
+  "dark": #08000a
 );
 
 $body-bg: #08000a;
-$body-color: #fbeaff;
+$body-color: white;
 
 :root {
   --animation-duration: 0.25s;

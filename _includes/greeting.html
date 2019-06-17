@@ -1,8 +1,13 @@
 <section id="greeting">
-  <div class="section-container container text-center">
-    <h1 class="section-title display-1 divider m-0">Kayla Glick</h1>
-    <h1 class="text-neutral display-4 mb-0">Web Developer</h1>
-    <h3 class="text-neutral mb-5"><i>Pixel-perfect websites for your picture-perfect business</i></h3>
-    <a href="mailto:kaylaglick12@gmail.com" class="btn btn-lg btn-outline-pop">Get In Touch</a>
+  <div class="section-container container">
+    <h1 class="section-title display-1 divider text-white m-0">Kayla Glick</h1>
+    <h1 class="display-4 text-white mb-0">Web Developer</h1>
+    <h3 class="text-white mb-4"><i>Pixel-perfect websites for your picture-perfect business</i></h3>
+    <div>
+      <a href="mailto:kaylaglick12@gmail.com" id="greetingContact" class="btn btn-lg btn-outline-pop mb-4">Get In Touch</a>
+    </div>
+    <div>
+      {% include layout/social_links.html %}
+    </div>
   </div>
 </section>

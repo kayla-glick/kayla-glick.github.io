@@ -5,24 +5,23 @@
 a {
   color: theme-color('pop');
   text-decoration: none !important;
-  transition: var(--animation-duration) ease-in-out;
+  transition: all var(--animation-duration) ease-in-out;
 
   &:hover, &:focus, &:active {
     color: theme-color-level('pop', 4);
   }
 }
 
-ul, ol {
-  &.unstyled {
-    list-style: none;
-  }
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: theme-color('pop');
 }
 
 p {
-  color: theme-color('neutral');
+  color: theme-color('text');
 }
 
 hr {
-  border-top-color: theme-color('neutral');
+  border-top-color: theme-color('text');
   margin: 1.5rem 0;
 }

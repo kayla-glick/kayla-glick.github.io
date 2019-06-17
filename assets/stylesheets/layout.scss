@@ -2,7 +2,7 @@ html {
   min-height: 100%;
   position: relative;
 
-  &.fontawesome-i2svg-active, &.ready {
+  &.fontawesome-i2svg-active.ready {
     body {
       opacity: 1;
     }
@@ -12,10 +12,6 @@ html {
     opacity: 0;
     transition: 0.5s opacity ease-in-out;
   }
-}
-
-main {
-  padding-bottom: calc(2rem + 42px);
 }
 
 .wallpaper {
@@ -34,6 +30,6 @@ main {
   height: 100vh;
   z-index: -1;
   position: fixed;
-  background: black;
-  opacity: 0.7;
+  background: theme-color('dark');
+  opacity: 0.5;
 }

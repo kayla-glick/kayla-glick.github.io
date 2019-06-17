@@ -48,6 +48,7 @@
 
         #headerName {
           opacity: 0;
+          color: inherit;
           transition: opacity var(--animation-duration) ease-in-out;
         }
       }
@@ -76,7 +77,7 @@
                 transition: all var(--animation-duration) ease-in-out;
               }
 
-              &:hover, &:focus, &:active, &.active {
+              &:hover, &:active, &.active {
                 color: theme-color('pop') !important;
 
                 &::after {

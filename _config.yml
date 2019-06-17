@@ -4,7 +4,6 @@
 exclude: []
 future: false
 plugins:
-  - jekyll-coffeescript
   - jekyll-seo-tag
 sass:
   load_paths:
