@@ -72,34 +72,29 @@ skills:
 employers:
   musc:
     employer: "Medical University of South Carolina"
+    employer_short: "MUSC"
     role: "Web Developer"
     dates: "Oct 2018 - Present"
+    location: "Remote / Charleston, SC"
+    link: "https://sparc.musc.edu/"
+    responsibilities:
+      - "Full stack development of open-source web applications for medical research at institutions across the U.S."
+      - "Collaborate with a diverse team of developers, analysts, and open-source contributors on a daily basis."
+      - "Design and coordinate projects to overhaul UX and back-end architecture of existing applications using Ruby on Rails, JavaScript, Bootstrap 4, and Node.js."
+      - "Develop extensive unit, integration, and system tests using RSpec and Selenium Webdriver."
+
   musc_intern:
     employer: "Medical University of South Carolina"
-    role: "Web Developer Intern"
+    employer_short: "MUSC (Intern)"
+    role: "Intern"
     dates: "Jun 2015 - Sept 2018"
-
-experience:
-  musc:
-    employer: "Medical University of SC"
-    website: "https://www.musc.edu"
-    role: "Web Developer"
-    dates: "June 2015 - Present"
-    location: "Charleston, SC / Remote"
-    tasks:
-      - "Collaborated with a team of developers and from various institutions to build complex open-source Ruby on Rails web applications used to manage costs and services for clinical research studies."
-      - "Interfaced with systems analysts to write and test new functionality and fix bugs in short scrum sprints."
-      - "Drafted and built major new modules and lead modernization of existing portions of applications."
-  bosch:
-    employer: "Bosch"
-    website: "https://www.bosch.com/"
-    role: "Full-Stack Developer, Scrum Master"
-    dates: "Jan - May 2018"
     location: "Charleston, SC"
-    tasks:
-      - "Collaborated with a small team of CofC students and Bosch employees to design a Ruby on Rails application for managing production targets."
-      - "Alternated roles as Scrum Master to plan sprints and manage team progress."
-
+    link: "https://sparc.musc.edu/"
+    responsibilities:
+      - "Developed open-source web applications for medical research at institutions across the U.S. using Ruby on Rails and JavaScript."
+      - "Interfaced with analysts to devise new functionality and improvements to existing systems."
+      - "Led major overhauls of existing interfaces using Bootstrap 3."
+      - "Wrote extensive unit, integration, and system tests using RSpec and Selenium Webdriver."
 portfolio:
   csci_462:
     name: "Target Charts"

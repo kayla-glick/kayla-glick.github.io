@@ -6,7 +6,7 @@ $(document).ready(function() {
     $('nav').addClass('scroll'); 
   }
 
-  $('html').addClass('ready')
+  $('html').addClass('ready');
 
   $('.nav-link, .scroll-to').click(function(e) {
     e.preventDefault();
@@ -34,8 +34,10 @@ $(document).ready(function() {
     fadeIn()
   });
 
-  $('.continue').click(function() {
-    $(this).blur()
+  $(document).on('click', '.btn-employer:not(.active)', function() {
+    $('.btn-employer.active').removeClass('active');
+    $(this).addClass('active');
+    $('#employerCarousel').carousel($(this).data('index'));
   });
 });
 

@@ -17,3 +17,66 @@
     }
   }
 }
+
+.carousel {
+  .carousel-inner {
+    display: flex;
+
+    .carousel-item {
+      display: flex;
+
+      img {
+        position: absolute;
+        width: 150%;
+        height: 100%;
+        left: -25%;
+        display: block;
+      }
+
+      .carousel-overlay {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: theme-color('dark');
+        opacity: 0.5;
+        z-index: 1;
+      }
+
+      .carousel-caption {
+        position: initial;
+        padding: 0;
+        display: flex;
+        flex-flow: column;
+        text-align: left;
+
+        .carousel-caption-header, .carousel-caption-body, .carousel-caption-footer {
+          padding: 15px;
+          z-index: 1;
+        }
+
+        .carousel-caption-header, .carousel-caption-footer {
+          position: relative;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: theme-color('dark');
+            opacity: 0.5;
+            z-index: -1;
+          }
+        }
+
+        .carousel-caption-body {
+          flex: 1;
+        }
+      }
+    }
+  }
+}
