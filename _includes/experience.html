@@ -10,12 +10,12 @@
           <ul class=list-unstyled>
             {% for job in site.employers %}
             <li>
-              <button class="btn btn-block btn-employer{% if forloop.index == 1 %} active{%endif %}" data-index="{{ forloop.index | minus: 1 }}">{{ job[1].employer_short }}<br/><small class="text-muted">{{ job[1].dates }}</small></button>
+              <button class="btn btn-block btn-employer fade-in{% if forloop.index == 1 %} active{%endif %}" data-index="{{ forloop.index | minus: 1 }}">{{ job[1].employer_short }}<br/><small class="text-muted">{{ job[1].dates }}</small></button>
             </li>
             {% endfor %}
           </ul>
         </div>
-        <div id="employerCarousel" class="col-9 carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+        <div id="employerCarousel" class="col-9 carousel slide carousel-fade fade-in" data-ride="carousel" data-interval="false">
           <div class="carousel-inner">
             {% for job in site.employers %}
               <div id="job{{ forloop.index | minus: 1 }}" class="carousel-item{% if forloop.index == 1 %} active{% endif %}">
