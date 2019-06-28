@@ -68,7 +68,6 @@ skills:
     text: "React"
     proficiency: 1
 
-
 employers:
   musc:
     employer: "Medical University of South Carolina"
@@ -95,50 +94,36 @@ employers:
       - "Interfaced with analysts to devise new functionality and improvements to existing systems."
       - "Led major overhauls of existing interfaces using Bootstrap 3."
       - "Wrote extensive unit, integration, and system tests using RSpec and Selenium Webdriver."
+
 portfolio:
-  csci_462:
+  target_charts:
     name: "Target Charts"
-    description: "A business target management and visualization tool built by CofC students in collaboration with Bosch Charleston."
+    description: "A web application for tracking and visualizing production targets, developed for my senior capstone project in collaboration with Bosch Charleston. Includes customizable visualization, efficient data entry, and full responsiveness."
     featured: "true"
     tags:
-      - Rails
-      - Ruby
-      - JavaScript
-      - HTML
-      - CSS
-      - MySQL
+      - Ruby on Rails
+      - Bootstrap
+      - jQuery
     links:
       github: "https://github.com/Anderson-Lab/capstone-spring-2018-team-4"
       youtube: "https://www.youtube.com/watch?v=ShAVnZbSqfY&feature=youtu.be"
-  csci_362:
-    name: "Testing Canvas"
-    description: "An automated test suite built around the Canvas LMS source code for a Software Engineering class."
-    featured: "false"
-    tags:
-      - Ruby
-      - Bash
-    links:
-      github: "https://github.com/kyle-glick/Don-t-Test-Me"
-  csci_360:
+  360snoozin:
     name: "360Snoozin"
-    description: "A dual-alarm AM/FM radio clock built with JavaFX for a Software Architecture and Design class."
+    description: "A dual-alarm AM/FM radio clock application developed for my Software Architecture and Design class. Uses multi-threading to accomplish asynchronous timing and radio functionality."
     featured: "true"
     tags:
       - JavaFX
-      - Java
-      - HTML
-      - CSS
+      - Bootstrap
+      - jQuery
     links:
       github: "https://github.com/kyle-glick/360Snoozin"
-  csci_332:
+  movedb:
     name: "MovEDB"
-    description: "A simple movie ticket and theater management website built with PHP for a Database Concepts class."
+    description: "A movie ticketing and theater management web application developed for my Database Concepts class. Open new theaters, choose which movies to show, and allow moviegoers to purchase tickets."
     featured: "true"
     tags:
       - PHP
-      - JavaScript
-      - HTML
-      - CSS
-      - MySQL
+      - Bootstrap
+      - jQuery
     links:
       github: "https://github.com/kyle-glick/csci-332"

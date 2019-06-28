@@ -1,0 +1,66 @@
+#portfolio {
+  .project-container {
+    position: relative;
+    display: inline-block;
+
+    &:nth-child(odd) {
+      .project-details {
+        text-align: right;
+        float: right;
+
+        .project-description {
+          box-shadow: -2px 2px 2px 0px theme-color-level('dark', -8);
+        }
+      }
+    }
+
+    &:nth-child(even) {
+      .project-cover {
+        right: 0;
+      }
+
+      .project-details {
+        .project-description {
+          box-shadow: 2px 2px 2px 0px theme-color-level('dark', -8);
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 6rem;
+    }
+
+    .project-cover {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    }
+
+    .project-details {
+      display: flex;
+      flex-flow: column;
+
+      .project-description {
+        background: theme-color-level('background', -3);
+        border: 0;
+        line-height: 1;
+      }
+
+      .project-tags {
+        .tag {
+          &:not(:last-child) {
+            margin-right: 1rem;
+          }
+        }
+      }
+
+      .project-links {
+        .link {
+          &:not(:last-child) {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
