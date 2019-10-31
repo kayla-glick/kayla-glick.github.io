@@ -116,7 +116,7 @@ portfolio:
       - Bootstrap
       - jQuery
     links:
-      github: "https://github.com/kyle-glick/360Snoozin"
+      github: "https://github.com/kayla-glick/360Snoozin"
   movedb:
     name: "MovEDB"
     description: "A movie ticketing and theater management web application developed for my Database Concepts class. Open new theaters, choose which movies to show, and allow moviegoers to purchase tickets."
@@ -126,4 +126,4 @@ portfolio:
       - Bootstrap
       - jQuery
     links:
-      github: "https://github.com/kyle-glick/csci-332"
+      github: "https://github.com/kayla-glick/csci-332"
