@@ -8,7 +8,7 @@ $(document).ready(function() {
 
   $('html').addClass('ready');
 
-  $('.nav-link, .scroll-to').click(function(e) {
+  $('.nav-link:not(.btn), .scroll-to').click(function(e) {
     e.preventDefault();
 
     if ($(this).hasClass('nav-link')) {
