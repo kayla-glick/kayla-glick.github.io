@@ -40,10 +40,12 @@
     }
 
     .navbar-toggler {
+      position: relative;
       flex-flow: column;
       align-items: center;
       justify-content: space-between;
       z-index: 1;
+      outline: 0;
 
       &:not(.collapsed) {
         .toggler-bar {
@@ -62,7 +64,6 @@
       }
 
       .toggler-bar {
-        position: relative;
         width: 100%;
 
         &::before {
