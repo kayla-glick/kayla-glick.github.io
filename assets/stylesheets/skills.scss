@@ -1,0 +1,37 @@
+#skills {
+  .skill {
+    display: flex;
+    justify-content: space-between;
+    color: theme-color('text');
+    cursor: pointer;
+    transition: background var(--animation-duration) linear;
+
+    span {
+      transition: font-weight var(--animation-duration) linear;
+    }
+
+    .proficiency {
+      svg {
+        transition: margin var(--animation-duration) linear;
+      }
+
+      svg.empty {
+        color: rgba(theme-color('text'), 0.25);
+      }
+    }
+
+    &:hover {
+      background: theme-color-level('background', 0.4);
+
+      span {
+        font-weight: normal !important;
+      }
+
+      .proficiency {
+        svg {
+          margin-left: 1px;
+        }
+      }
+    }
+  }
+}

@@ -33,3 +33,27 @@ html {
   background: theme-color('dark');
   opacity: 0.5;
 }
+
+@include media-breakpoint-up(xs) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 95%;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  html {
+    font-size: 100%;
+  }
+
+  section, footer {
+    p, a {
+      font-size: 20px;
+    }
+  }
+}

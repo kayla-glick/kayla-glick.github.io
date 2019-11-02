@@ -1,19 +1,17 @@
 #experience {
-  .btn.btn-employer {
-    border-top: 0;
-    border-bottom: 0;
-    border-right: 0;
-    border-left: 2px solid theme-color('text');
-    color: theme-color('text');
-    text-align: left;
+  #employerLinks {
+    .employer-link {
+      .btn.btn-employer {
+        color: theme-color('text');
+        transition: all 0.3s ease-in-out;
 
-    &.active, &:hover {
-      border-left: 2px solid theme-color('pop');
-      background: rgba(theme-color('pop'), 0.1);
-      color: theme-color('pop');
+        &.active, &:hover {
+          background: rgba(theme-color('pop'), 0.1);
+          color: theme-color('pop');
+        }
+      }
     }
   }
-
   #employerCarousel {
     ul {
       padding-left: 1.5rem;
@@ -29,6 +27,58 @@
           left: -1rem;
           color: theme-color('pop');
           font-size: 2em;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  #experience {
+    #employerLinks {
+      .btn.btn-employer {
+        border-top: 0;
+        border-bottom: 0;
+        border-right: 0;
+        border-left: 2px solid rgba(theme-color('text'), 0.25);
+        text-align: left;
+
+        &.active, &:hover {
+          border-left: 2px solid theme-color('pop');
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-only(xs) {
+  #experience {
+    #employerLinksContainer {
+      overflow-x: scroll;
+
+      #employerLinks {
+        overflow-x: visible;
+        display: flex;
+
+        .employer-link {
+          display: flex;
+
+          &:last-of-type {
+            padding-right: 1rem;
+          }
+
+          .btn.btn-employer {
+            min-width: 120px;
+            border-top: 0;
+            border-bottom: 2px solid rgba(theme-color('text'), 0.25);
+            border-right: 0;
+            border-left: 0;
+            white-space: nowrap;
+
+            &.active, &:hover {
+              border-bottom: 2px solid theme-color('pop');
+            }
+          }
         }
       }
     }

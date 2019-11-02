@@ -8,8 +8,12 @@
         text-align: right;
         float: right;
 
-        .project-description {
-          box-shadow: -2px 2px 2px 0px theme-color-level('dark', -8);
+        .project-links {
+          justify-content: flex-end;
+
+          .link {
+            margin-left: 0.5rem;
+          }
         }
       }
     }
@@ -20,14 +24,12 @@
       }
 
       .project-details {
-        .project-description {
-          box-shadow: 2px 2px 2px 0px theme-color-level('dark', -8);
+        .project-links {
+          .link {
+            margin-right: 0.5rem;
+          }
         }
       }
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 6rem;
     }
 
     .project-cover {
@@ -37,8 +39,7 @@
     }
 
     .project-details {
-      display: flex;
-      flex-flow: column;
+      padding: 0;
 
       .project-description {
         background: theme-color-level('background', -3);
@@ -55,9 +56,107 @@
       }
 
       .project-links {
+        display: flex;
+
         .link {
           &:not(:last-child) {
             margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xs) {
+  #portfolio {
+    .project-container {
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  #portfolio {
+    .project-container {
+      height: 250px;
+
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+
+      .project-cover {
+        height: 250px;
+        width: 444.44px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #portfolio {
+    .project-container {
+      height: 300px;
+
+      .project-cover {
+        height: 300px;
+        width: 533.33px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  #portfolio {
+    .project-container {
+      height: 400px;
+
+      &:not(:last-child) {
+        margin-bottom: 6rem;
+      }
+
+      .project-cover {
+        height: 400px;
+        width: 711.11px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-only(xs) {
+  #portfolio {
+    .project-container {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: theme-color-level('background', -3);
+        opacity: 0.95;
+        z-index: 2;
+        border-radius: 0.25rem;
+      }
+
+      .project-cover {
+        width: 100%;
+        margin: auto 0;
+        border-radius: 0.25rem;
+        z-index: 1;
+      }
+
+      .project-details {
+        padding: 1rem;
+        z-index: 3;
+
+        .project-description {
+          background: transparent;
+
+          .card-body {
+            padding: 0;
           }
         }
       }

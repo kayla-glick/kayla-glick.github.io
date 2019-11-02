@@ -1,15 +1,15 @@
 section {
-  position: relative;
   min-height: 100vh;
+  position: relative;
   display: flex;
   flex-flow: column;
 
   &:nth-child(n + 2) {
-    background: theme-color('background');
+    background: white;
   }
 
   &:nth-child(2n + 3) {
-    background: white;
+    background: theme-color('background');
   }
 
   .section-container {
@@ -23,14 +23,37 @@ section {
       @extend .display-4;
       width: 100%;
       margin-bottom: 1.5rem;
-      text-align: center;
+      display: flex;
+      align-items: center;
+
+      hr {
+        flex: 1 1 auto;
+        margin-left: 1.5rem;
+      }
     }
   }
+}
 
-  .section-content-container {
+@include media-breakpoint-up(xs) {
+  section {
+    .section-container {
+      padding: calc(100px + 3rem) 1.5rem 100px 1.5rem;
+    }
   }
+}
 
-  p, a {
-    font-size: 20px;
+@include media-breakpoint-up(lg) {
+  section {
+    .section-container {
+      padding: calc(100px + 3rem) 90px 100px 90px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  section {
+    .section-container {
+      padding: calc(100px + 3rem) 170px 100px 170px;
+    }
   }
 }

@@ -13,92 +13,126 @@ sass:
 title: "Kayla Glick | Web Developer"
 
 skills:
-  agile:
-    text: "Agile / Scrum"
-    proficiency: 5
-  bootstrap:
-    text: "Bootstrap (3 & 4)"
-    proficiency: 5
-  html:
-    text: "HTML(5)"
-    proficiency: 5
-  json:
-    text: "JSON"
-    proficiency: 5
-  rails:
-    text: "(Ruby) on Rails"
-    proficiency: 5
-  scss:
-    text: "(S)CSS"
-    proficiency: 5
-  coffeescript:
-    text: "Coffeescript (1 & 2)"
-    proficiency: 4
-  git:
-    text: "Git(Hub)"
-    proficiency: 4
-  javascript:
-    text: "JavaScript (ES6+)"
-    proficiency: 4
-  jQuery:
-    text: "jQuery"
-    proficiency: 4
-  mysql:
-    text: "MySQL"
-    proficiency: 4
-  rest:
-    text: "REST"
-    proficiency: 4
-  uml:
-    text: "UML"
-    proficiency: 4
-  java:
-    text: "Java"
-    proficiency: 3
-  nodejs:
-    text: "Node.js"
-    proficiency: 3
-  yarn:
-    text: "Yarn"
-    proficiency: 3
-  bash:
-    text: "Bash"
-    proficiency: 2
-  react:
-    text: "React"
-    proficiency: 1
+  languages:
+    ruby:
+      text: "Ruby"
+      proficiency: 5
+    html:
+      text: "HTML"
+      proficiency: 5
+    sass:
+      text: "CSS / Sass"
+      proficiency: 5
+    javascript:
+      text: "JavaScript (ES6+)"
+      proficiency: 4
+    coffeescript:
+      text: "Coffeescript (1 & 2)"
+      proficiency: 4
+    sql:
+      text: "SQL"
+      proficiency: 4
+    java:
+      text: "Java"
+      proficiency: 3
+    bash:
+      text: "Bash"
+      proficiency: 2
+  frameworks:
+    rails:
+      text: "Ruby on Rails"
+      proficiency: 5
+    bootstrap:
+      text: "Bootstrap"
+      proficiency: 5
+    jQuery:
+      text: "jQuery"
+      proficiency: 4
+    nodejs:
+      text: "Node.js"
+      proficiency: 3
+    react:
+      text: "React (Currently Learning)"
+      proficiency: 1
+  tools:
+    git:
+      text: "Git"
+      proficiency: 5
+    json:
+      text: "JSON"
+      proficiency: 5
+    yaml:
+      text: "YAML"
+      proficiency: 5
+    pivotal:
+      text: "Pivotal Tracker"
+      proficiency: 4
+    travis:
+      text: "Travis CI"
+      proficiency: 4
+    mysql:
+      text: "MySQL"
+      proficiency: 4
+    uml:
+      text: "UML"
+      proficiency: 3
+    webpack:
+      text: "Webpack"
+      proficiency: 2
+  principles:
+    agile:
+      text: "Agile / Scrum"
+      proficiency: 5
+    mvc:
+      text: "Model-View-Controller"
+      proficiency: 5
+    rest:
+      text: "RESTful Architecture"
+      proficiency: 4
+    saas:
+      text: "Software as a Service"
+      proficiency: 4
+    tdd:
+      text: "Test-Driven-Development"
+      proficiency: 4
 
 employers:
   musc:
     employer: "Medical University of South Carolina"
+    employer_link: "https://web.musc.edu/"
     employer_short: "MUSC"
     role: "Web Developer"
     dates: "Oct 2018 - Present"
-    location: "Remote / Charleston, SC"
+    location: "Charleston, SC"
     link: "https://sparc.musc.edu/"
     responsibilities:
-      - "Full stack development of open-source web applications for medical research at institutions across the U.S."
-      - "Collaborate with a diverse team of developers, analysts, and open-source contributors on a daily basis."
-      - "Design and coordinate projects to overhaul UX and back-end architecture of existing applications using Ruby on Rails, JavaScript, Bootstrap 4, and Node.js."
-      - "Develop extensive unit, integration, and system tests using RSpec and Selenium Webdriver."
+      - "Collaborate with a team of developers, analysts, and open-source contributors to develop the full stack of open-source web applications for medical research."
+      - "Lead multiple UI/UX overhauls of front-end interfaces and functionality using the Bootstrap 4 framework, JavaScript, and SCSS."
+      - "Refactor back-end architecture to improve the performance of our applications using caching techniques and query optimization."
+      - "Derive new bug and feature requirements  based on feedback from users, analysts, and open-source contributors from other institutions and manage stories accordingly."
+      - "Delegate tasks and responsibilities to other developers following Scrum principles and deliver team progress reports during weekly sprint meetings."
+      - "Train new developers and provide advice and support on design decisions, code practices, and other issues as they arise."
+      - "Perform thorough code review and provide feedback on contributions from other developers and open-source contributors."
+      - "Write comprehensive automated unit and integration tests using the RSpec testing framework and Selenium WebDriver."
 
   musc_intern:
     employer: "Medical University of South Carolina"
+    employer_link: "https://web.musc.edu/"
     employer_short: "MUSC (Intern)"
     role: "Intern"
     dates: "Jun 2015 - Sept 2018"
     location: "Charleston, SC"
     link: "https://sparc.musc.edu/"
     responsibilities:
-      - "Developed open-source web applications for medical research at institutions across the U.S. using Ruby on Rails and JavaScript."
-      - "Interfaced with analysts to devise new functionality and improvements to existing systems."
-      - "Led major overhauls of existing interfaces using Bootstrap 3."
-      - "Wrote extensive unit, integration, and system tests using RSpec and Selenium Webdriver."
+      - "Collaborated with a team of developers, analysts, and contributors to develop the full stack of open-source web applications for medical research."
+      - "Interfaced with analysts to devise new requirements for and make improvements to existing systems."
+      - "Led multiple projects to improve front-end interfaces and back-end architectural performance."
+      - "Wrote comprehensive automated unit and integration tests using the RSpec testing framework and Selenium WebDriver."
 
 portfolio:
   target_charts:
     name: "Target Charts"
-    description: "A web application for tracking and visualizing production targets, developed for my senior capstone project in collaboration with Bosch Charleston. Includes customizable visualization, efficient data entry, and full responsiveness."
+    description: "A web application for tracking and visualizing factory production targets developed and presented for my senior capstone team project in collaboration with Bosch Charleston. Includes customizable visualization, efficient data entry, and full responsiveness."
     featured: "true"
     tags:
       - Ruby on Rails
@@ -123,6 +157,7 @@ portfolio:
     featured: "true"
     tags:
       - PHP
+      - SQL
       - Bootstrap
       - jQuery
     links:

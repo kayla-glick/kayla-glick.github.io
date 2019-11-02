@@ -1,23 +1,40 @@
 #contact {
+  min-height: calc(100vh - 120px);
   padding-bottom: 0;
 
   .section-container {
-    padding-bottom: 0;
-    display: flex;
-    flex-flow: column;
-
     .section-content-container {
       flex: 1;
     }
   }
+}
 
-  svg {
-    width: 32px;
-    height: 32px;
+#siteFooter {
+  height: 120px;
+
+  #footerLinks {
+    width: 200px;
   }
+}
 
-  footer {
-    display: flex;
-    flex-wrap: wrap;
+@include media-breakpoint-up(xs) {
+  #siteFooter {
+    #footerLinks {
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #siteFooter {
+    #footerLinks {
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
   }
 }

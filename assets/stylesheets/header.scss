@@ -1,20 +1,22 @@
 #siteHeader {
-  height: 80px;
+  height: 100px;
   display: flex;
   align-items: center;
 
   nav.navbar {
     width: 100%;
     height: 100%;
-    padding: 0;
+    padding: 1.5rem;
 
     &::before {
       content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       opacity: 0;
       z-index: -1;
-      position: absolute;
       background-color: theme-color('dark');
       transition: opacity var(--animation-duration) ease-in-out;
     }
@@ -23,34 +25,224 @@
       &::before {
         opacity: 0.75;
       }
+    }
 
-      .navbar-brand {
-        #headerName {
-          opacity: 1 !important;
-        }
+    .navbar-brand {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      z-index: 1;
+
+      .logo {
+        transition: all var(--animation-duration) ease-in-out;
       }
     }
 
-    .container-fluid, .container {
-      height: 100%;
+    .navbar-toggler {
+      flex-flow: column;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1;
 
-      .navbar-brand {
-        padding: 0;
-        margin: 0;
+      &:not(.collapsed) {
+        .toggler-bar {
+          &:nth-child(2)::before {
+            width: 100%;
+          }
+
+          &:nth-child(3)::before {
+            opacity: 0;
+          }
+
+          &:nth-child(4)::before {
+            width: 100%;
+          }
+        }
+      }
+
+      .toggler-bar {
+        position: relative;
+        width: 100%;
+
+        &::before {
+          content: "";
+          position: absolute;
+          right: 0;
+          height: 2px;
+          background: theme-color('pop');
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:nth-child(2)::before {
+          width: 100%;
+        }
+
+        &:nth-child(3)::before {
+          width: 85%;
+          opacity: 1;
+        }
+
+        &:nth-child(4)::before {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  #siteHeader {
+    nav.navbar {
+      .navbar-toggler {
+        &:not(.collapsed) {
+          .toggler-bar {
+            &:nth-child(2)::before {
+              transform: translateY(8px) rotate(225deg);
+            }
+
+            &:nth-child(4)::before {
+              transform: translateY(-8px) rotate(-225deg);
+            }
+          }
+        }
+      }
+
+      .collapse {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
         display: flex;
-        align-items: center;
+        pointer-events: none;
 
-        .logo {
-          height: 64px;
-          width: 64px;
-          transition: all var(--animation-duration) ease-in-out;
+        &.show {
+          pointer-events: all;
+
+          .collapse-overlay {
+            opacity: 0.5;
+          }
+
+          .navbar-nav {
+            right: 0;
+          }
         }
 
-        #headerName {
+        .collapse-overlay {
+          height: 100vh;
+          width: 100vw;
+          background: theme-color('dark');
           opacity: 0;
-          color: inherit;
-          transition: opacity var(--animation-duration) ease-in-out;
+
+          transition: opacity 0.3s ease-in-out;
         }
+
+        .navbar-nav {
+          position: absolute;
+          right: -50vw;
+          height: 100vh;
+          width: 50vw;
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          justify-content: center;
+          background: theme-color-level('dark', -1);
+          z-index: 1;
+          transition: right 0.3s ease-in-out;
+
+          .nav-item {
+            padding: 0.5rem 0;
+
+            #resume {
+              margin-top: 2.5rem;
+              padding: 0.5rem 1rem !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main#content {
+    &.blur {
+      filter: blur(4px);
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  #siteHeader {
+    nav.navbar {
+      .navbar-toggler {
+        &:not(.collapsed) {
+          .toggler-bar {
+            &:nth-child(2)::before {
+              transform: translateY(9px) rotate(225deg);
+            }
+
+            &:nth-child(4)::before {
+              transform: translateY(-9px) rotate(-225deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  #siteHeader {
+    nav.navbar {
+      .collapse {
+        .navbar-nav {
+          right: -75vw;
+          width: 75vw;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xs) {
+  #siteHeader {
+    nav.navbar {
+      .navbar-brand .logo {
+        height: 48px;
+        width: 48px;
+      }
+
+      .navbar-toggler {
+        width: 48px;
+        height: 48px;
+        padding: 1rem 0.75rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #siteHeader {
+    .navbar-brand .logo {
+      height: 64px;
+      width: 64px;
+    }
+
+    .navbar-toggler {
+      width: 64px;
+      height: 64px;
+      padding: 1.25rem 0.9rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #siteHeader {
+    nav.navbar {
+      .navbar-brand {
+        margin-left: 10px;
       }
 
       .collapse {
@@ -63,25 +255,28 @@
             padding: 0;
 
             .nav-link {
-              color: theme-color('light');
-              padding: 10px;
               margin: 0 10px;
 
-              &::after {
-                content: '';
-                width: 25px;
-                height: 1px;
-                margin: 0 auto;
-                background: theme-color('pop');
-                display: block;
-                transition: all var(--animation-duration) ease-in-out;
-              }
-
-              &:hover, &:active, &.active {
-                color: theme-color('pop') !important;
+              &:not(.btn) {
+                padding: 10px;
+                color: theme-color('light');
 
                 &::after {
-                  width: 100%;
+                  content: '';
+                  width: 25px;
+                  height: 1px;
+                  margin: 0 auto;
+                  background: theme-color('pop');
+                  display: block;
+                  transition: all var(--animation-duration) ease-in-out;
+                }
+
+                &:hover, &:active, &.active {
+                  color: theme-color('pop') !important;
+
+                  &::after {
+                    width: 100%;
+                  }
                 }
               }
             }
@@ -89,6 +284,24 @@
 
           #resumeLink {
             margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-only(sm) {
+  #siteHeader {
+    nav.navbar {
+      .collapse {
+        .navbar-nav {
+          .nav-item {
+            padding: 0;
+
+            #resume {
+              margin-top: 1rem;
+            }
           }
         }
       }

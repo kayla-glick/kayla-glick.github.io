@@ -25,12 +25,13 @@
     .carousel-item {
       display: flex;
 
-      img {
+      .carousel-image {
         position: absolute;
         width: 150%;
         height: 100%;
         left: -25%;
         display: block;
+        filter: blur(4px);
       }
 
       .carousel-overlay {
@@ -47,6 +48,7 @@
 
       .carousel-caption {
         position: initial;
+        width: 100%;
         padding: 0;
         display: flex;
         flex-flow: column;
@@ -75,6 +77,22 @@
 
         .carousel-caption-body {
           flex: 1;
+
+          li:not(:last-of-type) {
+            @extend .mb-1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-only(xs) {
+  .carousel {
+    .carousel-item {
+      .carousel-caption {
+        .carousel-caption-body {
+          padding: 0.5rem !important;
         }
       }
     }
