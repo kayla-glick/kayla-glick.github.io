@@ -57,3 +57,15 @@ section {
     }
   }
 }
+
+@media (max-width: 2560px) {
+  .section-container {
+    max-width: 1440px;
+  }  
+}
+
+@media (max-width: 3840px) {
+  .section-container {
+    .max-width: 2898px;
+  }
+}
