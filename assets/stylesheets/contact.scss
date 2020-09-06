@@ -11,10 +11,6 @@
 
 #siteFooter {
   height: 120px;
-
-  #footerLinks {
-    width: 200px;
-  }
 }
 
 @include media-breakpoint-up(xs) {
