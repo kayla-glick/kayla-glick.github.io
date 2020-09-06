@@ -1,85 +1,80 @@
 #experience {
-  #employerLinks {
-    .employer-link {
-      .btn.btn-employer {
-        color: theme-color('text');
-        transition: all 0.3s ease-in-out;
-
-        &.active, &:hover {
-          background: rgba(theme-color('pop'), 0.1);
-          color: theme-color('pop');
-        }
-      }
-    }
-  }
-  #employerCarousel {
-    ul {
-      padding-left: 1.5rem;
-      list-style: none;
-
-      li {
+  .row {
+    &:not(:last-child) {
+      .col-6 {
         position: relative;
+        padding-bottom: 1.5rem;
 
-        &::before {
-          content: "\2023";
-          position: absolute;
-          top: -.5em;
-          left: -1rem;
-          color: theme-color('pop');
-          font-size: 2em;
+        &:first-child.order-last {
+          border-left: 2px solid theme-color-level('pop', -10);
+
+          &+ .col-6 {
+            border-right: 2px solid theme-color-level('pop', -10);
+          }
+        }
+
+        &:first-child:not(.order-last) {
+          border-right: 2px solid theme-color-level('pop', -10);
+
+          &+ .col-6 {
+            border-left: 2px solid theme-color-level('pop', -10);
+          }
         }
       }
     }
-  }
-}
 
-@include media-breakpoint-up(sm) {
-  #experience {
-    #employerLinks {
-      .btn.btn-employer {
-        border-top: 0;
-        border-bottom: 0;
-        border-right: 0;
-        border-left: 2px solid rgba(theme-color('text'), 0.25);
-        text-align: left;
+    .col-6 {
+      position: relative;
 
-        &.active, &:hover {
-          border-left: 2px solid theme-color('pop');
+      &:first-child.order-last {
+        padding-left: 1.5rem;
+
+        &+ .col-6 {
+          padding-right: 1.5rem;
+          text-align: right;
         }
+
+        .timeline-indicator {
+          left: -17.5px;
+        }
+      }
+
+      &:first-child:not(.order-last) {
+        padding-right: 1.5rem;
+
+        &+ .col-6 {
+          padding-left: 1.5rem;
+          text-align: left;
+        }
+
+        .timeline-indicator {
+          right: -17.5px;
+        }
+      }
+
+      .timeline-indicator {
+        position: absolute;
+        top: 0;
+        width: 32px;
+        height: 32px;
+        color: theme-color('pop');
+        background: white;
+        z-index: 1;
       }
     }
   }
-}
 
-@include media-breakpoint-only(xs) {
-  #experience {
-    #employerLinksContainer {
-      overflow-x: scroll;
+  .responsibilities {
+    padding-left: 0;
 
-      #employerLinks {
-        overflow-x: visible;
-        display: flex;
+    li {
+      position: relative;
+      padding-left: 0.75rem;
 
-        .employer-link {
-          display: flex;
-
-          &:last-of-type {
-            padding-right: 1rem;
-          }
-
-          .btn.btn-employer {
-            min-width: 120px;
-            border-top: 0;
-            border-bottom: 2px solid rgba(theme-color('text'), 0.25);
-            border-right: 0;
-            border-left: 0;
-            white-space: nowrap;
-
-            &.active, &:hover {
-              border-bottom: 2px solid theme-color('pop');
-            }
-          }
-        }
+      &::before {
+        content: "-";
+        position: absolute;
+        left: 0;
       }
     }
   }

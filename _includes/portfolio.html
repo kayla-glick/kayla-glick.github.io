@@ -1,33 +1,36 @@
 <section id="portfolio">
+  {% assign brands = 'github|youtube' split '|' %}
   <div class="section-container container-fluid">
     <div class="section-title-container">
-      <h1 class="section-title">Featured Projects<hr/></h1>
+      <h1 class="section-title fade-in">Featured Projects<hr/></h1>
     </div>
     <div class="section-content-container">
       {% for project in site.portfolio %}
-        <div class="project-container w-100 fade-in">
-          <img src="{{ site.base_url }}/assets/images/portfolio/{{ project[0] }}/cover.png" class="d-block project-cover fade-in fade-in-sub">
-          <div class="project-details h-100 col-12 col-sm-6 d-flex flex-column justify-content-center">
-            <div class="fade-in fade-in-sub mb-2 mb-sm-3">
-              <a href="{{ project[1].links.github }}" target="blank" class="h2 mb-0">{{ project[1].name }}</a>
-            </div>
-            <div class="project-description card fade-in fade-in-sub mb-2 mb-sm-3">
-              <div class="card-body p-xl-4">
-                <p class="mb-0"><small>{{ project[1].description }}</small></p>
+        {% if project[1].featured == 'true' %}
+          <div class="project-container w-100 fade-in">
+            <img src="{{ site.base_url }}/assets/images/portfolio/{{ project[0] }}/cover.png" class="d-block project-cover fade-in fade-in-sub">
+            <div class="project-details h-100 col-12 col-sm-6 d-flex flex-column justify-content-center">
+              <div class="fade-in fade-in-sub mb-2 mb-sm-3">
+                <a href="{{ project[1].links.github }}" target="blank" class="h1 mb-0">{{ project[1].name }}</a>
+              </div>
+              <div class="project-description card fade-in fade-in-sub mb-1">
+                <div class="card-body p-xl-4">
+                  <p class="mb-0"><small>{{ project[1].description }}</small></p>
+                </div>
+              </div>
+              <p class="project-tags mb-2">
+                <small>{% for tag in project[1].tags %}<span class="tag text-pop fade-in fade-in-sub">{{ tag }}</span>{% endfor %}</small>
+              </p>
+              <div class="project-links">
+                {% for link in project[1].links %}
+                  <div class="fade-in fade-in-sub ml-2">
+                    <a href="{{ link[1] }}" target="blank" class="link {{ link[0] }}"><i class="{% if brands contains link[0] %}fab{% else %}fas{% endif %} fa-{{ link[0] }} fa-lg"></i></a>
+                  </div>
+                {% endfor %}
               </div>
             </div>
-            <p class="project-tags mb-2 mb-sm-3">
-              <small>{% for tag in project[1].tags %}<span class="tag fade-in fade-in-sub">{{ tag }}</span>{% endfor %}</small>
-            </p>
-            <div class="project-links">
-              {% for link in project[1].links %}
-                <div class="fade-in fade-in-sub ml-2">
-                  <a href="{{ link[1] }}" target="blank" class="link"><i class="fab fa-{{ link[0] }} fa-lg"></i></a>
-                </div>
-              {% endfor %}
-            </div>
           </div>
-        </div>
+        {% endif %}
       {% endfor %}
     </div>
   </div>

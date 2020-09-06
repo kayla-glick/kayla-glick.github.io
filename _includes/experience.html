@@ -1,50 +1,28 @@
 <section id="experience">
   <div class="section-container container-fluid">
     <div class="section-title-container">
-      <h1 class="section-title">Where I've Worked<hr/></h1>
+      <h1 class="section-title fade-in">Where I've Worked<hr/></h1>
     </div>
     <div class="section-content-container">
-      <div class="row">
-        <div class="col-12 col-sm-3" id="employerLinksContainer">
-          <ul class="list-unstyled" id="employerLinks">
-            {%- for job in site.employers -%}
-              <li class="employer-link">
-                <button class="btn btn-block btn-employer fade-in{% if forloop.index == 1 %} active{%endif %}" data-index="{{ forloop.index | minus: 1 }}">{{ job[1].employer_short }}<br/><small class="text-text d-none d-sm-block">{{ job[1].dates }}</small></button>
-              </li>
-            {%- endfor -%}
-          </ul>
-        </div>
-        <div id="employerCarousel" class="col-12 col-sm-9 carousel slide carousel-fade fade-in" data-ride="carousel" data-interval="false">
-          <div class="carousel-inner">
-            {% for job in site.employers %}
-              <div id="job{{ forloop.index | minus: 1 }}" class="carousel-item{% if forloop.index == 1 %} active{% endif %}">
-                <img src="{{ site.baseurl }}/assets/images/experience/{{ job[0] }}/banner.jpg" class="carousel-image">
-                <div class="carousel-overlay"></div>
-                <div class="carousel-caption">
-                  <div class="carousel-caption-header">
-                    <h4><span class="text-white">{{ job[1].role }}</span> @ <a href="{{ job[1].employer_link }}" target="_blank">{{ job[1].employer }}</a></h4>
-                    <h6 class="text-muted mb-0">{{ job[1].dates }}</h6>
-                  </div>
-                  <div class="carousel-caption-body">
-                    <ul class="mb-0">
-                      {% for responsibility in job[1].responsibilities %}
-                        <li class="text-white">{{ responsibility }}</li>
-                      {% endfor %}
-                    </ul>
-                  </div>
-                  <div class="carousel-caption-footer">
-                    <span class="text-pop"><i class="fas fa-map-marker-alt"></i> {{ job[1].location }}</span>
-                    <div class="float-right">
-                      <span class="text-pop"><i class="fal fa-link"></i></span>
-                      <a href="{{ job[1].link }}" target="blank" class="h6 mb-0"><span>{{ job[1].link }}</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            {% endfor %}
+      {% for role in site.roles %}
+        {% assign mod = forloop.index | modulo: 2 %}
+        <div class="row">
+          <div class="col-6 {% if mod == 0 %}order-last{% endif %}">
+            <i class="fas fa-dot-circle timeline-indicator"></i>
+            <a href="{{ role[1].employer_link }}" class="text-pop h3 mb-0 fade-in"><span class="font-weight-bold">{{ role[1].employer }}</span></a>
+            <h3 class="text-pop mb-0 fade-in"><em>{{ role[1].role }}</em></h3>
+            <h4 class="text-muted fade-in"><small>{{ role[1].dates }} - {{ role[1].location }}</small></h4>
+            <ul class="responsibilities list-unstyled mb-0 fade-in">
+              {% for responsibility in role[1].responsibilities %}
+                <li class="text-text">{{ responsibility }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="col-6">
+            <h3 class="text-pop mb-0 fade-in">{{ role[1].year }}</h3>
           </div>
         </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
