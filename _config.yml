@@ -26,15 +26,10 @@ skills:
     javascript:
       text: "JavaScript (ES6+)"
       proficiency: 4
-    coffeescript:
-      text: "Coffeescript (1 & 2)"
       proficiency: 4
     sql:
       text: "SQL"
       proficiency: 4
-    java:
-      text: "Java"
-      proficiency: 3
     bash:
       text: "Bash"
       proficiency: 2
@@ -48,11 +43,14 @@ skills:
     jQuery:
       text: "jQuery"
       proficiency: 4
+    react:
+      text: "React"
+      proficiency: 3
     nodejs:
       text: "Node.js"
-      proficiency: 3
-    react:
-      text: "React (Currently Learning)"
+      proficiency: 2
+    graphql:
+      text: "GraphQL (New)"
       proficiency: 1
   tools:
     git:
@@ -64,21 +62,15 @@ skills:
     yaml:
       text: "YAML"
       proficiency: 5
+    github:
+      text: "GitHub"
+      proficiency: 5
     pivotal:
-      text: "Pivotal Tracker"
-      proficiency: 4
-    travis:
-      text: "Travis CI"
+      text: "Storyboards (Pivotal, Jira)"
       proficiency: 4
     mysql:
       text: "MySQL"
       proficiency: 4
-    uml:
-      text: "UML"
-      proficiency: 3
-    webpack:
-      text: "Webpack"
-      proficiency: 2
   principles:
     agile:
       text: "Agile / Scrum"
@@ -95,39 +87,46 @@ skills:
     tdd:
       text: "Test-Driven-Development"
       proficiency: 4
+    ci:
+      text: "Continuous Integration"
+      proficiency: 4
 
 roles:
+  dutchie_soft_eng:
+    employer: "Dutchie"
+    employer_link: "https://dutchie.com/"
+    role: "Software Engineer III"
+    dates: "Mar 2021 - Present"
+    year: "2021"
+    location: "Remote"
+    responsibilities:
   musc_senior_web_dev:
-    employer: "Medical University of South Carolina"
+    employer: "MUSC"
     employer_link: "https://web.musc.edu/"
     role: "Senior Web Developer"
-    dates: "Jan 2020 - Present"
+    dates: "Jan 2020 - Feb 2021"
     year: "2020"
-    location: "Remote, Charleston, SC"
+    location: "Remote / Charleston, SC"
     responsibilities:
-      - "Develop and manage multiple open-source web applications under MUSC."
+      - "Develop and manage open-source Ruby on Rails web applications."
       - "Collaborate with stakeholders to plan new features, sprints and releases."
       - "Manage storyboards, pull requests, and code deployments to meet sprint deadlines."
-      - "Delegate tasks and deliver team progress reports during weekly sprint meetings."
-      - "Perform thorough review and provide feedback on all code contributions."
-      - "Train new developers and provide advice, support, and guidance as needed."
       - "Design and update interfaces according to UX and accessibility principles."
       - "Refactor back-end architecture to improve performance of applications."
-      - "Oversee comprehensive automated testing using continuous integration."
   musc_web_dev:
-    employer: "Medical University of South Carolina"
+    employer: "MUSC"
     employer_link: "https://web.musc.edu/"
     role: "Web Developer"
     year: "2018"
     dates: "Oct 2018 - Dec 2019"
-    location: "Remote, Charleston, SC"
+    location: "Remote / Charleston, SC"
     responsibilities:
       - "Collaborated with a team of developers, analysts, and contributors to develop the full stack of open-source web applications for MUSC."
       - "Interfaced with analysts to devise new requirements for and make improvements to existing applications."
       - "Led multiple projects to improve front-end interfaces and back-end architectural performance."
       - "Wrote comprehensive automated unit and integration tests."
   musc_intern:
-    employer: "Medical University of South Carolina"
+    employer: "MUSC"
     employer_link: "https://web.musc.edu/"
     role: "Web Developer Intern"
     dates: "Jun 2015 - Sept 2018"
