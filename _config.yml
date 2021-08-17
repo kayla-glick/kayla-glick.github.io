@@ -46,12 +46,12 @@ skills:
     react:
       text: "React"
       proficiency: 3
+    graphql:
+      text: "GraphQL"
+      proficiency: 3
     nodejs:
       text: "Node.js"
       proficiency: 2
-    graphql:
-      text: "GraphQL (New)"
-      proficiency: 1
   tools:
     git:
       text: "Git"
@@ -92,14 +92,28 @@ skills:
       proficiency: 4
 
 roles:
+  dutchie_senior_soft_eng:
+    employer: "Dutchie"
+    employer_link: "https://dutchie.com/"
+    role: "Senior Software Engineer"
+    dates: "Jul 2021 - Present"
+    year: "2021"
+    location: "Remote"
+    responsibilities:
+      - "Planning future pyments projects (🤫 hush hush) and infrastructure improvements."
+      - "Writing and managing Jira tickets for the payments team."
+      - "... and more to come!"
   dutchie_soft_eng:
     employer: "Dutchie"
     employer_link: "https://dutchie.com/"
     role: "Software Engineer III"
-    dates: "Mar 2021 - Present"
+    dates: "Mar 2021 - Jul 2021"
     year: "2021"
     location: "Remote"
     responsibilities:
+      - "Set up 3rd-party payment processor integrations to be used at dutchie."
+      - "Started the groundwork for a centralized infrastructure for payment processing."
+      - "Mentored other teammates in the dutchie back-end stack."
   musc_senior_web_dev:
     employer: "MUSC"
     employer_link: "https://web.musc.edu/"
