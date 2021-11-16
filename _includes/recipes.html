@@ -1,0 +1,16 @@
+<section id="recipes">
+  <div class="section-container container-fluid d-flex flex-column">
+    <div class="section-title-container">
+      <h1 class="section-title fade-in">My Recipe Book<hr/></h1>
+    </div>
+    <div class="section-content-container">
+      <div class="d-flex flex-wrap">
+        {% for recipe in site.recipes %}
+          <div class="flex-fill">
+            <h3>{{ recipe[1].name }}</h3>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,14 +1,14 @@
 #experience {
-  .row {
+  .timeline-row {
     &:not(:last-child) {
-      .col-6 {
+      .timeline-section-container {
         position: relative;
         padding-bottom: 1.5rem;
 
         &:first-child.order-last {
           border-left: 2px solid theme-color-level('pop', -10);
 
-          &+ .col-6 {
+          &+ .timeline-section-container {
             border-right: 2px solid theme-color-level('pop', -10);
           }
         }
@@ -16,20 +16,20 @@
         &:first-child:not(.order-last) {
           border-right: 2px solid theme-color-level('pop', -10);
 
-          &+ .col-6 {
+          &+ .timeline-section-container {
             border-left: 2px solid theme-color-level('pop', -10);
           }
         }
       }
     }
 
-    .col-6 {
+    .timeline-section-container {
       position: relative;
 
       &:first-child.order-last {
         padding-left: 1.5rem;
 
-        &+ .col-6 {
+        &+ .timeline-section-container {
           padding-right: 1.5rem;
           text-align: right;
         }
@@ -42,7 +42,7 @@
       &:first-child:not(.order-last) {
         padding-right: 1.5rem;
 
-        &+ .col-6 {
+        &+ .timeline-section-container {
           padding-left: 1.5rem;
           text-align: left;
         }
@@ -62,19 +62,34 @@
         z-index: 1;
       }
     }
+
+    .responsibilities {
+      padding-left: 0;
+
+      li {
+        position: relative;
+        padding-left: 0.75rem;
+
+        &::before {
+          content: "-";
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
   }
+}
 
-  .responsibilities {
-    padding-left: 0;
 
-    li {
-      position: relative;
-      padding-left: 0.75rem;
+@include media-breakpoint-up(xs) {
+  #experience {
+    .timeline-row {
+      &:first-child {
+        padding-top: 1rem;
+      }
 
-      &::before {
-        content: "-";
-        position: absolute;
-        left: 0;
+      .timeline-section {
+        margin-top: -1rem;
       }
     }
   }
