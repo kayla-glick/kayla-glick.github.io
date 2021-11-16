@@ -171,60 +171,60 @@ recipes:
     labels:
       - (V)
 
-# portfolio:
-#   sparcrequest:
-#     name: "SPARCRequest"
-#     description: "An open-source web-based research management system developed by my team under the South Carolina Clinical & Translational Research Institute that integrates research and clinical care workflows."
-#     featured: "true"
-#     tags:
-#       - Ruby on Rails
-#       - Bootstrap 4
-#       - JavaScript (ES6)
-#       - jQuery
-#     links:
-#       github: "https://github.com/sparc-request/sparc-request"
-#       external-link-alt: "https://sparc.musc.edu"
-#   living_biobank:
-#     name: "Living BioBank"
-#     description: "An open-source web application developed by myself and a few other collaborators under the Medical University of South Carolina Biomedical Informatics Center for the capture and delivery of de-identified clinical data and phenotyped specimens."
-#     featured: "true"
-#     tags:
-#       - Ruby on Rails
-#       - Bootstrap 4
-#       - JavaScript (ES6)
-#       - jQuery
-#     links:
-#       github: "https://github.com/living-biobank/living-biobank"
-#       external-link-alt: "https://lbb.musc.edu"
-#   target_charts:
-#     name: "Target Charts"
-#     description: "A web application developed and presented for my senior capstone team project in collaboration with Bosch Charleston that integrates data management, tracking, and in-depth and customizable visualization of production target tracking."
-#     featured: "true"
-#     tags:
-#       - Ruby on Rails
-#       - Bootstrap 4
-#       - jQuery
-#     links:
-#       github: "https://github.com/Anderson-Lab/capstone-spring-2018-team-4"
-#       youtube: "https://www.youtube.com/watch?v=ShAVnZbSqfY&feature=youtu.be"
-#   360snoozin:
-#     name: "360Snoozin"
-#     description: "A dual-alarm AM/FM radio clock application developed for my Software Architecture and Design class. Uses multi-threading to accomplish asynchronous timing and radio functionality."
-#     featured: "false"
-#     tags:
-#       - JavaFX
-#       - Bootstrap
-#       - jQuery
-#     links:
-#       github: "https://github.com/kayla-glick/360Snoozin"
-#   movedb:
-#     name: "MovEDB"
-#     description: "A movie ticketing and theater management web application developed for my Database Concepts class. Open new theaters, choose which movies to show, and allow moviegoers to purchase tickets."
-#     featured: "false"
-#     tags:
-#       - PHP
-#       - SQL
-#       - Bootstrap
-#       - jQuery
-#     links:
-#       github: "https://github.com/kayla-glick/csci-332"
+portfolio:
+  sparcrequest:
+    name: "SPARCRequest"
+    description: "An open-source web-based research management system developed by my team under the South Carolina Clinical & Translational Research Institute that integrates research and clinical care workflows."
+    featured: "true"
+    tags:
+      - Ruby on Rails
+      - Bootstrap 4
+      - JavaScript (ES6)
+      - jQuery
+    links:
+      github: "https://github.com/sparc-request/sparc-request"
+      external-link-alt: "https://sparc.musc.edu"
+  living_biobank:
+    name: "Living BioBank"
+    description: "An open-source web application developed by myself and a few other collaborators under the Medical University of South Carolina Biomedical Informatics Center for the capture and delivery of de-identified clinical data and phenotyped specimens."
+    featured: "true"
+    tags:
+      - Ruby on Rails
+      - Bootstrap 4
+      - JavaScript (ES6)
+      - jQuery
+    links:
+      github: "https://github.com/living-biobank/living-biobank"
+      external-link-alt: "https://lbb.musc.edu"
+  target_charts:
+    name: "Target Charts"
+    description: "A web application developed and presented for my senior capstone team project in collaboration with Bosch Charleston that integrates data management, tracking, and in-depth and customizable visualization of production target tracking."
+    featured: "true"
+    tags:
+      - Ruby on Rails
+      - Bootstrap 4
+      - jQuery
+    links:
+      github: "https://github.com/Anderson-Lab/capstone-spring-2018-team-4"
+      youtube: "https://www.youtube.com/watch?v=ShAVnZbSqfY&feature=youtu.be"
+  360snoozin:
+    name: "360Snoozin"
+    description: "A dual-alarm AM/FM radio clock application developed for my Software Architecture and Design class. Uses multi-threading to accomplish asynchronous timing and radio functionality."
+    featured: "false"
+    tags:
+      - JavaFX
+      - Bootstrap
+      - jQuery
+    links:
+      github: "https://github.com/kayla-glick/360Snoozin"
+  movedb:
+    name: "MovEDB"
+    description: "A movie ticketing and theater management web application developed for my Database Concepts class. Open new theaters, choose which movies to show, and allow moviegoers to purchase tickets."
+    featured: "false"
+    tags:
+      - PHP
+      - SQL
+      - Bootstrap
+      - jQuery
+    links:
+      github: "https://github.com/kayla-glick/csci-332"
