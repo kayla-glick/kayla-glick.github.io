@@ -7,9 +7,9 @@
       <div id="skills" class="w-100 fade-in">
         <div class="row">
           <div class="col-12 col-md-6">
-            <h4 class="w-100">Programming Languages</h4>
+            <h4 class="w-100">Languages & Frameworks</h4>
             <ul class="list-unstyled">
-              {% for skill in site.skills.languages %}
+              {% for skill in site.skills.languages_frameworks %}
                 <li class="skill-container fade-in fade-in-sub">
                   <div class="skill">
                     <span>{{ skill[1]['text'] }}</span>
@@ -28,9 +28,9 @@
             </ul>
           </div>
           <div class="col-12 col-md-6">
-            <h4 class="w-100">Libraries & Frameworks</h4>
+            <h4 class="w-100">Tools & Principles</h4>
             <ul class="list-unstyled">
-              {% for skill in site.skills.frameworks %}
+              {% for skill in site.skills.tools_principles %}
                 <li class="skill-container fade-in fade-in-sub">
                   <div class="skill">
                     <span>{{ skill[1]['text'] }}</span>
@@ -49,7 +49,7 @@
             </ul>
           </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-12 col-md-6">
             <h4 class="w-100">Tools & Platforms</h4>
             <ul class="list-unstyled">
@@ -92,7 +92,7 @@
               {% endfor %}
             </ul>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

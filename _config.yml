@@ -13,85 +13,64 @@ sass:
 title: "Kayla Glick | Web Developer"
 
 skills:
-  languages:
-    ruby:
-      text: "Ruby"
-      proficiency: 5
-    html:
-      text: "HTML"
-      proficiency: 5
-    sass:
-      text: "CSS / Sass"
-      proficiency: 5
-    javascript:
-      text: "JavaScript (ES6+)"
-      proficiency: 4
-      proficiency: 4
-    sql:
-      text: "SQL"
-      proficiency: 4
-    bash:
-      text: "Bash"
-      proficiency: 2
-  frameworks:
+  languages_frameworks:
     rails:
       text: "Ruby on Rails"
       proficiency: 5
-    bootstrap:
-      text: "Bootstrap"
+    javascript:
+      text: "JavaScript (ES6+)"
       proficiency: 5
-    jQuery:
-      text: "jQuery"
-      proficiency: 4
-    react:
-      text: "React"
-      proficiency: 3
-    graphql:
-      text: "GraphQL"
-      proficiency: 3
-    grpc:
-      text: "gRPC"
-      proficiency: 3
-    nodejs:
-      text: "Node.js"
-      proficiency: 2
-  tools:
-    git:
-      text: "Git + GitHub"
+    html:
+      text: "HTML5"
       proficiency: 5
     json:
       text: "JSON"
       proficiency: 5
-    yaml:
-      text: "YAML"
+    bootstrap:
+      text: "Bootstrap"
+      proficiency: 4
+    sass:
+      text: "CSS & Sass"
+      proficiency: 4
+    sql:
+      text: "SQL"
+      proficiency: 4
+    grpc:
+      text: "gRPC"
+      proficiency: 4
+    graphql:
+      text: "GraphQL"
+      proficiency: 3
+    react:
+      text: "React"
+      proficiency: 3
+  tools_principles:
+    apis:
+      text: "REST & RPC APIs"
       proficiency: 5
-    pivotal:
-      text: "Storyboards (Pivotal, Jira)"
-      proficiency: 4
-    lucid:
-      text: "Lucid Charts"
-      proficiency: 4
-    databases:
-      text: "MySQL, Postgres, MongoDB"
-      proficiency: 4
-  principles:
     agile:
-      text: "Agile / Scrum"
+      text: "Agile Development"
       proficiency: 5
-    mvc:
-      text: "Model-View-Controller"
+    datamodels:
+      text: "Data Modeling"
       proficiency: 5
-    rest:
-      text: "RESTful Architecture"
+    flowchart:
+      text: "Flowchart Design"
+      proficiency: 5
+    projman:
+      text: "Project Management"
       proficiency: 4
-    saas:
-      text: "Software as a Service"
+    ux:
+      text: "UX Design Principles"
       proficiency: 4
-    tdd:
-      text: "Test-Driven-Development"
+    git:
+      text: "Git Version Control"
       proficiency: 4
-    ci:
-      text: "Continuous Integration"
+    storyboards:
+      text: "Storyboards"
+      proficiency: 4
+    automation:
+      text: "Test Automation"
       proficiency: 4
 
 roles:
@@ -103,7 +82,15 @@ roles:
     year: "Present"
     location: "Remote"
     responsibilities:
-      - "More details to come!"
+      - "Tech lead and consulting engineer for Dutchie’s online payments team."
+      - "Architect for the workflows, services, and underlying data models supporting Dutchie’s in-house payments service, Dutchie Pay."
+      - "Draft engineering project blueprints from product specifications and design mock-ups, and consult on blueprints from other teams."
+      - "Develop high-level estimates to help determine project timelines and resource estimation."
+      - "Create and manage Jira tickets and sprint storyboards for the online payments team."
+      - "Manage releases and deployments using Git & Heroku Enterprise."
+      - "Drive incident investigation and response using Datadog, Rollbar, and the Heroku console."
+      - "Mentor and provide guidance to other members of the team."
+
   dutchie_soft_eng:
     employer: "Dutchie"
     employer_link: "https://dutchie.com/"
@@ -112,12 +99,11 @@ roles:
     year: "2021"
     location: "Remote"
     responsibilities:
-      - "Planned and lead a top-secret online payments infrastructure for Dutchie's e-commerce platform."
-      - "Drafted project design documents on Confluence with diagrams from Lucid Charts."
-      - "Manaed Jira tickets and sprint planning for my team."
-      - "Collaborated with product and design teams to plan new payments workflows."
-      - "Mentored other teammates in the dutchie back-end stack."
-      - "Implemented full-stack project code using Ruby on Rails, gRPC, GraphQL, and React"
+      - "Developed a new full-stack platform for accepting online credit card payments with Rails, GraphQL, and React."
+      - "Began investigation and initial planning for Dutchie’s in-house payments platform."
+      - "Devised new patterns to consolidate Dutchie’s back-end service objects."
+      - "Proposed improvements to Dutchie’s back-end testing practices."
+
   musc_senior_web_dev:
     employer: "MUSC"
     employer_link: "https://web.musc.edu/"
@@ -126,11 +112,12 @@ roles:
     year: "2020"
     location: "Remote / Charleston, SC"
     responsibilities:
-      - "Developed and managed open-source Ruby on Rails web applications."
-      - "Collaborated with stakeholders to plan new features, sprints and releases."
+      - "Collaborate with stakeholders to plan new features, sprints and releases."
       - "Managed storyboards, pull requests, and code deployments to meet sprint deadlines."
-      - "Designed and updated interfaces according to UX and accessibility principles."
-      - "Refactored back-end architecture to improve performance of applications."
+      - "Refactored multiple back-end components to improve application performance"
+      - "Trained new developers and provided advice, support, and guidance as needed."
+      - "Performed thorough review and provided feedback on all code contributions."
+
   musc_web_dev:
     employer: "MUSC"
     employer_link: "https://web.musc.edu/"
@@ -139,10 +126,10 @@ roles:
     dates: "Oct 2018 - Dec 2019"
     location: "Remote / Charleston, SC"
     responsibilities:
-      - "Collaborated with a team of developers, analysts, and contributors to develop the full stack of open-source web applications for MUSC."
+      - "Joined the same team I had interned for after graduation, performing many of the same roles as I had previously."
+      - "Led multiple projects to improve front-end UX, including implementing Bootstrap and re-designing multiple sections of our applications."
       - "Interfaced with analysts to devise new requirements for and make improvements to existing applications."
-      - "Led multiple projects to improve front-end interfaces and back-end architectural performance."
-      - "Wrote comprehensive automated unit and integration tests."
+
   musc_intern:
     employer: "MUSC"
     employer_link: "https://web.musc.edu/"
@@ -150,6 +137,10 @@ roles:
     dates: "Jun 2015 - Sept 2018"
     year: "2015"
     location: "Charleston, SC"
+    responsibilities:
+      - "Learned Ruby on Rails, HTML, JavaScript and web development concepts from scratch while attending school."
+      - "Collaborated with other interns and full-time developers to build and maintain full-stack Ruby on Rails web applications."
+      - "Improved upon existing RSpec and Capybara tests to provide more-comprehensive test coverage."
 
 recipes:
   onigirazu:
@@ -172,6 +163,17 @@ recipes:
       - (V)
 
 portfolio:
+  dutchiepay:
+    name: "Dutchie Pay"
+    description: "Dutchie's premiere in-house ACH payments platform. I designed a significant portion of the underlying workflow, consumer-facing APIs, supporting data models, as well as lead the team's development."
+    featured: "true"
+    tags:
+      - Ruby on Rails
+      - gRPC
+      - Software Architecture
+      - Data Modeling
+    links:
+      external-link-alt: "https://business.dutchie.com/payments"
   sparcrequest:
     name: "SPARCRequest"
     description: "An open-source web-based research management system developed by my team under the South Carolina Clinical & Translational Research Institute that integrates research and clinical care workflows."
