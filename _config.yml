@@ -77,7 +77,7 @@ roles:
   dutchie_soft_eng_2:
     employer: "Dutchie"
     employer_link: "https://dutchie.com/"
-    role: "Senior Software Engineer II"
+    role: "Tech Lead, Senior Software Engineer II"
     dates: "Nov 2021 - Present"
     year: "Present"
     location: "Remote"
@@ -110,7 +110,7 @@ roles:
     role: "Senior Web Developer"
     dates: "Jan 2020 - Feb 2021"
     year: "2020"
-    location: "Remote / Charleston, SC"
+    location: "Remote"
     responsibilities:
       - "Collaborate with stakeholders to plan new features, sprints and releases."
       - "Managed storyboards, pull requests, and code deployments to meet sprint deadlines."
@@ -124,7 +124,7 @@ roles:
     role: "Web Developer"
     year: "2018"
     dates: "Oct 2018 - Dec 2019"
-    location: "Remote / Charleston, SC"
+    location: "Remote"
     responsibilities:
       - "Joined the same team I had interned for after graduation, performing many of the same roles as I had previously."
       - "Led multiple projects to improve front-end UX, including implementing Bootstrap and re-designing multiple sections of our applications."
@@ -133,7 +133,7 @@ roles:
   musc_intern:
     employer: "MUSC"
     employer_link: "https://web.musc.edu/"
-    role: "Web Developer Intern"
+    role: "Intern Web Developen"
     dates: "Jun 2015 - Sept 2018"
     year: "2015"
     location: "Charleston, SC"
