@@ -74,24 +74,34 @@ skills:
       proficiency: 4
 
 roles:
-  dutchie_soft_eng_2:
+  github_senior:
+    employer: "GitHub"
+    employer_link: "https://github.com"
+    role: "Senior Software Engineer"
+    dates: "Aug 2022 - Present"
+    year: "Present"
+    location: "Remote"
+    responsibilities:
+      - "More coming soon!"
+
+  dutchie_senior_2:
     employer: "Dutchie"
     employer_link: "https://dutchie.com/"
     role: "Tech Lead, Senior Software Engineer II"
-    dates: "Nov 2021 - Present"
-    year: "Present"
+    dates: "Nov 2021 - June 2022"
+    year: "2022"
     location: "Remote"
     responsibilities:
       - "Tech lead and consulting engineer for Dutchie’s online payments team."
       - "Architect for the workflows, services, and underlying data models supporting Dutchie’s in-house payments service, Dutchie Pay."
-      - "Draft engineering project blueprints from product specifications and design mock-ups, and consult on blueprints from other teams."
-      - "Develop high-level estimates to help determine project timelines and resource estimation."
-      - "Create and manage Jira tickets and sprint storyboards for the online payments team."
-      - "Manage releases and deployments using Git & Heroku Enterprise."
-      - "Drive incident investigation and response using Datadog, Rollbar, and the Heroku console."
-      - "Mentor and provide guidance to other members of the team."
+      - "Drafted engineering project blueprints from product specifications and design mock-ups, and consult on blueprints from other teams."
+      - "Developed high-level estimates to help determine project timelines and resource estimation."
+      - "Created and manage Jira tickets and sprint storyboards for the online payments team."
+      - "Managed releases and deployments using Git & Heroku Enterprise."
+      - "Drove incident investigation and response using Datadog, Rollbar, and the Heroku console."
+      - "Mentored and provided guidance to other members of the team."
 
-  dutchie_soft_eng:
+  dutchie_senior:
     employer: "Dutchie"
     employer_link: "https://dutchie.com/"
     role: "Senior Software Engineer"
@@ -133,7 +143,7 @@ roles:
   musc_intern:
     employer: "MUSC"
     employer_link: "https://web.musc.edu/"
-    role: "Intern Web Developen"
+    role: "Intern Web Developer"
     dates: "Jun 2015 - Sept 2018"
     year: "2015"
     location: "Charleston, SC"
