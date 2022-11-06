@@ -85,18 +85,6 @@ function fadeIn() {
         });
       }, 100 * index);
       index +=1;
-    } else if (!$e.visible(true) && $e.hasClass('show')) {
-      setTimeout(function() {
-        $e.removeClass('show');
-
-        var subIndex = 0;
-        $e.find('.fade-in-sub.show').each(function(i, c) {
-          setTimeout(function() {
-            $(c).removeClass('show');
-          }, 50 * subIndex);
-          subIndex += 1;
-        });
-      }, 100 * index);
     }
   })
 }
