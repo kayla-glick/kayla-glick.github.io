@@ -25,6 +25,7 @@
 
     .timeline-section-container {
       position: relative;
+      min-height: 300px;
 
       &:first-child.order-last {
         padding-left: 1.5rem;
