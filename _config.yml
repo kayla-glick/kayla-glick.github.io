@@ -115,7 +115,7 @@ roles:
       - "Proposed improvements to Dutchie’s back-end testing practices."
 
   musc_senior_web_dev:
-    employer: "MUSC"
+    employer: "Medical University of SC"
     employer_link: "https://web.musc.edu/"
     role: "Senior Web Developer"
     dates: "Jan 2020 - Feb 2021"
@@ -129,7 +129,7 @@ roles:
       - "Performed thorough review and provided feedback on all code contributions."
 
   musc_web_dev:
-    employer: "MUSC"
+    employer: "Medical University of SC"
     employer_link: "https://web.musc.edu/"
     role: "Web Developer"
     year: "2018"
@@ -141,7 +141,7 @@ roles:
       - "Interfaced with analysts to devise new requirements for and make improvements to existing applications."
 
   musc_intern:
-    employer: "MUSC"
+    employer: "Medical University of SC"
     employer_link: "https://web.musc.edu/"
     role: "Intern Web Developer"
     dates: "Jun 2015 - Sept 2018"
