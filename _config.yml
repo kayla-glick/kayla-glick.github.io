@@ -82,7 +82,7 @@ roles:
     year: "Present"
     location: "Remote"
     responsibilities:
-      - "More coming soon!"
+      - "Building software for GitHub's #gitcoin billing team."
 
   dutchie_senior_2:
     employer: "Dutchie"
