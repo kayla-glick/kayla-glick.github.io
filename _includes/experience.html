@@ -6,9 +6,9 @@
     <div class="section-content-container">
       {% for role in site.roles %}
         {% assign mod = forloop.index | modulo: 2 %}
-        <div class="timeline-row row">
-          <div class="timeline-section-container col-6 fade-in {% if mod == 0 %}order-last{% endif %}">
-            <i class="fas fa-dot-circle timeline-indicator fade-in-sub"></i>
+        <div class="timeline-row row fade-in">
+          <div class="timeline-section-container col-6 {% if mod == 0 %}order-last{% endif %}">
+            <i class="fas fa-dot-circle timeline-indicator"></i>
             <div class="timeline-section d-flex align-items-start">
               <img src="{{ site.base_url }}/assets/images/experience/{{ role[0] }}/logo.png" width="64" class="d-none d-sm-block mr-2">
               <div>
