@@ -20,7 +20,7 @@
       }
     }
 
-    &:hover {
+    &:hover, &.fade-in:not(.show) {
       background: theme-color-level('background', 0.4);
 
       span {

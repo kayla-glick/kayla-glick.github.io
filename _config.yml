@@ -175,7 +175,7 @@ recipes:
 portfolio:
   dutchiepay:
     name: "Dutchie Pay"
-    description: "Dutchie's premiere in-house ACH payments platform. I designed a significant portion of the underlying workflow, consumer-facing APIs, supporting data models, as well as lead the team's development."
+    description: "Dutchie Pay is Dutchie's premiere in-house ACH payments platform. I designed a significant portion of the underlying workflow, consumer-facing APIs, and supporting data models, as well as lead the team's development from concept to reality."
     featured: "true"
     tags:
       - Ruby on Rails
