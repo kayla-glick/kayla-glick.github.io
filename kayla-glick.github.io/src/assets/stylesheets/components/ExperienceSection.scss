@@ -38,10 +38,7 @@
         border: 0;
         background: none;
         color: $link-color;
-
-        &.active {
-          color: $link-hover-color;
-        }
+        transition: color $animation-duration ease-in-out;
         
         svg {
           width: 2rem;
@@ -65,7 +62,11 @@
           transition: background-color $animation-duration ease-in-out;
 
           &.active {
-            background: rgba(0,0,0,0.05)
+            background: rgba(0,0,0,0.05);
+
+            .timeline-indicator {
+              color: $link-hover-color;
+            }
           }
         }
 

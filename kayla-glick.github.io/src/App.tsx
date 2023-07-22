@@ -4,7 +4,7 @@ import Cover from './components/Cover';
 import GreetingSection from './components/sections/GreetingSection';
 import AboutSection from './components/sections/AboutSection';
 import ExperienceSection from './components/sections/experience/';
-import PortfolioSection from './components/sections/PortfolioSection';
+import PortfolioSection from './components/sections/portfolio/';
 import ContactSection from './components/sections/ContactSection';
 
 import './App.scss';

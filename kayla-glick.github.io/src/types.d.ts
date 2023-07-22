@@ -16,9 +16,9 @@ type Role = {
 }
 
 type Project = {
-  link: string
+  link?: string
   name: string
-  image: string
+  images: string[]
   description: string
   skills: string[]
 }
