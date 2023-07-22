@@ -1,0 +1,21 @@
+// Buttons
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant(
+      $value,
+      $value,
+      rgba($value, 0.2),
+      $value,
+      $value
+    );
+
+    background: rgba($value, 0.1)
+  }
+}
+
+// Badges
+
+.badge {
+  background-color: mix($primary, $light, 10%);
+}

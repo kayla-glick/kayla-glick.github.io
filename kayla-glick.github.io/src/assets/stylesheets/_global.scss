@@ -1,0 +1,9 @@
+a {
+  text-decoration: none;
+  outline: none;
+  transition: color $animation-duration ease-in-out;
+
+  &:focus {
+    color: var(--bs-link-hover-color);
+  }
+}

@@ -1,0 +1,19 @@
+#contact {
+  min-Height: calc(100vh - $site-header-height);
+
+  .section-container {
+    min-Height: calc(100vh - $site-header-height);
+  }
+
+  #site-footer {
+    position: absolute;
+    height: $site-header-height;
+    left: 0;
+    right: 0;
+    bottom: $site-header-height * -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba($dark, .5);
+  }
+}

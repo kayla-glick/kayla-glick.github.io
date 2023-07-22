@@ -1,0 +1,51 @@
+@use "sass:map";
+
+section {
+  position: relative;
+  min-height: 100vh;
+
+  &:nth-child(n + 2) {
+    background: $section-bg;
+  }
+
+  &:nth-child(2n + 3) {
+    background: $section-bg-alt;
+  }
+
+  .section-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: calc($site-header-height + map.get($spacers, 4)) $spacer;
+    margin: auto;
+  }
+
+  .section-title {
+    @extend .display-4;
+    width: 100%;
+    margin-bottom: $spacer * 1.5;
+    display: flex;
+    align-items: center;
+
+    hr {
+      flex: 1 1 auto;
+      margin-left: $spacer * 1.5;
+    }
+  }
+}
+
+@each $breakpoint, $value in $grid-breakpoints {
+  @if $breakpoint == "xs" {
+    $value: 100%;
+  } @else {
+    $value: strip-unit($value) + rem;
+  }
+
+  @include media-breakpoint-up($breakpoint) {
+    section {
+      .section-container {
+        width: $value;
+      }
+    }
+  }
+}
