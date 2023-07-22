@@ -1,0 +1,15 @@
+{
+  "short_name": "Kayla Glick",
+  "name": "Kayla Glick | Senior Software Engineer",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#fe5f55",
+  "background_color": "#000000"
+}
