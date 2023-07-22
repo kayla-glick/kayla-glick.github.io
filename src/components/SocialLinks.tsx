@@ -6,12 +6,12 @@ function SocialLinks() {
   return (
     <ul className="list-inline mb-0">
       <li className="list-inline-item me-4">
-        <a href="https://github.com/kayla-glick" target="blank">
+        <a href="https://github.com/kayla-glick" target="_blank" rel="noreferrer">
           <GitHubIcon fill="currentColor" height="36" width="36" />
         </a>
       </li>
       <li className="list-inline-item me-4">
-        <a href="https://linkedin.com/in/kayla-glick" target="blank">
+        <a href="https://linkedin.com/in/kayla-glick" target="_blank" rel="noreferrer">
           <LinkedinIcon fill="currentColor" height="36" width="36" />
         </a>
       </li>

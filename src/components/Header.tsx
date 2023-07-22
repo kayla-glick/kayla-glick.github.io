@@ -21,7 +21,7 @@ function Header() {
               <Nav.Link href="#portfolio">Portfolio</Nav.Link>
               <Nav.Link href="#contact">Contact</Nav.Link>
               <Nav.Item>
-                <Button href="/Kayla Glick Resume.pdf" variant="outline-primary" className="ms-3">Resume</Button>
+                <Button href="/Kayla Glick Resume.pdf" target="_blank" variant="outline-primary" className="ms-3">Resume</Button>
               </Nav.Item>
             </Nav>
           </Navbar.Collapse>
