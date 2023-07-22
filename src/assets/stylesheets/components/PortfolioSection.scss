@@ -1,0 +1,23 @@
+#portfolio {
+  .portfolio-item {
+    display: flex;
+
+    &:not(:last-child) {
+      padding-bottom: map-get($spacers, 4);
+    }
+
+    .portfolio-item-details {
+      width: 50%;
+      padding: map-get($spacers, 4);
+      transition: background-color $animation-duration ease-in-out;
+
+      &.active {
+        background: rgba(0,0,0,0.05)
+      }
+    }
+
+    .portfolio-item-carousel {
+      width: 50%;
+    }
+  }
+}

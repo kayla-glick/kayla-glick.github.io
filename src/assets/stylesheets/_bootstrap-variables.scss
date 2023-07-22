@@ -1,0 +1,88 @@
+@use "sass:map";
+
+// Colors
+
+$primary: #fe5f55;
+$primary-hover: darken($primary, 30%);
+$light: #f3f1ea;
+$dark: #08000a;
+
+// Spacing
+
+$spacer: 1rem !default;
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-rounded: false;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: #08000a;
+$body-color: #592693;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color: $primary;
+$link-hover-color: $primary-hover;
+
+// Grid Breakpoints
+
+// From PureCSS
+$grid-breakpoints: (
+  xs:   0,
+  sm:   35.5em, // ≥568px
+  md:   48em,   // ≥768px
+  lg:   64em,   // ≥1024px
+  xl:   70em,   // ≥1280px
+  xxl:  120em,  // ≥1920px
+  xxxl: 160em,  // ≥2560px
+  x4k:  240em,  // ≥3840px
+);
+
+// Typography
+
+$font-weight-base: lighter;
+$font-size-base: 1rem;
+
+$headings-color: $primary;
+$headings-font-weight: lighter;
+
+$display-font-weight: lighter;
+
+$hr-color: $body-color;
+
+// Buttons
+
+$btn-font-weight: lighter;
+$btn-padding-x: $spacer;
+$btn-padding-y: $spacer * .5;
+
+// Navs
+
+$nav-link-font-weight: lighter;
+
+// Navbar
+
+$navbar-padding-x: $spacer * 1.5;
+$navbar-padding-y: $spacer * 1.5;
+
+$navbar-brand-padding-y: 0;
+
+$navbar-nav-link-padding-x: $spacer;
+
+$navbar-dark-active-color: $primary;
+$navbar-dark-color: $light;
+$navbar-dark-hover-color: $primary;
+$navbar-dark-brand-color: $primary;
+$navbar-dark-brand-hover-color: $primary-hover;
+
+// Badges
+
+$badge-font-weight: normal;
+$badge-color: $primary;
