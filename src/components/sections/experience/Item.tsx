@@ -22,20 +22,22 @@ function Item({ role }: Props) {
 
   return (
     <div className="timeline-row">
-      <div className="timeline-section">
+      <div
+        className="timeline-section"
+        onMouseOver={(e) => handleHover(e, true)}
+        onMouseLeave={(e) => handleHover(e, false)}
+        onClick={(e) => handleClick(e)}
+        ref={containerRef}
+      >
+        <FadeInContainer className="timeline-indicator">
+          <button className="btn">
+            <DotIcon fill="currentcolor" />
+            <p className="mb-0">{role.dates}</p>
+          </button>
+        </FadeInContainer>
         <div
           className="timeline-section-contents"
-          ref={containerRef}
-          onMouseOver={(e) => handleHover(e, true)}
-          onMouseLeave={(e) => handleHover(e, false)}
-          onClick={(e) => handleClick(e)}
         >
-          <FadeInContainer className="timeline-indicator">
-            <button className="btn">
-              <DotIcon fill="currentcolor" />
-              <p className="mb-0">{role.dates}</p>
-            </button>
-          </FadeInContainer>
           <FadeInContainer className="timeline-section-details">
             <Image src={role.logo} alt={`${role.company} Logo`} width="48" height="48" className="me-2" />
             <div className="d-flex flex-column">

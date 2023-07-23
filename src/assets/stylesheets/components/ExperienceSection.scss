@@ -63,23 +63,24 @@
         display: flex;
         align-items: flex-start;
         border-right: 2px solid tint-color($primary, 50%);
+
+        &.active {
+          .timeline-section-contents {
+            background: rgba(0,0,0,0.05);
+          }
+
+          .timeline-indicator {
+            button {
+              color: $link-hover-color;
+            }
+          }
+        }
         
         .timeline-section-contents {
           display: flex;
           padding: map-get($spacers, 4);
+          margin-top: $spacer * -2;
           transition: background-color $animation-duration ease-in-out;
-
-          &.active {
-            background: rgba(0,0,0,0.05);
-
-            .timeline-indicator {
-              color: $link-hover-color;
-            }
-          }
-
-          .timeline-section-details {
-            margin-top: $spacer * -2;
-          }
         }
 
         .timeline-company {
