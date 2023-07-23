@@ -65,10 +65,13 @@ $btn-padding-y: $spacer * .5;
 
 // Navs
 
+$nav-link-color: $light;
 $nav-link-font-weight: lighter;
+$nav-link-padding-y: $spacer * .5;
 
 // Navbar
 
+$navbar-color: $light;
 $navbar-padding-x: $spacer * 1.5;
 $navbar-padding-y: $spacer * 1.5;
 
@@ -86,3 +89,8 @@ $navbar-dark-brand-hover-color: $primary-hover;
 
 $badge-font-weight: normal;
 $badge-color: $primary;
+
+// Offcanvas
+
+$offcanvas-padding-x: $navbar-padding-x;
+$offcanvas-padding-y: $navbar-padding-y - $nav-link-padding-y;

@@ -1,13 +1,13 @@
 #portfolio {
   .portfolio-item {
     display: flex;
+    flex-wrap: wrap;
 
     &:not(:last-child) {
       padding-bottom: map-get($spacers, 4);
     }
 
     .portfolio-item-details {
-      width: 50%;
       padding: map-get($spacers, 4);
       transition: background-color $animation-duration ease-in-out;
 
@@ -15,9 +15,19 @@
         background: rgba(0,0,0,0.05)
       }
     }
+  }
+}
 
-    .portfolio-item-carousel {
-      width: 50%;
+@include media-breakpoint-up(md) {
+  #portfolio {
+    .portfolio-item {
+      .portfolio-item-details {
+        width: 50%;
+      }
+
+      .portfolio-item-carousel {
+        width: 50%;
+      }
     }
   }
 }

@@ -22,13 +22,104 @@
 
 // Navbar
 
-.navbar-toggler {
-  background: rgba($primary, 0.1);
-  border: 1px solid $primary;
-  box-shadow: none !important;
-  transition: background-color $animation-duration ease-in-out;
+.navbar-nav {
+  .nav-link {
+    &::after {
+      content: '';
+      width: $spacer * 1.5;
+      height: $border-width;
+      margin: 0 auto;
+      background: $primary;
+      display: block;
+      transition: all $animation-duration ease-in-out;
+    }
+    
+    &:hover, &:active, &.active {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
 
-  &:hover, &:active, &:focus, &.active {
-    background: rgba($primary, 0.2);
+.offcanvas {
+  .navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0;
+
+    .navbar-nav {
+      flex-direction: column;
+
+      .nav-link {
+        padding-left: 0;
+        padding-right: 0;
+
+        &::after {
+          margin: 0;
+        }
+      }
+    }
+  }
+  
+  .navbar-toggler {
+    position: absolute;
+    top: $offcanvas-padding-y + $nav-link-padding-y;
+    right: $offcanvas-padding-x;
+  }
+}
+
+.navbar-toggler {
+  z-index: 100000;
+  position: fixed;
+  top: $navbar-padding-y;
+  right: $navbar-padding-x;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 2rem;
+  height: 1.5rem;
+  border: none;
+  box-shadow: none !important;
+  outline: 0;
+
+  &:not(.collapsed) {
+    .toggler-bar {
+      &:nth-child(1)::before {
+        width: 100%;
+        transform: translateY(.75rem) rotate(225deg);
+      }
+
+      &:nth-child(2)::before {
+        opacity: 0;
+      }
+
+      &:nth-child(3)::before {
+        width: 100%;
+        transform: translateY(-.75rem) rotate(-225deg);
+      }
+    }
+  }
+
+  
+  .toggler-bar {
+    width: 100%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      height: 2px;
+      background: $primary;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &::before {
+      width: 100%;
+    }
+
+    &:nth-child(2)::before {
+      opacity: 1;
+    }
   }
 }

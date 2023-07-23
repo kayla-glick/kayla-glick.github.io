@@ -1,6 +1,7 @@
 import React from 'react';
-import Header from './components/Header';
 import Cover from './components/Cover';
+import Header from './components/Header';
+import MobileNavigation from './components/MobileNavigation';
 import GreetingSection from './components/sections/GreetingSection';
 import AboutSection from './components/sections/AboutSection';
 import ExperienceSection from './components/sections/experience/';
@@ -14,6 +15,7 @@ function App() {
     <>
       <Cover />
       <Header />
+      <MobileNavigation />
       <main>
         <GreetingSection />
         <AboutSection />

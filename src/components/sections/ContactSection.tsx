@@ -13,7 +13,7 @@ function ContactSection() {
         <SocialLinks />
       </div>
       <div id="site-footer">
-        <p className="text-light">&copy; Copyright {new Date().getFullYear()} Kayla Glick</p>
+        <p className="text-light">Designed & built by Kayla Glick using React & Bootstrap</p>
       </div>
     </Section>
   )

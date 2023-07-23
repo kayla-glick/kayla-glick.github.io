@@ -10,7 +10,7 @@ function AboutSection() {
     <Section id="about" title="A Little About Me">
       <FadeInContainer className="flex-column">
         <div className="row">
-          <div className="col-lg-7 col-md-9 col-12 fade-in">
+          <div className="col-md-7 col-12 fade-in">
             <h2>Hi, I'm Kayla!</h2>
             <p>
               I'm a Senior Software Engineer based in
@@ -42,12 +42,11 @@ function AboutSection() {
               </li>
             </ul>
           </div>
-          <div className="col-4 d-none d-lg-block offset-1 text-right fade-in">
+          <div className="col-5 col-lg-4 d-none d-md-block offset-lg-1 text-right fade-in">
             <Image src={me} alt="me" roundedCircle className="d-block w-100" />
           </div>
         </div>
-        <Image src={me} alt="me" roundedCircle className="d-none d-md-block d-lg-none w-50 mx-auto mt-5 fade-in" />
-        <Image src={me} alt="me" roundedCircle className="d-block d-md-none w-75 mx-auto mt-3 fade-in" />
+        <Image src={me} alt="me" roundedCircle className="d-block d-md-none w-50 mx-auto mt-3 fade-in" />
       </FadeInContainer>
     </Section>
   )

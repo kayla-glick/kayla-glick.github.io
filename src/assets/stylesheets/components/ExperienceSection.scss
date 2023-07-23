@@ -1,31 +1,13 @@
+@use "sass:math";
+
+$timeline-indicator-size: 2rem;
+
 #experience {
   .timeline {
     padding-top: map-get($spacers, 4);
 
     .timeline-row {
       position: relative;
-
-      &:nth-child(2n) {
-        .timeline-indicator {
-          left: unset;
-          right: calc(50% - 1rem);
-
-          button {
-            flex-direction: row-reverse;
-
-            svg {
-              margin-left: map-get($spacers, 2);
-              margin-right: unset;
-            }
-          }
-        }
-
-        .timeline-section {
-          margin-left: auto;
-          border-left: 2px solid tint-color($primary, 50%);
-          border-right: unset;
-        }
-      }
 
       &:last-child {
         .timeline-section {
@@ -37,29 +19,33 @@
       .timeline-indicator {
         position: absolute;
         top: 0;
-        left: calc(50% - 1rem);
+        left: calc(80% - math.div($timeline-indicator-size, 2));
         
         button {
           display: flex;
-          align-items: center;
           padding: 0;
           border: 0;
           background: none;
           color: $link-color;
           transition: color $animation-duration ease-in-out;
+          text-align: start;
 
           svg {
-            width: 2rem;
-            height: 2rem;
+            width: $timeline-indicator-size;
+            height: $timeline-indicator-size;
             margin-right: map-get($spacers, 2);
             border-radius: 1rem;
             background: $light;
+          }
+
+          p {
+            flex: 1;
           }
         }
       }
 
       .timeline-section {
-        width: calc(50% + 1px);
+        width: 80%;
         display: flex;
         align-items: flex-start;
         border-right: 2px solid tint-color($primary, 50%);
@@ -98,6 +84,48 @@
 
         .timeline-description {
           margin-bottom: map-get($spacers, 2);
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #experience {
+    .timeline {
+      .timeline-row {
+        &:nth-child(2n) {
+          .timeline-indicator {
+            left: unset;
+            right: calc(50% - 1rem);
+  
+            button {
+              flex-direction: row-reverse;
+  
+              svg {
+                margin-left: map-get($spacers, 2);
+                margin-right: unset;
+              }
+            }
+          }
+  
+          .timeline-section {
+            margin-left: auto;
+            border-left: 2px solid tint-color($primary, 50%);
+            border-right: unset;
+          }
+        }
+
+        .timeline-indicator {
+          left: calc(50% - math.div($timeline-indicator-size, 2));
+
+          button {
+            align-items: center;
+          }
+        }
+
+        .timeline-section {
+          width: calc(50% + 1px);
         }
       }
     }

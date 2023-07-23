@@ -2,28 +2,23 @@
   height: $site-header-height;
   transition: background-color $animation-duration ease-in-out;
 
-  .nav-link {
-    &::after {
-      content: '';
-      width: $spacer * 1.5;
-      height: $border-width;
-      margin: 0 auto;
-      background: $primary;
-      display: block;
-      transition: all $animation-duration ease-in-out;
-    }
-    
-    &:hover, &:active, &.active {
-      &::after {
-        width: 100%;
-      }
-    }
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+  #resume {
+    margin-left: map-get($spacers, 3);
   }
 }
-
 
 html:not([data-scroll='0']) {
   #site-header {
     background: rgba($dark, .75);
+  }
+}
+
+.offcanvas {
+  #resume {
+    margin-top: map-get($spacers, 2);
   }
 }

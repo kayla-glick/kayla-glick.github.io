@@ -16,7 +16,7 @@ section {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: calc($site-header-height + map.get($spacers, 4)) $spacer;
+    padding: calc($site-header-height + map.get($spacers, 4)) $navbar-padding-x;
     margin: auto;
   }
 
