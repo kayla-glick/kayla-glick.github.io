@@ -22,3 +22,22 @@ a {
   transform: none;
   visibility: visible;
 }
+
+$root-font-sizes: (
+  xs: 1em,
+  sm: 1em,
+  md: 1em,
+  lg: 1em,
+  xl: 1em,
+  xxl: 1.25em,
+  xxxl: 1.5em,
+  x4k: 2em,
+);
+
+@each $breakpoint, $value in $root-font-sizes {
+  @include media-breakpoint-up($breakpoint) {
+    :root {
+      font-size: $value;
+    }
+  }
+}

@@ -34,13 +34,18 @@ section {
   }
 }
 
-@each $breakpoint, $value in $grid-breakpoints {
-  @if $breakpoint == "xs" {
-    $value: 100%;
-  } @else {
-    $value: strip-unit($value) + rem;
-  }
+$section-widths: (
+  xs: 100%,
+  sm: 100%,
+  md: 100%,
+  lg: 64rem,
+  xl: 70rem,
+  xxl: 70rem,
+  xxxl: 90rem,
+  x4k: 120rem,
+);
 
+@each $breakpoint, $value in $section-widths {
   @include media-breakpoint-up($breakpoint) {
     section {
       .section-container {

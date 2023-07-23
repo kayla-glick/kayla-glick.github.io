@@ -8,7 +8,7 @@ import FadeInContainer from '../FadeInContainer';
 function AboutSection() {
   return (
     <Section id="about" title="A Little About Me">
-      <FadeInContainer>
+      <FadeInContainer className="flex-column">
         <div className="row">
           <div className="col-lg-7 col-md-9 col-12 fade-in">
             <h2>Hi, I'm Kayla!</h2>
