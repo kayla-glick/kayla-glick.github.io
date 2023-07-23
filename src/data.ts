@@ -1,3 +1,5 @@
+import type { Project, Role } from "./types";
+
 const ROLES: Role[] = [
   {
     company: "GitHub",

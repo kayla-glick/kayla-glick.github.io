@@ -1,9 +1,9 @@
-type Link = {
+export type Link = {
   text: string
   url: string
 }
 
-type Role = {
+export type Role = {
   company: string
   link: string
   logo: string
@@ -15,7 +15,7 @@ type Role = {
   projects?: Link[]
 }
 
-type Project = {
+export type Project = {
   link?: string
   name: string
   images: string[]

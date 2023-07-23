@@ -7,3 +7,18 @@ a {
     color: var(--bs-link-hover-color);
   }
 }
+
+.fade-in-section {
+  display: flex;
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity $animation-duration ease-out, $animation-duration * 2 ease-out;
+  will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}

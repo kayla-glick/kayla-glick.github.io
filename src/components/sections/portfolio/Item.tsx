@@ -1,7 +1,11 @@
+import React from 'react';
 import Carousel from "react-bootstrap/Carousel";
 import Image from "react-bootstrap/Image";
+import FadeInContainer from '../../FadeInContainer';
 import PortfolioItemFooter from "../../PortfolioItemFooter";
 import useInteractiveContainer from "../hooks/use-interactive-container";
+
+import type { Project } from '../../../types';
 
 type Props = {
   project: Project
@@ -22,28 +26,30 @@ function Item({ project }: Props) {
   } : {}
 
   return (
-    <div className="portfolio-item">
-      <div className="portfolio-item-details" ref={containerRef} {...eventProps}>
-        <h2>
-          {project.link ?
-            <a href={project.link} target="_blank" rel="noreferrer" ref={linkRef}>{project.name} </a>  
-            :
-            project.name
-          }
-        </h2>
-        <p>{project.description}</p>
-        <PortfolioItemFooter badges={project.skills} />
+    <FadeInContainer>
+      <div className="portfolio-item">
+        <div className="portfolio-item-details" ref={containerRef} {...eventProps}>
+          <h2>
+            {project.link ?
+              <a href={project.link} target="_blank" rel="noreferrer" ref={linkRef}>{project.name} </a>  
+              :
+              project.name
+            }
+          </h2>
+          <p>{project.description}</p>
+          <PortfolioItemFooter badges={project.skills} />
+        </div>
+        <Carousel className="portfolio-item-carousel" fade>
+          {project.images.map((image) => {
+            return (
+              <Carousel.Item>
+                <Image src={image} width="100%" />
+              </Carousel.Item>
+            )
+          })}
+        </Carousel>
       </div>
-      <Carousel className="portfolio-item-carousel" fade>
-        {project.images.map((image) => {
-          return (
-            <Carousel.Item>
-              <Image src={image} width="100%" />
-            </Carousel.Item>
-          )
-        })}
-      </Carousel>
-    </div>
+    </FadeInContainer>
   )
 }
 
