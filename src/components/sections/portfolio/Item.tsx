@@ -26,8 +26,8 @@ function Item({ project }: Props) {
   } : {}
 
   return (
-    <FadeInContainer>
-      <div className="portfolio-item">
+    <div className="portfolio-item">
+      <FadeInContainer>
         <div className="portfolio-item-details" ref={containerRef} {...eventProps}>
           <h2>
             {project.link ?
@@ -48,8 +48,8 @@ function Item({ project }: Props) {
             )
           })}
         </Carousel>
-      </div>
-    </FadeInContainer>
+      </FadeInContainer>
+    </div>
   )
 }
 
