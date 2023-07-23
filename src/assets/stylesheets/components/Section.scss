@@ -38,11 +38,11 @@ $section-widths: (
   xs: 100%,
   sm: 100%,
   md: 100%,
-  lg: 64rem,
+  lg: 100%,
   xl: 70rem,
   xxl: 70rem,
-  xxxl: 90rem,
-  x4k: 120rem,
+  xxxl: 70rem,
+  x4k: 70rem,
 );
 
 @each $breakpoint, $value in $section-widths {

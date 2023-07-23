@@ -19,3 +19,16 @@
 .badge {
   background-color: mix($primary, $light, 10%);
 }
+
+// Navbar
+
+.navbar-toggler {
+  background: rgba($primary, 0.1);
+  border: 1px solid $primary;
+  box-shadow: none !important;
+  transition: background-color $animation-duration ease-in-out;
+
+  &:hover, &:active, &:focus, &.active {
+    background: rgba($primary, 0.2);
+  }
+}

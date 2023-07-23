@@ -8,13 +8,13 @@ import { ReactComponent as Logo } from '../assets/img/logo.svg';
 function Header() {
   return (
     <header className="fixed-top" id="site-header">
-      <Navbar variant="dark">
+      <Navbar variant="dark" expand="lg">
         <Container fluid>
           <Navbar.Brand href="#greeting">
-            <Logo width="48" height="48"/>
+            <Logo width="2.5rem" height="2.5rem"/>
           </Navbar.Brand>
-          <Navbar.Toggle />
-          <Navbar.Collapse>
+          <Navbar.Toggle aria-controls="site-navbar-collapse"/>
+          <Navbar.Collapse id="site-navbar-collapse">
             <Nav className="ms-auto">
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#experience">Experience</Nav.Link>
