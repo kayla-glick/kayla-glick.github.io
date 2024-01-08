@@ -13,7 +13,7 @@ function ContactSection() {
         <SocialLinks />
       </div>
       <div id="site-footer">
-        <p className="text-light">Designed & built by Kayla Glick using React & Bootstrap</p>
+        <p className="text-light mb-0">Designed & built by Kayla Glick</p>
       </div>
     </Section>
   )
