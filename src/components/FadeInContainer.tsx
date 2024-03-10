@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import { HTMLAttributes, useEffect, useRef, useState } from "react";
 
-function FadeInContainer(props: React.HTMLAttributes<HTMLElement>) {
+function FadeInContainer(props: HTMLAttributes<HTMLElement>) {
   const [isVisible, setVisible] = useState(false);
   const domRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {

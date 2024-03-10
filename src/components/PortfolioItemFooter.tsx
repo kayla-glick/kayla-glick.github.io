@@ -1,4 +1,3 @@
-import React from "react";
 import Badge from "react-bootstrap/Badge";
 import { v4 as uuidv4 } from "uuid";
 import { ReactComponent as LinkIcon } from "../assets/img/icons/link.svg";

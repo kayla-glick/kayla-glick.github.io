@@ -1,4 +1,4 @@
-import React from 'react';
+import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import ScrollSpy from 'bootstrap/js/dist/scrollspy';
 import App from './App';
@@ -19,9 +19,9 @@ window.addEventListener('load', () => {
 })
 
 root.render(
-  <React.StrictMode>
+  <StrictMode>
     <App />
-  </React.StrictMode>
+  </StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

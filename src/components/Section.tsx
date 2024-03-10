@@ -1,7 +1,7 @@
-import React from 'react';
+import { HtmlHTMLAttributes, ReactNode } from 'react';
 
-interface SectionProps extends React.HtmlHTMLAttributes<HTMLDivElement> {
-  children?: React.ReactNode
+interface SectionProps extends HtmlHTMLAttributes<HTMLDivElement> {
+  children?: ReactNode
   title?: string
 }
 

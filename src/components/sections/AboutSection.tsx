@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'react-bootstrap/Image';
 
 import Section from '../Section';
