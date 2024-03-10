@@ -35,7 +35,7 @@ function Item({ project }: Props) {
             project.name
           }
         </h2>
-        <p>{project.description}</p>
+        <p dangerouslySetInnerHTML={{ __html: project.description }} />
         <PortfolioItemFooter badges={project.skills} />
       </div>
       <Carousel className="portfolio-item-carousel" fade>

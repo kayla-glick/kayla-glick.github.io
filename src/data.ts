@@ -96,16 +96,17 @@ const PROJECTS: Project[] = [
       require("./assets/img/portfolio/wowsims-4.png"),
     ],
     description: `
-      I lead a full UI refresh of the Wrath of the Light King site for WoWSims -
-      an open-source fan-made World of Warcraft®: Classic™ simulation website -
-      along with designing the site homepages, raid simulation UI, & doing various
-      other feature work & bug fixes in collaboration with users & other developers.
+      WoWSims is a fan-made open-source project to provide simulations for World of Warcraft® Classic™.<br>
+      Since 2022 I've made thousands of contributions to the project, including a complete UI redesign and developing 5 different simulations.<br>
+      In 2024 I was made an admin of the project, and have since worked with our developers to launch new sites for 
+      World of Warcraft® Classic Season of Discovery and Cataclysm Classic™.
     `,
     skills: [
       "Open-Source",
       "TypeScript",
+      "Go",
+      "Protobufs",
       "Web Components",
-      "SCSS",
       "Bootstrap",
     ],
   },
@@ -132,7 +133,7 @@ const PROJECTS: Project[] = [
       require("./assets/img/portfolio/dutchie-pay-1.png"),
     ],
     description: `
-      Dutchie Pay is Dutchie's premiere in-house payments service for online Cannabis payments.
+      Dutchie Pay is Dutchie's premiere in-house payments service for online Cannabis payments.<br>
       I architected the workflows, services, & underlying relational data models for the project,
       & also worked with the product & design teams to flesh out the UI/UX.
     `,
