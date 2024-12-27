@@ -2,11 +2,26 @@ import type { Project, Role } from "./types";
 
 const ROLES: Role[] = [
   {
+    company: "Tern",
+    link: "https://tern.travel",
+    logo: require("./assets/img/experience/tern.png"),
+    name: "Senior Software Engineer",
+    dates: "Dec 2024 - Present",
+    description: `
+      Building a brighter future for the travel industry.
+    `,
+    skills: [
+      "Ruby on Rails",
+      "Hotwire",
+      "Stimulus",
+    ],
+  },
+  {
     company: "GitHub",
     link: "https://github.com",
     logo: require("./assets/img/experience/github.png"),
     name: "Senior Software Engineer",
-    dates: "Aug 2022 - Present",
+    dates: "Aug 2022 - Nov 2024",
     description: `
       Leading & providing technical guidance for projects on GitHub's
       <a href='/gitcoin.png' target='_blank'>@GitCoin</a> billing team,
