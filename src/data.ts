@@ -120,10 +120,10 @@ const PROJECTS: Project[] = [
       require("./assets/img/portfolio/wowsims-4.png"),
     ],
     description: `
-      WoWSims is a fan-made open-source project to provide simulations for World of Warcraft® Classic™.<br>
-      Since 2022 I've made thousands of contributions to the project, including a complete UI redesign and developing 5 different simulations.<br>
-      In 2024 I was made an admin of the project, and have since worked with our developers to launch new sites for 
-      World of Warcraft® Classic Season of Discovery and Cataclysm Classic™.
+      WoWSims is a fan-made open-source project to provide simulations for World of Warcraft® Classic™.
+      Since 2022 I've made thousands of contributions to the project including a complete UI redesign.<br /><br />
+      In 2024 I was made a maintainer of the project and have since managed our GitHub organization, site hosting,
+      and worked with our developers to launch multiple new site versions for new WoW Classic releases.
     `,
     skills: [
       "Open-Source",
@@ -134,22 +134,6 @@ const PROJECTS: Project[] = [
       "Bootstrap",
     ],
   },
-  // {
-  //   name: "GitHub Billing vNext",
-  //   images: [
-  //     require("./assets/img/portfolio/github-billing-vnext-1.png"),
-  //   ],
-  //   description: `
-  //     Billing vNext is a project to overhaul GitHub's Billing UI/UX that my team is currently
-  //     working on. As one of the most experienced front-end developers on the team, I've been
-  //     providing guidance throughout the development of the project. 
-  //   `,
-  //   skills: [
-  //     "React",
-  //     "TypeScript",
-  //     "Figma",
-  //   ],
-  // },
   {
     link: "https://business.dutchie.com/dutchiepay/consumer",
     name: "Dutchie Pay",
@@ -157,7 +141,7 @@ const PROJECTS: Project[] = [
       require("./assets/img/portfolio/dutchie-pay-1.png"),
     ],
     description: `
-      Dutchie Pay is Dutchie's premiere in-house payments service for online Cannabis payments.<br>
+      Dutchie Pay is Dutchie's premiere in-house payments service for online Cannabis payments.
       I architected the workflows, services, & underlying relational data models for the project,
       & also worked with the product & design teams to flesh out the UI/UX.
     `,
