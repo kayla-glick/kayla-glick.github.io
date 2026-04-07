@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6f8e0e0a.css",
-    "main.js": "/static/js/main.c3568d4a.js",
+    "main.js": "/static/js/main.8bca12c9.js",
     "static/js/787.837f07e2.chunk.js": "/static/js/787.837f07e2.chunk.js",
     "static/media/wowsims-1.png": "/static/media/wowsims-1.41e3eca0387a4bac0cf5.png",
     "static/media/wowsims-4.png": "/static/media/wowsims-4.48f6346406d4fa4f555e.png",
@@ -20,11 +20,11 @@
     "static/media/envelope.svg": "/static/media/envelope.4188183a061be7b9496b01a09df152fb.svg",
     "static/media/dot-circle.svg": "/static/media/dot-circle.3c9c5ccadc14c4927b667301b5c530da.svg",
     "main.6f8e0e0a.css.map": "/static/css/main.6f8e0e0a.css.map",
-    "main.c3568d4a.js.map": "/static/js/main.c3568d4a.js.map",
+    "main.8bca12c9.js.map": "/static/js/main.8bca12c9.js.map",
     "787.837f07e2.chunk.js.map": "/static/js/787.837f07e2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6f8e0e0a.css",
-    "static/js/main.c3568d4a.js"
+    "static/js/main.8bca12c9.js"
   ]
 }
