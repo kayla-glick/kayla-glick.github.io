@@ -63,6 +63,7 @@ $timeline-indicator-size: 2rem;
         }
         
         .timeline-section-contents {
+          width: 100%;
           display: flex;
           padding: map-get($spacers, 4);
           margin-top: $spacer * -2;
