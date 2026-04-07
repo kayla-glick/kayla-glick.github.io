@@ -6,14 +6,21 @@ const ROLES: Role[] = [
     link: "https://tern.travel",
     logo: require("./assets/img/experience/tern.png"),
     name: "Senior Software Engineer",
-    dates: "Dec 2024 - Present",
+    dates: "Dec 2024 - Apr 2026",
     description: `
-      Building a brighter future for the travel industry.
+      Led numerous initiatives to add new features and reimagine the user experience
+      of Tern's travel advisory platform. Using tools like Claude Code and cloud
+      agents, we shipped fast and iteratively - without sacrificing on quality -
+      to always have something new for our users every single week.
+      I also hosted a weekly forum for our engineering team to discuss new tools
+      and process improvements.
     `,
     skills: [
       "Ruby on Rails",
       "Hotwire",
       "Stimulus",
+      "Tailwind CSS",
+      "PostgreSQL",
     ],
   },
   {
@@ -23,10 +30,11 @@ const ROLES: Role[] = [
     name: "Senior Software Engineer",
     dates: "Aug 2022 - Nov 2024",
     description: `
-      Leading & providing technical guidance for projects on GitHub's
-      <a href='/gitcoin.png' target='_blank'>@GitCoin</a> billing team,
-      including an ongoing overhaul of GitHub's billing UI/UX with new company-wide React initiatives.
-      Also facilitating retros & technical discussions to improve team processes.
+      Led & provided technical guidance for projects on GitHub's billing team,
+      including a complete overhaul of the GitHub billing UI powered by
+      an event store service processing millions of line items each day.
+      I also facilitated retros on my team and hosted training sessions
+      to teach other developers Ruby on Rails.
     `,
     skills: [
       "Ruby on Rails",
@@ -44,9 +52,10 @@ const ROLES: Role[] = [
     previousRoles: ["Senior Software Engineer I"],
     dates: "Mar 2021 - Jul 2022",
     description: `
-      As a lead engineer for the payments team, I architected the workflows, services, & underlying
-      relational data models supporting Dutchie's in-house payments service - Dutchie Pay - & worked
-      closely with product, design, & engineering leadership to drive numerous other projects at the company.
+      As a lead engineer for Dutchie's payments team I architected Dutchie's in-house payments service - Dutchie Pay.
+      along with with various other payment processor integrations.
+      I worked closely with our product team and engineering leadership to draft engineering plans
+      and lead my team through 
     `,
     skills: [
       "System Design",

@@ -20,9 +20,10 @@ function AboutSection() {
               I started my journey in college pursuing 3D modeling, environment art, & game development before jumping into the world of web development.
               After making the switch, I quickly learned Ruby on Rails & have since had opportunities to
               build tools for managing medical research,
-              make Cannabis more accessible to people all over the world,
-              helping to shape the future of software at <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>,
-              and now I'm part of the team at <a href="https://tern.travel" target="_blank" rel="noreferrer">Tern</a> building a better all-in-one platform for the Travel industry!
+              to make Cannabis more accessible to people all over the world,
+              to shape the future of software at <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>,
+              and to reimagine what the travel industry could be at <a href="https://tern.travel" target="_blank" rel="noreferrer">Tern</a>.
+              I'm currently looking for work, so if you're hiring <a href="mailto:kaylaglick12@gmail.com" target="_blank" rel="noreferrer">let's chat!</a>
             </p>
             <p className="mb-0">Outside the office, you'll often find me:</p>
             <ul className="list-unstyled">
