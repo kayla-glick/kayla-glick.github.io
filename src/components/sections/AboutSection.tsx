@@ -14,7 +14,7 @@ function AboutSection() {
             <p>
               I'm a Senior Software Engineer based in
               <a href="https://www.google.com/maps/place/Raleigh,+NC/@35.8439338,-78.8098641,11z/data=!3m1!4b1!4m6!3m5!1s0x89ac5a2f9f51e0f7:0x6790b6528a11f0ad!8m2!3d35.7795897!4d-78.6381787!16zL20vMGZ2eWc?entry=ttu">&nbsp;Raleigh, North Carolina&nbsp;</a>
-              with 8 years of experience leading and collaborating with teams to design, build, & deploy pixel-perfect web applications at scale with a focus on UI/UX, performance, and observability.
+              with over 10 years of experience leading and collaborating with teams to design, build, & deploy pixel-perfect web applications at scale with a focus on UI/UX, performance, and observability.
             </p>
             <p>
               I started my journey in college pursuing 3D modeling, environment art, & game development before jumping into the world of web development.
