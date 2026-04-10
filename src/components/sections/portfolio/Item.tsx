@@ -1,8 +1,8 @@
-import Carousel from "react-bootstrap/Carousel";
-import Image from "react-bootstrap/Image";
+import { Carousel, Image } from "react-bootstrap";
+
+import useInteractiveContainer from "../hooks/use-interactive-container";
 import FadeInContainer from '../../FadeInContainer';
 import PortfolioItemFooter from "../../PortfolioItemFooter";
-import useInteractiveContainer from "../hooks/use-interactive-container";
 
 import type { Project } from '../../../types';
 
