@@ -1,6 +1,6 @@
 import Badge from "react-bootstrap/Badge";
 import { v4 as uuidv4 } from "uuid";
-import { ReactComponent as LinkIcon } from "../assets/img/icons/link.svg";
+import LinkIcon from "../assets/img/icons/link.svg?react";
 import { Link } from "../types";
 
 type PortfolioItemFooterProps = {

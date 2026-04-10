@@ -1,8 +1,7 @@
-import React from 'react';
 import Image from "react-bootstrap/Image";
 import { v4 as uuidv4 } from "uuid";
 import PortfolioItemFooter from "../../PortfolioItemFooter";
-import { ReactComponent as DotIcon } from "../../../assets/img/icons/dot-circle.svg";
+import DotIcon from "../../../assets/img/icons/dot-circle.svg?react";
 import useInteractiveContainer from "../hooks/use-interactive-container";
 import FadeInContainer from '../../FadeInContainer';
 

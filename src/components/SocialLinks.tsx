@@ -1,6 +1,6 @@
-import { ReactComponent as GitHubIcon } from '../assets/img/icons/github.svg';
-import { ReactComponent as LinkedinIcon } from '../assets/img/icons/linkedin.svg';
-import { ReactComponent as EnvelopeIcon } from '../assets/img/icons/envelope.svg';
+import GitHubIcon from '../assets/img/icons/github.svg?react';
+import LinkedinIcon from '../assets/img/icons/linkedin.svg?react';
+import EnvelopeIcon from '../assets/img/icons/envelope.svg?react';
 
 function SocialLinks() {
   return (

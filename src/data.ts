@@ -1,10 +1,22 @@
 import type { Project, Role } from "./types";
 
+import TernLogo from "./assets/img/experience/tern.png";
+import GitHubLogo from "./assets/img/experience/github.png";
+import DutchieLogo from "./assets/img/experience/dutchie.png";
+import MUSCLogo from "./assets/img/experience/musc.png";
+
+import WoWSims1 from "./assets/img/portfolio/wowsims-1.png";
+import WoWSims2 from "./assets/img/portfolio/wowsims-2.png";
+import WoWSims3 from "./assets/img/portfolio/wowsims-3.png";
+import WoWSims4 from "./assets/img/portfolio/wowsims-4.png";
+
+import DutchiePay1 from "./assets/img/portfolio/dutchie-pay-1.png";
+
 const ROLES: Role[] = [
   {
     company: "Tern",
     link: "https://tern.travel",
-    logo: require("./assets/img/experience/tern.png"),
+    logo: TernLogo,
     name: "Senior Software Engineer",
     dates: "Dec 2024 - Apr 2026",
     description: `
@@ -26,7 +38,7 @@ const ROLES: Role[] = [
   {
     company: "GitHub",
     link: "https://github.com",
-    logo: require("./assets/img/experience/github.png"),
+    logo: GitHubLogo,
     name: "Senior Software Engineer",
     dates: "Aug 2022 - Nov 2024",
     description: `
@@ -47,7 +59,7 @@ const ROLES: Role[] = [
   {
     company: "Dutchie",
     link: "https://dutchie.com",
-    logo: require("./assets/img/experience/dutchie.png"),
+    logo: DutchieLogo,
     name: "Senior Software Engineer II",
     previousRoles: ["Senior Software Engineer I"],
     dates: "Mar 2021 - Jul 2022",
@@ -76,7 +88,7 @@ const ROLES: Role[] = [
   {
     company: "MUSC",
     link: "https://web.musc.edu/",
-    logo: require("./assets/img/experience/musc.png"),
+    logo: MUSCLogo,
     name: "Senior Web Developer",
     previousRoles: [
       "Web Developer",
@@ -114,10 +126,10 @@ const PROJECTS: Project[] = [
     link: "https://wowsims.github.io/",
     name: "WoWSims",
     images: [
-      require("./assets/img/portfolio/wowsims-1.png"),
-      require("./assets/img/portfolio/wowsims-2.png"),
-      require("./assets/img/portfolio/wowsims-3.png"),
-      require("./assets/img/portfolio/wowsims-4.png"),
+      WoWSims1,
+      WoWSims2,
+      WoWSims3,
+      WoWSims4,
     ],
     description: `
       WoWSims is a fan-made open-source project to provide simulations for World of Warcraft® Classic™.
@@ -138,7 +150,7 @@ const PROJECTS: Project[] = [
     link: "https://business.dutchie.com/dutchiepay/consumer",
     name: "Dutchie Pay",
     images: [
-      require("./assets/img/portfolio/dutchie-pay-1.png"),
+      DutchiePay1,
     ],
     description: `
       Dutchie Pay is Dutchie's premiere in-house payments service for online Cannabis payments.
