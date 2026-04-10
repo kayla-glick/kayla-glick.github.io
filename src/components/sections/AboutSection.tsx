@@ -1,8 +1,8 @@
-import Image from 'react-bootstrap/Image';
+import { Image } from 'react-bootstrap';
 
+import FadeInContainer from '../FadeInContainer';
 import Section from '../Section';
 import me from '../../assets/img/me.jpg';
-import FadeInContainer from '../FadeInContainer';
 
 function AboutSection() {
   return (

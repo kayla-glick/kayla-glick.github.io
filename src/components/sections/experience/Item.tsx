@@ -1,23 +1,20 @@
-import Image from "react-bootstrap/Image";
+import { Image } from "react-bootstrap";
 import { v4 as uuidv4 } from "uuid";
+
+import useInteractiveContainer from "../hooks/use-interactive-container";
+import FadeInContainer from "../../FadeInContainer";
 import PortfolioItemFooter from "../../PortfolioItemFooter";
 import DotIcon from "../../../assets/img/icons/dot-circle.svg?react";
-import useInteractiveContainer from "../hooks/use-interactive-container";
-import FadeInContainer from '../../FadeInContainer';
 
-import type { Role } from '../../../types';
+import type { Role } from "../../../types";
 
 type Props = {
-  role: Role
-}
+  role: Role;
+};
 
 function Item({ role }: Props) {
-  const {
-    containerRef,
-    linkRef,
-    handleClick,
-    handleHover,
-  } = useInteractiveContainer();
+  const { containerRef, linkRef, handleClick, handleHover } =
+    useInteractiveContainer();
 
   return (
     <div className="timeline-row">
@@ -34,31 +31,47 @@ function Item({ role }: Props) {
             <p className="mb-0">{role.dates}</p>
           </button>
         </FadeInContainer>
-        <div
-          className="timeline-section-contents"
-        >
+        <div className="timeline-section-contents">
           <FadeInContainer className="timeline-section-details">
-            <Image src={role.logo} alt={`${role.company} Logo`} width="48" height="48" className="me-2" />
+            <Image
+              src={role.logo}
+              alt={`${role.company} Logo`}
+              width="48"
+              height="48"
+              className="me-2"
+            />
             <div className="d-flex flex-column">
               <h2 className="timeline-company">
-                <a href={role.link} target="_blank" rel="noreferrer" ref={linkRef}>
+                <a
+                  href={role.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  ref={linkRef}
+                >
                   {role.company}
                 </a>
               </h2>
               <div className="timeline-roles">
                 <h3 className="timeline-role">{role.name}</h3>
                 {role.previousRoles?.map((name) => {
-                  return <p className="timeline-role" key={uuidv4()}>{name}</p>
+                  return (
+                    <p className="timeline-role" key={uuidv4()}>
+                      {name}
+                    </p>
+                  );
                 })}
               </div>
-              <p className="timeline-description" dangerouslySetInnerHTML={{__html: role.description}} />
+              <p
+                className="timeline-description"
+                dangerouslySetInnerHTML={{ __html: role.description }}
+              />
               <PortfolioItemFooter links={role.projects} badges={role.skills} />
             </div>
           </FadeInContainer>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Item;
