@@ -48,16 +48,16 @@ $timeline-indicator-size: 2rem;
         width: 80%;
         display: flex;
         align-items: flex-start;
-        border-right: 2px solid tint-color($primary, 50%);
+        border-right: 2px solid $primary;
 
         &.active {
           .timeline-section-contents {
-            background: rgba(0,0,0,0.05);
+            background: light-dark(rgba(0,0,0,0.05), rgba(255,255,255,0.05));
           }
 
           .timeline-indicator {
             button {
-              color: $link-hover-color;
+              color: light-dark($link-hover-color, var(--bs-primary-text-emphasis));
             }
           }
         }
@@ -79,7 +79,7 @@ $timeline-indicator-size: 2rem;
 
           .timeline-role {
             margin-bottom: 0;
-            color: $secondary
+            color: var(--bs-secondary-color);
           }
         }
 
@@ -87,6 +87,14 @@ $timeline-indicator-size: 2rem;
           margin-bottom: map-get($spacers, 2);
         }
       }
+    }
+
+    .timeline-logo {
+      width: 48px;
+      height: 48px;
+      margin-right: map-get($spacers, 2);
+      fill: light-dark(#000, #fff);
+      transition: fill $animation-duration ease-in-out;
     }
   }
 }
@@ -112,8 +120,13 @@ $timeline-indicator-size: 2rem;
   
           .timeline-section {
             margin-left: auto;
-            border-left: 2px solid tint-color($primary, 50%);
-            border-right: unset;
+          }
+
+          &:not(:last-child) {
+            .timeline-section {
+              border-left: 2px solid $primary;
+              border-right: unset;
+            }
           }
         }
 

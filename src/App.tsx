@@ -6,6 +6,7 @@ import AboutSection from './components/sections/AboutSection';
 import ExperienceSection from './components/sections/experience/';
 import PortfolioSection from './components/sections/portfolio/';
 import ContactSection from './components/sections/ContactSection';
+import ThemeToggle from './components/ThemeToggle';
 
 import './App.scss';
 
@@ -22,6 +23,7 @@ function App() {
         <PortfolioSection />
         <ContactSection />
       </main>
+      <ThemeToggle />
     </>
   );
 }

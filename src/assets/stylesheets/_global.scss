@@ -1,3 +1,13 @@
+html {
+  &[data-bs-theme="light"] {
+    color-scheme: light;
+  }
+  
+  &[data-bs-theme="dark"] {
+    color-scheme: dark;
+  }
+}
+
 a {
   text-decoration: none;
   outline: none;
@@ -6,6 +16,10 @@ a {
   &:focus {
     color: var(--bs-link-hover-color);
   }
+}
+
+hr {
+  color: light-dark($hr-color, $hr-color-dark);
 }
 
 .fade-in-section {
@@ -22,17 +36,6 @@ a {
   transform: none;
   visibility: visible;
 }
-
-$root-font-sizes: (
-  xs: 1em,
-  sm: 1em,
-  md: 1em,
-  lg: 1em,
-  xl: 1em,
-  xxl: 1.25em,
-  xxxl: 1.5em,
-  x4k: 2em,
-);
 
 @each $breakpoint, $value in $root-font-sizes {
   @include media-breakpoint-up($breakpoint) {

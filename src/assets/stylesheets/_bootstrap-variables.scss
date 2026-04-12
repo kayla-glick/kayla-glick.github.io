@@ -16,6 +16,7 @@ $spacer: 1rem !default;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-rounded: false;
+$enable-negative-margins: true;
 
 // Body
 //
@@ -29,6 +30,7 @@ $body-color: #592693;
 // Style anchor elements.
 
 $link-color: $primary;
+$link-color-dark: $primary;
 $link-hover-color: $primary-hover;
 
 // Grid Breakpoints
@@ -51,11 +53,13 @@ $font-weight-base: lighter;
 $font-size-base: 1rem;
 
 $headings-color: $primary;
+$headings-color-dark: $primary;
 $headings-font-weight: lighter;
 
 $display-font-weight: lighter;
 
 $hr-color: $body-color;
+$hr-color-dark: #dfc0ff;
 
 // Buttons
 

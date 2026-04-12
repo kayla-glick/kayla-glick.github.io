@@ -1,3 +1,5 @@
+import { FunctionComponent, ReactElement, SVGProps } from "react"
+
 export type Link = {
   text: string
   url: string
@@ -6,7 +8,7 @@ export type Link = {
 export type Role = {
   company: string
   link: string
-  logo: string
+  logo: FunctionComponent<SVGProps<SVGSVGElement>> | string
   name: string
   previousRoles?: string[]
   dates: string

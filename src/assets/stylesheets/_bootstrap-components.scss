@@ -17,7 +17,7 @@
 // Badges
 
 .badge {
-  background-color: mix($primary, $light, 10%);
+  background-color: light-dark(mix($primary, $light, 10%), mix($primary, $dark, 20%));
 }
 
 // Navbar
@@ -122,4 +122,8 @@
       opacity: 1;
     }
   }
+}
+
+.tooltip-inner {
+  color: light-dark($light, $dark);
 }

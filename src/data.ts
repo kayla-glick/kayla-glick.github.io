@@ -1,7 +1,7 @@
 import type { Project, Role } from "./types";
 
-import TernLogo from "./assets/img/experience/tern.png";
-import GitHubLogo from "./assets/img/experience/github.png";
+import TernLogo from "./assets/img/experience/tern.svg?react";
+import GitHubLogo from "./assets/img/experience/github.svg?react";
 import DutchieLogo from "./assets/img/experience/dutchie.png";
 import MUSCLogo from "./assets/img/experience/musc.png";
 
@@ -113,10 +113,6 @@ const ROLES: Role[] = [
         text: "SPARCRequest",
         url: "https://sparc.musc.edu"
       },
-      {
-        text: "Living BiobBank",
-        url: "https://lbb.musc.edu"
-      }
     ]
   }
 ]

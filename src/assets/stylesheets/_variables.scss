@@ -1,4 +1,16 @@
 $animation-duration: .25s;
-$section-bg: white;
-$section-bg-alt: #f3f1ea;
+$section-bg-light: white;
+$section-bg-alt-light: #f3f1ea;
+$section-bg-dark: #0b0016;
+$section-bg-alt-dark: #02020c;
 $site-header-height: 6rem;
+$root-font-sizes: (
+  xs: 1em,
+  sm: 1em,
+  md: 1em,
+  lg: 1em,
+  xl: 1em,
+  xxl: 1.25em,
+  xxxl: 1.5em,
+  x4k: 2em,
+);

@@ -1,6 +1,7 @@
 #site-header {
   height: $site-header-height;
   transition: background-color $animation-duration ease-in-out;
+  backdrop-filter: blur(4px);
 
   .navbar-nav {
     margin-left: auto;

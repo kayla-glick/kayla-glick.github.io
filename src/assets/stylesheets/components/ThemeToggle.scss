@@ -1,0 +1,31 @@
+.theme-toggle {
+  position: fixed;
+  right: 1.125rem;
+  bottom: 1.125rem;
+  z-index: 1050;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  background: light-dark($section-bg-dark, $section-bg-light);
+  color: #111;
+  font-size: 1.4rem;
+  transition: background-color $animation-duration ease-in-out,
+              color $animation-duration ease-in-out,
+              border-color $animation-duration ease-in-out,
+              box-shadow $animation-duration ease;
+  box-shadow: 0 0.5rem 1.5rem light-dark(rgba(0, 0, 0, 0.12), rgba(255, 255, 255, 0.12));
+  text-decoration: none;
+  outline: none;
+
+  &:hover,
+  &:focus-within,
+  &:active,
+  &:focus {
+    background: light-dark(mix($section-bg-alt-light, $dark, 10%), mix($section-bg-alt-dark, $light, 10%)) !important;
+    box-shadow: 0 0.75rem 1.75rem light-dark(rgba(0, 0, 0, 0.18), rgba(255, 255, 255, 0.18))
+  }
+}

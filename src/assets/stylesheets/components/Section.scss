@@ -5,11 +5,11 @@ section {
   min-height: 100vh;
 
   &:nth-child(n + 2) {
-    background: $section-bg;
+    background: light-dark($section-bg-light, $section-bg-dark);
   }
 
   &:nth-child(2n + 3) {
-    background: $section-bg-alt;
+    background: light-dark($section-bg-alt-light, $section-bg-alt-dark);
   }
 
   .section-container {
