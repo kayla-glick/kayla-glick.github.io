@@ -1,5 +1,6 @@
 #portfolio {
   .portfolio-item {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
 
@@ -7,26 +8,83 @@
       padding-bottom: map-get($spacers, 4);
     }
 
+    &:nth-child(2n) {
+      .portfolio-item-details {
+        left: 0;
+      }
+      
+      .carousel {
+        margin-left: auto;
+      }
+    }
+
     .portfolio-item-details {
-      padding-right: map-get($spacers, 4);
+      position: absolute;
+      top: 5%;
+      right: 0;
+      width: 50%;
+      padding: map-get($spacers, 4);
+      border-radius: 4px;
+      box-shadow: 0 0.5rem 1.5rem light-dark(rgba(0, 0, 0, 0.12), rgba(255, 255, 255, 0.12));
+      background: light-dark(mix($section-bg-alt-light, #0000, 95%), mix($section-bg-alt-dark, #0000, 95%));
+      backdrop-filter: blur(4px);
       transition: background-color $animation-duration ease-in-out;
 
       &.active {
-        background: light-dark(rgba(0,0,0,0.05), rgba(255,255,255,0.05));
+        background: light-dark(mix($section-bg-alt-light, #000A, 90%), mix($section-bg-alt-dark, #fffA, 90%));
+      }
+    }
+    
+    .portfolio-item-title {
+      display: flex;
+      align-items: flex-end;
+
+      small {
+        margin-left: auto;
+        margin-bottom: map-get($spacers, 1);
+        font-size: $font-size-base;
+        color: var(--bs-secondary-color);
+      }
+    }
+
+    .carousel {
+      width: 85%;
+      border-radius: 4px;
+      z-index: -1;
+      box-shadow: 0 0.5rem 1.5rem light-dark(rgba(0, 0, 0, 0.12), rgba(255, 255, 255, 0.12));
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  #portfolio {
+    .portfolio-item {
+      .portfolio-item-details {
+        width: 75%;
       }
     }
   }
 }
 
-@include media-breakpoint-up(md) {
+@include media-breakpoint-down(md) {
   #portfolio {
     .portfolio-item {
       .portfolio-item-details {
-        width: 50%;
+        position: relative;
+        width: 100%;
       }
 
-      .portfolio-item-carousel {
-        width: 50%;
+      .portfolio-item-title {
+        flex-direction: column;
+        align-items: flex-start;
+
+        small {
+          margin-left: 0;
+        }
+      }
+
+      .carousel {
+        width: 100%;
       }
     }
   }

@@ -23,7 +23,7 @@ $enable-negative-margins: true;
 // Settings for the `<body>` element.
 
 $body-bg: #08000a;
-$body-color: #592693;
+$body-color: #000;
 
 // Links
 //
@@ -49,12 +49,12 @@ $grid-breakpoints: (
 
 // Typography
 
-$font-weight-base: lighter;
+$font-weight-base: normal;
 $font-size-base: 1rem;
 
 $headings-color: $primary;
 $headings-color-dark: $primary;
-$headings-font-weight: lighter;
+$headings-font-weight: normal;
 
 $display-font-weight: lighter;
 
@@ -63,14 +63,14 @@ $hr-color-dark: #dfc0ff;
 
 // Buttons
 
-$btn-font-weight: lighter;
+$btn-font-weight: normal;
 $btn-padding-x: $spacer;
 $btn-padding-y: $spacer * .5;
 
 // Navs
 
 $nav-link-color: $light;
-$nav-link-font-weight: lighter;
+$nav-link-font-weight: normal;
 $nav-link-padding-y: $spacer * .5;
 
 // Navbar

@@ -10,6 +10,14 @@ import WoWSims2 from "./assets/img/portfolio/wowsims-2.png";
 import WoWSims3 from "./assets/img/portfolio/wowsims-3.png";
 import WoWSims4 from "./assets/img/portfolio/wowsims-4.png";
 
+import ClassicPlus1 from "./assets/img/portfolio/cpp-1.webp";
+import ClassicPlus2 from "./assets/img/portfolio/cpp-2.webp";
+import ClassicPlus3 from "./assets/img/portfolio/cpp-3.webp";
+import ClassicPlus4 from "./assets/img/portfolio/cpp-4.webp";
+import ClassicPlus5 from "./assets/img/portfolio/cpp-5.webp";
+import ClassicPlus6 from "./assets/img/portfolio/cpp-6.webp";
+import ClassicPlus7 from "./assets/img/portfolio/cpp-7.webp";
+
 import DutchiePay1 from "./assets/img/portfolio/dutchie-pay-1.png";
 
 const ROLES: Role[] = [
@@ -119,20 +127,46 @@ const ROLES: Role[] = [
 
 const PROJECTS: Project[] = [
   {
+    link: "https://wowclassic.plus/",
+    name: "The Classic+ Project",
+    dates: "Oct 2025 - Present",
+    description: `
+      The Classic+ Project is a fan site for the World of Warcraft Classic community to organize and share their ideas for a highly-speculated upcoming release.
+      I lead the development of the site, working closely with our leads to understand their vision and build a highly-stylized UI that mimics real parts of the in-game UI.
+    `,
+    images: [
+      ClassicPlus1,
+      ClassicPlus2,
+      ClassicPlus3,
+      ClassicPlus4,
+      ClassicPlus5,
+      ClassicPlus6,
+      ClassicPlus7,
+    ],
+    skills: [
+      "React",
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "MaterialUI",
+    ],
+  },
+  {
     link: "https://wowsims.github.io/",
     name: "WoWSims",
-    images: [
-      WoWSims1,
-      WoWSims2,
-      WoWSims3,
-      WoWSims4,
-    ],
     description: `
       WoWSims is a fan-made open-source project to provide simulations for World of Warcraft® Classic™.
       Since 2022 I've made thousands of contributions to the project including a complete UI redesign.<br /><br />
       In 2024 I was made a maintainer of the project and have since managed our GitHub organization, site hosting,
       and worked with our developers to launch multiple new site versions for new WoW Classic releases.
     `,
+    dates: "Oct 2022 - Present",
+    images: [
+      WoWSims1,
+      WoWSims2,
+      WoWSims3,
+      WoWSims4,
+    ],
     skills: [
       "Open-Source",
       "TypeScript",
@@ -145,14 +179,15 @@ const PROJECTS: Project[] = [
   {
     link: "https://business.dutchie.com/dutchiepay/consumer",
     name: "Dutchie Pay",
+    dates: "July 2021 - Jul 2022",
+    description: `
+      Dutchie Pay is Dutchie's premiere in-house payments service for online Cannabis payments.
+      I architected the workflows, services, and underlying relational data models for the project,
+      and also worked with the product and design teams to flesh out the UI/UX.
+    `,
     images: [
       DutchiePay1,
     ],
-    description: `
-      Dutchie Pay is Dutchie's premiere in-house payments service for online Cannabis payments.
-      I architected the workflows, services, & underlying relational data models for the project,
-      & also worked with the product & design teams to flesh out the UI/UX.
-    `,
     skills: [
       "System Design",
       "Data Modeling",

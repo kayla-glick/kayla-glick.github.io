@@ -1,4 +1,4 @@
-import { FunctionComponent, ReactElement, SVGProps } from "react"
+import { FunctionComponent, SVGProps } from "react"
 
 export type Link = {
   text: string
@@ -20,6 +20,7 @@ export type Role = {
 export type Project = {
   link?: string
   name: string
+  dates: string
   images: string[]
   description: string
   skills: string[]

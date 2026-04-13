@@ -27,17 +27,18 @@ function Item({ project }: Props) {
   return (
     <FadeInContainer className="portfolio-item">
       <div className="portfolio-item-details" ref={containerRef} {...eventProps}>
-        <h2>
+        <h2 className="portfolio-item-title">
           {project.link ?
             <a href={project.link} target="_blank" rel="noreferrer" ref={linkRef}>{project.name} </a>  
             :
             project.name
           }
+          <small>{project.dates}</small>
         </h2>
         <p dangerouslySetInnerHTML={{ __html: project.description }} />
         <PortfolioItemFooter badges={project.skills} />
       </div>
-      <Carousel className="portfolio-item-carousel" fade>
+      <Carousel className="portfolio-item-carousel" fade controls={false}>
         {project.images.map((image) => {
           return (
             <Carousel.Item>

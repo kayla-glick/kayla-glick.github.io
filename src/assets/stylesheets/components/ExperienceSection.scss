@@ -5,6 +5,9 @@ $timeline-indicator-size: 2rem;
 #experience {
   .timeline {
     padding-top: map-get($spacers, 4);
+    display: flex;
+    flex-direction: column;
+    gap: map-get($spacers, 4);
 
     .timeline-row {
       position: relative;
@@ -48,7 +51,6 @@ $timeline-indicator-size: 2rem;
         width: 80%;
         display: flex;
         align-items: flex-start;
-        border-right: 2px solid $primary;
 
         &.active {
           .timeline-section-contents {
@@ -67,6 +69,8 @@ $timeline-indicator-size: 2rem;
           display: flex;
           padding: map-get($spacers, 4);
           margin-top: $spacer * -2;
+          border-right: 2px solid $primary;
+          border-radius: 4px 0 0 4px;
           transition: background-color $animation-duration ease-in-out;
         }
 
@@ -122,11 +126,11 @@ $timeline-indicator-size: 2rem;
             margin-left: auto;
           }
 
-          &:not(:last-child) {
-            .timeline-section {
-              border-left: 2px solid $primary;
-              border-right: unset;
-            }
+          .timeline-section-contents {
+            border-left: 2px solid $primary;
+            border-right: unset;
+            border-radius: 0 4px 4px 0;
+            box-shadow: 0.5rem 0.5rem 1.5rem light-dark(rgba(0, 0, 0, 0.12), rgba(255, 255, 255, 0.12));
           }
         }
 
@@ -140,6 +144,10 @@ $timeline-indicator-size: 2rem;
 
         .timeline-section {
           width: calc(50% + 1px);
+        }
+
+        .timeline-section-contents {
+          box-shadow: -0.5rem 0.5rem 1.5rem light-dark(rgba(0, 0, 0, 0.12), rgba(255, 255, 255, 0.12));
         }
       }
     }
