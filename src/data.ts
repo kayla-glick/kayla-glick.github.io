@@ -152,7 +152,7 @@ const PROJECTS: Project[] = [
     ],
   },
   {
-    link: "https://wowsims.github.io/",
+    link: "https://wowsims.com/",
     name: "WoWSims",
     description: `
       WoWSims is a fan-made open-source project to provide simulations for World of Warcraft® Classic™.
