@@ -32,8 +32,8 @@ function Item({ role }: Props) {
             <p className="mb-0">{role.dates}</p>
           </button>
         </FadeInContainer>
-        <div className="timeline-section-contents">
-          <FadeInContainer className="timeline-section-details">
+        <FadeInContainer className="timeline-section-details">
+          <div className="timeline-section-contents">
             <div>
               {typeof role.logo === "string" ? (
                 <Image
@@ -66,7 +66,11 @@ function Item({ role }: Props) {
                 {role.previousRoles?.map((name) => {
                   return (
                     <p className="timeline-role" key={uuidv4()}>
-                      <LevelUpIcon className="mt-n2 mx-1" width="12" height="12" />
+                      <LevelUpIcon
+                        className="mt-n2 mx-1"
+                        width="12"
+                        height="12"
+                      />
                       {name}
                     </p>
                   );
@@ -78,8 +82,8 @@ function Item({ role }: Props) {
               />
               <PortfolioItemFooter links={role.projects} badges={role.skills} />
             </div>
-          </FadeInContainer>
-        </div>
+          </div>
+        </FadeInContainer>
       </div>
     </div>
   );
