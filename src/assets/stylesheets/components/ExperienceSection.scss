@@ -23,6 +23,7 @@ $timeline-indicator-size: 2rem;
         position: absolute;
         top: 0;
         left: calc(80% - math.div($timeline-indicator-size, 2));
+        z-index: 1;
         
         button {
           display: flex;
