@@ -31,7 +31,7 @@ Error generating stack: `+e.message+`
     `,skills:[`Ruby on Rails`,`JavaScript`,`jQuery`,`HTML`,`SCSS`,`Bootstrap`],projects:[{text:`SPARCRequest`,url:`https://sparc.musc.edu`}]}],Jo=[{link:`https://wowclassic.plus/`,name:`The Classic+ Project`,dates:`Oct 2025 - Present`,description:`
       The Classic+ Project is a fan site for the World of Warcraft Classic community to organize and share their ideas for a highly-speculated upcoming release.
       I lead the development of the site, working closely with our leads to understand their vision and build a highly-stylized UI that mimics real parts of the in-game UI.
-    `,images:[zo,Bo,Vo,Ho,Uo,Wo,Go],skills:[`React`,`Python`,`FastAPI`,`PostgreSQL`,`MaterialUI`]},{link:`https://wowsims.github.io/`,name:`WoWSims`,description:`
+    `,images:[zo,Bo,Vo,Ho,Uo,Wo,Go],skills:[`React`,`Python`,`FastAPI`,`PostgreSQL`,`MaterialUI`]},{link:`https://wowsims.com/`,name:`WoWSims`,description:`
       WoWSims is a fan-made open-source project to provide simulations for World of Warcraft® Classic™.
       Since 2022 I've made thousands of contributions to the project including a complete UI redesign.<br /><br />
       In 2024 I was made a maintainer of the project and have since managed our GitHub organization, site hosting,
