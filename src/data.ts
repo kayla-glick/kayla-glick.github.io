@@ -1,6 +1,7 @@
 import type { Project, Role } from "./types";
 
 import TernLogo from "./assets/img/experience/tern.svg?react";
+import GifthealthLogo from "./assets/img/experience/gifthealth.jpg";
 import GitHubLogo from "./assets/img/experience/github.svg?react";
 import DutchieLogo from "./assets/img/experience/dutchie.png";
 import MUSCLogo from "./assets/img/experience/musc.png";
@@ -21,6 +22,21 @@ import ClassicPlus7 from "./assets/img/portfolio/cpp-7.webp";
 import DutchiePay1 from "./assets/img/portfolio/dutchie-pay-1.png";
 
 const ROLES: Role[] = [
+  {
+    company: "Gifthealth",
+    link: "https://www.gifthealth.com/",
+    logo: GifthealthLogo,
+    name: "Senior Software Engineer",
+    dates: "May 2026 - Present",
+    description: `
+      Expanding access to healthcare and medicine.
+    `,
+    skills: [
+      "Ruby on Rails",
+      "Hotwire",
+      "Stimulus",
+    ],
+  },
   {
     company: "Tern",
     link: "https://tern.travel",

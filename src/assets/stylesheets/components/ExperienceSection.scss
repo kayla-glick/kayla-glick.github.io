@@ -64,6 +64,10 @@ $timeline-indicator-size: 2rem;
             }
           }
         }
+
+        .timeline-section-details {
+          flex-grow: 1;
+        }
         
         .timeline-section-contents {
           width: 100%;
